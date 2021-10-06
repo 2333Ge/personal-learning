@@ -5,9 +5,9 @@ import ManyData from "./demo/manyData";
 function App() {
   return (
     <div>
-      {/* <ContextType />
-      <UIOptimization /> */}
-      <ManyData />
+      <ContextType />
+      <UIOptimization />
+      {/* <ManyData /> */}
     </div>
   );
 }

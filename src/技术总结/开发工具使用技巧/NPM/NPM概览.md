@@ -2,17 +2,11 @@
 
 ## 实用命令
 
-- 查看模块所有版本
+|           快捷键            |         描述         |
+| :-------------------------: | :------------------: |
+| npm view deepmerge versions |   查看模块所有版本   |
+|     npm ls -g --depth=0     | 查看全局安装依赖版本 |
 
-```sh
-npm view deepmerge versions
-```
-
-- 查看全局安装依赖版本
-
-```
-npm ls -g --depth=0
-```
 
 # 相关资料
 
