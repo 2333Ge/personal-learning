@@ -15,7 +15,7 @@ yo code
 
 ## package.json
 
-- name和publisher： VS Code <publisher>.<name>用作插件的唯一 ID
+- name 和 publisher： VS Code <publisher>.<name>用作插件的唯一 ID
 - main：插件入口文件
 - engines.vscode：这指定了扩展所依赖的 VS Code API 的最低版本。
 
@@ -55,16 +55,17 @@ yo code
 }
 
 ```
+
 ## 入口文件
 
-导出两个函数、activate和deactivate。activate当您注册的激活事件发生时执行。deactivate让您有机会在您的扩展程序被停用之前进行清理。
+导出两个函数、activate 和 deactivate。activate 当您注册的激活事件发生时执行。deactivate 让您有机会在您的扩展程序被停用之前进行清理。
 
 # api
 
 - 弹窗
 
-```
-	vscode.window.sho wInformationMessage('我的 HelloWorld');
+```js
+vscode.window.showInformationMessage("我的 HelloWorld");
 ```
 
 # 参考资料
@@ -72,3 +73,8 @@ yo code
 - [官网](https://code.visualstudio.com/api)
 - [官网-api](https://code.visualstudio.com/api/references/vscode-api)
 - http://blog.haoji.me/vscode-plugin-hello-world.html
+- [](https://liiked.github.io/VS-Code-Extension-Doc-ZH/#/)
+
+MultiColorHighlighter
+
+- [颜色插件-自定义关键字](https://hub.fastgit.org/456ken/Highlighter-vscode)
