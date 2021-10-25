@@ -10,11 +10,38 @@
 
 # 插件
 
+## 项目中配置插件
+
+项目根目录下，.vscode 目录下添加 extensions.json 文件
+// See https://go.microsoft.com/fwlink/?LinkId=827846
+
+```
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "octref.vetur",
+    "eamodio.gitlens",
+    "cipchk.cssrem",
+    "dariofuzinato.vue-peek",
+    "knisterpeter.vscode-commitizen",
+    "christian-kohler.path-intellisense",
+    "dweizhe.docthis-customize-tags",
+    "mcfe.mcfe-toolkit"
+  ]
+}
+```
+
+## CodeRunner
+
+实时一键运行代码
+
 ## Background
 
 设置 ide 背景图
 
-### 使用问题
+背景图显示不出参考：
+https://blog.csdn.net/toopoo/article/details/88841755
+https://github.com/Microsoft/vscode/issues/7426
 
 #### 1. 图片显示不出
 
@@ -53,7 +80,6 @@ ide 中文
 ## [Git History](https://www.cnblogs.com/EdisonVan/p/10642698.html)
 
 Git 历史提交比较
-
 # 参考文章
 
 - [官方文档](https://code.visualstudio.com/docs/languages/javascript)
@@ -67,6 +93,7 @@ Git 历史提交比较
 
 - http://blog.haoji.me/vscode-plugin-hello-world.html
 - https://code.visualstudio.com/api
+- https://juejin.cn/post/6997186741866070023
 
 # 其他
 
