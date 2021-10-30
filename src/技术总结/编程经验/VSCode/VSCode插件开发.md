@@ -20,38 +20,13 @@ yo code
 - engines.vscode：这指定了扩展所依赖的 VS Code API 的最低版本。
 
 ```
+
 {
   "name": "helloworld-sample",
-  "displayName": "helloworld-sample",
-  "description": "HelloWorld example for VS Code",
-  "version": "0.0.1",
-  "publisher": "vscode-samples",
-  "repository": "https://github.com/microsoft/vscode-extension-samples/helloworld-sample",
   "engines": {
     "vscode": "^1.51.0"
   },
-  "categories": ["Other"],
-  "activationEvents": ["onCommand:extension.helloWorld"],
   "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.helloWorld",
-        "title": "Hello World"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
-  },
-  "devDependencies": {
-    "@types/node": "^8.10.25",
-    "@types/vscode": "^1.51.0",
-    "tslint": "^5.16.0",
-    "typescript": "^3.4.5"
-  }
 }
 
 ```
@@ -62,19 +37,19 @@ yo code
 
 # api
 
+- [个人插件-Highlight My Word 总结](https://juejin.cn/post/7021931752914419743)
+
 - 弹窗
 
 ```js
 vscode.window.showInformationMessage("我的 HelloWorld");
 ```
 
-# 参考资料
+# 相关资料
 
 - [官网](https://code.visualstudio.com/api)
 - [官网-api](https://code.visualstudio.com/api/references/vscode-api)
-- http://blog.haoji.me/vscode-plugin-hello-world.html
-- [](https://liiked.github.io/VS-Code-Extension-Doc-ZH/#/)
-
-MultiColorHighlighter
-
-- [颜色插件-自定义关键字](https://hub.fastgit.org/456ken/Highlighter-vscode)
+- [小茗同学] http://blog.haoji.me/vscode-plugin-hello-world.html
+- [博客-中文文档](https://liiked.github.io/VS-Code-Extension-Doc-ZH/#/)
+- [MultiColorHighlighter](https://hub.fastgit.org/456ken/Highlighter-vscode)
+- [个人插件-Highlight My Word 总结](https://juejin.cn/post/7021931752914419743)
