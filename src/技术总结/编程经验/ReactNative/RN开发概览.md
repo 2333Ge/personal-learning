@@ -5,7 +5,10 @@
 
 ## 常用插件
 
+- 原生路径管理： react-native-fs
+
 ### 画图工具
+
 #### react-native-svg
 
 https://github.com/react-native-svg/react-native-svg

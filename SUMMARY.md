@@ -35,6 +35,7 @@
 ### Gradle
 
 - [Gradle 概览](src/技术总结/开发工具使用技巧/Gradle/Gradle概览.md)
+- [《Mastering Gradle》笔记](src/技术总结/开发工具使用技巧/Gradle/《Mastering Gradle》笔记.md)
 
 ### Android 设备
 
@@ -93,3 +94,4 @@
 - [资源汇总](src/技术总结/资源汇总.md)
 - [《设计心理学》总结.md](src/技术总结/《设计心理学》总结.md)
 - [前端基础知识](src/技术总结/前端基础知识.md)
+- [开发名词释义](src/科普/开发名词释义.md)
