@@ -1,0 +1,8 @@
+{
+  "name": "personal-learning",
+  "version": "0.0.1",
+  "description": "personal-learning",
+  "scripts": {
+    "push": "./bin/push.sh"
+  }
+}

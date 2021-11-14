@@ -1,0 +1,184 @@
+{
+    "root": {
+        "data": {
+            "id": "cewcmhh9t880",
+            "created": 1633932198261,
+            "text": "颜色插件"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cewcmhh9t880",
+                    "created": 1633932198261,
+                    "text": "需求",
+                    "layout_mind_offset": {
+                        "x": -2,
+                        "y": -33
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cewcmhh9t880",
+                            "created": 1633932198261,
+                            "text": "基础：改变目标变量背景色",
+                            "layout_mind_offset": {
+                                "x": -30,
+                                "y": -63
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cewfzh73mxs0",
+                            "created": 1633941679710,
+                            "text": "插件使用者可自行配置",
+                            "layout_right_offset": {
+                                "x": 18,
+                                "y": 1
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cewfzh73mxs0",
+                            "created": 1633941679710,
+                            "text": "支持主题切换（多版本变量=>颜色映射）",
+                            "layout_right_offset": {
+                                "x": 20,
+                                "y": -2
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cewfzh73mxs0",
+                            "created": 1633941679710,
+                            "text": "支持侧边栏预览key&value",
+                            "layout_right_offset": {
+                                "x": 20,
+                                "y": -2
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cewcmhh9t880",
+                    "created": 1633932198261,
+                    "text": "要点",
+                    "layout_mind_offset": {
+                        "x": 13,
+                        "y": -13
+                    },
+                    "expandState": "collapse"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cewcmhh9t880",
+                            "created": 1633932198261,
+                            "text": "颜色配置、主题切换",
+                            "layout_mind_offset": {
+                                "x": 380,
+                                "y": 71
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cewcmhh9t880",
+                            "created": 1633932198261,
+                            "text": " ",
+                            "layout_mind_offset": {
+                                "x": 380,
+                                "y": 71
+                            },
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cewcmhh9t880",
+                                    "created": 1633932198261,
+                                    "text": "editor定位关键字",
+                                    "layout_mind_offset": {
+                                        "x": 380,
+                                        "y": 71
+                                    }
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cewcmhh9t880",
+                            "created": 1633932198261,
+                            "text": "设置所配置的颜色",
+                            "layout_mind_offset": {
+                                "x": 380,
+                                "y": 71
+                            },
+                            "layout_right_offset": {
+                                "x": 13,
+                                "y": 5
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cewcmhh9t880",
+                            "created": 1633932198261,
+                            "text": "VSCode注册事件",
+                            "layout_mind_offset": {
+                                "x": 380,
+                                "y": 71
+                            },
+                            "layout_right_offset": {
+                                "x": 13,
+                                "y": 5
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cewcmhh9t880",
+                    "created": 1633932198261,
+                    "text": "问题列表",
+                    "layout_mind_offset": {
+                        "x": 486,
+                        "y": 175
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cewcmhh9t880",
+                            "created": 1633932198261,
+                            "text": "dispose,设置后",
+                            "layout_mind_offset": {
+                                "x": 408,
+                                "y": 178
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
