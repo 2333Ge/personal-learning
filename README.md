@@ -14,51 +14,20 @@
 
 ## 开发工具使用技巧
 
-### Android Studio
-
 - [AS 调试技巧](src/技术总结/开发工具使用技巧/AndroidStudio/AS调试技巧.md)
 - [AS 概览](src/技术总结/开发工具使用技巧/AndroidStudio/AS概览.md)
-
-### VSCode
-
 - [VSCode 基础概览](src/技术总结/开发工具使用技巧/VSCode/VSCode基础概览.md)
-
-### ADB
-
 - [ADB LogCat](src/技术总结/开发工具使用技巧/ADB/ADB-LogCat.md)
 - [ADB Shell](src/技术总结/开发工具使用技巧/ADB/ADB-Shell.md)
-
-### Git
-
 - [Git 概览](src/技术总结/开发工具使用技巧/Git/Git概览.md)
-
-### Gradle
 
 - [Gradle 概览](src/技术总结/开发工具使用技巧/Gradle/Gradle概览.md)
 - [《Mastering Gradle》笔记](<src/技术总结/开发工具使用技巧/Gradle/《Mastering\ Gradle》笔记.md>)
-
-### Android 设备
-
 - [Android 开发者选项](src/技术总结/开发工具使用技巧/Android设备/Android开发者选项.md)
-
-### 代码规范工具
-
 - [代码规范工具概览](src/技术总结/开发工具使用技巧/代码规范工具/代码规范工具概览.md)
-
-### mac
-
 - [mac 概览](src/技术总结/开发工具使用技巧/MAC/MAC概览.md)
-
-### npm
-
 - [NPM 概览](src/技术总结/开发工具使用技巧/Npm/NPM概览.md)
-
-### Chrome
-
 - [Chrome 概览](src/技术总结/开发工具使用技巧/Chrome/Chrome概览.md)
-
-### MarkDown
-
 - [MarkDown 概览](src/技术总结/开发工具使用技巧/MarkDown/MarkDown概览.md)
 
 ## 编程经验
