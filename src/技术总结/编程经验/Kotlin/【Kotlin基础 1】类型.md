@@ -12,7 +12,7 @@
 - https://www.bejson.com/runcode/kotlin/
 - https://play.kotlinlang.org/
 
-# 基本类型
+# [基本类型](https://book.kotlincn.net/text/basic-types.html)
 
 所有以未超出 Int 最大值的整型值初始化的变量都会推断为 Int 类型。如果初始值超过了其最大值，那么推断为 Long 类型。
 
@@ -70,7 +70,6 @@ fun main() {
 
 另一方面，它们仍然相等(见打印三)
 
----
 
 ## 显示转换
 
@@ -117,7 +116,7 @@ val oneByte: Byte = 1
 
 val b = 0b00000001
 println((b shl 2)) // 4
-// ⚠️只能应用于 Int 与 Long??? 为什么这个不会报错
+// ⚠️只能应用于 Int 与 Long? 为什么这个不会报错
 // 解释：0b、0x只表示不同的声明写法不决定变量类型
 ```
 
@@ -202,7 +201,7 @@ Kotlin 中数组是不型变的（invariant）。这意味着 Kotlin 不让我�
 
 无装箱开销的类表示原生类型数组：ByteArray、 ShortArray、IntArray，这些类与 Array 并没有继承关系，但是它们有同样的方法属性集
 
-# 类型检测与类型转换
+# [类型检测与类型转换](https://book.kotlincn.net/text/typecasts.html)
 
 ## is !is 操作符
 
