@@ -22,7 +22,7 @@
 - [Git 概览](src/技术总结/开发工具使用技巧/Git/Git概览.md)
 
 - [Gradle 概览](src/技术总结/开发工具使用技巧/Gradle/Gradle概览.md)
-- [《Mastering Gradle》笔记](<src/技术总结/开发工具使用技巧/Gradle/《Mastering%20Gradle》笔记.md>)
+- [《Mastering Gradle》笔记](src/技术总结/开发工具使用技巧/Gradle/《Mastering%20Gradle》笔记.md)
 - [Android 开发者选项](src/技术总结/开发工具使用技巧/Android设备/Android开发者选项.md)
 - [代码规范工具概览](src/技术总结/开发工具使用技巧/代码规范工具/代码规范工具概览.md)
 - [mac 概览](src/技术总结/开发工具使用技巧/MAC/MAC概览.md)
@@ -43,14 +43,14 @@
 #### 从零开始的 Kotlin 学习生活
 
 - [【Kotlin 基础 1】类型](src/技术总结/编程经验/Kotlin/【Kotlin基础%201】类型.md)
-- [【Kotlin 基础 2】流程控制](<src/技术总结/编程经验/Kotlin/【Kotlin基础%202】流程控制.md>)
-- [【Kotlin 基础 3】函数与 lambda 表达式](<src/技术总结/编程经验/Kotlin/【Kotlin基础%203】函数与%20lambda%20表达式.md>)
-- [【Kotlin 基础 4】类、继承与属性](<src/技术总结/编程经验/Kotlin/【Kotlin基础%204】类、继承与属性.md>)
-- [【Kotlin 基础 5】接口与函数式接口](<src/技术总结/编程经验/Kotlin/【Kotlin基础%205】接口与函数式接口.md>)
-- [【Kotlin 基础 6】可见性修饰符](<src/技术总结/编程经验/Kotlin/【Kotlin基础%206】可见性修饰符.md>)
-- [【Kotlin 基础 7】扩展](<src/技术总结/编程经验/Kotlin/【Kotlin基础%207】扩展.md>)
-- [【Kotlin 基础 8】数据类、密封类](<src/技术总结/编程经验/Kotlin/【Kotlin基础%208】数据类、密封类.md>)
-- [【Kotlin 基础 9】结构声明](<src/技术总结/编程经验/Kotlin/【Kotlin基础%209】结构声明.md>)
+- [【Kotlin 基础 2】流程控制](src/技术总结/编程经验/Kotlin/【Kotlin基础%202】流程控制.md)
+- [【Kotlin 基础 3】函数与 lambda 表达式](src/技术总结/编程经验/Kotlin/【Kotlin基础%203】函数与%20lambda%20表达式.md)
+- [【Kotlin 基础 4】类、继承与属性](src/技术总结/编程经验/Kotlin/【Kotlin基础%204】类、继承与属性.md)
+- [【Kotlin 基础 5】接口与函数式接口](src/技术总结/编程经验/Kotlin/【Kotlin基础%205】接口与函数式接口.md)
+- [【Kotlin 基础 6】可见性修饰符](src/技术总结/编程经验/Kotlin/【Kotlin基础%206】可见性修饰符.md)
+- [【Kotlin 基础 7】扩展](src/技术总结/编程经验/Kotlin/【Kotlin基础%207】扩展.md)
+- [【Kotlin 基础 8】数据类、密封类](src/技术总结/编程经验/Kotlin/【Kotlin基础%208】数据类、密封类.md)
+- [【Kotlin 基础 9】解构声明](src/技术总结/编程经验/Kotlin/【Kotlin基础%209】解构声明.md)
 
 ### React Native
 
