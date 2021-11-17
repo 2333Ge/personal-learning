@@ -237,6 +237,7 @@ typealias ClickHandler = (Button, ClickEvent) -> Unit
   - 顶层、成员、扩展属性：`List<Int>::size`，
   - 构造函数：`::Regex`
 - 使用实现函数类型接口的自定义类的实例
+  > 📢：注意写法
 
 ```kotlin
 class IntTransformer: (Int) -> Int {
@@ -248,7 +249,7 @@ val intFunction: (Int) -> Int = IntTransformer()
 
 与不带接收者的函数类型非字面值可以互换，其中接收者可以替代第一个参数，反之亦然。例如，`(A, B) -> C` 类型的值可以传给或赋值给期待 `A.(B) -> C`
 
-?? 后面一种写法的意思
+?? 后面一种写法的意思(扩展函数)
 
 ```kotlin
 fun main() {

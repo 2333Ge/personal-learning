@@ -104,13 +104,13 @@ val <T> List<T>.lastIndex: Int
 
 ```kotlin
 class MyClass {
-companion object { } // 将被称为 "Companion"
+    companion object { } // 将被称为 "Companion"
 }
 
 fun MyClass.Companion.printCompanion() { println("companion") }
 
 fun main() {
-MyClass.printCompanion()
+    MyClass.printCompanion()
 }
 ```
 
@@ -139,7 +139,7 @@ fun main() {
 
 ## 拓展声明为成员
 
-> 扩展声明所在的类的实例称为分发接收者，扩展方法调用所在的接收者类型的实例称为扩展接收者。（??② 说法又点绕）
+> 扩展声明所在的类的实例称为分发接收者，扩展方法调用所在的接收者类型的实例称为扩展接收者。（??② 说法有点绕）
 
 可以在一个类内部为另一个类声明扩展
 
@@ -152,9 +152,9 @@ class Connection(val host: Host, val port: Int) {
     fun printPort() { print(port) }
 
     fun Host.printConnectionString() {
-         printHostname()   // 调用 Host.printHostname()
+        printHostname()   // 调用 Host.printHostname()
         print(":")
-         printPort()   // 调用 Connection.printPort()
+        printPort()   // 调用 Connection.printPort()
     }
 
     fun connect() {

@@ -6,13 +6,11 @@
 ## 常用插件
 
 - 原生路径管理： react-native-fs
-
-### 画图工具
-
-#### react-native-svg
-
-https://github.com/react-native-svg/react-native-svg
-https://snack.expo.io/@msand/react-native-svg-example
+- 日历：https://github.com/wix/react-native-calendars
+- svg 画图工具：react-native-svg
+  - https://github.com/react-native-svg/react-native-svg
+  - https://snack.expo.io/@msand/react-native-svg-example
+- 图表工具：echarts
 
 #### eCharts
 

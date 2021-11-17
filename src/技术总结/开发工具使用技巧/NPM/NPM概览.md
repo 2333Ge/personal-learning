@@ -7,6 +7,21 @@
 | npm view deepmerge versions |   查看模块所有版本   |
 |     npm ls -g --depth=0     | 查看全局安装依赖版本 |
 
+## 技巧
+
+## 通过 git 安装依赖
+
+` package.json`按照如下方式配置
+
+```json
+{
+  "dependencies": {
+    "bestzip": "git+<git 地址>#分支"
+  }
+}
+```
+
+执行 `npm i`
 
 # 相关资料
 
