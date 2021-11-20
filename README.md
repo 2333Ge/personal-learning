@@ -52,7 +52,7 @@
 - [【Kotlin基础 12】内联类](src/技术总结/编程经验/Kotlin/【Kotlin基础%2012】内联类.md)
 - [【Kotlin基础 13】对象表达式与对象声明](src/技术总结/编程经验/Kotlin/【Kotlin基础%2013】对象表达式与对象声明.md)
 - [【Kotlin基础 14】委托](src/技术总结/编程经验/Kotlin/【Kotlin基础%2014】委托.md)
-- [【Kotlin基础 15】类型别名](src/技术总结/编程经验/Kotlin/【Kotlin基础%2015】类型别名.md)
+- [【Kotlin基础 15】属性委托](src/技术总结/编程经验/Kotlin/【Kotlin基础%2015】属性委托.md)
 - [【Kotlin基础 16】类型别名](src/技术总结/编程经验/Kotlin/【Kotlin基础%2016】类型别名.md)
 ### React Native
 
