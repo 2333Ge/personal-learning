@@ -2,11 +2,17 @@
 
 首选项-键盘快捷方式
 
-- 多列同位置同时编辑：鼠标中键+滑动选择
+- 多列同位置同时编辑：点击鼠标中键+滑动选择
 - 同时修改同名符号：选中修改内容 => cmd+d(d 点几下往后选中多少个同样的字符)
-- f2 变量重命名
-- cmd+shift+<[> || <]>左右切换 tab
-- cmd + `： 非全屏模式下切换窗口
+- 变量重命名: `f2`
+- 左右切换 tab: `cmd+shift+<[> || <]>`
+- 非全屏模式下切换窗口: `cmd + ``：
+- 开关左侧工具栏：`cmd+b`
+- 打开终端：
+
+```
+ctrl+`
+```
 
 # 插件
 
@@ -80,6 +86,7 @@ ide 中文
 ## [Git History](https://www.cnblogs.com/EdisonVan/p/10642698.html)
 
 Git 历史提交比较
+
 # 参考文章
 
 - [官方文档](https://code.visualstudio.com/docs/languages/javascript)

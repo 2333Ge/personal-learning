@@ -1,7 +1,3 @@
-# 介绍
-
-记录个人学习内容
-
 # 技术总结
 
 ## 代码质量与代码规范
@@ -50,8 +46,13 @@
 - [【Kotlin 基础 6】可见性修饰符](src/技术总结/编程经验/Kotlin/【Kotlin基础%206】可见性修饰符.md)
 - [【Kotlin 基础 7】扩展](src/技术总结/编程经验/Kotlin/【Kotlin基础%207】扩展.md)
 - [【Kotlin 基础 8】数据类、密封类](src/技术总结/编程经验/Kotlin/【Kotlin基础%208】数据类、密封类.md)
-- [【Kotlin 基础 9】解构声明](src/技术总结/编程经验/Kotlin/【Kotlin基础%209】解构声明.md)
-
+- [【Kotlin 基础 10】解构声明](src/技术总结/编程经验/Kotlin/【Kotlin基础\ 10】泛型：in、out、where.md)
+- [【Kotlin基础 11】嵌套类、内部类、枚举类](src/技术总结/编程经验/Kotlin/【Kotlin基础%2011】嵌套类、内部类、枚举类.md)
+- [【Kotlin基础 12】内联类](src/技术总结/编程经验/Kotlin/【Kotlin基础%2012】内联类.md)
+- [【Kotlin基础 13】对象表达式与对象声明](src/技术总结/编程经验/Kotlin/【Kotlin基础%2013】对象表达式与对象声明.md)
+- [【Kotlin基础 14】委托](src/技术总结/编程经验/Kotlin/【Kotlin基础%2014】委托.md)
+- [【Kotlin基础 15】类型别名](src/技术总结/编程经验/Kotlin/【Kotlin基础%2015】类型别名.md)
+- [【Kotlin基础 16】类型别名](src/技术总结/编程经验/Kotlin/【Kotlin基础%2016】类型别名.md)
 ### React Native
 
 - [RN 开发概览](src/技术总结/编程经验/ReactNative/RN开发概览.md)

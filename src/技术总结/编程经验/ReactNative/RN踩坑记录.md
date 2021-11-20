@@ -22,3 +22,19 @@
 </manifest>
 
 ```
+
+# 升级 0.61 以上后原生自动引入问题
+
+android 大概是0.61， 不希望自动引入，配置
+
+```js
+// react-native.config.js
+module.exports = {
+  dependencies: {
+    'react-native-video': {
+      platforms: {
+        android: null,
+      },
+    }
+};
+```
