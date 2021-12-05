@@ -30,6 +30,7 @@ https://support.apple.com/zh-cn/guide/terminal/welcome/2.9/mac
 ```
 brew install tree
 tree -a
+tree -I “node_modules” // 过滤指定目录
 ```
 
 参考：https://www.jianshu.com/p/9411d60950bf
