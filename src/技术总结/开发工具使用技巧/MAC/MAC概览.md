@@ -38,8 +38,8 @@ tree -I “node_modules” // 过滤指定目录
 ## 工具应用
 
 - Iterm2: 终端窗口分屏
-- Vscode： 加上各种插件，比绝大部分文档/笔记记录工具好（见：vscode ）
-
+- VSCode： 加上各种插件，比大部分文档/笔记记录工具好（见：vscode ）
+- Gifski gif制作
 # 其他
 
 ## 查看文件/文件夹路径

@@ -11,6 +11,21 @@
   - https://github.com/react-native-svg/react-native-svg
   - https://snack.expo.io/@msand/react-native-svg-example
 - 图表工具：echarts
+- 截图插件：react-native-view-shot
+  - 该视图必须设置 collapsable={false} https://reactnative.cn/docs/view/#collapsable
+  - 截取长视图时，引用选 ScrollView 中的 View 而不是 ScrollView https://github.com/gre/react-native-view-shot/issues/274
+- 动态申请权限：react-native-permissions
+- 图片预览：react-native-image-zoom-viewer
+- 图片轮播：react-native-swiper
+- 视频播放：react-native-video
+- 路由管理：react-navigation
+- 截流：lodash
+- 状态管理：mobx
+- 深拷贝：deepmerge
+- 日期工具：dayjs
+- 精准时间：react-native-background-timer
+- 二维码：react-native-qrcode-svg
+- 自定义相机：react-native-camera
 
 #### eCharts
 
