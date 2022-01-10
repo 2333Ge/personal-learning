@@ -27,8 +27,6 @@
 - 二维码：react-native-qrcode-svg
 - 自定义相机：react-native-camera
 
-#### eCharts
-
 ## bug 排查方法
 
-- 找 bundle 对应代码
+- 找 bundle文件 对应代码
