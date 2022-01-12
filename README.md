@@ -90,6 +90,7 @@
 
 - [使用 typeDoc 快速生成开发文档](https://juejin.cn/post/7037828707045605407)
 - [VSCode 插件开发小计 | 高亮自定义主题](https://juejin.cn/post/7021931752914419743)
+- [答应我，别再使用 Ctrl+C\V 变量重命名 | VSCode快捷键推荐](https://juejin.cn/post/7040486849755742244)
 
 # 资源
 
