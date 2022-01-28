@@ -51,7 +51,7 @@ src/资源/keyboard-shortcuts-macos.pdf
 
 # 插件
 
-## 项目中配置插件
+## 项目中配置推荐插件
 
 项目根目录下，.vscode 目录下添加 extensions.json 文件
 // See https://go.microsoft.com/fwlink/?LinkId=827846

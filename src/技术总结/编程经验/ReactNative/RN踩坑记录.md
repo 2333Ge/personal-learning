@@ -39,3 +39,4 @@ module.exports = {
 
 - 原生视图被优化引发的问题：设置`removeClippedSubviews={false}`，如只参与布局的视图容易被优化，通过Ref计算当前view的属性失败
 - 同向滑动冲突：设置属性`nestedScrollEnabled={true}`
+- react-native debugger 连接问题: https://github.com/jhen0409/react-native-debugger/issues/620
