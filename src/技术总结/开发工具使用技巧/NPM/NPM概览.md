@@ -2,11 +2,11 @@
 
 ## 实用命令
 
-|           快捷键            |         描述         |
-| :-------------------------: | :------------------: |
-| npm view deepmerge versions |   查看模块所有版本   |
-|     npm ls -g --depth=0     | 查看全局安装依赖版本 |
-
+|           快捷键            |                 描述                 |
+| :-------------------------: | :----------------------------------: |
+| npm view deepmerge versions |           查看模块所有版本           |
+|     npm ls -g --depth=0     |         查看全局安装依赖版本         |
+|         npm root -g         | 查看node_modules在计算机上的确切位置 |
 ## 技巧
 
 ## 通过 git 安装依赖
@@ -39,6 +39,24 @@ npm ERR!
 ```
 
 改用命令 npm install --legacy-peer-deps
+
+# npx 
+
+- http://www.ruanyifeng.com/blog/2019/02/npx.html
+- http://nodejs.cn/learn/the-npx-nodejs-package-runner
+
+
+- 执行node_modules 中可执行程序
+- 能避免全局安装的模块
+
+```
+npx cowsay "你好"
+```
+
+```
+$ npx create-react-app my-react-app
+```
+上面代码运行时，npx 将create-react-app下载到一个临时目录，使用以后再删除。所以，以后再次执行上面的命令，会重新下载create-react-app。
 
 # 相关资料
 
