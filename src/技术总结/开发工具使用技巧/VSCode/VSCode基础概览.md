@@ -88,39 +88,28 @@ https://github.com/Microsoft/vscode/issues/7426
 
 检查是否装到了下载目录里了
 
-## vscode-mindmap
+## 其他
 
-- 思维导图插件
-- 创建.km 文件，vscode 自动识别
+- vscode-mindmap：思维导图插件
+  - 创建.km 文件，vscode 自动识别
 
-## Draw.io Integration
+- Draw.io Integration：流程图
 
-- 流程图
+- Markdown
+  - Markdown paste
+  - Markdown table formatter
 
-## Markdown
+- Code spell checker：拼写检查工具
 
-- Markdown paste
-- Markdown table formatter
+- Color highLight：颜色高光
 
-## Code spell checker
+- [KoroFileHeader](https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE)：注释插件
 
-拼写检查工具
+- Chinese：ide 中文
 
-## Color highLight
+- [Git History](https://www.cnblogs.com/EdisonVan/p/10642698.html)： Git 历史提交比较
 
-颜色高光
-
-## [KoroFileHeader](https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE)
-
-注释插件
-
-## Chinese
-
-ide 中文
-
-## [Git History](https://www.cnblogs.com/EdisonVan/p/10642698.html)
-
-Git 历史提交比较
+- equimper.react-native-react-redux: 代码片段
 
 # 参考文章
 

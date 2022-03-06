@@ -7,6 +7,8 @@ prop-types.js
 
 [柯里化](https://www.jianshu.com/p/2975c25e4d71)（接受多个参数的函数改为返回接受单一参数，返回【接收余下参数返回结果】的新函数的技术）、高级函数（参数函数或返回函数）
 
+
+
 # question list
 
 1. script标签作用(第二集)
