@@ -32,6 +32,8 @@ src/资源/keyboard-shortcuts-macos.pdf
 <!-- - 跳转指定行： -->
 - 跳转下一个警告：`f8`
 - 编辑窗口中的文件切换：`⌃+⇧+tab`
+- 跳转引用：`⇧+f12`
+- 跳转实现：`⌘+f12`
 
 编辑器管理
 
@@ -125,6 +127,12 @@ https://github.com/Microsoft/vscode/issues/7426
 - http://blog.haoji.me/vscode-plugin-hello-world.html
 - https://code.visualstudio.com/api
 - https://juejin.cn/post/6997186741866070023
+
+# 代码片段
+
+- https://juejin.cn/post/6844903869424599053
+- https://juejin.cn/post/7052694806685810725
+- https://snippet-generator.app/
 
 # 其他
 

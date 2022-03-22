@@ -34,7 +34,26 @@ module.exports = {
     }
 };
 ```
+# 实现模糊效果
 
+参考：https://stackoverflow.com/questions/55422749/how-to-blur-text-in-react-native
+
+```jsx
+<View
+  style={{
+    height: 3,
+    width: 70,
+    shadowOpacity: 1,
+    shadowColor: '#000',
+    shadowOffset: { width: 10, height: 10 },
+    shadowRadius: 5,
+    elevation: 5,
+    borderWidth: 0.5,
+    borderColor: "white",
+    backgroundColor: "rgba(255, 255, 255, 1)"
+  }}
+/>
+```
 # 随记
 
 - 原生视图被优化引发的问题：设置`removeClippedSubviews={false}`，如只参与布局的视图容易被优化，通过Ref计算当前view的属性失败

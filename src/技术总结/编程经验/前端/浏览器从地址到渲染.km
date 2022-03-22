@@ -1,0 +1,85 @@
+{
+    "root": {
+        "data": {
+            "id": "cipefzarybc0",
+            "created": 1647851044785,
+            "text": "输入",
+            "hyperlink": "https://juejin.cn/post/6994066112203718686",
+            "hyperlinkTitle": "原文链接",
+            "note": "期间对非法字符进行转义\n\n非网址或协议不合法时使用浏览器默认搜索引擎，生成带关键字URL搜索\n\n？？合法与否后面步骤一样？"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cipefzarybc0",
+                    "created": 1647851044785,
+                    "text": "IPC发送到网络进程，检查缓存",
+                    "note": "检查缓存\n\n1. https => service worker, 如请求拦截、离线缓存？\n\n2. 浏览器内存缓存\n\n3. 硬盘缓存\n\n4. http2 => 推送缓存， 即Session\n\n"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cipefzarybc0",
+                            "created": 1647851044785,
+                            "text": "有缓存，解码开始渲染",
+                            "note": "\n\n"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cipefzarybc0",
+                            "created": 1647851044785,
+                            "text": "无缓存或过期",
+                            "note": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cipefzarybc0",
+                                    "created": 1647851044785,
+                                    "text": "URL解析",
+                                    "note": "提取 协议、域名、端口、路径"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cipefzarybc0",
+                                            "created": 1647851044785,
+                                            "text": "DNS解析",
+                                            "note": "客户端  浏览器缓存 => 本地host文件 => 本地DNS解析器缓存\n\n找不到\n\n> ??如果都没有找到，就会走DNS服务器设置的转发器请求，如果没设置转发模式，就向13根发起解析请求\n\n\n![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1a83f56340b1470ebf54f93c38e43ca1~tplv-k3u1fbpfcp-zoom-in-crop-mark:1304:0:0:0.awebp)\n\n??CDN"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cipefzarybc0",
+                                                    "created": 1647851044785,
+                                                    "text": "3次握手，建立TCP连接",
+                                                    "note": "3次握手完毕\n\nhttp => 进入传输阶段\n\nhttps => 进行TLS加密协议的握手过程\n\n关闭连接4次挥手"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cipefzarybc0",
+                                                            "created": 1647851044785,
+                                                            "text": "连接建立，发送请求",
+                                                            "note": null
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "structure",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
