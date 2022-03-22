@@ -69,3 +69,4 @@ git branch <分支> commitId // 用对应日志建立新分支
 | :------------: | :-----: |
 | git commit -m  | git cm  |
 | git commit -am | git acm |
+

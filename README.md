@@ -34,7 +34,7 @@
 
 ## 前端
 
-- [前端概览](src\技术总结\编程经验\前端\前端概览.md)
+- [前端概览](src/技术总结/编程经验/前端/前端概览.md)
 
 ### webpack
 
@@ -82,11 +82,12 @@
 - [React 语法基础](src/技术总结/编程经验/React/React语法基础.md)
 - [《React 进阶指南》笔记](src/技术总结/编程经验/React/《React进阶指南》笔记.md)
 ### JS
-- [优秀代码示例](src\技术总结\编程经验\JavaScript\优秀代码示例.md)
-- [原型与原型链](src\技术总结\编程经验\JavaScript\原型与原型链.md)
+- [优秀代码示例](src/技术总结/编程经验/JavaScript/优秀代码示例.md)
+- [原型与原型链](src/技术总结/编程经验/JavaScript/原型与原型链.md)
 ### VSCode
 
 - [VSCode 插件开发](src/技术总结/编程经验/VSCode/VSCode插件开发.md)
+- [VSCode 自定义模版代码](src/技术总结/开发工具使用技巧/VSCode/代码片段.md)
 
 ### 算法
 

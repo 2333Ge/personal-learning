@@ -128,6 +128,12 @@ https://github.com/Microsoft/vscode/issues/7426
 - https://code.visualstudio.com/api
 - https://juejin.cn/post/6997186741866070023
 
+# 代码片段
+
+- https://juejin.cn/post/6844903869424599053
+- https://juejin.cn/post/7052694806685810725
+- https://snippet-generator.app/
+
 # 其他
 
 ### vscode 正则查找目标文件示例
