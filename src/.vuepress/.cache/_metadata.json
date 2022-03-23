@@ -1,0 +1,36 @@
+{
+  "hash": "5c9370c8",
+  "browserHash": "dcffed7f",
+  "optimized": {
+    "vue": {
+      "file": "/Users/ych/Documents/private/personal-learning/src/.vuepress/.cache/vue.js",
+      "src": "/Users/ych/Documents/private/personal-learning/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "file": "/Users/ych/Documents/private/personal-learning/src/.vuepress/.cache/vue-router.js",
+      "src": "/Users/ych/Documents/private/personal-learning/node_modules/vue-router/dist/vue-router.esm-bundler.js",
+      "needsInterop": false
+    },
+    "@vue/devtools-api": {
+      "file": "/Users/ych/Documents/private/personal-learning/src/.vuepress/.cache/@vue_devtools-api.js",
+      "src": "/Users/ych/Documents/private/personal-learning/node_modules/@vue/devtools-api/lib/esm/index.js",
+      "needsInterop": false
+    },
+    "@vueuse/core": {
+      "file": "/Users/ych/Documents/private/personal-learning/src/.vuepress/.cache/@vueuse_core.js",
+      "src": "/Users/ych/Documents/private/personal-learning/node_modules/@vueuse/core/index.mjs",
+      "needsInterop": false
+    },
+    "nprogress": {
+      "file": "/Users/ych/Documents/private/personal-learning/src/.vuepress/.cache/nprogress.js",
+      "src": "/Users/ych/Documents/private/personal-learning/node_modules/nprogress/nprogress.js",
+      "needsInterop": true
+    },
+    "@vuepress/shared": {
+      "file": "/Users/ych/Documents/private/personal-learning/src/.vuepress/.cache/@vuepress_shared.js",
+      "src": "/Users/ych/Documents/private/personal-learning/node_modules/@vuepress/shared/lib/esm/index.js",
+      "needsInterop": false
+    }
+  }
+}
