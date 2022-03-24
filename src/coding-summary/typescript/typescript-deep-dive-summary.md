@@ -126,6 +126,20 @@ enum Color {
 
 let col = Color.Red;
 col = 0; // 有效的，这也是 Color.Red
+
+col = 100; // 这样赋值TS不报错？？col 等于上述枚举哪一个？
+```
+
+何时可以使用枚举，用数字、二进制表示某种状态时，枚举能语义化字段的表示的状态，又能用于真实环境的数据传输
+
+```ts
+
+enum AnimalFlags {
+  None        = 0,
+  HasClaws    = 1 << 0,
+  CanFly      = 1 << 1
+}
+
 ```
 
 

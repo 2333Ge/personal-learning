@@ -1,18 +1,18 @@
-# 所有文章
+# 所有笔记
 
 ## 开发工具使用技巧
 
-- [AS 调试技巧](../ide-skill/android/as-debug.md)
-- [AS 概览](../ide-skill/android/androidstudio.md)
 - [VSCode 基础概览](../ide-skill/vscode/index.md)
 - [VSCode 自定义模版代码](../ide-skill/vscode/snippet.md)
+- [AS 调试技巧](../ide-skill/android/as-debug.md)
+- [AS 概览](../ide-skill/android/androidstudio.md)
 - [ADB LogCat](../ide-skill/android/adb-logcat.md)
 - [ADB Shell](../ide-skill/android/adb-shell.md)
+- [Android 开发者选项](../ide-skill/android/android-developer-tools.md)
 - [Git 概览](../ide-skill/git/index.md)
 - [Gradle 概览](../ide-skill/gradle/index.md)
 - [《Mastering Gradle》笔记](../ide-skill/gradle/mastering-gradle-summary.md)
-- [Android 开发者选项](../ide-skill/android/android-developer-tools.md)
-- [ESLint](../ide-skill/)
+- [ESLint](../ide-skill/code-standard-tools/eslint.md)
 - [mac 概览](../ide-skill/code-standard-tools/eslint.md)
 - [NPM 概览](../ide-skill/npm/index.md)
 - [Chrome 概览](../ide-skill/chrome/index.md)
@@ -35,9 +35,14 @@
 - [React 语法基础](../coding-summary/react/react-basic.md)
 - [《React 进阶指南》笔记](../coding-summary/react/react-source-code-summary.md)
 
-### JS
+## TypeScript
 
-- [优秀代码示例](../coding-summary/javascript/nice-code-demo.md)
+- [TS 优秀代码示例](../coding-summary/typescript/typescript-nice-code-snippet.md)
+- [《深入理解TypeScript》笔记](../coding-summary//typescript/typescript-deep-dive-summary.md)
+
+### JavaScript
+
+- [JS 优秀代码示例](../coding-summary/javascript/nice-code-demo.md)
 - [原型与原型链](../coding-summary/javascript/prototype-chain.md)
 
 ### VSCode
@@ -85,6 +90,7 @@
 
 ## 其他
 
+- [开发名词释义](../wiki/code-words.md)
 ### 博客
 
 - [使用 typeDoc 快速生成开发文档](https://juejin.cn/post/7037828707045605407)

@@ -23,7 +23,7 @@ VSCode左上角
 
 在ts或js文件中输入log测试效果
 
-![log](../../../image/tools/snippet-log.gif)
+![log](./image/snippet-log.gif)
 
 
 # snippet文件字段说明
@@ -82,7 +82,7 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
 # 快捷键
 
 在`keybindings.json`编辑快捷键片段： 输入 `cmd+k cmd+s`  => 右上角打开文件图标
-![位置](../../../image/tools/vscode-keyboard-bind.png)
+![位置](./image/vscode-keyboard-bind.png)
 
 ## 快捷键中直接新建片段
 
@@ -156,7 +156,7 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
 
 ```
 
-![位置](../../../image/tools/snippet-itf.gif)
+![位置](./image/snippet-itf.gif)
 
 
 ## MarkDown中创建表格
@@ -177,7 +177,7 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
   }
 }
 ```
-![snippet-markdown](../../../image/tools/snippet-markdown.gif)
+![snippet-markdown](./image/snippet-markdown.gif)
 
 # 总结
 
