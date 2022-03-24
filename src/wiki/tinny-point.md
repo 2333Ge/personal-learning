@@ -1,6 +1,6 @@
 # 细碎知识点
 
-h5唤起APP，系统如何确定应用？
+## h5唤起APP，系统如何确定应用？
 
 原生可注册对schema的判断（[参考链接](https://www.cnblogs.com/zhang-cb/p/7093769.html)）
 ```xml

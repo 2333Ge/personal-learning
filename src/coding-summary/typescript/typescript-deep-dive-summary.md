@@ -103,8 +103,9 @@ npm install @types/jquery --save-dev
 
 
 ```ts
-// ?? 假如已有node.d.ts 已经声明process，如下声明会覆盖掉已有声明吗？目测会覆盖
-// ?? 如何声明类似process这样的不用import的变量
+/*
+  假如node.d.ts中声明了process，如下声明会覆盖掉已有声明吗??不重名似乎不会覆盖，注意想要声明的接口和变量名是否一致，如String实现接口是StringConstructor
+*/
 
 interface Process {
   exit(code?: number): void;
@@ -113,9 +114,30 @@ interface Process {
 declare let process: Process;
 ```
 
+如何创建类似process这样的不用import的变量??,下面的方式RN中可以使用，但会提示`'ppp' is not defined`
+
+```ts
+// global.d.ts
+declare interface PPP {
+  log(): void;
+}
+
+declare let ppp: PPP;
+```
+
+```ts
+global.ppp = {
+  log: () => {
+    console.log('============');
+  },
+};
+
+// 'ppp' is not defined
+ppp.log();
+```
 ## 枚举
 
-数字类型枚举
+### 数字类型枚举
 
 ```ts
 enum Color {
@@ -127,7 +149,7 @@ enum Color {
 let col = Color.Red;
 col = 0; // 有效的，这也是 Color.Red
 
-col = 100; // 这样赋值TS不报错？？col 等于上述枚举哪一个？
+col = 100; // 这样赋值TS不报错??需要注意📢
 ```
 
 何时可以使用枚举，用数字、二进制表示某种状态时，枚举能语义化字段的表示的状态，又能用于真实环境的数据传输
@@ -141,18 +163,202 @@ enum AnimalFlags {
 }
 
 ```
+### 常量枚举
+
+```ts
+enum Tristate {
+  False,
+  True,
+  Unknown
+}
+
+const lie = Tristate.False;
+
+// 编译成，意味着运行时会查找变量Tristate 和 Tristate.False
+let lie = Tristate.False
+```
+
+用下列写法可以获得性能上的一个小提升
+
+```ts
+const enum Tristate {
+  False,
+  True,
+  Unknown
+}
+
+const lie = Tristate.False;
+
+// 编译成
+let lie = 0;
+
+```
+- 内联枚举的任何用法（0 而不是 `Tristate.False`）；
+- 不会为枚举类型编译成任何 JavaScript（在这个例子中，运行时没有 `Tristate` 变量），因为它使用内联语法。
+
+
+## 开放式枚举
+
+编译后的枚举长这样
+
+```js
+var Tristate;
+(function(Tristate) {
+  Tristate[(Tristate['False'] = 0)] = 'False';
+  Tristate[(Tristate['True'] = 1)] = 'True';
+  Tristate[(Tristate['Unknown'] = 2)] = 'Unknown';
+})(Tristate || (Tristate = {}));
+```
+
+这捕获了一个局部变量 TriState，它要么指向已经定义的TriState 值，要么使用一个新的空对象来初始化它。
+
+这意味着你可以跨多个文件拆分（和扩展）枚举定义，如下所示，你可以把 Color 的定义拆分至两个块中：
+
+// 意味着重复的命名会覆盖?？编译后的JS在多个文件会互相影响??栗子??
+
+```ts
+enum Color {
+  Red,
+  Green,
+  Blue
+}
+
+enum Color {
+  DarkRed = 3,
+  DarkGreen,
+  DarkBlue
+}
+```
+
+## lib.d.ts
+
+安装 `TypeScript` 时，会顺带安装一个 `lib.d.ts` 声明文件。这个文件包含 JavaScript 运行时以及 DOM 中存在各种常见的环境声明。
+
+- 未安装TS编写JS代码没提示就是这个原因??VSC TS插件似乎会提供这个文件
+
+使用 `global.d.ts`创建自己的声明空间
+
+## 函数
+
+TS支持声明函数重载
+
+- 有函数实现的情况可如下方式声明函数重载
+
+```ts
+function padding(all: number);
+function padding(topAndBottom: number, leftAndRight: number);
+function padding(top: number, right: number, bottom: number, left: number);
+// Actual implementation that is a true representation of all the cases the function body needs to handle
+function padding(a: number, b?: number, c?: number, d?: number) {
+  if (b === undefined && c === undefined && d === undefined) {
+    b = c = d = a;
+  } else if (c === undefined && d === undefined) {
+    c = a;
+    d = b;
+  }
+  return {
+    top: a,
+    right: b,
+    bottom: c,
+    left: d
+  };
+}
+```
+
+- 无函数实现的情况下需要这么声明
+
+```ts
+type LongHandAllowsOverloadDeclarations = {
+  (a: number): number;
+  (a: string): string;
+};
+// ps： 这种方式无法声明重载
+type ShortHand = (a: number) => number;
+```
+
+## 可调用的类型
+
+```ts
+interface ReturnString {
+  (): string;
+}
+```
+
+表示一个返回值为 string 的函数.
+
+内联写法：
+
+```ts
+let overloaded: {
+  (foo: string): string;
+  (foo: number): number;
+};
+```
+
+可实例化写法
+
+```ts
+interface CallMeWithNewToGetString {
+  new (): string;
+}
+
+// 使用
+declare const Foo: CallMeWithNewToGetString;
+const bar = new Foo(); // bar 被推断为 string 类型
+```
+
+
+padding不能当做类型使用吗??这也不是一个合规的变量呀..
+
+```ts
+
+// 提示：“padding”表示值，但在此处用作类型
+function padding(all: number):void;
+
+type A = padding;
+```
+## 双重断言
+
+谨慎使用，当你了解传入参数更具体的类型时
+
+```ts
+function handler(event: Event) {
+  const element = event as HTMLElement; // Error: 'Event' 和 'HTMLElement' 中的任何一个都不能赋值给另外一个
+  const element2 = (event as any) as HTMLElement; // ok
+}
+```
+
+## 类型保护
+
+```ts
+// 仅仅是一个 interface
+interface Foo {
+  foo: number;
+  common: string;
+}
+
+interface Bar {
+  bar: number;
+  common: string;
+}
+
+// 用户自己定义的类型保护！
+function isFoo(arg: Foo | Bar): arg is Foo {
+  return (arg as Foo).foo !== undefined;
+}
+```
 
 
 ## 随记
 
 
-- 只导入模块, 这种写法导入了什么？
+- 只导入模块, 这种写法导入了什么??
 
 ```js
 import 'core-js'; 
 import './index.css'
 ```
 
-- d.ts文件到底是什么作用？只会对引入对应依赖的项目起作用吗，原始仓库能否用到这部分类型声明功能。为啥.两下，为啥叫d.ts，和普通ts文件区别？
+- d.ts文件到底是什么作用？为啥.两下，为啥叫d.ts，和普通ts文件区别？
 
 eg: 使用@types为现有npm包提供类型声明

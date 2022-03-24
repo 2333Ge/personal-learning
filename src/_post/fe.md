@@ -2,7 +2,9 @@
 
 ## 技能树
 
-![技能](../../../资源/前端技能树.jpg)
+网易云课堂嫖的图，可供参考
+
+![技能](./fe-skill-tree.jpg)
 
 ## http 
 
@@ -27,6 +29,7 @@
 
 第三次握手：客 => 服，+ 客户端接收能力（服务端知道）
 
+## 前段基础相关笔记
 
-## 单位
-
+- [3次握手4次挥手](../coding-summary/fe/three-way-handshake.md)
+- [前端常用单位说明](../coding-summary/fe/three-way-handshake.md)
