@@ -9,5 +9,6 @@ module.exports = {
   themeConfig: {
     logo: "logo.jpg",
     nav: [{ text: "🏠 Home", link: "/" }],
+    nav: [{ text: "🏠 test", link: "../coding-summary/react/" }],
   },
 };

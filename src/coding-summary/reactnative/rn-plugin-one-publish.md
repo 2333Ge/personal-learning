@@ -28,8 +28,8 @@ react-native-create-library ychTest
 
 - 打开初始化的项目内的 android 目录
 - 编写 module 文件（供 RN 调用的方法）如下
-- 其余文件不需要更改、包括 RN 端
-  ![](../../../image/技术总结/RN/PlugIn/plugIn1-1.png)
+- 其余文件不需要更改、包括 RN 端 ̰
+  ![](./image/plugIn1-1.png)
 
 ```java
 public class RNYchTestModule extends ReactContextBaseJavaModule {
@@ -80,7 +80,7 @@ npm login
 - 第一次上传
   npm publish
 - 出现下面问题时登录邮箱邮箱验证注册信息
-  ![](../../../image/技术总结/RN/PlugIn/plugIn1-2.png)
+  ![](./image/plugIn1-2.png)
 
 #### E 使用
 
@@ -121,7 +121,7 @@ npm login
 #### F 结果
 
 弹窗成功
-![](../../../image/技术总结/RN/PlugIn/plugIn1-3.png)
+![](./image/plugIn1-3.png)
 
 # 参考文献
 

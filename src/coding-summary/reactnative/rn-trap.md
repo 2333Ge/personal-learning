@@ -8,7 +8,7 @@
 
 误删 debug 用文件，导致 SDK 28 以上的连接服务失败
 
-![](../../../image/技术总结/RN/trap/connent-server-error-debug-file.png)
+![图片](./image/connent-server-error-debug-file.png)
 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
