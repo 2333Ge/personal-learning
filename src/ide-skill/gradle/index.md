@@ -150,9 +150,9 @@ signingConfigs {
 ## 开启离线模式
 
 - Android studio 3.6 以后
-  ![](./image/gradle1.png)
+  ![图片](./image/gradle1.png)
 - 3.6 以前
-  ![](./image/gradle2.png)
+  ![图片](./image/gradle2.png)
 
 ## 升级到最新的 GRADLE 和 JDK
 
