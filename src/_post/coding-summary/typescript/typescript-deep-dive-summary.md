@@ -347,6 +347,97 @@ function isFoo(arg: Foo | Bar): arg is Foo {
   return (arg as Foo).foo !== undefined;
 }
 ```
+## 类型推断
+
+选项 `noImplicitAny` 用来告诉编译器，当无法推断一个变量时发出一个错误（或者只能推断为一个隐式的 `any` 类型）
+
+## Never
+
+`never` 与`void`的差异:
+
+`void` 表示没有任何类型，`never` 表示永远不存在的值的类型
+
+`void` 类型可以被赋值（在 strictNullChecking 为 false 时），但是除了 `never` 本身以外，其他任何类型不能赋值给 `never`。
+
+类似这样??
+```ts
+type V = void;
+type N = never;
+
+const a: V = undefined;
+const b: N = undefined; // 不能将类型“undefined”分配给类型“never”。ts(2322)
+```
+## 索引签名
+
+```ts
+
+type A = 'MM' | 'BB'
+
+type B = { [P in A]: A; }
+// C为什么报错,和B的区别?? 映射的类型可能不声明属性或方法,ts(7061)
+interface C{
+  [p in A]: A;
+}
+```
+
+尽量不要使用这种把字符串索引签名与有效变量混合使用。如果属性名称中有拼写错误，这个错误不会被捕获到：
+
+```ts
+interface NestedCSS {
+  color?: string; // strictNullChecks=false 时索引签名可为 undefined
+  [selector: string]: string | NestedCSS;
+}
+
+const failsSilently: NestedCSS = {
+  colour: 'red' // 'colour' 不会被捕捉到错误
+};
+```
+取而代之，我们把索引签名分离到自己的属性里
+
+```ts
+interface NestedCSS {
+  color?: string;
+  nest?: {
+    [selector: string]: NestedCSS;
+  };
+}
+
+
+const failsSliently: NestedCSS = {
+  colour: 'red'  // TS Error: 未知属性 'colour'
+}
+```
+### 索引签名中排除某些属性
+
+```ts
+type FieldState = {
+  value: string;
+};
+
+type FromState = {
+  isValid: boolean; // Error: 不符合索引签名
+  [filedName: string]: FieldState;
+};
+```
+
+请注意尽管你可以声明它至一个已存在的 TypeScript 类型上，但是你不能创建如下的对象
+
+```ts
+type FieldState = {
+  value: string;
+};
+
+type FormState = { isValid: boolean } & { [fieldName: string]: FieldState };
+
+// 使用它来创建一个对象时，将不会工作
+const bar: FormState = {
+  // 为啥报错??  'isValid' 不能赋值给 'FieldState'
+  isValid: false,
+};
+```
+
+## 
+
 
 
 ## 随记
