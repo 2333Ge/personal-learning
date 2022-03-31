@@ -37,4 +37,4 @@ beginWork
 是否需要调和
 比对变化、查看是否更新
 
-![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/99afa68f8ab94c93be41df70db0ae488~tplv-k3u1fbpfcp-watermark.awebp?)
+![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/99afa68f8ab94c93be41df70db0ae488~tplv-k3u1fbpfcp-watermark.awebp)

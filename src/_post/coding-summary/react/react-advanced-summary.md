@@ -47,9 +47,9 @@ class Index extends React.Component{
 ```
 
 1. babel 编译：React.createElement, 注意 3 个参数作用
-   ![图片](./image/JSX-babel.awebp)
+   ![图片](./image/JSX-babel.jpg)
 2. createElement 处理后的样子 注意转换类型的映照关系
-   ![图片](./image/jsx-creatElement.awebp)
+   ![图片](./image/jsx-creatElement.jpg)
 3. React 底层调和处理后，终将变成什么？
    React element 对象的每一个子节点都会形成一个与之对应的 fiber 对象，然后通过 sibling、return、child 将每一个 fiber 对象联系起来。
 
@@ -252,7 +252,7 @@ function Index() {
 ```
 
 打印
-![图片](./image/props-to.awebp)
+![图片](./image/props-to.jpg)
 将 Index 组件 indexProps 抽象传递给 Son，一方面混入 fatherProps
 
 #### 抽离 props
@@ -297,12 +297,12 @@ FormItem.displayName 为什么这么取 children.type.displayName
 ## 生命周期
 
 - 挂载
-  ![图片](./image/lifecycle-mont.awebp)
+  ![图片](./image/lifecycle-mont.jpg)
 
 constructor -> getDerivedStateFromProps / componentWillMount -> render -> componentDidMount
 
 - 更新
-  ![图片](./image/lifecycle-update.awebp)
+  ![图片](./image/lifecycle-update.jpg)
 
 componentWillReceiveProps( props 改变) / getDerivedStateFromProp -> shouldComponentUpdate -> componentWillUpdate -> render -> getSnapshotBeforeUpdate -> componentDidUpdate
 
@@ -310,7 +310,7 @@ componentWillReceiveProps( props 改变) / getDerivedStateFromProp -> shouldComp
   commit 阶段调用 componentWillUnmount
 
 - 总览
-  ![图片](./image/lifecycle-all-class.awebp)
+  ![图片](./image/lifecycle-all-class.jpg)
 
 ### 各阶段要点
 
@@ -427,7 +427,7 @@ React.memo 当二个参数 compare 不存在时，会用浅比较原则处理 pr
 2. context 穿透，上述的几种方式，都不能本质上阻断 context 改变，而带来的渲染穿透，所以开发者在使用 Context 要格外小心，既然选择了消费 context ，就要承担 context 改变，带来的更新作用。
 
 渲染流程图
-![图片](./image/render-step.awebp)
+![图片](./image/render-step.jpg)
 
 ## 事件原理
 
@@ -529,7 +529,7 @@ completeWork 阶段对于组件处理 context ；对于元素标签初始化，�
 
 #### 调和 + 异步调度 流程总图
 
-![图片](./image/fiber-async.awebp)
+![图片](./image/fiber-async.jpg)
 
 ### Question
 
