@@ -2,6 +2,7 @@
 
 ## 其他资源汇总贴
 
+- 前端实用工具：https://juejin.cn/post/7079447275755274254#refetch
 - 前端开发常用免费资源：https://juejin.cn/post/6875943665597546510
 - 前端资源汇总: https://juejin.cn/post/6844903442905825293
 - github 前端资源汇总仓库: https://github.com/helloqingfeng/Awsome-Front-End-learning-resource

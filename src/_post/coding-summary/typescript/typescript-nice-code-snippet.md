@@ -77,3 +77,14 @@ printAnimalAbilities(animal); // animal has claws, animal can fly
 ```
 
 运算不太方便，比如状态是`['HasClaws', 'CanFly']`, 想移除Fly状态得找到元素位置、操作数组，等操作相比前面一种方式麻烦太多
+
+## 简写技巧
+
+可选项变必选
+
+```ts
+type Concrete<Type> = {
+  [Property in keyof Type]-?: Type[Property];
+};
+```
+

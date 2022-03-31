@@ -4,6 +4,16 @@
 
 原文链接：https://jkchao.github.io/typescript-book-chinese/
 
+从此书学到的东西：
+
+- 枚举，语义化基础标识
+- 重载
+- infer：标识 `extends` 中待推断的类型变量
+- 协变、逆变 （还是似懂非懂）
+- global.d.ts: 全局模块声明，如在现有String中新增工具方法、无类型提示的module可在此声明
+- 结合[TS 优秀代码片段](typescript-nice-code-snippet.md)、[TS 技巧](typescript-skill.md)复习
+...
+
 ## 声明空间
 
 [声明空间](https://jkchao.github.io/typescript-book-chinese/project/declarationspaces.html)：类型声明空间与变量声明空间。
@@ -25,7 +35,6 @@ const bar = Bar; // Error: "cannot find name 'Bar'"
 ```
 
 ## 模块
-
 ### 模块路径
 
 当导入路径不是相对路径时候，会按照Node模块解析策略  
@@ -104,7 +113,7 @@ npm install @types/jquery --save-dev
 
 ```ts
 /*
-  假如node.d.ts中声明了process，如下声明会覆盖掉已有声明吗??不重名似乎不会覆盖，注意想要声明的接口和变量名是否一致，如String实现接口是StringConstructor
+  假如node.d.ts中声明了process，如下声明会覆盖掉已有声明吗??似乎不会覆盖，注意想要声明的接口和变量名是否一致，如String实现接口是StringConstructor
 */
 
 interface Process {
@@ -114,7 +123,7 @@ interface Process {
 declare let process: Process;
 ```
 
-如何创建类似process这样的不用import的变量??,下面的方式RN中可以使用，但会提示`'ppp' is not defined`
+如何创建类似process这样的不用import的变量??下面的方式RN中可以使用，但会提示`'ppp' is not defined`
 
 ```ts
 // global.d.ts
@@ -174,7 +183,7 @@ enum Tristate {
 
 const lie = Tristate.False;
 
-// 编译成，意味着运行时会查找变量Tristate 和 Tristate.False
+// 编译成如下形式，意味着运行时会查找变量Tristate 和 Tristate.False
 let lie = Tristate.False
 ```
 
@@ -214,7 +223,7 @@ var Tristate;
 
 这意味着你可以跨多个文件拆分（和扩展）枚举定义，如下所示，你可以把 Color 的定义拆分至两个块中：
 
-// 意味着重复的命名会覆盖?？编译后的JS在多个文件会互相影响??栗子??
+意味着重复的命名会覆盖?？编译后的JS在多个文件会互相影响??栗子??
 
 ```ts
 enum Color {
@@ -312,7 +321,7 @@ padding不能当做类型使用吗??这也不是一个合规的变量呀..
 
 ```ts
 
-// 提示：“padding”表示值，但在此处用作类型
+// error：“padding”表示值，但在此处用作类型
 function padding(all: number):void;
 
 type A = padding;
@@ -436,9 +445,161 @@ const bar: FormState = {
 };
 ```
 
-## 
+## 名义化枚举
+
+```ts
+// BAR
+enum BarIdBrand {
+  _ = ''
+}
+
+```
+`_` 映射到空字符串的成员，即`{ _ = '' }`。这可以强制 `TypeScript` 推断出这是一个基于字符串的枚举，而不是一个数字类型的枚举。因为`TypeScript` 会把一个空的枚举类型（`{}`）推断为一个数字类型的枚举，数字类型的枚举与 `string` 的交叉类型是 `never`
+
+## 协变与逆变??
+
+<!-- 还是不太理解 -->
+
+先约定如下的标记：
+
+- `A ≼ B` 意味着 `A` 是 `B` 的子类型。
+- `A → B` 指的是以 `A` 为参数类型，以 `B` 为返回值类型的函数类型。
+- `x : A` 意味着 `x` 的类型为 `A`。
+
+假设：`Greyhound ≼ Dog ≼ Animal`
+
+得出：`(Animal → Greyhound) ≼ (Dog → Dog)`（详细推导过程[见][covariance]）
+
+用术语表示：参数类型是逆变的，返回值类型是协变的。
+
+> 返回值类型是协变的，意思是 A ≼ B 就意味着 (T → A) ≼ (T → B) 。参数类型是逆变的，意思是 A ≼ B 就意味着 (B → T) ≼ (A → T) （ A 和 B 的位置颠倒过来了）
+
+## infer 
+
+`infer` 表示在 `extends` 条件语句中待推断的类型变量，如：
+
+```ts
+type ParamType<T> = T extends (...args: infer P) => any ? P : T;
 
 
+interface User {
+  name: string;
+  age: number;
+}
+
+type Func = (user: User) => void;
+
+type Param = ParamType<Func>; // Param = User
+type AA = ParamType<string>; // string
+
+```
+
+示例1：tuple 转 union eg: `[string, number] -> string | number`
+
+```ts
+type ElementOf<T> = T extends Array<infer E> ? E : never;
+
+type TTuple = [string, number];
+
+type ToUnion = ElementOf<TTuple>; // string | number
+
+// 高级写法
+type ToUnion = TTuple[number]; // string | number
+
+```
+
+示例2：https://github.com/LeetCode-OpenSource/hire/blob/master/typescript_zh.md
+
+[题目及个人解答](./infer-demo.ts)
+
+## FAQs
+
+### 如果对象实现了某个接口，我怎么在运行时检查？
+
+```ts
+interface SomeInterface {
+  name: string;
+  length: number;
+}
+interface SomeOtherInterface {
+  questions: string[];
+}
+
+function f(x: SomeInterface | SomeOtherInterface) {
+  // Can't use instanceof on interface, help?
+  if (x instanceof SomeInterface) {
+    // ...
+  }
+}
+```
+
+在编译时期， TypeScript 的类型被删除。这意味着没有用于执行运行时类型检查的内置机制。这完全取决与你如何鉴别对象。一个比较广泛的用法是检查某个对象里的属性。你可以使用用户定义的类型保护来实现它：
+
+```ts
+function isSomeInterface(x: any): x is SomeInterface {
+  return typeof x.name === 'string' && typeof x.length === 'number';
+
+function f(x: SomeInterface|SomeOtherInterface) {
+  if (isSomeInterface(x)) {
+    console.log(x.name); // Cool!
+  }
+}
+```
+
+### 重载问题
+
+请思考：为什么以下写法会报错
+
+```ts
+function createLog(message: string): number;
+function createLog(source: string, message?: string): number {
+  return 0;
+}
+
+createLog('message'); // OK
+createLog('source', 'message'); // ERROR: Supplied parameters do not match any signature
+```
+当至少具有一个函数重载的签名时，只有重载是可见的。最后一个声明签名（也可以被称为签名的实现）对签名的形状并没有贡献，因此，要获得所需的行为，你需要添加额外的重载
+
+```ts
+function createLog(message: string): number;
+function createLog(source: string, message: string): number;
+function createLog(source: string, message?: string): number {
+  return 0;
+}
+```
+
+另一个例子
+
+```ts
+function compare(a: string, b: string): void;
+function compare(a: number, b: number): void;
+function compare(a: string | number, b: string | number): void {
+  // Just an implementation and not visible to callers
+}
+
+compare(1, 2); // OK
+compare('s', 'l'); // OK
+compare(1, 'l'); // Error.
+```
+
+### class 的类型
+
+以下这段代码会提示出错
+
+```ts
+class MyClass {
+  someMethod() {}
+}
+var x: MyClass;
+// Cannot assign 'typeof MyClass' to MyClass? Huh?
+x = MyClass;
+```
+`x` 是`MyClass`的实例，声明类的写法应该是 `typeof MyClass`
+
+### 扩展 Error、Array、Map 内置函数的问题
+
+[参阅][extendclass]（不太明白）
 
 ## 随记
 
@@ -453,3 +614,9 @@ import './index.css'
 - d.ts文件到底是什么作用？为啥.两下，为啥叫d.ts，和普通ts文件区别？
 
 eg: 使用@types为现有npm包提供类型声明
+
+
+
+[covariance]:https://jkchao.github.io/typescript-book-chinese/tips/covarianceAndContravariance.html
+
+[extendclass]:https://jkchao.github.io/typescript-book-chinese/faqs/class.html#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%89%A9%E5%B1%95-error%E3%80%81array%E3%80%81map-%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%EF%BC%9F
