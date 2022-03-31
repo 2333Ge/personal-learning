@@ -2,9 +2,10 @@
 
 > 原文：[《React 进阶指南》](https://juejin.cn/book/6945998773818490884)
 > 个人 demo: demo/react-demo
-> 源码：
 
-```
+源码下载：
+
+```sh
 git clone https://hub.fastgit.org/facebook/react.git
 git checkout v16.19
 ```
@@ -550,17 +551,18 @@ completeWork 阶段对于组件处理 context ；对于元素标签初始化，�
 ## Hooks 原理
 
 ### Questions
-
-① React Hooks 为什么必须在函数组件内部执行？React 如何能够监听 React Hooks 在外部执行并抛出异常。
-② React Hooks 如何把状态保存起来？保存的信息存在了哪里？
-③ React Hooks 为什么不能写在条件语句中？
-④ useMemo 内部引用 useRef 为什么不需要添加依赖项，而 useState 就要添加依赖项。
-⑤ useEffect 添加依赖项 props.a ，为什么 props.a 改变，useEffect 回调函数 create 重新执行。
+  
+① React Hooks 为什么必须在函数组件内部执行？React 如何能够监听 React Hooks 在外部执行  
+并抛出异常。  
+② React Hooks 如何把状态保存起来？保存的信息存在了哪里？  
+③ React Hooks 为什么不能写在条件语句中？  
+④ useMemo 内部引用 useRef 为什么不需要添加依赖项，而 useState 就要添加依赖项。  
+⑤ useEffect 添加依赖项 props.a ，为什么 props.a 改变，useEffect 回调函数 create 重  
+新执行。  
 ⑥ React 内部如何区别 useEffect 和 useLayoutEffect ，执行时机有什么不同？
 
 ### 
 ## 随记
 
 - 如何分享
-- 全局异常捕获+人工反馈
 - 每章以后需要知道该章要点,相关问题面试时可能问到

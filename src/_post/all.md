@@ -1,10 +1,6 @@
 ---
 title: Theme Maker
 date: 2022-03-24
-category: 汇总
-excludeRelatedPost: true
-# cover: /images/bg-neimeng1.jpg
-tag: 汇总
 ---
 # 所有笔记
 

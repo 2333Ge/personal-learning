@@ -1,17 +1,21 @@
-## 《Android开发艺术探索》笔记
+---
+title: 《Android开发艺术探索》笔记
+date: 2019-01-01
+category: Android
+cover: https://developer.android.com/topic/generic-system-image/images/gsi-support.png
+tag: [Android, Reading]
+---
 ## Activity 生命周期和启动模式
 
 ### 生命周期
 
-- 注意 restart
 - 新 activity 采用透明主题，当前 activity 不会调用 onstop
-- 启动新 activity，新的 onResume 和旧的 onPause 那个先执行
+- 启动新 activity，新的 onResume 和旧的 onPause 那个先执行？
   - 旧的 onPause 先执行
   - 尽量在 onStop 中做操作，从而使得 Activity 尽快显示并切换到前台
-- onSaveInstance 在 onStop 之前和 onPause 没必然联系
+- onSaveInstance 在 onStop 之前，和 onPause 没必然联系
 - onRestoretore 在 onStart 之后
 - 保存和恢复 view 的层次结构 p10
-
   - activity 意外终结时调用 onsaveInstance 保存数据，委托 window，window 委托顶层容器（通常 DecorView）保存数据。顶层容器一一通知子元素保存数据
 
 - 内存不足时资源回收顺序
@@ -38,12 +42,11 @@
   - singleTask+只能单独存在于一任务栈中
   - ✳ 注意后台任务栈多后台任务切换到前台的情况 p18
 - TaskAffinity 属性
-
   - 指定任务栈
   - 主要和 singleTask 和 allowTaskReparenting 属性搭配（与 allowTaskReparenting 搭配的情况见 p20）
 
 - 如何给 activity 指定启动模式
-  - menifest
+  - manifest
   - intent 添加 flag(addFlags 方法)，两种方法均有时，以第二种方法为准
   - 第一种方法无法指定 FLAG_CLEAR_TOP 属性，第二种方法无法指定 singleInstance
   - 各种各样的标志位及其使用（可用于启动模式的转换）p27
@@ -87,7 +90,7 @@
 
 ### Messenger 的使用 p65
 
-### AIDL P73
+### AIDL (P73)
 
 - 自定义的 Parcelable 对象，必须显示的 import 进来，不管是否和当前 AIDL 文件处于一个文件夹
 - AIDL 用到自定义的 Parcelable 对象，必须新建一个同名 AIDL 文件，并在其中声明它为 Parcelable 类型

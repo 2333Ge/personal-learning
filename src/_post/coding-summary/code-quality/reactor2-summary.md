@@ -1,5 +1,11 @@
-# 《重构(第二版)》笔记
-
+---
+title: 《重构2》笔记
+date: 2020-06-01
+category: code-quality
+tags:
+  - code-quality
+  - Reading
+---
 ## 第一章 重构，第一个示例
 
 ### 摘要

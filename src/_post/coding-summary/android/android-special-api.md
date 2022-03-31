@@ -1,5 +1,9 @@
-# Android 特殊场景Api记录
-
+---
+title: Android 特殊场景Api记录
+date: 2019-01-01
+category: Android
+tag: [Android]
+---
 ## 启动应用默认 activity
 
 场景来源：推送处理 Activity
@@ -16,9 +20,9 @@ public static void launchAppWithData(Context context, String PushMsg) {
   }
 ```
 
-## 读取 Asset
+## 读取 Asset文件路径
 
-- ??不能直接获取 asset 路径
+- question：能否直接获取 asset 路径
 
 ```kotlin
 fun getAssetFilePath(context: Context, fileName: String): String? {
