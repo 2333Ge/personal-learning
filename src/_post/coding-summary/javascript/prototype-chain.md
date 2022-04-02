@@ -1,4 +1,12 @@
-# 原型与原型链
+---
+title: 原型与原型链
+date: 2022-04-01
+category: Javascript
+tags:
+  - Javascript
+---
+
+<!-- more -->
 
 ## 前言
 
@@ -57,6 +65,7 @@ Object.__proto__ === Function.prototype
 // output: true
 ```
 ## 对象的继承
+
 ```js
 function Person(first, last, age, gender, interests) {
   this.name = {

@@ -1,13 +1,25 @@
-# 学习资料
+---
+title: Nodejs概览
+date: 2022-04-02
+category: Nodejs
+tags:
+  - Nodejs
+---
+
+Node.js 是一个开源和跨平台的 JavaScript 运行时环境。 它几乎是任何类型项目的流行工具。
+
+<!-- more -->
+
+
+## what is Node.js
+
+Node.js 是一个开源和跨平台的 JavaScript 运行时环境。 它几乎是任何类型项目的流行工具。
 
 - 官网：http://nodejs.cn/learn
 - 《深入浅出Node.js》
 
-# what is Node.js
 
-Node.js 是一个开源和跨平台的 JavaScript 运行时环境。 它几乎是任何类型项目的流行工具。
-
-# node.js 与浏览器区别
+## node.js 与浏览器区别
 
 [详见](http://nodejs.cn/learn/differences-between-nodejs-and-the-browser)
 
@@ -20,18 +32,18 @@ Node.js 是一个开源和跨平台的 JavaScript 运行时环境。 它几乎�
 
 ？？CommonJS 模块 ES 模块标准区别
 
-# V8 JavaScript引擎介绍
+## V8 JavaScript引擎介绍
 
 http://nodejs.cn/learn/the-v8-javascript-engine
 
 V8 提供了执行 JavaScript 的运行时环境。 DOM 和其他 Web 平台 API 则由浏览器提供。
 
 现代的 JavaScript 引擎不再只是解释 JavaScript，也会对其进行编译。
-# 执行程序
+## 执行程序
 
 运行Node.js程序eg：`node app.js`
 
-# 退出程序
+## 退出程序
 
 1. `process.exit(1)`
 
@@ -47,7 +59,7 @@ process.on('SIGTERM', () => {
 })
 ```
 
-# 环境变量
+## 环境变量
 
 `process.env.NODE_ENV // "development"`
 
@@ -64,7 +76,7 @@ export NODE_ENV=production
 NODE_ENV=production node app.js
 
 
-# Node.js REPL
+## Node.js REPL
 
 [Node.js REPL](http://nodejs.cn/learn/how-to-use-the-nodejs-repl):
 REPL 也被称为运行评估打印循环，是一种编程语言环境（主要是控制台窗口），它使用单个表达式作为用户输入，并在执行后将结果返回到控制台
@@ -73,7 +85,7 @@ REPL 也被称为运行评估打印循环，是一种编程语言环境（主要
 
 要点：tab补全、全局对象、.命令（重置上下文、文件保存等）、多行编辑、
 
-# 从命令行接收参数
+## 从命令行接收参数
 
 `process.argv`接收：第一个参数是 node 命令的完整路径。第二个参数是正被执行的文件的完整路径。
 
@@ -90,7 +102,7 @@ node app.js --name=joe
 
 否则直接取出来则是`"--name=joe"`形式
 
-# 使用 Node.js 输出到命令行
+## 使用 Node.js 输出到命令行
 
 - `console.trace`:打印函数调用栈
 - `console.time`、`timeEnd`: 计算时间，轻松计算函数运行所需的时间
@@ -107,7 +119,7 @@ measureDoingSomething()
 - 为控制台输出着色库：[Chalk](https://github.com/chalk/chalk)
 - 创建进度条库：[Progress](https://www.npmjs.com/package/progress)
 
-# 在 Node.js 中从命令行接收输入
+## 在 Node.js 中从命令行接收输入
   
 如：Node.js 提供了 [readline](http://nodejs.cn/api/readline.html) 模块来执行以下操作：每次一行地从可读流（例如 process.stdin 流，在 Node.js 程序执行期间该流就是终端输入）获取输入。
 
@@ -124,10 +136,10 @@ readline.question(`你叫什么名字?`, name => {
 ```
 
 还有：Inquirer、 readline-sync
-# 使用 exports 从 Node.js 文件中公开功能
+## 使用 exports 从 Node.js 文件中公开功能
 
 module.exports
-# npm 包管理器
+## npm 包管理器
 
 `npm root -g` 查看本机全局node_modules目录位置
 
@@ -140,7 +152,7 @@ module.exports
 
 原理及其他使用场景[可见](http://www.ruanyifeng.com/blog/2019/02/npx.html)
 
-## package.json指南
+### package.json指南
 
 http://nodejs.cn/learn/the-package-json-guide
 
@@ -148,7 +160,7 @@ http://nodejs.cn/learn/the-package-json-guide
 
 - main: 设置软件包的入口点。当在应用程序中**导入此软件包**时，应用程序会在该位置搜索模块的导出。
 
-## npm版本控制
+### npm版本控制
 
 `x.y.z`
 
@@ -162,7 +174,7 @@ http://nodejs.cn/learn/the-package-json-guide
 - 当以向后兼容的方式添加功能时，则升级次版本。
 - 当进行向后兼容的缺陷修复时，则升级补丁版本。
 
-## npm dependencies与devDependencies
+### npm dependencies与devDependencies
 
 当添加了 `-D` 或 `--save-dev` 标志时，则会将其安装为开发依赖项（会被添加到 `devDependencies` 列表）。
 
@@ -170,7 +182,7 @@ http://nodejs.cn/learn/the-package-json-guide
 
 需要设置 `--production` 标志（`npm install --production`），以避免安装这些开发依赖项。
 
-# Node.js事件循环
+## Node.js事件循环
 
 http://nodejs.cn/learn/the-nodejs-event-loop
 
@@ -198,7 +210,7 @@ setImmediate() 与 setTimeout(() => {}, 0)（传入 0 毫秒的超时）、proce
 
 延迟 0 毫秒的 setTimeout() 回调与 setImmediate() 非常相似。 执行顺序取决于各种因素，但是它们都会在事件循环的下一个迭代中运行。
 
-# 事件触发器
+## 事件触发器
 
 ```js
 const EventEmitter = require('events')
@@ -217,7 +229,7 @@ eventEmitter.emit('start', 1, 100)
 
 详见：http://nodejs.cn/api/events.html
 
-# 搭建Http服务器
+## 搭建Http服务器
 
 ```js
 const http = require('http')
@@ -235,7 +247,7 @@ server.listen(port, () => {
 })
 ```
 
-# 发送Http请求
+## 发送Http请求
 
 ```
 const https = require('https')
@@ -266,9 +278,9 @@ req.end()
 - [Axios](https://github.com/axios/axios)：发送Post请求
 - Express: 获取Http请求正文数据
 
-# 文件相关
+## 文件相关
 
-## 使用文件描述符
+### 使用文件描述符
 
 ```js
 const fs = require('fs')
@@ -278,7 +290,7 @@ fs.open('/Users/joe/test.txt', 'r', (err, fd) => {
 })
 ```
 
-## 文件属性
+### 文件属性
 
 ```js
 const fs = require('fs')
@@ -295,7 +307,7 @@ fs.stat('/Users/joe/test.txt', (err, stats) => {
 - 使用 stats.isSymbolicLink() 判断文件是否符号链接。
 - 使用 stats.size 获取文件的大小（以字节为单位）。
 
-## 文件路径
+### 文件路径
 
 从路径中获取信息
 
@@ -326,7 +338,7 @@ path.normalize('/users/joe/..//test.txt') //'/users/test.txt'
 
 ```
 
-## 读取文件
+### 读取文件
 ```js
 const fs = require('fs')
 
@@ -344,7 +356,7 @@ fs.readFile() 和 fs.readFileSync() 都会在返回数据之前将文件的全�
 
 在这种情况下，更好的选择是使用流来读取文件的内容。
 
-## 写入文件
+### 写入文件
 
 ```js
 const fs = require('fs')
@@ -371,12 +383,12 @@ fs.writeFile('/Users/joe/test.txt', content, err => {
 
 更多内容查看官网、随用随看
 
-# 相关question 
+## 相关question 
 
 - [Ajax](https://baike.baidu.com/item/ajax/8425?fr=aladdin)? Ajax 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。
 
 
-# 随记
+## 随记
 
 - 掘金笔记的question
 - 宏任务、微任务、事件循环权威资料？

@@ -1,11 +1,21 @@
+---
+title: 如何退出Nodejs程序
+date: 2022-04-02
+category: Nodejs
+tags:
+  - Nodejs
+---
 
-# 省流
+<!-- more -->
+## 省流
+
 1. `process.exit(1)`
 
-推出码也可`process.exitCode`设置
+退出码也可通过`process.exitCode`设置
 
 2. 友好版
 `process.kill(process.pid, 'SIGTERM')`
+
 ```js
 process.on('SIGTERM', () => {
   server.close(() => {

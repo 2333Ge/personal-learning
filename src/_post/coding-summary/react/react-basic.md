@@ -1,5 +1,12 @@
-# React 语法基础
+---
+title: React语法基础
+date: 2022-04-02
+category: React
+tags:
+  - React
+---
 
+<!-- more -->
 ## 列表
 
 元素的 key 只有放在就近的数组上下文中才有意义。

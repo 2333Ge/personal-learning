@@ -1,4 +1,12 @@
-# react源码笔记
+---
+title: React 源码笔记
+date: 2022-04-02
+category: React
+tags:
+  - React
+---
+
+<!-- more -->
 
 ## setState 后 React 做了什么
 

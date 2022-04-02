@@ -1,4 +1,12 @@
-# 优秀代码示例
+---
+title: JS 优秀代码示例
+date: 2022-04-01
+category: Javascript
+tags:
+  - Javascript
+---
+
+<!-- more -->
 
 ## 时序写法
 

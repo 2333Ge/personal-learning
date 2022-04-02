@@ -1,6 +1,16 @@
-# Hooks 使用笔记
+---
+title: React Hooks使用总结
+date: 2022-04-02
+category: React
+tags:
+  - React
+  - Hooks
+---
 
-## 触发式动画
+<!-- more -->
+## Hooks 使用笔记
+
+### 触发式动画
 
 - useState 触发 reRender
 - useRef 设置生命周期中动画变化值常量
@@ -21,6 +31,6 @@ const animateItemsHeight = useRef(new Animated.Value(isOpen ? ItemsHeight : 0)).
 
 ```
 
-## 复用和组件生命周期相关逻辑
+### 复用和组件生命周期相关逻辑
 
 如：class 写法，在 componentDidMount 设置监听器、在 componentWillUnmount 取消监听器，在各个组件都需重写逻辑，不便复用
