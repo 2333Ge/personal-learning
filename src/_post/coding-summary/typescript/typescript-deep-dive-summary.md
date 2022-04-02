@@ -1,9 +1,9 @@
 ---
 title: 《深入理解 TypeScript》 笔记
 date: 2022-04-02
-category: Typescript
+category: TypeScript
 tags:
-  - Typescript
+  - TypeScript
 ---
 
 <!-- more -->

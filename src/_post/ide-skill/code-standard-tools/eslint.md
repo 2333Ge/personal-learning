@@ -1,6 +1,16 @@
-# ESLint
+---
+title: ESLint 概览
+date: 2022-04-02
+category: ESLint
+tags:
+  - ESLint
+  - ide-skill
+---
+
+<!-- more -->
 
 ## 相关文章
+
 - [官方中文文档](https://eslint.bootcss.com/docs/user-guide/getting-started)
 - [搞懂 ESLint 和 Prettier](https://zhuanlan.zhihu.com/p/80574300)
 

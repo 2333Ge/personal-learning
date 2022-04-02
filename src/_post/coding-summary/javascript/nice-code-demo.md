@@ -1,9 +1,9 @@
 ---
 title: JS 优秀代码示例
 date: 2022-04-01
-category: Javascript
+category: JavaScript
 tags:
-  - Javascript
+  - JavaScript
 ---
 
 <!-- more -->

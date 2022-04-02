@@ -1,4 +1,15 @@
-# 《Mastering Gradle》笔记
+---
+title: 《Mastering Gradle》笔记
+date: 2022-04-02
+category: Gradle
+tags:
+  - Gradle
+  - ide-skill
+  - Reading
+---
+
+<!-- more -->
+# 前言
 
 - 原书：https://juejin.cn/book/6844733819363262472
 - demo: demo/gradle-demo

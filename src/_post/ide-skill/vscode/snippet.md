@@ -1,13 +1,23 @@
+---
+title: VSCode snippet自定义代码模板
+date: 2022-04-02
+category: VSCode
+tags:
+  - ide-skill
+  - VSCode
+---
 
 > 代码片段是可以更轻松地输入重复代码模式的模板，例如循环或条件语句
-# 自定义snippet优势
+
+<!-- more -->
+## 自定义snippet优势
 
 - 现有插件提供的`snippet`(如：equimper.react-native-react-redux)弊端
   - 学习与记忆成本高
   - 不一定能达到目标效果，如打印log想自定义tag方便过滤,如：`console.log('name====>', name)`
 - 便于在任意文件使用，如`markdown`文件中画表格(目前没想到除了自定义代码片段，如何更方便地在这种文件中定义模版)
-# Hello World
-## 创建片段
+## Hello World
+### 创建片段
 
 VSCode左上角  
 => code   
@@ -19,14 +29,14 @@ VSCode左上角
 
 或 `cmd + shift + p` => 输入`snippet` => 选择新建全局代码片段文件
 
-## 使用
+### 使用
 
 在ts或js文件中输入log测试效果
 
 ![log](./image/snippet-log.gif)
 
 
-# snippet文件字段说明
+## snippet文件字段说明
 
 ```json
 {
@@ -49,7 +59,7 @@ VSCode左上角
 ```
 `scope`支持的语言标识符可点[此处][language_identifiers]查看（如：`typescript`并不支持`tsx`文件，需要填入`typescriptreact`）
 
-## snippet语法
+### snippet语法
 
 详细语法可见<a href='#参考文档'>参考文档</a>中的[1]、[2]和[官网][official]，记录的比较详细，此处就简述了
 
@@ -79,12 +89,12 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
 
 ```
 
-# 快捷键
+## 快捷键
 
 在`keybindings.json`编辑快捷键片段： 输入 `cmd+k cmd+s`  => 右上角打开文件图标
 ![位置](./image/vscode-keyboard-bind.png)
 
-## 快捷键中直接新建片段
+### 快捷键中直接新建片段
 
 ```json
 {
@@ -97,7 +107,7 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
 }
 ```
 
-## 引用已有片段
+### 引用已有片段
 
 以下示例绑定默认示例中的snippet，输入`cmd+k 2`查看效果
 
@@ -114,9 +124,9 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
 }
 
 ```
-# 示例片段
+## 示例片段
 
-##  TS、RN函数组件
+###  TS、RN函数组件
 
 用模版创建一个RN的函数组件，默认取文件名当组件名字
 
@@ -159,7 +169,7 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
 ![位置](./image/snippet-itf.gif)
 
 
-## MarkDown中创建表格
+### MarkDown中创建表格
 
 特定文件使用的代码片段可通过`code => 首选项 => 用户片段 => 选择特定语言` 的方式创建，便无需填写`scope`
 
@@ -179,7 +189,7 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
 ```
 ![snippet-markdown](./image/snippet-markdown.gif)
 
-# 总结
+## 总结
 
 总的来说snippet使用比较简单，提效非常明显且优雅，强烈安利。本文不过拾人牙慧，建议可上[官网][official]详细了解下
 
@@ -187,7 +197,7 @@ ps: 片段生成工具：[Snippet生成器](https://snippet-generator.app/)
 
 ps2: 其他VSCode小技巧传送门：[VSCode快捷键推荐](https://juejin.cn/post/7040486849755742244)
 
-# 参考文档
+## 参考文档
 
 [1] [VSCode 利用 Snippets 设置超实用的代码块](https://juejin.cn/post/6844903869424599053)  
 [2] [一个案例学会 VSCode Snippets，极大提高开发效率](https://juejin.cn/post/7052694806685810725)  
@@ -204,7 +214,7 @@ ps2: 其他VSCode小技巧传送门：[VSCode快捷键推荐](https://juejin.cn/
 
 [language_identifiers]:https://code.visualstudio.com/docs/languages/identifiers
 
-<!-- # 随记
+<!-- ## 随记
 
 markdown prefix /开头才能生效? 
 

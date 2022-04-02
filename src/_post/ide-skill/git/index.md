@@ -1,3 +1,15 @@
+---
+title: Git 概览
+date: 2022-04-02
+category: Git
+tags:
+  - Git
+  - ide-skill
+---
+
+<!-- more -->
+## 通用
+
 - changelog 生成
 
 [Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
@@ -9,9 +21,9 @@
 
 [参考资料](https://www.kejihub.com/5833.html)
 
-# 踩坑记录
+## 踩坑记录
 
-## warning: redirecting to https://code....
+### warning: redirecting to https://code....
 
 重定向
 ```sh
@@ -29,7 +41,7 @@ git pull
 ```
 
 
-# 实用命令
+## 实用命令
 
 - 查看对应指令帮助
 
@@ -63,7 +75,7 @@ git log -g
 git branch <分支> commitId // 用对应日志建立新分支
 ```
 
-# 命令简写
+## 命令简写
 
 |      完整      |  简写   |
 | :------------: | :-----: |

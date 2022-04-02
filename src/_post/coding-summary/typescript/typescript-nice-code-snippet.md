@@ -3,7 +3,7 @@ title:  TS 优秀代码示例
 date: 2022-04-02
 category: 
 tags:
-  - Typescript
+  - TypeScript
 ---
 
 <!-- more -->

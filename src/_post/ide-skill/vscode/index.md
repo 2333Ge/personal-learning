@@ -1,4 +1,14 @@
-# 快捷键
+---
+title: VSCode开发工具概览
+date: 2022-04-02
+category: VSCode
+tags:
+  - VSCode
+  - ide-skill
+---
+
+<!-- more -->
+## 快捷键
 
 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
 src/资源/keyboard-shortcuts-macos.pdf
@@ -51,9 +61,9 @@ src/资源/keyboard-shortcuts-macos.pdf
 - 禅模式，只有正在操作的代码：`⌘+k z`
 - 将当前文件在新窗口打开：`⌘+k+o`
 
-# 插件
+## 插件
 
-## 项目中配置推荐插件
+### 项目中配置推荐插件
 
 项目根目录下，.vscode 目录下添加 extensions.json 文件
 // See https://go.microsoft.com/fwlink/?LinkId=827846
@@ -74,11 +84,11 @@ src/资源/keyboard-shortcuts-macos.pdf
 }
 ```
 
-## CodeRunner
+### CodeRunner
 
 实时一键运行代码
 
-## Background
+### Background
 
 设置 ide 背景图
 
@@ -86,11 +96,11 @@ src/资源/keyboard-shortcuts-macos.pdf
 https://blog.csdn.net/toopoo/article/details/88841755
 https://github.com/Microsoft/vscode/issues/7426
 
-#### 1. 图片显示不出
+##### 1. 图片显示不出
 
 检查是否装到了下载目录里了
 
-## 其他
+### 其他
 
 - vscode-mindmap：思维导图插件
   - 创建.km 文件，vscode 自动识别
@@ -113,7 +123,7 @@ https://github.com/Microsoft/vscode/issues/7426
 
 - equimper.react-native-react-redux: 代码片段
 
-# 参考文章
+## 参考文章
 
 - [官方文档](https://code.visualstudio.com/docs/languages/javascript)
   > 英文版，较详细
@@ -122,21 +132,21 @@ https://github.com/Microsoft/vscode/issues/7426
 - [极客教程-VSCode 教程](https://geek-docs.com/vscode/vscode-tutorials/what-is-vscode.html)
   > 中文版，说明较详细
 
-# 插件开发相关资料
+## 插件开发相关资料
 
 - http://blog.haoji.me/vscode-plugin-hello-world.html
 - https://code.visualstudio.com/api
 - https://juejin.cn/post/6997186741866070023
 
-# 代码片段
+## 代码片段
 
 - https://juejin.cn/post/6844903869424599053
 - https://juejin.cn/post/7052694806685810725
 - https://snippet-generator.app/
 
-# 其他
+## 其他
 
-### vscode 正则查找目标文件示例
+#### vscode 正则查找目标文件示例
 
 ```
 List[\w\W]*components[\w\W]*<List

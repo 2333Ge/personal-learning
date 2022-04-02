@@ -1,5 +1,14 @@
-# AS 调试技巧
+---
+title: AS 调试技巧
+date: 2022-04-02
+category: Android
+tags:
+  - Android
+  - android-studio
+  - ide-skill
+---
 
+<!-- more -->
 ## 折叠 LOG
 
 ### 设置一行显示内容

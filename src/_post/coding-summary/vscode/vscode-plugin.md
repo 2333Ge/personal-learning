@@ -1,10 +1,10 @@
 ---
 title: VSCode 插件开发小记
 date: 2022-04-02
-category: vscode
+category: VSCode
 tags: 
   - vscode-plugin
-  - Vscode
+  - VSCode
 ---
 
 <!-- more -->

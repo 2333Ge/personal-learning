@@ -1,4 +1,14 @@
-# 快捷键
+---
+title: Mac 概览
+date: 2022-04-02
+category: MAC
+tags:
+  - MAC
+  - ide-skill
+---
+
+<!-- more -->
+## 快捷键
 
 系统偏好设置-快捷键
 
@@ -17,7 +27,7 @@
 |     光标跳转当前行（编辑器、控制台）     |        ctrl + a        |
 | 当前行删除光标后的内容（编辑器、控制台） |         ctrl+k         |
 
-# 终端命令
+## 终端命令
 
 https://support.apple.com/zh-cn/guide/terminal/welcome/2.9/mac
 
@@ -27,7 +37,7 @@ https://support.apple.com/zh-cn/guide/terminal/welcome/2.9/mac
 |       打开当前目录       | open . |
 | 列出当前目录文件及其权限 | ls -l  |
 
-## 打印目录树
+### 打印目录树
 
 ```
 brew install tree
@@ -37,18 +47,18 @@ tree -I “node_modules” // 过滤指定目录
 
 参考：https://www.jianshu.com/p/9411d60950bf
 
-## 工具应用
+### 工具应用
 
 - Iterm2: 终端窗口分屏
 - VSCode： 加上各种插件，比大部分文档/笔记记录工具好（见：vscode ）
 - Gifski gif制作
 
-# 其他
+## 其他
 
-## 查看文件/文件夹路径
+### 查看文件/文件夹路径
 
 将文件/文件夹拖到终端
 
-## 达尔优键盘问题记录
+### 达尔优键盘问题记录
 
 - cmd+a、c 等键失效: fn+win

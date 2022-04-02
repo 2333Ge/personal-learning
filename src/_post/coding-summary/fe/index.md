@@ -1,10 +1,18 @@
-# 前端概览
+---
+title: 前端开发概览
+date: 2022-04-02
+category: FE
+tags:
+  - FE
+---
+
+<!-- more -->
 
 ## 技能树
 
 网易云课堂嫖的图，可供参考
 
-![技能](./fe-skill-tree.jpg)
+![技能](./image/fe-skill-tree.jpg)
 
 ## http 
 
@@ -31,5 +39,5 @@
 
 ## 前段基础相关笔记
 
-- [3次握手4次挥手](../coding-summary/fe/three-way-handshake.md)
-- [前端常用单位说明](../coding-summary/fe/three-way-handshake.md)
+- [3次握手4次挥手](./three-way-handshake.md)
+- [前端常用单位说明](./three-way-handshake.md)

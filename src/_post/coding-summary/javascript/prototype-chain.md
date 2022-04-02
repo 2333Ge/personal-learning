@@ -1,9 +1,9 @@
 ---
 title: 原型与原型链
 date: 2022-04-01
-category: Javascript
+category: JavaScript
 tags:
-  - Javascript
+  - JavaScript
 ---
 
 <!-- more -->

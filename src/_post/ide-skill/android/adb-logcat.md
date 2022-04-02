@@ -1,10 +1,20 @@
-# 官方链接
+---
+title: ADB logcat
+date: 2022-04-02
+category: Android
+tags:
+  - Android
+  - ide-skill
+---
+
+<!-- more -->
+## 官方链接
 
 https://developer.android.google.cn/studio/command-line/logcat?hl=zh_cn
 
-# 使用
+## 使用
 
-## -b + 缓冲区
+### -b + 缓冲区
 
 ```
 adb logcat -b all | grep "am_on_create.*{...activity}"
@@ -13,15 +23,15 @@ adb logcat -b all | grep "am_on_create.*{...activity}"
 加载可供查看的备用日志缓冲区
 请参阅[查看备用日志缓冲区](https://developer.android.google.cn/studio/command-line/logcat#alternativeBuffers)。
 
-## grep 过滤
+### grep 过滤
 
 - Grep 过滤条件https://blog.csdn.net/f2006116/article/details/89077030
 
-## -c
+### -c
 
 清除（清空）所选的缓冲区并退出。要清除所有缓冲区，请使用 -b all -c。
 
-## -f <filename>
+### -f <filename>
 
 将日志消息输出写入 <filename>。默认值为 stdout。
 
@@ -31,7 +41,7 @@ adb logcat -b all | grep "am_on_create.*{...activity}"
 Adb logcat >test
 ```
 
-## 输出自指定时间以来的最新行。
+### 输出自指定时间以来的最新行。
 
 ```
 adb logcat -t '01-26 20:52:41.820'

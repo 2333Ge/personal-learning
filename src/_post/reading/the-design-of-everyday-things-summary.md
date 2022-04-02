@@ -1,4 +1,13 @@
-# 《设计心理学》笔记
+---
+title: 《设计心理学》笔记
+date: 2022-04-02
+category: Reading
+tags:
+  - Reading
+  - FE
+---
+
+<!-- more -->
 
 ## 第一章 日用品心理学
 
