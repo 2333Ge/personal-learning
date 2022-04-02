@@ -1,4 +1,13 @@
-# 《深入理解 TypeScript》 笔记
+---
+title: 《深入理解 TypeScript》 笔记
+date: 2022-04-02
+category: Typescript
+tags:
+  - Typescript
+---
+
+<!-- more -->
+## 前言
 
 [TS中文网](https://www.tslang.cn/docs/home.html)学习过一遍，查漏补缺，只记录没见过、没掌握、比较重要的知识点
 

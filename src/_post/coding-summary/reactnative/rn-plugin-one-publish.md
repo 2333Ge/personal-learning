@@ -1,5 +1,12 @@
-# 【RN-插件 1】原生插件-初始化、发布 npm&使用
+---
+title: 【RN-插件 1】原生插件-初始化、发布 npm&使用
+date: 2022-04-02
+category: react-native
+tags:
+  - react-native
+---
 
+<!-- more -->
 ## 1 目标
 
 发布自己的原生-RN 插件，实现能通过 npm i 装上并使用

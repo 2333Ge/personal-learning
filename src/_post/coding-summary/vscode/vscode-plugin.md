@@ -1,4 +1,14 @@
-# VSCode 插件开发小记
+---
+title: VSCode 插件开发小记
+date: 2022-04-02
+category: vscode
+tags: 
+  - vscode-plugin
+  - Vscode
+---
+
+<!-- more -->
+## Hello World
 
 - 脚手架安装&初始化
 

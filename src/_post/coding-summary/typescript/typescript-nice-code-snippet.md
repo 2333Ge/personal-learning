@@ -1,4 +1,12 @@
-# TS 优秀代码示例
+---
+title:  TS 优秀代码示例
+date: 2022-04-02
+category: 
+tags:
+  - Typescript
+---
+
+<!-- more -->
 
 ## 枚举+位运算进行状态判断
 

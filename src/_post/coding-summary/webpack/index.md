@@ -1,4 +1,13 @@
-# 概念
+---
+title: Webpack 概览
+date: 2022-04-02
+category: Webpack
+tags:
+  - Webpack
+---
+
+<!-- more -->
+## 概念
 
 JS应用程序的静态模块打包工具。将项目中所需的每一个模块组合成一个或多个bundles。
 
@@ -9,5 +18,5 @@ JS应用程序的静态模块打包工具。将项目中所需的每一个模块
 - mode: 通过选择development, production 或 none 启动相应环境下的优化
 
 
-# 随记
+## 随记
 

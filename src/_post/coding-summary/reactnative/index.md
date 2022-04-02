@@ -1,4 +1,13 @@
-# RN 概览
+---
+title: RN开发 概览
+date: 2022-04-02
+category: react-native
+tags:
+  - react-native
+---
+
+<!-- more -->
+## 前言
 
 官网：https://www.react-native.cn/docs/getting-started
 学习资源汇总：https://github.com/reactnativecn/react-native-guide

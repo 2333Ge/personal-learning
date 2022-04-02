@@ -1,4 +1,12 @@
-# RN原生API奇淫巧技
+---
+title:  RN原生API奇淫巧技
+date: 2022-04-02
+category: react-native
+tags:
+  - react-native
+---
+
+<!-- more -->
 
 ## ReactMarker
 

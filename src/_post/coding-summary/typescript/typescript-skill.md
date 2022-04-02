@@ -1,4 +1,12 @@
-# TS 技巧
+---
+title: TS 小技巧
+date: 2022-04-02
+category: Typescript
+tags:
+  - Typescript
+---
+
+<!-- more -->
 
 ## 映射类型
 

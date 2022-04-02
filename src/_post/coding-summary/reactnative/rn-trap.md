@@ -1,4 +1,12 @@
-# RN 踩坑记录
+---
+title: RN 踩坑记录
+date: 2022-04-02
+category: react-native
+tags:
+  - react-native
+---
+
+<!-- more -->
 
 ## Could not connect to development server
 
@@ -56,7 +64,7 @@ module.exports = {
   }}
 />
 ```
-## 随记
+## 其他
 
 - 原生视图被优化引发的问题：设置`removeClippedSubviews={false}`，如只参与布局的视图容易被优化，通过Ref计算当前view的属性失败
 - 同向滑动冲突：设置属性`nestedScrollEnabled={true}`
