@@ -4,8 +4,8 @@
   "description": "personal-learning",
   "scripts": {
     "push": "./bin/push.sh",
-    "doc:dev": "vuepress dev src",
-    "doc:build": "vuepress build src"
+    "doc:dev": "vuepress dev blog",
+    "doc:build": "vuepress build blog"
   },
   "devDependencies": {
     "vuepress": "^1.9.7",

@@ -1,5 +1,5 @@
 ---
-title: Mac 概览
+title: MAC 概览
 date: 2022-04-02
 category: MAC
 tags:
