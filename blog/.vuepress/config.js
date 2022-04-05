@@ -1,11 +1,9 @@
 module.exports = {
-  // 站点配置
   lang: "zh-CN",
   title: "2333Ge",
   description: "一个95后程序猿的学习小站",
   port: 8089,
   dest: "docs",
-  // 主题和它的配置
   theme: "vuepress-theme-maker",
   themeConfig: {
     logo: "/logo.jpg",
@@ -14,50 +12,50 @@ module.exports = {
     blog: {
       directories: [
         {
-          id: 'post',
-          dirname: '_post',
-          path: '/',
-          itemPermalink: '/post/:year/:month/:day/:slug.html',
-          frontmatter: { title: '' },
+          id: "post",
+          dirname: "_post",
+          path: "/",
+          itemPermalink: "/post/:year/:month/:day/:slug.html",
+          frontmatter: { title: "" },
           pagination: {
             perPagePosts: 10,
-            prevText: '',
-            nextText: ''
+            prevText: "",
+            nextText: "",
           },
-        }
+        },
       ],
       frontmatters: [
         {
           id: "tag",
-          keys: ['tag', 'tags'],
-          path: '/tags/',
-          frontmatter: { title: 'Tag' },
+          keys: ["tag", "tags"],
+          path: "/tags/",
+          frontmatter: { title: "Tag" },
           pagination: {
             lengthPerPage: 10,
-            prevText: '',
-            nextText: ''
-          }
+            prevText: "",
+            nextText: "",
+          },
         },
         {
           id: "category",
-          keys: ['category', 'categories'],
-          path: '/categories/',
-          frontmatter: { title: 'Category' },
+          keys: ["category", "categories"],
+          path: "/categories/",
+          frontmatter: { title: "Category" },
           pagination: {
             lengthPerPage: 10,
-            prevText: '',
-            nextText: ''
-          }
-        }
+            prevText: "",
+            nextText: "",
+          },
+        },
       ],
       comment: {
-        service: 'valine',
-        appId: 'zSewNHe2h7Ai4v6QVjthsgdV-gzGzoHsz',
-        appKey: 'FvGhEbriYXbYQnPHdvsc3xG4',
-        placeholder: 'Leave a comment ~',
+        service: "valine",
+        appId: "zSewNHe2h7Ai4v6QVjthsgdV-gzGzoHsz",
+        appKey: "FvGhEbriYXbYQnPHdvsc3xG4",
+        placeholder: "Leave a comment ~",
         visitor: true,
-        enableQQ: true
-      }
+        enableQQ: true,
+      },
     },
     /*-----------------代码复制配置-----------------------*/
     copy: {
