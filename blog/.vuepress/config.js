@@ -3,9 +3,9 @@ module.exports = {
   title: "2333Ge",
   description: "一个95后程序猿的学习小站",
   port: 8089,
-  dest: "docs",
+  dest: "./docs",
   theme: "vuepress-theme-maker",
-  // base: "/",
+  base: "/personal-learning/",
   themeConfig: {
     logo: "./logo.jpg",
     searchPlaceholder: "Search ⌘+K",
