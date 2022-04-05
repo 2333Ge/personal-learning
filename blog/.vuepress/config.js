@@ -5,6 +5,7 @@ module.exports = {
   port: 8089,
   dest: "docs",
   theme: "vuepress-theme-maker",
+  base: "/docs/",
   themeConfig: {
     logo: "/logo.jpg",
     searchPlaceholder: "Search ⌘+K",
