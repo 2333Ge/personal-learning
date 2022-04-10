@@ -2,6 +2,8 @@
 
 - 好看的代码：位运算-React源码
 - TS 泛型技巧
+- arc 相关知识：规范流程、冲突解决、commit合并等
+  - https://blog.csdn.net/liangliang103377/article/details/73497769
 # 备忘
 
 注意笔记的面对对象
