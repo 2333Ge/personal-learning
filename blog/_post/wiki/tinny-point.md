@@ -24,3 +24,19 @@ tags:
   </intent-filter> 
 </activity>
 ```
+
+## 权限-rw-r--r--表示什么
+
+[参考文章](https://www.runoob.com/linux/linux-comm-chmod.html)
+
+第一个字符:表示文件类型，d是文件夹，l是连接文件，-是普通文件
+
+后面9个字符表示权限，r表示读权限，w表示写权限，x表示执行权限，-表示没有权限
+
+后面9个字符3个为一组，第1组表示文件所有者，第2组表示用户组，第3组表示其他用户的权限。
+
+![示意图](https://www.runoob.com/wp-content/uploads/2014/08/file-permissions-rwx.jpg)
+
+## etc/hosts
+
+mac etc/hosts文件中存放域名对应ip的解析

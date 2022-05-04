@@ -73,7 +73,9 @@ export NODE_ENV=production
 
 也可以通过将环境变量放在应用程序的初始化命令之前来应用它：
 
+```shell
 NODE_ENV=production node app.js
+```
 
 
 ## Node.js REPL
@@ -83,7 +85,7 @@ REPL 也被称为运行评估打印循环，是一种编程语言环境（主要
 
 有些地方比Chrome终端好用，如可以执行`.save`保存内容
 
-要点：tab补全、全局对象、.命令（重置上下文、文件保存等）、多行编辑、
+要点：tab补全、`global`全局对象、.命令（重置上下文、文件保存等）、多行编辑、
 
 ## 从命令行接收参数
 

@@ -64,6 +64,27 @@ module.exports = {
   }}
 />
 ```
+
+## 滑动+不同距离改变透明度
+
+```jsx
+<Animated.ScrollView
+        showsVerticalScrollIndicator={false}
+        onScroll={Animated.event(
+          [{ nativeEvent: { contentOffset: { y: yOffset.current } } }],
+          { useNativeDriver: false }
+        )}
+      >
+        ...
+</Animated.ScrollView>  
+```
+配合
+```js
+yOffset?.current.interpolate({
+              inputRange: [0, 100],
+              outputRange: [0, 1],
+            })
+```
 ## 其他
 
 - 原生视图被优化引发的问题：设置`removeClippedSubviews={false}`，如只参与布局的视图容易被优化，通过Ref计算当前view的属性失败
