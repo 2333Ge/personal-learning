@@ -5,7 +5,7 @@ module.exports = {
   port: 8089,
   dest: "./docs",
   theme: "vuepress-theme-maker",
-  base: "/personal-learning/",
+  base: "/personal-learning-blog/",
   themeConfig: {
     logo: "./logo.jpg",
     searchPlaceholder: "Search ⌘+K",

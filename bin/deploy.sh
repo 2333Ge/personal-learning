@@ -3,10 +3,16 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-npm run push
-npm run doc:build
+# 生成静态文件
+npm run build
 
-git checkout -b feat-blog
-git merge feat-vuepress
+# 进入生成的文件夹
+cd docs
+
+git init
+git add -A
 git commit -m 'deploy'
-git push
+git remote add origin https://gitee.com/i2333g3/personal-learning-blog.git
+git push -u -f origin master
+
+cd -
