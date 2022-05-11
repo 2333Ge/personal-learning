@@ -12,7 +12,7 @@ tags:
 
 ## 前言
 
-在b站偶然刷到这个视频--[《【麻省理工现场授课视频】计算机编程中最重要的一门课程------编程工具的使用》][bilibili]，发现中经常使用却一直忽略的工具--终端，有很多即使是编程之外也可以使用的技巧。
+在b站偶然刷到这个视频--[《【麻省理工现场授课视频】计算机编程中最重要的一门课程------编程工具的使用》][bilibili]，发现日常中经常使用却一直忽略的工具--终端，有很多即使是编程之外也可以使用的技巧。
 借此查阅总结了一些日常操作中比较实用的指令，如快速查目标目录下中最大的几个文件、文件内容比较、计数等等。
 
 本文只是抛砖概述有什么指令可用，每个点都不会太深入，若有感觉比较实用的指令，可根据备注的序号，在文末查看参考文章链接。
@@ -76,7 +76,8 @@ hello
 $ cat < hello.txt
 hello
 ```
-#### 通配符[5]
+
+**通配符**[5]：
 
 - `*`: 匹配0或任意个字符
 - `?`: 匹配一个任意字符
@@ -169,6 +170,7 @@ hhhh.md   lalala.md
 ### cd
 
 **`cd`**: 切换当前工作目录
+
 ```bash
 $ cd ~  # 切换到当前用户根目录，等于直接输入`cd`
 $ cd /  # 切换到所有用户共享的根目录
@@ -193,7 +195,8 @@ mv.md -> mv2.md
 ### ls
 
 **`ls`**:列出目录下的内容，`ls -l`：查看当前目录下的所有文件及详细信息
-```
+
+```bash
 $ ls -l
 total 0
 -rw-r--r--  1 ych  staff  0  5 11 19:39 lalala.md
@@ -201,7 +204,8 @@ total 0
 ### cat
 
 **`cat`**：连接和打印文件，`cat  -n 文件`：打印文件内容，显示行号
-```
+
+```bash
 $ ls node_modules | cat -n
      1	@ampproject
      2	@babel
@@ -211,11 +215,11 @@ $ ls node_modules | cat -n
 ### du
 
 **`du`**:查看磁盘占用，`du -h 文件名`：使用人类易读的单位打印文件磁盘占用（注意并不等于文件大小）。
+
 ```bash
 $ du -h package.json
 4.0K	package.json
 ```
-<!-------------------单个示例------------------------->
 ### xargs
 
 **`xargs`**：将标准输入转为命令行参数。一些命令不支持标准输入，只能直接在命令行输入参数，导致无法导致无法用管道命令传递参数[10]，此时可用`xargs`如：
@@ -244,15 +248,11 @@ wc [-clmw] [file ...]
 $ find . -type f | wc -l
 42
 ```
-<!-- my question -->
-<!-- 为什么是4
-```
-$ echo aaa | wc -c
-4
-``` -->
+
 ### who
 
 **`who`**：显示登陆者和相关数据（进程信息，启动时间等）
+
 ```bash
 # 显示当前终端会话信息
 $ who am i
@@ -539,7 +539,7 @@ leancloud-storage/dist/av-weapp-min.js.map
 
 2. 处理一下`who`的数据，只打印已开启的终端名及启动时间
 
-```
+```bash
 $ who -H                                 
 USER     LINE     WHEN         
 ych      console  May  4 17:42 
@@ -608,9 +608,11 @@ a-z、1-9 # 表示范围a-z、1-9
 **示例**：
 
 1. 打印test.txt内容，将换行符号替换成空格
+
 ```bash
 $ cat test.txt | tr -s "\n" " "
 ```
+
 2. 打印PATH，换行使更易读
 
 ```bash
@@ -622,6 +624,7 @@ $ echo $PATH | tr ':' '\n'
 /usr/local/sbin
 ...
 ```
+
 3. 小写字母转大写
 
 ```bash
@@ -723,7 +726,8 @@ $ diff -c n1.txt n2.txt
 
 1. `-b`忽略空白符
 
-比如有这么一个文件
+比如有这么一个文件:
+
 ```bash
 $ cat sort.txt
   1
@@ -734,7 +738,9 @@ $ cat sort.txt
  		4
    3
 ```
+
 不使用`-b`排序结果:
+
 ```bash
 $ sort sort.txt
 
@@ -745,7 +751,9 @@ $ sort sort.txt
   2
 5
 ```
-使用`-b`结果
+
+使用`-b`结果:
+
 ```bash
 $ sort -b sort.txt
 
@@ -756,6 +764,7 @@ $ sort -b sort.txt
  		4
 5
 ```
+
 2. 按数量排序
 
 比如现在有这样几个文件
@@ -836,17 +845,19 @@ ych      ttys005  May 11 15:27
 ### 输入字符串时注意事项
 
 如希望创建一个名叫`hello world`的文件夹,不能
+
 ```bash
 mkdir hello world
 ```
-这样会创建两个文件夹，Hello和world
 
-需要加转义符号或引号
+这样会创建两个文件夹，Hello和world，需要加转义符号或引号
+
 ```bash
 mkdir hello\ world
 # 或
 mkdir "hello world"
 ```
+
 其他用到字符的情况同理
 
 ## 参考文章
@@ -885,7 +896,7 @@ what-are-en0-en1-p2p-and-so-on-that-are-displayed-after-executing-ifconfig" >ifc
 
 [15] [阮一峰的blog: curl 的用法指南][curl]
 
-[16] [shell之cut详解][https://www.cnblogs.com/zmc60/p/15179793.html]
+[16] [shell之cut详解](https://www.cnblogs.com/zmc60/p/15179793.html)
 
 [17] [Shell 中sort命令使用](https://blog.csdn.net/sinat_34241861/article/details/122181834)
 
@@ -920,3 +931,6 @@ what-are-en0-en1-p2p-and-so-on-that-are-displayed-after-executing-ifconfig" >ifc
 
 <!-- curl 报错：证书？ssl?
 curl: (60) SSL certificate problem: unable to get local issuer certificate -->
+
+<!-- my question -->
+<!-- 为什么是4: $ echo aaa | wc -c -->
