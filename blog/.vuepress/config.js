@@ -6,6 +6,10 @@ module.exports = {
   dest: "./docs",
   theme: "vuepress-theme-maker",
   base: "/personal-learning-blog/",
+  // 显示代码行数
+  markdown: {
+    lineNumbers: true,
+  },
   themeConfig: {
     logo: "./logo.jpg",
     searchPlaceholder: "Search ⌘+K",
@@ -69,7 +73,10 @@ module.exports = {
       showInMobile: false,
     },
     /*-----------------左侧导航配置-----------------------*/
-    nav: [{ text: "🏠 主页", link: "/" }],
+    nav: [
+      { text: "🏠 主页", link: "/" },
+      { text: "Shell 实用指令概览", link: "/post/2022/04/21/shell.html" },
+    ],
     /*-----------------设置 sidebar 底部社交媒体 URL。-----------------------*/
     social: [
       {
@@ -79,6 +86,14 @@ module.exports = {
       {
         type: "github",
         link: "2333Ge",
+      },
+      {
+        type: "feed",
+        link: "https://gitee.com/i2333g3/personal-learning",
+      },
+      {
+        type: "feed",
+        link: "https://juejin.cn/user/1082334819913486/posts",
       },
     ],
     /*-----------------主题配置-----------------------*/
