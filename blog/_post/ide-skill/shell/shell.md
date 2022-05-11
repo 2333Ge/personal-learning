@@ -2,6 +2,7 @@
 title: Shell 实用指令概览
 date: 2022-04-21
 category: Shell
+cover: /images/bg-shell.jpeg
 tags:
   - Shell
   - Wiki
@@ -11,20 +12,14 @@ tags:
 
 ## 前言
 
-在b站偶然刷到这个视频--[《【麻省理工现场授课视频】计算机编程中最重要的一门课程------编程工具的使用》][bilibili]，发现日常经常使用却一直忽略的工具--终端，有很多即使是编程之外也可以使用的技巧。
+在b站偶然刷到这个视频--[《【麻省理工现场授课视频】计算机编程中最重要的一门课程------编程工具的使用》][bilibili]，发现中经常使用却一直忽略的工具--终端，有很多即使是编程之外也可以使用的技巧。
 借此查阅总结了一些日常操作中比较实用的指令，如快速查目标目录下中最大的几个文件、文件内容比较、计数等等。
 
-本文只是抛砖，每个点都不会太深入，若有感觉比较实用的指令，可根据备注的序号，在文末查看参考文章链接。
+本文只是抛砖概述有什么指令可用，每个点都不会太深入，若有感觉比较实用的指令，可根据备注的序号，在文末查看参考文章链接。
 
 ps: 以下示例均在 mac 终端 Zsh 中运行，其他终端中可能会略有偏差。
 
 ps2: 本文持续更新版收录[在此][my-blog]
-
-## What is Shell
-
-> Shell 是指一种应用程序，这个应用程序提供了一个界面，用户通过这个界面访问操作系统内核的服务。[1]
-
-业界所说的Shell通常指Shell脚本
 
 ## 首先建议了解的技巧、概念
 
@@ -62,11 +57,15 @@ Ctrl R # 在历史命令中查找[8]，比如之前某条命令执行失败，�
 
 ### 一些基础概念
 
+- **什么是Shell**：Shell 是指一种应用程序，这个应用程序提供了一个界面，用户通过这个界面访问操作系统内核的服务。业界所说的Shell通常指Shell脚本。[1]
+
 - **标准输入、标准输出**：一个命令通常从一个叫标准输入的地方读取输入，默认情况下，这恰好是你的终端。同样，一个命令通常将其输出写入到标准输出，默认情况下，这也是你的终端。[11]
+
 - **输入/输出重定向**：[11]
   - `>`：输出重定向
   - `<`：输入重定向
   - `>>`：以追加的方式输出重定向
+
 - **管道操作符`|`**：处理前面一个指令传出的正确输出信息，并将其传入下一个指令
 
 ```bash
@@ -100,36 +99,45 @@ $ touch  {f1,f2}/{a..e}.md # 等于 touch f1/a.md、f1/b.md、f1/c.md、f1/d.md�
 
 ## 实用命令
 
-- **`mkdir path/directory`**: 创建新文件夹，`path`不存在或`directory`存在会抛出错误，`mkdir -p path/directory`:递归的创建一个某个目录，目录存在则跳过，不会抛出错误。
+### mkdir
 
-- **`open path`**：打开文件、目录或应用程序。`open .`：在"访达（finder）"中打开当前文件夹。
+**`mkdir path/directory`**: 创建新文件夹，`path`不存在或`directory`存在会抛出错误，`mkdir -p path/directory`:递归的创建一个某个目录，目录存在则跳过，不会抛出错误。
+### open
 
-<!-------------------无示例------------------------->
-- **`history`**：显示历史执行过的命令
+**`open path`**：打开文件、目录或应用程序。`open .`：在"访达（finder）"中打开当前文件夹。
+
+### history
+
+**`history`**：显示历史执行过的命令
 ```bash
 $ history 1 # 显示全部
 $ history 20 # 显示近20条命令，在zsh中是显示从20到最新一条
 $ history -d offset # 删除从0到offset的记录
 ```
+### date
 
-- **`date`**：查看当前时间
+**`date`**：查看当前时间
 
 ```bash
 $ date
 2022年 5月11日 星期三 15时31分15秒 CST
 ```
+### touch
 
-- **`touch`**：设置文件的修改和访问时间，如果没有对应文件将新建一个。
+**`touch`**：设置文件的修改和访问时间，如果没有对应文件将新建一个。
 ```bash
 $ touch lalala.md
 $ ls
 lalala.md
 ```
+### shellcheck
 
-- **`shellcheck yourscript`**: 检查脚本是否有语法错误，[shellcheck工具安装及使用方式](https://github.com/koalaman/shellcheck#from-your-terminal)
+**`shellcheck yourscript`**: 检查脚本是否有语法错误，[shellcheck工具安装及使用方式](https://github.com/koalaman/shellcheck#from-your-terminal)
+
 ![](./image/shellcheck.png)
+### curl
 
-- **`curl`**：发出网络请求，然后得到和提取数据，显示在"标准输出"（stdout）上。[15]，各个选项含义可参考[阮一峰大佬的blog][curl]，接口出现问题时，用此方法复现出问题的接口非常方便。
+**`curl`**：发出网络请求，然后得到和提取数据，显示在"标准输出"（stdout）上。[15]，各个选项含义可参考[阮一峰大佬的blog][curl]
 
 ```bash
 # 什么参数都不加默认是get请求
@@ -139,24 +147,40 @@ $ curl www.baidu.com
 ...
 ```
 
-- **`cp source target`**：文件拷贝。  
+接口出现问题时，用此方法复现出问题的接口非常方便。假设以下是开发中的一个遇到问题的接口，通过Charles中抓包后，`Copy cURL Request`
+
+![curl-baidu](./image/curl-baidu.png)
+
+可以得到如下信息，这样所有的请求信息变拿到了，可以完美复现问题场景，挨个排查问题
+
+```bash
+curl -H "Host: suggestion.baidu.com" -H "Sec-Fetch-Site: none" -H "Sec-Fetch-Mode: no-cors" -H "Sec-Fetch-Dest: empty" -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" -H "Accept-Language: zh-CN,zh;q=0.9" -H "Cookie: BDUSS_BFESS=Z2UVJ4UERzNTVyWHVRb21KLTVkcVdOdWhDMDl3aG1jWkdpMFA4M2x3R2NvbEppRVFBQUFBJCQAAAAAAAAAAAEAAAAkAEGTxcu1wsCtubG1xLn71q0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJwVK2KcFStiQW; BDSFRCVID_BFESS=w4FOJeC62Z7x5j3DOYtxtKoBoVALqC3TH6ao7gE5pd23RU6n14g8EG0PhM8g0KAbx4seogKK0mOTHv-F_2uxOjjg8UtVJeC6EG0Ptf8g0f5; BAIDUID_BFESS=698F99AAD30B1558728C57D13A001C25:FG=1" --compressed "https://suggestion.baidu.com/su?wd=&action=opensearch&ie=UTF-8"
+```
+
+
+### cp
+
+**`cp source target`**：文件拷贝。  
 ```bash
 $ cp lalala.md hhhh.md
 $ ls
 hhhh.md   lalala.md
 ```
+### cd
 
-- **`cd`**: 切换当前工作目录
+**`cd`**: 切换当前工作目录
 ```bash
 $ cd ~  # 切换到当前用户根目录，等于直接输入`cd`
 $ cd /  # 切换到所有用户共享的根目录
 $ cd -  # 回到上一次的目录
 ```
+### pwd
 
-- **`pwd`**：查看终端当前所在路径
+**`pwd`**：查看终端当前所在路径
 ![cd](./image/cd.jpg)
+### mv
 
-- **`mv source target`**：为文件或目录改名、将文件或目录移入其它位置
+**`mv source target`**：为文件或目录改名、将文件或目录移入其它位置
 
 ```bash
 # -f  -- 覆盖前不提示
@@ -166,15 +190,17 @@ $ cd -  # 回到上一次的目录
 $ mv -v mv.md mv2.md
 mv.md -> mv2.md
 ```
+### ls
 
-- **`ls`**:列出目录下的内容，`ls -l`：查看当前目录下的所有文件及详细信息
+**`ls`**:列出目录下的内容，`ls -l`：查看当前目录下的所有文件及详细信息
 ```
 $ ls -l
 total 0
 -rw-r--r--  1 ych  staff  0  5 11 19:39 lalala.md
 ```
+### cat
 
-- **`cat`**：连接和打印文件，`cat  -n 文件`：打印文件内容，显示行号
+**`cat`**：连接和打印文件，`cat  -n 文件`：打印文件内容，显示行号
 ```
 $ ls node_modules | cat -n
      1	@ampproject
@@ -182,15 +208,17 @@ $ ls node_modules | cat -n
      3	@hapi
      ...
 ```
+### du
 
-- **`du`**:查看磁盘占用，`du -h 文件名`：使用人类易读的单位打印文件磁盘占用（注意并不等于文件大小）。
+**`du`**:查看磁盘占用，`du -h 文件名`：使用人类易读的单位打印文件磁盘占用（注意并不等于文件大小）。
 ```bash
 $ du -h package.json
 4.0K	package.json
 ```
 <!-------------------单个示例------------------------->
+### xargs
 
-- **`xargs`**：将标准输入转为命令行参数。一些命令不支持标准输入，只能直接在命令行输入参数，导致无法导致无法用管道命令传递参数[10]，此时可用`xargs`如：
+**`xargs`**：将标准输入转为命令行参数。一些命令不支持标准输入，只能直接在命令行输入参数，导致无法导致无法用管道命令传递参数[10]，此时可用`xargs`如：
 
 ```bash
 $ echo "hello world" | echo
@@ -202,8 +230,9 @@ $ git branch | grep "test-*" | xargs git branch -D
 ```
 
 更详细的用法可参考[阮一峰的blog](https://www.ruanyifeng.com/blog/2019/08/xargs-tutorial.html)
+### wc
 
-- **`wc`**: 计数行数、词数（换行符、空格符分割）、字节数。
+**`wc`**: 计数行数、词数（换行符、空格符分割）、字节数。
  
 ```bash
 wc [-clmw] [file ...]
@@ -221,8 +250,9 @@ $ find . -type f | wc -l
 $ echo aaa | wc -c
 4
 ``` -->
+### who
 
-- **`who`**：显示登陆者和相关数据（进程信息，启动时间等）
+**`who`**：显示登陆者和相关数据（进程信息，启动时间等）
 ```bash
 # 显示当前终端会话信息
 $ who am i
@@ -235,8 +265,9 @@ ych      console  May  4 17:42  old  	   153
 ych      ttys002  May  6 18:10   .   	 55852
 ...
 ```
+### head
 
-- **`head`**：输出文件的头部信息
+**`head`**：输出文件的头部信息
 ```bash
 # 输出文件的前几行：
 $ head -n 行数 文件名
@@ -257,8 +288,9 @@ $ history 1200 | head -n 10
  1208  ls | sort -f
  1209  ls | sort -S
 ```
+### tail
 
-- **`tail`**：输出文件的末尾信息
+**`tail`**：输出文件的末尾信息
 ```bash
 # 输出文件的末尾几行：
 $  tail -n count path/to/file
@@ -267,8 +299,10 @@ $ tail -n +count path/to/file
 # 输出文件的末尾几个字节：
 $ tail -c count path/to/file
 ```
+### rm
 
-- **`rm`**：尝试删除指定的非目录类型文件
+**`rm`**：尝试删除指定的非目录类型文件。
+
 ```bash
 -r # 递归删除目录及子文件
 -f # 强制删除文件，无视文件权限，不展示二次确认信息或错误输出
@@ -284,8 +318,9 @@ remove c? n
 $ ls
 c
 ```
+### source
 
-- **`source`**： 在当前终端环境下读取并执行文件中的命令[18]，如：
+**`source`**： 在当前终端环境下读取并执行文件中的命令[18]，如：
 
 ```bash
 # 有这样一个文件
@@ -308,8 +343,9 @@ $ mcd lalalala
 $ pwd
 /Users/ych/documents/learning/shell_start/src/lalalala
 ```
+### ifconfig
 
-- **`ifconfig`**：配置网络接口参数
+**`ifconfig`**：配置网络接口参数
 
 显示本机IP:
 
@@ -322,12 +358,9 @@ $ grep "inet " <(ifconfig en0) --color=auto
 ```
 > en0: Ethernet 0，以太网接口 0，大多数情况en0是你的WIFI[6]
 
-<!-------------------暂无示例------------------------->
+### grep
 
-<!-------------------详细示例------------------------->
-### `grep`
-
-`grep pattern 文件`：在给定的文件中，按行匹配`pattern`的内容，打印该行。
+**`grep pattern 文件`**：在给定的文件中，按行匹配`pattern`的内容，打印该行。
 
 ```bash
 -i  # 忽略搜索字符串的大小写
@@ -354,7 +387,7 @@ $ grep -n "^#" node_modules/kleur/readme.md
 83:### Conditional Support
 ...
 ```
-### `tree`
+### tree
 
 **`tree`**：以树形结构打印目录内容
 
@@ -389,7 +422,7 @@ $  tree -P '*.txt' --prune
 $  tree -P 文件夹名 --matchdirs --prune
 ```    
 
-**示例**:
+**示例**：
 
 ```bash
 tree -L 1 node_modules
@@ -402,9 +435,9 @@ node_modules
 ├── @react-native
 ...
 ```
-### `find`
+### find
 
-`find`：文件查找[9]
+**`find`**：文件查找[9]
 
 **操作符**
 
@@ -454,7 +487,7 @@ expr1 expr2
 -maxdepth levels # 在起点以下最多levels层目录下查找
 ```
 
-**示例**
+**示例**：
 
 1. 查找当前目录下除了node_modules目录中的所有md文件
 
@@ -472,9 +505,9 @@ $ find node_modules ! -type d -size +1M | xargs du -h
 ...
 ```
 
-### `cut`
+### cut
 
-`cut`: 从标准输入或文件中剪切字段，每列序号从1开始
+**`cut`**: 从标准输入或文件中剪切字段，每列序号从1开始
 
 **选项**
 
@@ -489,7 +522,7 @@ cut -f list [-d delim] [-s] [file ...]
 -f list  # 配合-d，指定哪一段用字段分隔符分割的字段，输出由一个分割符分割
 ```
 
-**示例**
+**示例**：
 
 1. 上例「显示node_modules中所有大于1MB的文件」太长了，切掉重复的部分
 
@@ -526,9 +559,9 @@ ttys006 May 5 10:36
 ttys008 May 7 18:51 
 ```
 
-### `which`
+### which
 
-`which`: 在 PATH 变量指定的路径中搜索某个系统命令的位置并且返回第一个搜索结果。也就是说使用 which 命令就可以看到某个系统命令是否存在以及执行的到底是哪一个位置的命令。[2]
+**`which`**: 在 PATH 变量指定的路径中搜索某个系统命令的位置并且返回第一个搜索结果。也就是说使用 which 命令就可以看到某个系统命令是否存在以及执行的到底是哪一个位置的命令。[2]
 
 ```bash
 $ which date
@@ -541,9 +574,9 @@ $ which which
 which: shell built-in command # 内置命令
 ```
 
-### `tr`
+### tr
 
-`tr`: 将标准输入复制到标准输出，并替换或删除所选字符。
+**`tr`**: 将标准输入复制到标准输出，并替换或删除所选字符。
 
 **选项**
 
@@ -572,7 +605,7 @@ a-z、1-9 # 表示范围a-z、1-9
     # xdigit       十六进制字符
 ```
 
-**示例**
+**示例**：
 
 1. 打印test.txt内容，将换行符号替换成空格
 ```bash
@@ -604,9 +637,9 @@ $ cat hello2.md
 $ tr 'he' 'ABCD' < hello2.md
 # ABllo world
 ```
-### `diff`
+### diff
 
-`diff`: 按行比较文件和目录
+**`diff`**: 按行比较文件和目录
 
 **选项**
 
@@ -631,7 +664,7 @@ $ tr 'he' 'ABCD' < hello2.md
 # c、d同理
 ```
 
-**示例**
+**示例**：
 
 1. 比如`npm install`了一个包，想知道node_modules里多了什么东西
 
@@ -668,9 +701,9 @@ $ diff -c n1.txt n2.txt
 + react-is
 + tslib
 ```
-### `sort`
+### sort
 
-`sort`: 按行比较进行排序
+**`sort`**: 按行比较进行排序
 
 **选项**：
 
@@ -746,11 +779,11 @@ drwxr-xr-x 7 ych staff 224 4 19 16:03 nodejs_start
 ```
 
 
-### `awk`
+### awk
 
-`awk`: 一种处理文件的通用编程语言。awk是专门为文本处理设计的编程语言，是一门数据驱动的编程语言，与sed类似都是以数据驱动的行处理软件，主要用于数据扫描、过滤、统计汇总工作，数据可以来自标准输入、管道或者文件。[20]
+**`awk`**: 一种处理文件的通用编程语言。awk是专门为文本处理设计的编程语言，是一门数据驱动的编程语言，与sed类似都是以数据驱动的行处理软件，主要用于数据扫描、过滤、统计汇总工作，数据可以来自标准输入、管道或者文件。[20]
 
-**示例**
+**示例**：
 
 这个东西比较复杂，先从几个例子来看有啥作用吧
 
