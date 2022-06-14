@@ -1,6 +1,6 @@
 ---
 title: 《设计心理学》笔记
-date: 2022-04-02
+date: 2021-06-01
 category: Reading
 tags:
   - Reading

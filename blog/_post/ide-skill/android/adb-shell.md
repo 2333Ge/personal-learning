@@ -1,6 +1,6 @@
 ---
 title: ADB Shell
-date: 2022-04-02
+date: 2019-01-01
 category: 
 tags:
   - ide-skill

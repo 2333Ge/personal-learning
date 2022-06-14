@@ -1,6 +1,6 @@
 ---
 title: VSCode snippet自定义代码模板
-date: 2022-04-02
+date: 2022-03-16
 category: VSCode
 tags:
   - ide-skill

@@ -76,6 +76,9 @@ module.exports = {
     nav: [
       { text: "🏠 主页", link: "/" },
       { text: "Shell 实用指令概览", link: "/post/2022/04/21/shell.html" },
+      { text: "《深入理解 TypeScript》 笔记", link: "/post/2022/03/15/typescript-deep-dive-summary.html" },
+      { text: "VSCode snippet自定义代码模板", link: "/post/2022/03/16/snippet.html" },
+      { text: "VSCode插件开发小记 | 高亮自定义主题", link: "/post/2019/10/23/vscode-plugin-highlight-my-word.html" },
     ],
     /*-----------------设置 sidebar 底部社交媒体 URL。-----------------------*/
     social: [

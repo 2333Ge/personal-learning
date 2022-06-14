@@ -1,6 +1,6 @@
 ---
 title: RN 踩坑记录
-date: 2022-04-02
+date: 2020-06-01
 category: react-native
 tags:
   - react-native

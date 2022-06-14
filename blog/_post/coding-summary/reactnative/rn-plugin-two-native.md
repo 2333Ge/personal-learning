@@ -1,6 +1,6 @@
 ---
 title: 【RN-插件 2】原生视图插件
-date: 2022-04-02
+date: 2020-01-01
 category: react-native
 tags:
   - react-native

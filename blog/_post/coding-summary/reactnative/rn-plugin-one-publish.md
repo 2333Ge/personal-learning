@@ -1,6 +1,6 @@
 ---
 title: 【RN-插件 1】原生插件-初始化、发布 npm&使用
-date: 2022-04-02
+date: 2020-01-01
 category: react-native
 tags:
   - react-native

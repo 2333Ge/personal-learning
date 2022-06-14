@@ -1,6 +1,6 @@
 ---
 title: VSCode插件开发小记 | 高亮自定义主题
-date: 2022-04-02
+date: 2019-10-23
 category: VSCode
 tags:
   - VSCode

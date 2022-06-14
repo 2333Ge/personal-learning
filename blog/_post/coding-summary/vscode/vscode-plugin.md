@@ -1,6 +1,6 @@
 ---
 title: VSCode 插件开发小记
-date: 2022-04-02
+date: 2019-06-01
 category: VSCode
 tags: 
   - vscode-plugin
