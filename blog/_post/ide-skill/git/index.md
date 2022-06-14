@@ -43,6 +43,16 @@ git pull
 
 ## 实用命令
 
+- 修改commit信息，如填错邮件地址
+
+https://segmentfault.com/a/1190000041122415
+
+git log 查看commit id
+git rebase -i <最早commit> 重新设置基准线
+git commit --amend --author="Author Name <email@address.com>" 来修改commit
+`git rebase --continue 移动到下个commit作为基准线
+
+
 - 查看对应指令帮助
 
 ```js
