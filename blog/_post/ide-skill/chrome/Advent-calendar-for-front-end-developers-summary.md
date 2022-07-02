@@ -16,7 +16,7 @@ tags:
 
 全文精华，记录关键字供回忆复习
 
-Ctrl CMD 替换实验，MAC Windows 记混了
+MAC Windows 的 Ctrl CMD 记混了 ，快捷键不生效时替换使用试试
 
 
 ## 关键字

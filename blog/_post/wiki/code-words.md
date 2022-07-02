@@ -7,13 +7,17 @@ tags:
 ---
 
 <!-- more -->
-## 开发常见名词释义
+## 开发名词
 
 - dsl(domain-specific language): 同时具备描述能力和逻辑能力的语言[1][2]。
 - CI/CD(Continuous Integration/Continuous Delivery): 持续集成/持续交付[3]
 - pr(Pull Request): 和`merge request`一个意思，`merge request` gitlab 常用，拉取代码修改代码发起合并请求。
 - ssr：服务端渲染
 
+## 数据分析相关名词
+
+- UGC(User Generated Content): 用户原创内容
+- 
 ## 参考文章
 
 [1] [五分钟，科普下 dsl](https://zhuanlan.zhihu.com/p/24800713)

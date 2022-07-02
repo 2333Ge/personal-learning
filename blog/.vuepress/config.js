@@ -79,6 +79,8 @@ module.exports = {
       { text: "《深入理解 TypeScript》 笔记", link: "/post/2022/03/15/typescript-deep-dive-summary.html" },
       { text: "VSCode snippet自定义代码模板", link: "/post/2022/03/16/snippet.html" },
       { text: "VSCode插件开发小记 | 高亮自定义主题", link: "/post/2019/10/23/vscode-plugin-highlight-my-word.html" },
+      { text: "《重构2》笔记", link: "/post/2020/06/01/reactor2-summary.html" },
+      
     ],
     /*-----------------设置 sidebar 底部社交媒体 URL。-----------------------*/
     social: [
@@ -91,11 +93,11 @@ module.exports = {
         link: "2333Ge",
       },
       {
-        type: "feed",
+        type: "author",
         link: "https://gitee.com/i2333g3/personal-learning",
       },
       {
-        type: "feed",
+        type: "juejin",
         link: "https://juejin.cn/user/1082334819913486/posts",
       },
     ],

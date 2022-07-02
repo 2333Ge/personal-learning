@@ -449,7 +449,14 @@ type FormState = { isValid: boolean } & { [fieldName: string]: FieldState };
 
 // 使用它来创建一个对象时，将不会工作
 const bar: FormState = {
-  // 为啥报错??  'isValid' 不能赋值给 'FieldState'
+  // 报错: 'isValid' 不能赋值给 'FieldState'
+  isValid: false,
+};
+
+// 改成下列方式后，bar定义正常
+type FormState = { isValid: boolean } & { [fieldName: string]: FieldState };
+
+const bar: FormState = {
   isValid: false,
 };
 ```
