@@ -4,6 +4,7 @@
 - TS 泛型技巧
 - arc 相关知识：规范流程、冲突解决、commit合并等
   - https://blog.csdn.net/liangliang103377/article/details/73497769
+-  本地音乐播放器
 # 备忘
 
 注意笔记的面对对象
@@ -16,9 +17,5 @@
 - 网名，无数字、无特殊符号
 - logo
 
-## vue-press 问题记录
 
-- tags链接不对
-- 评论后头像是网址设置吗
-- docs 对外的话有些东西隐藏
 
