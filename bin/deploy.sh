@@ -10,10 +10,13 @@ npm run build
 # 进入生成的文件夹
 cd docs
 
-git init
-git add -A
-git commit -m 'deploy'
-git remote add origin https://gitee.com/i2333g3/personal-learning-blog.git
-git push -u -f origin master
+# git init
+# git add -A
+# git commit -m 'deploy'
+# git remote add origin https://gitee.com/i2333g3/personal-learning-blog.git
+# git push -u -f origin master
 
 cd -
+
+echo "$(date +"%Y-%m-%d %H:%M:%S")" >> my_actions
+
