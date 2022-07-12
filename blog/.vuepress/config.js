@@ -97,7 +97,7 @@ module.exports = {
         link: "https://gitee.com/i2333g3/personal-learning",
       },
       {
-        type: "juejin",
+        type: "feed",
         link: "https://juejin.cn/user/1082334819913486/posts",
       },
     ],
