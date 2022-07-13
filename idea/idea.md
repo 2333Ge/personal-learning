@@ -29,7 +29,10 @@
 - 网站：docker + nginx web 服务器 + 云托管平台 + cdn 节点分发
 - 云函数签到、自动签到
   - 掘金
-- github actions 自动部署、签到
+- github actions
+  - 自动部署 ✅ 打包过程能否放到云
+  - 签到 
+- my_actions 以 submodule 形式添加
 # 项目中知识点
 
 - 评论系统设计
@@ -40,6 +43,7 @@
 # 看书、学习
 
 - babel
+- [Git 官方手册](https://git-scm.com/book/zh/v2)
 - 吉他：五线谱、简谱 => 手型
 - 《React 进阶实践指南》
 - 《深入浅出nodejs》
