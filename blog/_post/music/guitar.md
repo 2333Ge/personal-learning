@@ -7,7 +7,7 @@ tags:
   - guitar
 ---
 
-<!-- more -->
+<!-- more -->  
 
 ## Hello World 
 
@@ -90,10 +90,55 @@ my: 卡马 D1C
 
 止音：小指
 
-## 欢乐颂
+## 小星星（lv1）
+
+![](image/small-star.jpg)
+
+## 欢乐颂(lv2)
 
 需要达到看到五线谱能知道该按什么位置
 
 ![](image/huan-le-song.jpeg)
 
+## 弹唱斑马斑马(lv3)
+![](image/banma1.jpg)
+![](image/banma2.jpg)
+## 右手基基本功
+
+加速版
+
+![](./image/right-fast.jpg)
+
+## 左手爬格子
+
+要点：
+
+- 手型：古典手型
+- 四指张开，力气，保持一个手指一个品格，3456
+- 食指和小指可以平贴在几根弦上，但是不要压下去
+- 中指和无名指可以碰到相邻的琴弦，但注意不要带出杂音
+- 每根手指抬起高度不要超过2cm
+- 每天练琴前来十遍
+
+![](./image/left-pagezi.jpg)
+
+## 和弦
+
+3个以上的音符同时发出声音
+
+   
+## 同桌的你(lv1)
+
+![](./image/my-tong-zhuo.png)
+## 《城里的月光》，和弦转换初级（lv2）
+
+![](./image/city-light1.jpg)
+
+![](./image/city-light2.jpg)
+
+## 《少年锦时》(lv3)
+
+![](./image/shao-nian-time1.jpg)
+
+![](./image/shao-nian-time2.jpg)
 
