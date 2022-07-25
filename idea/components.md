@@ -9,11 +9,22 @@
 
 ### 市场分析
 
+awesome-react-native： https://github.com/jondot/awesome-react-native
+
 <!-- 详细分析市场产品, 不急着敲代码，从设计 => 实现 -->
+- 有些东西不用自己写，引入直接改，支持下主题
 
 - 美团：https://tech.meituan.com/2019/09/26/open-source-react-native-component-library-beeshell.html
 
 ## 概要设计
+
+
+lint、日常开发规范、矫正
+TS
+单元测试
+demo
+  - react-navigation
+开发文档
 
 ## 模块设计
 
@@ -28,6 +39,8 @@
 - 高可定制化
 - 自定义主题
 - 单元测试
+
+static 方法拷贝
 
 - icon
 - 交互防抖
@@ -46,3 +59,4 @@
 - 好用的轮子汇总
 
 - mergeStyles, 可以merge不能 typeof defaultStyles
+

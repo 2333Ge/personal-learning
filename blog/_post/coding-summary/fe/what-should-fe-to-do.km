@@ -4,7 +4,10 @@
             "id": "cl9cm9doxog0",
             "created": 1657189410708,
             "text": "what should FE to do",
-            "note": null
+            "note": "自建轮子、用已有的\n\n组件、方法",
+            "font-family": "comic sans ms",
+            "font-weight": "bold",
+            "expandState": "expand"
         },
         "children": [
             {
@@ -16,13 +19,10 @@
                         "x": -42,
                         "y": -51
                     },
-                    "layout_right_offset": {
-                        "x": -91,
-                        "y": -43
-                    },
                     "layout": null,
                     "note": "在持续迭代中始终能保持\n\n- 不崩\n- 不容易出错\n- 出错能快速定位、快速修复\n\n",
-                    "expandState": "expand"
+                    "expandState": "expand",
+                    "font-family": "comic sans ms"
                 },
                 "children": [
                     {
@@ -35,12 +35,9 @@
                                 "y": -15
                             },
                             "layout": null,
-                            "layout_right_offset": {
-                                "x": 3,
-                                "y": -12
-                            },
-                            "note": "统计 => 报表 => 反推优化\n\n搭建、使用、维护",
-                            "expandState": "collapse"
+                            "note": "搭建完备的监控体系，从统计、生成报表 最后反推优化。知道项目的不足才方便反推优化",
+                            "expandState": "expand",
+                            "font-family": "comic sans ms"
                         },
                         "children": [
                             {
@@ -53,10 +50,8 @@
                                         "y": -15
                                     },
                                     "layout": null,
-                                    "layout_right_offset": {
-                                        "x": 8,
-                                        "y": -13
-                                    }
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -70,10 +65,8 @@
                                         "y": -15
                                     },
                                     "layout": null,
-                                    "layout_right_offset": {
-                                        "x": 3,
-                                        "y": -14
-                                    }
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -87,10 +80,8 @@
                                         "y": -15
                                     },
                                     "layout": null,
-                                    "layout_right_offset": {
-                                        "x": 6,
-                                        "y": -23
-                                    }
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             }
@@ -106,11 +97,9 @@
                                 "y": -15
                             },
                             "layout": null,
-                            "expandState": "collapse",
-                            "layout_right_offset": {
-                                "x": 6,
-                                "y": -20
-                            }
+                            "expandState": "expand",
+                            "font-family": "comic sans ms",
+                            "note": "完备的规范使系统更易拓展、易维护\n\n是否有代码的坏味道（《重构2》）"
                         },
                         "children": [
                             {
@@ -123,260 +112,73 @@
                                         "y": -15
                                     },
                                     "layout": null,
-                                    "expandState": "collapse",
-                                    "layout_right_offset": {
-                                        "x": 14,
-                                        "y": -16
-                                    }
+                                    "expandState": "expand",
+                                    "font-family": "comic sans ms",
+                                    "note": "变量命名、函数长度、文件长度，单词拼错的情况都非常常见，如写个组件，props定义错了，所有使用的地方就得跟着错\n\n风格指南举例：\n\n- [Google开源项目风格指南-TS](https://zh-google-styleguide.readthedocs.io/en/latest/google-typescript-styleguide/contents/)\n- [Google开源项目风格指南-JS](https://zh-google-styleguide.readthedocs.io/en/latest/google-javascript-styleguide/contents/)\n- [Airbnb JavaScript 风格指南](https://github.com/lin-123/javascript)\n- [Airbnb React/JSX 风格指南](https://github.com/lin-123/javascript/tree/cn/react)\n- [standard](https://github.com/standard/standard/blob/master/docs/README-zhcn.md)\n"
                                 },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cl9cm9doxog0",
-                                            "created": 1657189410708,
-                                            "text": "变量命名",
-                                            "layout_mind_offset": {
-                                                "x": -43,
-                                                "y": -15
-                                            },
-                                            "layout": null
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cl9cm9doxog0",
-                                            "created": 1657189410708,
-                                            "text": "函数长度",
-                                            "layout_mind_offset": {
-                                                "x": -43,
-                                                "y": -15
-                                            },
-                                            "layout": null
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cl9cm9doxog0",
-                                            "created": 1657189410708,
-                                            "text": "一页文件长度",
-                                            "layout_mind_offset": {
-                                                "x": -43,
-                                                "y": -15
-                                            },
-                                            "layout": null
-                                        },
-                                        "children": []
-                                    }
-                                ]
+                                "children": []
                             },
                             {
                                 "data": {
                                     "id": "cl9cm9doxog0",
                                     "created": 1657189410708,
-                                    "text": "组件、模块设计规范",
+                                    "text": "规范检查、矫正",
                                     "layout_mind_offset": {
                                         "x": -43,
                                         "y": -15
                                     },
                                     "layout": null,
-                                    "layout_right_offset": {
-                                        "x": 11,
-                                        "y": -21
-                                    },
-                                    "expandState": "collapse"
+                                    "expandState": "expand",
+                                    "font-family": "comic sans ms",
+                                    "note": "动态检查工具\n\n- ESLint\n- CodeSpellChecker\n\n纠正工具：自动、手动\n\n- Prettier\n\n比如之前的组件库工程，每次提交前都会自动跑一遍全局格式化，避免下次修改代码时手动格式化文件，格式化了非本人修改的代码。"
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cl9cm9doxog0",
                                             "created": 1657189410708,
-                                            "text": "开闭原则",
+                                            "text": "开发",
                                             "layout_mind_offset": {
                                                 "x": -43,
                                                 "y": -15
                                             },
                                             "layout": null,
-                                            "layout_right_offset": {
-                                                "x": -17,
-                                                "y": 0
-                                            }
+                                            "font-family": "comic sans ms",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cl9cm9doxog0",
+                                            "created": 1657189410708,
+                                            "text": "编译",
+                                            "layout_mind_offset": {
+                                                "x": -43,
+                                                "y": -15
+                                            },
+                                            "layout": null,
+                                            "font-family": "comic sans ms",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cl9cm9doxog0",
+                                            "created": 1657189410708,
+                                            "text": "提交",
+                                            "layout_mind_offset": {
+                                                "x": -43,
+                                                "y": -15
+                                            },
+                                            "layout": null,
+                                            "font-family": "comic sans ms",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     }
                                 ]
-                            },
-                            {
-                                "data": {
-                                    "id": "cl9cm9doxog0",
-                                    "created": 1657189410708,
-                                    "text": "规范检查、矫正工具",
-                                    "layout_mind_offset": {
-                                        "x": -43,
-                                        "y": -15
-                                    },
-                                    "layout": null,
-                                    "expandState": "collapse"
-                                },
-                                "children": [
-                                    {
-                                        "data": {
-                                            "id": "cl9cm9doxog0",
-                                            "created": 1657189410708,
-                                            "text": "EsLint",
-                                            "layout_mind_offset": {
-                                                "x": -43,
-                                                "y": -15
-                                            },
-                                            "layout": null
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cl9cm9doxog0",
-                                            "created": 1657189410708,
-                                            "text": "CodeSpellChecker",
-                                            "layout_mind_offset": {
-                                                "x": -43,
-                                                "y": -15
-                                            },
-                                            "layout": null
-                                        },
-                                        "children": []
-                                    },
-                                    {
-                                        "data": {
-                                            "id": "cl9cm9doxog0",
-                                            "created": 1657189410708,
-                                            "text": "Prettier",
-                                            "layout_mind_offset": {
-                                                "x": -43,
-                                                "y": -15
-                                            },
-                                            "layout": null
-                                        },
-                                        "children": []
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "data": {
-                            "id": "cl9cm9doxog0",
-                            "created": 1657189410708,
-                            "text": "易拓展",
-                            "layout_mind_offset": {
-                                "x": -42,
-                                "y": -51
-                            },
-                            "layout": null,
-                            "expandState": "collapse"
-                        },
-                        "children": [
-                            {
-                                "data": {
-                                    "id": "cl9dturavsg0",
-                                    "created": 1657192826902,
-                                    "text": "层次清晰",
-                                    "layout": null
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "cl9dturavsg0",
-                                    "created": 1657192826902,
-                                    "text": "对拓展开放，对修改封闭",
-                                    "layout": null
-                                },
-                                "children": []
-                            }
-                        ]
-                    },
-                    {
-                        "data": {
-                            "id": "cl9cm9doxog0",
-                            "created": 1657189410708,
-                            "text": "易维护，见码知意",
-                            "layout_mind_offset": {
-                                "x": -42,
-                                "y": -51
-                            },
-                            "layout": null,
-                            "expandState": "collapse"
-                        },
-                        "children": [
-                            {
-                                "data": {
-                                    "id": "cl9cm9doxog0",
-                                    "created": 1657189410708,
-                                    "text": "智能提示、备注说明：TS",
-                                    "layout_mind_offset": {
-                                        "x": -42,
-                                        "y": -51
-                                    },
-                                    "layout": null,
-                                    "layout_right_offset": {
-                                        "x": -7,
-                                        "y": 18
-                                    }
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "cl9cm9doxog0",
-                                    "created": 1657189410708,
-                                    "text": "功能说明",
-                                    "layout_mind_offset": {
-                                        "x": -42,
-                                        "y": -51
-                                    },
-                                    "layout": null,
-                                    "layout_right_offset": {
-                                        "x": -7,
-                                        "y": 18
-                                    }
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "cl9cm9doxog0",
-                                    "created": 1657189410708,
-                                    "text": "模块清晰",
-                                    "layout_mind_offset": {
-                                        "x": -42,
-                                        "y": -51
-                                    },
-                                    "layout": null,
-                                    "layout_right_offset": {
-                                        "x": -7,
-                                        "y": 18
-                                    },
-                                    "note": "看到代码便知道是哪一块\n\n如二级评论页\n\n- 一个函数内内容太多\n- 样式与业务杂糅\n- 业务不清，暗坑太多"
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "cl9dturavsg0",
-                                    "created": 1657192826902,
-                                    "text": "单一职责"
-                                },
-                                "children": []
-                            },
-                            {
-                                "data": {
-                                    "id": "cl9dturavsg0",
-                                    "created": 1657192826902,
-                                    "text": "是否有代码的坏味道（《重构2》）",
-                                    "note": "3.6 可变数据\n\n> 数据修改导致意料之外的结果，这种 bug 极难发现。保证数据能被修改操作最少化\n\n3.8 霰弹式修改(p76)\n\n> 每遇到某种变换，都必须在许多不同的类内做出许多小修改\n\n3.15 夸夸其谈通用性(p80)\n\n> “未来某一天会做这事”，企图已各种钩子和特殊情况来处理一些非必要的事情。如果函数或类的唯一用户是测试用例，那业务不需要这份“通用”。"
-                                },
-                                "children": []
                             }
                         ]
                     },
@@ -391,7 +193,8 @@
                             },
                             "layout": null,
                             "note": "如何做一套自测试的体系？",
-                            "expandState": "collapse"
+                            "expandState": "expand",
+                            "font-family": "comic sans ms"
                         },
                         "children": [
                             {
@@ -403,7 +206,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -411,14 +216,32 @@
                                 "data": {
                                     "id": "cl9cm9doxog0",
                                     "created": 1657189410708,
-                                    "text": "集合测试",
+                                    "text": "集成测试",
                                     "layout_mind_offset": {
                                         "x": -43,
                                         "y": -15
                                     },
                                     "layout": null,
-                                    "note": "一直以来的疑问：（RN）组件怎么做测试\n\n各种情况下UI是否符合预期\n\n如文本超长、字段为空等等\n\n曾经做过的方案是搭建一个可以可视化配置组件属性的工具，可视化修改属性，查看各种条件下是否符合预期\n\n![配置示例](./image/component-config.jpeg)",
-                                    "font-weight": "bold"
+                                    "note": "一直以来的疑问：（RN）组件怎么做测试\n\n各种情况下UI是否符合预期\n\n如文本超长、字段为空等等\n\n曾经做过的方案是搭建一个可以可视化配置组件属性的工具，可视化修改属性，查看各种条件下是否符合预期。市面上标准的做法是？\n\n![配置示例](./image/component-config.jpeg)",
+                                    "font-weight": "bold",
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cl9cm9doxog0",
+                                    "created": 1657189410708,
+                                    "text": "自动测试",
+                                    "layout_mind_offset": {
+                                        "x": -43,
+                                        "y": -15
+                                    },
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "note": "提交代码，单元测试通过才可以",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             }
@@ -434,19 +257,22 @@
                                 "y": -15
                             },
                             "layout": null,
-                            "expandState": "collapse"
+                            "expandState": "expand",
+                            "font-family": "comic sans ms"
                         },
                         "children": [
                             {
                                 "data": {
                                     "id": "cl9cm9doxog0",
                                     "created": 1657189410708,
-                                    "text": "热更新",
+                                    "text": "问题报警",
                                     "layout_mind_offset": {
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -454,12 +280,15 @@
                                 "data": {
                                     "id": "cl9cm9doxog0",
                                     "created": 1657189410708,
-                                    "text": "报警系统",
+                                    "text": "动态修复能力",
                                     "layout_mind_offset": {
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "note": "eg: 热更新",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -467,12 +296,14 @@
                                 "data": {
                                     "id": "cl9cm9doxog0",
                                     "created": 1657189410708,
-                                    "text": "回滚系统",
+                                    "text": "回滚机制",
                                     "layout_mind_offset": {
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             }
@@ -491,7 +322,8 @@
                     },
                     "layout": null,
                     "note": "- 能快速支持业务迭代",
-                    "expandState": "expand"
+                    "expandState": "collapse",
+                    "font-family": "comic sans ms"
                 },
                 "children": [
                     {
@@ -504,7 +336,9 @@
                                 "y": -15
                             },
                             "layout": null,
-                            "expandState": "expand"
+                            "expandState": "expand",
+                            "font-family": "comic sans ms",
+                            "note": "利用现有的轮子、自建（自建之前一定要充分考察市面上的同类产品）"
                         },
                         "children": [
                             {
@@ -517,7 +351,9 @@
                                         "y": -15
                                     },
                                     "layout": null,
-                                    "note": "“全”是一个动态完善的过程，需要在不断扩充的过程中能一直保持健壮、高效、高体验"
+                                    "note": "“全”是一个动态完善的过程，需要在不断扩充的过程中能一直保持健壮、高效、高体验",
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": [
                                     {
@@ -529,7 +365,9 @@
                                                 "x": -43,
                                                 "y": -15
                                             },
-                                            "layout": null
+                                            "layout": null,
+                                            "font-family": "comic sans ms",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     },
@@ -542,7 +380,9 @@
                                                 "x": -43,
                                                 "y": -15
                                             },
-                                            "layout": null
+                                            "layout": null,
+                                            "font-family": "comic sans ms",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     }
@@ -558,15 +398,40 @@
                                         "y": -15
                                     },
                                     "layout": null,
-                                    "expandState": "expand"
+                                    "expandState": "expand",
+                                    "font-family": "comic sans ms"
                                 },
                                 "children": [
                                     {
                                         "data": {
                                             "id": "cl9x3x6l8ao0",
                                             "created": 1657247216910,
-                                            "text": "TS",
-                                            "layout": null
+                                            "text": "代码提示",
+                                            "layout": null,
+                                            "font-family": "comic sans ms",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cl9x3x6l8ao0",
+                                            "created": 1657247216910,
+                                            "text": "配套文档",
+                                            "layout": null,
+                                            "font-family": "comic sans ms",
+                                            "expandState": "expand"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cl9x3x6l8ao0",
+                                            "created": 1657247216910,
+                                            "text": "基本注释",
+                                            "layout": null,
+                                            "font-family": "comic sans ms",
+                                            "expandState": "expand"
                                         },
                                         "children": []
                                     }
@@ -581,7 +446,10 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "note": "回到之前的问题，如果三天两头发版、改设计...",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             }
@@ -597,7 +465,9 @@
                                 "y": -15
                             },
                             "layout": null,
-                            "note": "编码 => 单元测试 => 测试 => 打包 => 发布"
+                            "note": "编码 => 单元测试 => 测试 => 打包 => 发布",
+                            "font-family": "comic sans ms",
+                            "expandState": "expand"
                         },
                         "children": []
                     },
@@ -611,7 +481,9 @@
                                 "y": -15
                             },
                             "layout": null,
-                            "expandState": "collapse"
+                            "expandState": "expand",
+                            "font-family": "comic sans ms",
+                            "note": "仅用console.log 效率太低了，\n\n即使是console.log 也有很多技巧可以学习\n\n比如用console.table 美化输出\n\n![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/7/167893640e9ba1d3~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)\n\n设置无代码侵入log\n\n![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/17/167b955a1f0311fc~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)\n\n此处安利站内小册[你不知道的 Chrome 调试技巧](https://juejin.cn/book/6844733783166418958)"
                         },
                         "children": [
                             {
@@ -623,7 +495,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             }
@@ -639,7 +513,8 @@
                                 "y": -15
                             },
                             "layout": null,
-                            "expandState": "collapse"
+                            "expandState": "expand",
+                            "font-family": "comic sans ms"
                         },
                         "children": [
                             {
@@ -651,7 +526,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -664,7 +541,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -677,7 +556,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -690,7 +571,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -703,7 +586,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -716,7 +601,24 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cl9cm9doxog0",
+                                    "created": 1657189410708,
+                                    "text": "编译、打包效率",
+                                    "layout_mind_offset": {
+                                        "x": -43,
+                                        "y": -15
+                                    },
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             }
@@ -735,11 +637,8 @@
                     },
                     "layout": null,
                     "note": "- 体验丝滑\n- 体验一致\n- 交互nice\n- 友好提示",
-                    "expandState": "expand",
-                    "layout_right_offset": {
-                        "x": 1,
-                        "y": -41
-                    }
+                    "expandState": "collapse",
+                    "font-family": "comic sans ms"
                 },
                 "children": [
                     {
@@ -752,7 +651,8 @@
                                 "y": -15
                             },
                             "layout": null,
-                            "expandState": "expand"
+                            "expandState": "expand",
+                            "font-family": "comic sans ms"
                         },
                         "children": [
                             {
@@ -764,7 +664,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -777,7 +679,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -790,7 +694,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             }
@@ -806,7 +712,8 @@
                                 "y": -15
                             },
                             "layout": null,
-                            "expandState": "collapse"
+                            "expandState": "expand",
+                            "font-family": "comic sans ms"
                         },
                         "children": [
                             {
@@ -818,7 +725,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -831,7 +740,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -844,7 +755,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -857,7 +770,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -870,7 +785,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             }
@@ -885,7 +802,9 @@
                                 "x": -43,
                                 "y": -15
                             },
-                            "layout": null
+                            "layout": null,
+                            "font-family": "comic sans ms",
+                            "expandState": "expand"
                         },
                         "children": [
                             {
@@ -897,7 +816,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             },
@@ -910,7 +831,9 @@
                                         "x": -43,
                                         "y": -15
                                     },
-                                    "layout": null
+                                    "layout": null,
+                                    "font-family": "comic sans ms",
+                                    "expandState": "expand"
                                 },
                                 "children": []
                             }
@@ -928,13 +851,15 @@
                         "y": -15
                     },
                     "layout": null,
-                    "note": "有可能上面建立的一些体系很容易的被一些新技术取缔，需要持续学习"
+                    "note": "有可能基于现有技术建立的一些体系很容易的被一些新技术取缔，比如react/vue => lowcode开发后台、原生开发 => 跨端开发，需要持续学习",
+                    "font-family": "comic sans ms",
+                    "expandState": "expand"
                 },
                 "children": []
             }
         ]
     },
     "template": "right",
-    "theme": "fresh-blue",
+    "theme": "snow-compact",
     "version": "1.4.43"
 }

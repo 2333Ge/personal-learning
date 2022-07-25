@@ -35,7 +35,7 @@ tags:
 - 精准时间：react-native-background-timer
 - 二维码：react-native-qrcode-svg
 - 自定义相机：react-native-camera
-
+- [lottie](https://github.com/airbnb/lottie-react-native): AE => JSON => 动画
 ## bug 排查方法
 
 - 找 bundle文件 对应代码
