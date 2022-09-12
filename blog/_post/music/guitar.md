@@ -12,12 +12,12 @@ tags:
 ## Hello World 
 
 1. [吉他选购](https://www.bilibili.com/video/BV1FB4y1s761) 
-
+      
 my: 卡马 D1C 
 
 
 2. [调音](https://www.bilibili.com/video/BV1db411c7gQ?p=2)
-
+  
 工具： 调音器 || APP Finger
 
 注意：先松琴弦再调音
@@ -84,12 +84,13 @@ my: 卡马 D1C
 
 连音线: 连接两个相同的音，表示第一个的延长，时值等于两个音的总和
 
-附点： 让音符的时值延长一半
+附点： 让音符的时值延长一半  
 
 休止符： 不发音、单拍子时间要给到位
 
 止音：小指
 
+![](image-daxueba/pu-test.jpg)
 ## 小星星（lv1）
 
 ![](image/small-star.jpg)
@@ -111,7 +112,7 @@ my: 卡马 D1C
 
 ## 左手爬格子
 
-要点：
+要点：   
 
 - 手型：古典手型
 - 四指张开，力气，保持一个手指一个品格，3456
@@ -124,9 +125,10 @@ my: 卡马 D1C
 
 ## 和弦
 
-3个以上的音符同时发出声音
+![](./image/he-xian1.jpg)
+  
+![](./image/he-xian2.jpg)
 
-   
 ## 同桌的你(lv1)
 
 ![](./image/my-tong-zhuo.png)
