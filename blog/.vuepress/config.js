@@ -11,7 +11,7 @@ module.exports = {
     lineNumbers: true,
   },
   themeConfig: {
-    logo: "./logo.jpg",
+    logo: "/logo.jpg",
     searchPlaceholder: "Search ⌘+K",
     /*-----------------博客及评论配置-----------------------*/
     blog: {

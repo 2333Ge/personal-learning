@@ -8,6 +8,8 @@ tags:
   - github-actions
 ---
 
+> 在 GitHub Actions 的仓库中自动化、自定义和执行软件开发工作流程。 您可以发现、创建和共享操作以执行您喜欢的任何作业（包括 CI/CD），并将操作合并到完全自定义的工作流程中。
+
 <!-- more -->
 
 ## github actions 作用
@@ -17,8 +19,6 @@ tags:
 很多操作在不同项目里面是类似的，完全可以共享。GitHub 注意到了这一点，想出了一个很妙的点子，允许开发者把每个操作写成独立的脚本文件，存放到代码仓库，使得其他开发者可以引用。
 
 如果你需要某个 action，不必自己写复杂的脚本，直接引用他人写好的 action 即可，整个持续集成过程，就变成了一个 actions 的组合。这就是 GitHub Actions 最特别的地方。
-
-> 在 GitHub Actions 的仓库中自动化、自定义和执行软件开发工作流程。 您可以发现、创建和共享操作以执行您喜欢的任何作业（包括 CI/CD），并将操作合并到完全自定义的工作流程中。
 
 ## 基本概念
 
@@ -76,6 +76,8 @@ jobs:
 
 ## 参考文章
 
-[1] [GitHub Actions 入门教程 -- 阮一峰 ](https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
-[2] [YAML 语言教程 -- 阮一峰](https://www.ruanyifeng.com/blog/2016/07/yaml.html)
+[1] [GitHub Actions 入门教程 -- 阮一峰 ](https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)  
+
+[2] [YAML 语言教程 -- 阮一峰](https://www.ruanyifeng.com/blog/2016/07/yaml.html)  
+
 [3] [官网](https://docs.github.com/cn/actions)
