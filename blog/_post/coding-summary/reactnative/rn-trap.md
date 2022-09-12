@@ -85,8 +85,66 @@ yOffset?.current.interpolate({
               outputRange: [0, 1],
             })
 ```
+## 代码画三角形
+
+## 列表 + 键盘
+
+- 滑动列表键盘不消失的情况，
+
 ## 其他
 
 - 原生视图被优化引发的问题：设置`removeClippedSubviews={false}`，如只参与布局的视图容易被优化，通过Ref计算当前view的属性失败
 - 同向滑动冲突：设置属性`nestedScrollEnabled={true}`
 - react-native debugger 连接问题: https://github.com/jhen0409/react-native-debugger/issues/620
+- 
+
+## ios
+
+### 换行问题显示问题
+
+图文混排，iPhone XS 换行失败 (有图片和空字符串的时候)
+
+```tsx
+const Title: React.FC<TitleProps> = ({
+  style,
+  title = new Array(100).fill('中').join(''),
+  displayIcon = true,
+  icon = 'https://i9.taou.com/maimai/p/32183/8953_6_82VpJ0euQSvlSKXk',
+  numberOfLines = 2,
+}) => {
+  if (!title?.trim()) return null;
+  const iconNode = displayIcon && (
+    <>
+      <Image
+        style={{ height: 16, width: 16 }}
+        source={{ uri: icon }}
+        resizeMode="contain"
+      />{' '}
+    </>
+  );
+  return (
+    <Text
+      style={[styles.text, StyleSheet.flatten(style)]}
+      ellipsizeMode="tail"
+      numberOfLines={numberOfLines}
+    >
+      {iconNode}
+      <Text style={{ fontSize: 16 }}>{title.trim()}</Text>
+    </Text>
+  );
+};
+
+const styles = StyleSheet.create({
+  text: {
+    // 指定fontSize时，iPhone xs 换行失败
+    fontSize: 16,
+    lineHeight: 18,
+    color: '#15161F',
+    fontWeight: 'bold',
+  },
+  icon: {
+    height: 16,
+    width: 16,
+  },
+});
+```

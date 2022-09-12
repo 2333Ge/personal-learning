@@ -24,3 +24,46 @@ tags:
 
 [a1]: ./image/codeInOneWindow.png
 [official]: https://developer.android.google.cn/studio/intro/keyboard-shortcuts
+
+
+## 技巧
+
+### Android 模拟器
+
+创建好模拟器后
+
+#### 终端打开
+
+```bash
+$ emulator -list-avds
+Android_10_1080p
+Android_10_1080p_no_Frame
+$ emulator -avd Android_10_1080p_no_Frame
+```
+
+
+若报错
+
+```
+emulator: ERROR: No AVD specified. Use '@foo' or '-avd foo' to launch a virtual device named 'foo'
+```
+
+配置zshrc, [参考](https://www.codegrepper.com/code-examples/whatever/PANIC%3A+Missing+emulator+engine+program+for+%27x86%27+CPU.)
+
+```bash
+export ANDROID_HOME=/Users/ych/Library/Android/sdk
+# export PATH=${PATH}:${ANDROID_HOME}/emulator # 这一段为什么不行
+export PATH=$ANDROID_HOME/emulator:$PATH
+```
+#### [RN 开发者菜单](https://reactnative.cn/docs/debugging)
+
+```
+cmd m
+```
+
+```
+adb shell input keyevent 82
+```
+
+
+

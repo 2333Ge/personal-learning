@@ -61,3 +61,4 @@ ppi = √(横向像素²+纵向像素²)/屏幕尺寸
 [2] [iPhone 屏幕分辨率和适配规则（基础篇）](https://www.jianshu.com/p/41a8ccdf91ed)  
 [3] [逻辑分辨率和物理分辨率区别](https://www.zhihu.com/question/40506180 )  
 [4] [什么是 dp、pt、sp？](https://zhuanlan.zhihu.com/p/26481853)
+[5] [css的值与单位--mdn(推荐)](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Values_and_units)
