@@ -2,6 +2,7 @@
 title: 跟着吉他大学霸学吉他
 date: 2022-08-21
 category: music
+cover: /images/bg-guitar-schedule.jpg
 tags:
   - music
   - guitar

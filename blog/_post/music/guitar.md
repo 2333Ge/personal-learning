@@ -2,6 +2,7 @@
 title: 吉他入门笔记
 date: 2022-06-25
 category: music
+cover: /images/bg-guitar.jpeg
 tags:
   - music
   - guitar
