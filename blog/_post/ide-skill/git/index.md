@@ -85,6 +85,14 @@ git log -g
 git branch <分支> commitId // 用对应日志建立新分支
 ```
 
+- 远程仓库设置(可以设置本地路径)
+
+```
+git remote add origin ../remote
+```
+- 项目纠错技巧 git bisect: https://www.ruanyifeng.com/blog/2018/12/git-bisect.html
+
+
 ## 命令简写
 
 |      完整      |  简写   |

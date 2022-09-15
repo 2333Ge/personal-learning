@@ -90,6 +90,7 @@ yOffset?.current.interpolate({
 ## 列表 + 键盘
 
 - 滑动列表键盘不消失的情况，
+- 滑动列表中的点击，需要点两次：设置`disableScrollViewPanResponder`
 
 ## 其他
 
