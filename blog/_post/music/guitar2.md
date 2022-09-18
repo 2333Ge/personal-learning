@@ -10,7 +10,7 @@ tags:
 
 <!-- more -->
 
-## 入门必看防弯路
+# 入门必看防弯路
 
 [入门先看](https://www.bilibili.com/video/BV1rS4y1J7TS)，打卡练习时刻表：
 
@@ -24,7 +24,7 @@ tags:
 
 
 
-## 右手基基本功
+# 右手基基本功
 
 分级别练习
 
@@ -43,7 +43,7 @@ tags:
 
 ![](./image-daxueba/right-hand-34-7.jpg)
 
-## [左手基本功](https://www.bilibili.com/video/BV15b4y177PN/?spm_id_from=333.788&vd_source=554c813e9abf3a2eb6e0cf650060074e)
+# [左手基本功](https://www.bilibili.com/video/BV15b4y177PN/?spm_id_from=333.788&vd_source=554c813e9abf3a2eb6e0cf650060074e)
 
 
 靠弦按弦练习
@@ -56,7 +56,7 @@ tags:
 
 左手出现问题[参考](https://www.bilibili.com/video/BV13Z4y1i7e1?spm_id_from=333.999.0.0&vd_source=554c813e9abf3a2eb6e0cf650060074e)
 
-## 基础乐理
+# 基础乐理
 
 - 咋震动(一秒多少次) 音调
 - 震多大 响度
@@ -120,3 +120,34 @@ tags:
 ## 首调唱名法
 
 首调唱名法：只称呼音级、序号、不代表具体音的叫法 
+
+# 全指版音阶系统教学
+
+都是标准音时，空弦音1-6弦 分别，E2、A2、D3、G3、B3、E4
+
+![](./image-daxueba/standard-xian-sound.png)
+
+品与品的音高关系：约靠近琴头音调约低，每个品格与挨着的品格相差半音
+
+从六弦空弦音开始，顺次往右按住每品弹，到与空弦音重复的品就跳过这一品，去弹下一根弦的空弦音，这不就和12平均律的音列一模一样吗（试着弹一下 ，很神奇）
+
+
+小公式：
+
+除了2、3弦，高弦n品 = 低弦n品 + 5品
+
+2弦n品 = 3弦n品 + 4品
+
+从任意一品开始都可以弹出一个12平均律音列
+
+![](./image-daxueba/pin-jun-lv12-jita.png)
+
+把位：指板上某品到某品的区域
+
+## 音阶的弹法咋来的
+
+C大调
+
+![](./image-daxueba/big-c.png)
+
+弹法见[视频](https://www.bilibili.com/video/BV1X44y1N7x5)
