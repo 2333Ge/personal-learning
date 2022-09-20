@@ -150,6 +150,12 @@ C大调
 ![](./image-daxueba/big-c.png)
 
 弹法见[视频](https://www.bilibili.com/video/BV1X44y1N7x5)
+
+## 跟练
+
+[跟练视频 ](https://www.bilibili.com/video/BV1ju411i7yA)
+
+E2开始的0-3品音阶
 # 参考文献
 
 [1] [维基百科-音高](https://zh.m.wikipedia.org/zh-cn/%E9%9F%B3%E9%AB%98)
