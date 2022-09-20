@@ -1,5 +1,5 @@
 ---
-title: Vim 入门
+title: Vim 小技巧
 date: 2022-05-12
 category: Shell
 tags:
@@ -20,7 +20,7 @@ vim 模式：
   - 命令模式：在 shell 中输入命令的命令模式
   - 可视模式：选择要操作的文本。 -->
 
-> 理解：vim's interface,itself, is a programming
+> 理解：vim接口本身是一种编程
 
 
 ### 查看帮助
@@ -103,15 +103,23 @@ h    l
 尝试与上面编辑、移动符号组合
 
 `d4d`: 删除4行
+
 `5j`: 向下移动5行
+
 `d5w`: 删除5个词
 
 ### 修饰符
+
 `i`: inside
-`a` 整体，包括周会或
+
+`a` 整体
+
+eg：
 
 `ci(`: 删除光标()中的内容，进入编辑模式
+
 `c%`: 如当前光标停留在（，删除()及()中的内容
+
 `da(`:  删除光标所在，被()包裹的内容
 
 ## 可视模式
@@ -127,13 +135,17 @@ h    l
 正常模式按`:`进入
 
 `:tabnew`: 新建tab
+
 `:/关键词`：搜索关键词，光标跳转到关键词处
+
 `:set mouse=a`: 启动对鼠标的支持
+
 `:qa!`:  离开 Vim，(当心，所有的改动都会丢失！)
 
 ## 相关链接
 
-[1] [官方中文手册](https://github.com/yianwillis/vimcdoc)
+[1] [官方中文手册](https://github.com/yianwillis/vimcdoc)  
+
 [2] [官方中文手册-总览](https://yianwillis.github.io/vimcdoc/doc/help.html)
 
 
