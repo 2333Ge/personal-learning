@@ -15,7 +15,7 @@ tags:
 - 现有插件提供的`snippet`(如：equimper.react-native-react-redux)弊端
   - 学习与记忆成本高
   - 不一定能达到目标效果，如打印log想自定义tag方便过滤,如：`console.log('name====>', name)`
-- 便于在任意文件使用，如`markdown`文件中画表格(目前没想到除了自定义代码片段，如何更方便地在这种文件中定义模版)
+- 便于在任意文件使用，如`markdown`文件中画表格(目前没想到除了自定义代码片段，如何更方便地在这种文件减少重复代码的编辑工作)
 ## Hello World
 ### 创建片段
 
@@ -189,7 +189,7 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
 
 ## 总结
 
-总的来说snippet使用比较简单，提效非常明显且优雅，强烈安利。本文不过拾人牙慧，建议可上[官网][official]详细了解下
+总的来说snippet使用比较简单，提效非常明显且优雅，强烈安利。本文不过拾人牙慧，建议上[官网][official]详细了解下
 
 ps: 片段生成工具：[Snippet生成器](https://snippet-generator.app/)
 
