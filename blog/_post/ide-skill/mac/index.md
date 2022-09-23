@@ -62,3 +62,7 @@ tree -I “node_modules” // 过滤指定目录
 ### 达尔优键盘问题记录
 
 - cmd+a、c 等键失效: fn+win
+
+### 系统日志
+
+大多数Unix系统中，日志放在`/var/log`文件夹下

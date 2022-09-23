@@ -6,7 +6,10 @@
     "push": "./bin/push.sh",
     "dev": "vuepress dev blog",
     "build": "vuepress build blog",
-    "deploy": "./bin/deploy.sh"
+    "deploy": "./bin/deploy.sh",
+    "ppt:build": "slidev build slidev/index.md",
+    "ppt:dev": "slidev --open slidev/index.md",
+    "ppt:export": "slidev export slidev/index.md"
   },
   "devDependencies": {
     "vuepress": "^1.9.7",
