@@ -11,13 +11,14 @@ tags:
 
 - dsl(domain-specific language): 同时具备描述能力和逻辑能力的语言[1][2]。
 - CI/CD(Continuous Integration/Continuous Delivery): 持续集成/持续交付[3]
+  - 持续集成，它指的是那些“当您的代码变动时，自动运行的东西”
 - pr(Pull Request): 和`merge request`一个意思，`merge request` gitlab 常用，拉取代码修改代码发起合并请求。
 - ssr：服务端渲染
 - 公钥私钥、非对称加密：非对称加密算法需要两个密钥：公开密钥（publickey:简称公钥）和私有密钥（privatekey:简称私钥）。公钥与私钥是一对，如果用公钥对数据进行加密，只有用对应的私钥才能解密。因为加密和解密使用的是两个不同的密钥[5]
 ## 数据分析相关名词
 
 - UGC(User Generated Content): 用户原创内容
-- 
+
 ## 参考文章
 
 [1] [五分钟，科普下 dsl](https://zhuanlan.zhihu.com/p/24800713)

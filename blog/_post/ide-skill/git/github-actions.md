@@ -12,27 +12,25 @@ tags:
 
 <!-- more -->
 
-## github actions 作用[1]
+## github actions 作用
 
-将编程以外的步骤抽象出来，使可以复用可以共享：
+将编程以外的步骤抽象出来，使可以复用可以共享，如拉代码、打包、部署：
 
-大家知道，持续集成由很多操作组成，比如抓取代码、运行测试、登录远程服务器，发布到第三方服务等等。GitHub 把这些操作就称为 actions。
-
-很多操作在不同项目里面是类似的，完全可以共享。GitHub 注意到了这一点，想出了一个很妙的点子，允许开发者把每个操作写成独立的脚本文件，存放到代码仓库，使得其他开发者可以引用。
-
-如果你需要某个 action，不必自己写复杂的脚本，直接引用他人写好的 action 即可，整个持续集成过程，就变成了一个 actions 的组合。这就是 GitHub Actions 最特别的地方。
+> 大家知道，持续集成由很多操作组成，比如抓取代码、运行测试、登录远程服务器，发布到第三方服务等等。GitHub 把这些操作就称为 actions。  
+> 很多操作在不同项目里面是类似的，完全可以共享。GitHub 注意到了这一点，想出了一个很妙的点子，允许开发者把每个操作写成独立的脚本文件，存放到代码仓库，使得其他开发者可以引用。  
+> 如果你需要某个 action，不必自己写复杂的脚本，直接引用他人写好的 action 即可，整个持续集成过程，就变成了一个 actions 的组合。这就是 GitHub Actions 最特别的地方。[1]
 
 ## 基本概念
 
 github actions 由以下几个部分构成
 
-- workflow （工作流程）：持续集成一次运行的过程，就是一个 workflow。
+- `workflow （工作流程）`：持续集成一次运行的过程，就是一个 workflow。
 
-- job （任务）：一个 workflow 由一个或多个 jobs 构成，含义是一次持续集成的运行，可以完成多个任务。
+- `job （任务）`：一个 workflow 由一个或多个 jobs 构成，含义是一次持续集成的运行，可以完成多个任务。
 
-- step（步骤）：每个 job 由多个 step 构成，一步步完成。
+- `step（步骤）`：每个 job 由多个 step 构成，一步步完成。
 
-- action （动作）：每个 step 可以依次执行一个或多个命令（action）。
+- `action （动作）`：每个 step 可以依次执行一个或多个命令（action）。
 
 ## github actions 文件组成[1]
 
@@ -158,6 +156,10 @@ const qqEmail = core.getInput("qq-email");
 ## 综合应用
 
 自定义签到actions：https://github.com/2333Ge/join-in
+
+---
+
+本文持续更新版收录在[此处](https://i2333g3.gitee.io/personal-learning-blog/post/2022/07/13/github-actions.html)
 
 ## 相关链接
 
