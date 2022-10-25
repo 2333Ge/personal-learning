@@ -15,6 +15,30 @@ tags:
 - pr(Pull Request): 和`merge request`一个意思，`merge request` gitlab 常用，拉取代码修改代码发起合并请求。
 - ssr：服务端渲染
 - 公钥私钥、非对称加密：非对称加密算法需要两个密钥：公开密钥（publickey:简称公钥）和私有密钥（privatekey:简称私钥）。公钥与私钥是一对，如果用公钥对数据进行加密，只有用对应的私钥才能解密。因为加密和解密使用的是两个不同的密钥[5]
+## URI（Uniform Resource Identifier）[6]
+
+统一资源标志符，用于标志某一互联网资源名称的字符串，该种标志允许用户对网络中（一般指万维网）的资源通过特定的协议进行交互操作。
+
+通用格式：
+
+[协议名]://[用户名]:[密码]@[主机名]:[端口]/[路径]?[查询参数]#[片段ID]
+
+eg:
+
+```
+                    hierarchical part
+        ┌───────────────────┴─────────────────────┐
+                    authority               path
+        ┌───────────────┴───────────────┐┌───┴────┐
+  abc://username:password@example.com:123/path/data?key=value&key2=value2#fragid1
+  └┬┘   └───────┬───────┘ └────┬────┘ └┬┘           └─────────┬─────────┘ └──┬──┘
+scheme  user information     host     port                  query         fragment
+
+  urn:example:mammal:monotreme:echidna
+  └┬┘ └──────────────┬───────────────┘
+scheme              path
+```
+
 ## 数据分析相关名词
 
 - UGC(User Generated Content): 用户原创内容
@@ -25,4 +49,5 @@ tags:
 [2] [Android 的 gradle 用到的 DSL 语言是个什么鬼?](https://blog.csdn.net/lpjishu/article/details/72530910)
 [3] [什么是CI/CD](https://linux.cn/article-9926-1.html?pr)
 [4] [开发中经常提及的Pr是什么意思？](https://www.zhihu.com/question/355235592)  
-[5] [百度百科-非对称加密算法](https://baike.baidu.com/item/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/1208652)
+[5] [百度百科-非对称加密算法](https://baike.baidu.com/item/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/1208652)  
+[6] [维基百科-URI](https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E6%A0%87%E5%BF%97%E7%AC%A6)

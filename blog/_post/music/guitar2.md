@@ -12,9 +12,16 @@ tags:
 
 # 入门必看防弯路
 
-[入门先看](https://www.bilibili.com/video/BV1rS4y1J7TS)，打卡练习时刻表：
+- [新手整体规划](https://www.bilibili.com/video/BV1rS4y1W7is)
+  - 了解琴、[保养](https://www.bilibili.com/video/BV1RB4y1Y7Dj)
+  - 识谱：六线谱、简谱、五线谱
+  - 乐理
+  - 击弦、滑弦、勾弦、扫弦，三个黑铁 => 扫弦 => 黄金*3 => 第二种扫弦 => 砖石 => 大横按 => 大师
+- [每天练琴内容](https://www.bilibili.com/video/BV1rS4y1J7TS)，
+- [新手常见问题](https://www.bilibili.com/video/BV14d4y1R7dA)
+- [分级练习曲](https://space.bilibili.com/87918598/article)  -- 专栏文集
 
-![](./image-daxueba/schedule.jpg)
+吉他分类：古典（古典音乐）、民谣（弹唱伴奏、指弹）、电（摇滚），木吉他常备当做民谣吉他和古典吉他的总称
 
 时刻注意：
 
@@ -22,6 +29,15 @@ tags:
 2. 姿势做标准，不能将就，可以慢，不能错
 3. 坚持
 
+整体规划表：
+
+![](./image-daxueba/schedule-all1.jpg)
+
+![](./image-daxueba/schedule-all2.jpg)
+
+每日练习时刻表：
+
+![](./image-daxueba/schedule.jpg)
 
 
 # 右手基基本功

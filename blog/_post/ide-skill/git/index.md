@@ -100,6 +100,22 @@ git remote add origin ../remote
 | git commit -m  | git cm  |
 | git commit -am | git acm |
 
+## 其他
+
+### 无法访问github?
+
+自从 2021 年 3 月初某会开始，很多地区已经间歇性无法访问 Github 了。
+这种情况无论是改 DNS 还是改 Hosts 都没用，因为是蔷对 Github 域名 SNI 干扰/封锁，任意 IP 指向 Github 去访问时，该 IP 的 443 端口就会超时 3 分钟！
+因为是随机干扰的，所以有时候会碰到 “短暂” 可用的 IP（模拟丢包、伪装为网站自身网络问题）。
+
+有兴趣可以看看这篇详细讲解分析的文章： https://www.v2ex.com/t/758568
+
+因此目前只有三种方法可以访问 Github 了：
+
+- 梯子
+- 镜像站~~（ https://hub.fastgit.xyz / 访问 Github 自动重定向至镜像站的方法）~~(❎)
+- 肉身出国
+- 本地代理直连加速，绕过 SNI 干扰（ https://github.com/docmirror/dev-sidecar / https://gitee.com/docmirror/dev-sidecar ）
 
 ## 相关链接
 
