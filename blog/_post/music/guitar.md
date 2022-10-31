@@ -31,7 +31,7 @@ my: 卡马 D1C
 
 各个手指向手心移动
 
-![](image/kong-xian.jpeg)
+![](./image/kong-xian.jpeg)
 
 5. 左手按弦
 
@@ -45,12 +45,12 @@ my: 卡马 D1C
 
 4分音符练习：
 
-![](image/fen-yin-fu-4.jpeg)
+![](./image/fen-yin-fu-4.jpeg)
 
 
 8分音符练习： 
 
-![](image/fen-yin-fu-8.jpeg)
+![](./image/fen-yin-fu-8.jpeg)
 
 ##  谱子
 
@@ -81,7 +81,7 @@ my: 卡马 D1C
 
 时值：音的长短，4分音符1拍，8分半拍
 
-![](image/shi-zhi.jpeg)
+![](./image/shi-zhi.jpeg)
 
 连音线: 连接两个相同的音，表示第一个的延长，时值等于两个音的总和
 
@@ -91,20 +91,20 @@ my: 卡马 D1C
 
 止音：小指
 
-![](image-daxueba/pu-test.jpg)
+![](./image-daxueba/pu-test.jpg)
 ## 小星星（lv1）
 
-![](image/small-star.jpg)
+![](./image/small-star.jpg)
 
 ## 欢乐颂(lv2)
 
 需要达到看到五线谱能知道该按什么位置
 
-![](image/huan-le-song.jpeg)
+![](./image/huan-le-song.jpeg)
 
 ## 弹唱斑马斑马(lv3)
-![](image/banma1.jpg)
-![](image/banma2.jpg)
+![](./image/banma1.jpg)
+![](./image/banma2.jpg)
 ## 右手基基本功
 
 加速版

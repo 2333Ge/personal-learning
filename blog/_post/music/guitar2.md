@@ -217,6 +217,11 @@ A比B高n度的音：B = A + n%7 - 1 + Math.floor(n/7)组
 ![](./image-daxueba/yin-shu2.jpg)
 ![](./image-daxueba/yin-shu3.jpg)
 
+## 跟练
+<!-- 待确认 -->
+[跟练视频 ](https://www.bilibili.com/video/BV1ju411i7yA)
+
+E2开始的0-3品音阶
 # 参考文献
 
 [1] [维基百科-音高](https://zh.m.wikipedia.org/zh-cn/%E9%9F%B3%E9%AB%98)  
