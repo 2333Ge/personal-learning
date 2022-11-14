@@ -89,7 +89,24 @@
 
 - 组件库
 
+前端：
+
+- webpack
+- babel
+- bundle
+- npm、yarn、pnpm
+- html5
+- css3、css
+
 # 油猴
 
 - 自定义搜索
 - 热榜整理
+- 笔记同步
+
+# 工作同步
+
+- TabSwitch
+- 单测
+  - 项目
+  - 文档

@@ -36,6 +36,12 @@ tags:
 - 二维码：react-native-qrcode-svg
 - 自定义相机：react-native-camera
 - [lottie](https://github.com/airbnb/lottie-react-native): AE => JSON => 动画
+- 滑动TabView：react-native-scrollable-tab-view
+- 深合并：deepmerge
+- iphonex:react-native-iphone-x-helper 兼容底部操作提示
+- 单元测试：jest、enzyme
+
+
 ## bug 排查方法
 
 - 找 bundle文件 对应代码

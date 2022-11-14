@@ -96,3 +96,50 @@ type Concrete<Type> = {
 };
 ```
 
+## React 导出 useImperativeHandle 声明
+
+参考：https://stackoverflow.com/questions/62210286/declare-type-with-react-useimperativehandle
+
+定义：
+
+```ts
+type CountdownProps = {}
+    
+type CountdownHandle = {
+  start: () => void,
+}
+    
+const Countdown: React.ForwardRefRenderFunction<CountdownHandle, CountdownProps> = (
+  props,
+  forwardedRef,
+) => {
+  React.useImperativeHandle(forwardedRef, ()=>({
+    start() {
+      alert('Start');
+    }
+  });
+
+  return <div>Countdown</div>;
+}
+
+export default React.forwardRef(Countdown);
+
+```
+
+使用：
+```ts
+const App: React.FC = () => {
+  // this will be inferred as `CountdownHandle`
+  type CountdownHandle = React.ElementRef<typeof Countdown>;
+
+  const ref = React.useRef<CountdownHandle>(null); // assign null makes it compatible with elements.
+
+  return (
+    <Countdown ref={ref} />
+  );
+};
+```
+
+
+
+

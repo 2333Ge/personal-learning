@@ -1,5 +1,5 @@
 ---
-title: Vim 小技巧
+title: Vim 概览
 date: 2022-05-12
 category: Shell
 tags:
