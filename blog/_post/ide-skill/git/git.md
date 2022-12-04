@@ -177,6 +177,11 @@ b47892 is the first bad commit
 # 退出查错 
 git bisect reset
 ```
+# 查看push到远程仓库的时间
+
+```bash
+git reflog show origin/V1.0.15_dev --pretty='format:%C(red)%h%Creset %C(cyan)%gd%Creset %C(green)%gs%Creset: %s' --date=iso
+```
 
 # 命令简写
 
