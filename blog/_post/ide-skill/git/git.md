@@ -140,7 +140,7 @@ git branch -help
 ## 新建并切换分支
 
 ```
-git checkout -b + 分支
+git checkout -b + 分
 ```
 
 ## 误操作后的恢复(有 commit 日志)
