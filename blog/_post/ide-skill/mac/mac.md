@@ -37,7 +37,7 @@ https://support.apple.com/zh-cn/guide/terminal/welcome/2.9/mac
 |       打开当前目录       | open . |
 | 列出当前目录文件及其权限 | ls -l  |
 
-### 打印目录树
+### **打印目录树**
 
 ```
 brew install tree

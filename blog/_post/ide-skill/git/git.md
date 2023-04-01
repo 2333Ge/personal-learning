@@ -37,7 +37,7 @@ vim ~/.gitconfig
 
 # 踩坑记录
 
-### warning: redirecting to https://code....
+## warning: redirecting to https://code....
 
 重定向
 ```sh
@@ -53,6 +53,9 @@ git remote add origin git@github.com:Nehic/demo.git
 // pull一下看还会不会提示warning: redirecting to XXX
 git pull
 ```
+## git 拉不下代码
+
+https://blog.csdn.net/qq_30376375/article/details/116504157
 
 # 实用指令
 

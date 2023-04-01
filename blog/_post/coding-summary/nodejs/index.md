@@ -388,7 +388,7 @@ fs.writeFile('/Users/joe/test.txt', content, err => {
 ## 相关question 
 
 - [Ajax](https://baike.baidu.com/item/ajax/8425?fr=aladdin)? Ajax 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。
-
+****
 
 ## 随记
 
