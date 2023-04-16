@@ -1,5 +1,88 @@
-# 相关资料
+# 工具
 
+prompt汇总：
+- https://qddmercny4.feishu.cn/sheets/shtcnMklYu0WsXEDUXXanrSEB2m
+- https://zl49so8lbq.feishu.cn/wiki/wikcnlmCYpKYFrH8ek1sS2ooy8d
+
+learning prompt：https://learningprompt.wiki/docs/chatgpt-learning-path
+
+prompt技巧：https://zhuanlan.zhihu.com/p/617524191
+
+## 编程相关
+
+ide: https://www.cursor.so/
+
+copilot介绍&使用：https://nira.com/github-copilot/
+
+copilot插件：https://githubnext.com/projects/copilot-labs/
+
+Copilot X: https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/
+内测申请：https://github.com/github-copilot/chat_waitlist_signup/join
+
+
+## 绘图相关
+
+midjourney 平替 stable diffusion：https://www.8btc.com/article/6774458
+
+stable diffusion 体验：https://playgroundai.com/create
+
+百度文心一格（图片）：https://yige.baidu.com/
+
+## 综合性
+
+ai聊天汇总: https://poe.com/
+
+### chatgpt
+
+- openai api 官网介绍：https://platform.openai.com/docs/introduction
+
+申请 waitlist
+
+- https://openai.com/waitlist/plugins (⭐️，新东西早点申请抢占市场)
+- https://openai.com/waitlist/gpt-4-api
+
+免费gpt4：https://ora.sh/openai/gpt4
+
+**插件系统**
+
+https://github.com/openai/plugins-quickstart
+
+demo：https://github.com/openai/chatgpt-retrieval-plugin
+> Find an example video of a Retrieval Plugin that has access to the UN Annual Reports from 2018 to 2022 [here](https://cdn.openai.com/chat-plugins/retrieval-gh-repo-readme/Retrieval-Final.mp4)
+
+
+- 介绍文章：https://mp.weixin.qq.com/s/F2CgJwTC0WUGdziKefjIZA
+
+
+### **claude**
+
+弱化版chatgpt：https://www.anthropic.com/product
+
+- 介绍文章：https://mp.weixin.qq.com/s/QB85YPjh6DMBTPla4NDfXg
+
+### new bing
+
+跳转国内解决思路
+
+- https://juejin.cn/post/7202531472720592951
+- https://zhuanlan.zhihu.com/p/605970396
+
+## 生产力工具&其他
+
+gptcommit, cursor, codeium, copilot、newbing
+
+opencat：客户端gpt工具(似乎api模式，不容易断连)，
+
+agentgbt: https://agentgpt.reworkd.ai/   
+
+
+飞书：https://github.com/ConnectAI-E/Feishu-OpenAI
+
+ai shell: https://github.com/BuilderIO/ai-shell
+
+https://aws.amazon.com/cn/codewhisperer/
+
+# 相关资料
 
 推文-ai能做的事：https://twitter.com/charliecurnin/status/1638942497983598592
 
@@ -7,7 +90,7 @@ ai相关论文汇总？：https://briefgpt.xyz/
 
 LLMs：https://learnprompting.org/zh-Hans/docs/advanced_applications/mrkl
 
-# 相关文章
+## 相关文章
 
 「ChatGPT最强竞品」爆火：不限量不要钱免注册！一手实测体验在此：https://mp.weixin.qq.com/s/QB85YPjh6DMBTPla4NDfXg
 
@@ -27,88 +110,7 @@ AutoGPT太火了，无需人类插手自主完成任务，GitHub2.7万星 :https
 
 最详细全文翻译！微软155页大工程首次揭示GPT-4超能力（浓缩精华版）：https://mp.weixin.qq.com/s/-MizP0JdgR5pLKDzlJYZnw
 
-
-prompt汇总：https://qddmercny4.feishu.cn/sheets/shtcnMklYu0WsXEDUXXanrSEB2m
-learning prompt:https://learningprompt.wiki/docs/chatgpt-learning-path
-prompt汇总：https://zl49so8lbq.feishu.cn/wiki/wikcnlmCYpKYFrH8ek1sS2ooy8d
-prompt技巧：https://zhuanlan.zhihu.com/p/617524191
-
-
-
-## 工具
-
-### chatgpt
-
-- openai api 官网介绍：https://platform.openai.com/docs/introduction
-
-**插件系统**
-
-https://github.com/openai/plugins-quickstart
-
-demo：https://github.com/openai/chatgpt-retrieval-plugin
-> Find an example video of a Retrieval Plugin that has access to the UN Annual Reports from 2018 to 2022 [here](https://cdn.openai.com/chat-plugins/retrieval-gh-repo-readme/Retrieval-Final.mp4)
-
-
-- 介绍文章：https://mp.weixin.qq.com/s/F2CgJwTC0WUGdziKefjIZA
-
-
-**poe**
-
-ai聊天汇总: https://poe.com/
-
-**claude**
-
-弱化版chatgpt：https://www.anthropic.com/product
-
-- 介绍文章：https://mp.weixin.qq.com/s/QB85YPjh6DMBTPla4NDfXg
-
-<!--  -->
-
-
-opencat：客户端gpt工具(似乎api模式)
-
-gptcommit, cursor, codeium, copilot、newbing
-
-midjourney 平替 stable diffusion：https://www.8btc.com/article/6774458
-stable diffusion 体验：https://playgroundai.com/create
-百度文心一格（图片）：https://yige.baidu.com/
-
-agentgbt: https://agentgpt.reworkd.ai/   
-
-ide: https://www.cursor.so/
-
-飞书：https://github.com/ConnectAI-E/Feishu-OpenAI
-
-copilot介绍&使用：https://nira.com/github-copilot/
-
-copilot插件：https://githubnext.com/projects/copilot-labs/
-
-Copilot X: https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/
-内测申请：https://github.com/github-copilot/chat_waitlist_signup/join
-
-ai shell: https://github.com/BuilderIO/ai-shell
-
-
-https://aws.amazon.com/cn/codewhisperer/
-
-gpt:
-
-申请 waitlist
-
-- https://openai.com/waitlist/plugins (⭐️)
-- https://openai.com/waitlist/gpt-4-api
-
-免费gpt4：https://ora.sh/openai/gpt4
-
-
-newbing
-
-跳转国内解决思路
-
-- https://juejin.cn/post/7202531472720592951
-- https://zhuanlan.zhihu.com/p/605970396
-
-## idea
+# 能用ai做什么
 
 - 代码优化
 - 让 gpt 总结需求生成 prompt
