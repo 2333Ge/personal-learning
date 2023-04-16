@@ -1,7 +1,15 @@
 # 相关资料
 
-# 文章
 
+推文-ai能做的事：https://twitter.com/charliecurnin/status/1638942497983598592
+
+ai相关论文汇总？：https://briefgpt.xyz/
+
+LLMs：https://learnprompting.org/zh-Hans/docs/advanced_applications/mrkl
+
+# 相关文章
+
+「ChatGPT最强竞品」爆火：不限量不要钱免注册！一手实测体验在此：https://mp.weixin.qq.com/s/QB85YPjh6DMBTPla4NDfXg
 
 ChatGPT 插件系统，正式上线： https://mp.weixin.qq.com/s/F2CgJwTC0WUGdziKefjIZA
 
@@ -17,26 +25,45 @@ GPT-5恐被叫停！马斯克、图灵奖得主等千名专家呼吁暂停超强
 
 AutoGPT太火了，无需人类插手自主完成任务，GitHub2.7万星 :https://mp.weixin.qq.com/s/bV1tPc7hNn2z06YOpzyanw
 
-「ChatGPT最强竞品」爆火：不限量不要钱免注册！一手实测体验在此：https://mp.weixin.qq.com/s/QB85YPjh6DMBTPla4NDfXg
+最详细全文翻译！微软155页大工程首次揭示GPT-4超能力（浓缩精华版）：https://mp.weixin.qq.com/s/-MizP0JdgR5pLKDzlJYZnw
 
-gpt-视频：https://player.vimeo.com/video/810996688?h=b552e96813 
-
-推文-ai能做的事：https://twitter.com/charliecurnin/status/1638942497983598592
-
-openai api 官网介绍：https://platform.openai.com/docs/introduction
-
-ai相关论文汇总？：https://briefgpt.xyz/
 
 prompt汇总：https://qddmercny4.feishu.cn/sheets/shtcnMklYu0WsXEDUXXanrSEB2m
 learning prompt:https://learningprompt.wiki/docs/chatgpt-learning-path
 prompt汇总：https://zl49so8lbq.feishu.cn/wiki/wikcnlmCYpKYFrH8ek1sS2ooy8d
 prompt技巧：https://zhuanlan.zhihu.com/p/617524191
 
-最详细全文翻译！微软155页大工程首次揭示GPT-4超能力（浓缩精华版）：https://mp.weixin.qq.com/s/-MizP0JdgR5pLKDzlJYZnw
 
-LLMs：https://learnprompting.org/zh-Hans/docs/advanced_applications/mrkl
 
 ## 工具
+
+### chatgpt
+
+- openai api 官网介绍：https://platform.openai.com/docs/introduction
+
+**插件系统**
+
+https://github.com/openai/plugins-quickstart
+
+demo：https://github.com/openai/chatgpt-retrieval-plugin
+> Find an example video of a Retrieval Plugin that has access to the UN Annual Reports from 2018 to 2022 [here](https://cdn.openai.com/chat-plugins/retrieval-gh-repo-readme/Retrieval-Final.mp4)
+
+
+- 介绍文章：https://mp.weixin.qq.com/s/F2CgJwTC0WUGdziKefjIZA
+
+
+**poe**
+
+ai聊天汇总: https://poe.com/
+
+**claude**
+
+弱化版chatgpt：https://www.anthropic.com/product
+
+- 介绍文章：https://mp.weixin.qq.com/s/QB85YPjh6DMBTPla4NDfXg
+
+<!--  -->
+
 
 opencat：客户端gpt工具(似乎api模式)
 
