@@ -142,6 +142,8 @@ eg：
 
 `:qa!`:  离开 Vim，(当心，所有的改动都会丢失！)
 
+`set  nu` 或者 `set  number` : vim显示行数
+
 ## 相关链接
 
 [1] [官方中文手册](https://github.com/yianwillis/vimcdoc)  
