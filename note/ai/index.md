@@ -1,6 +1,10 @@
 # 工具
 
-prompt汇总：
+汇总网站 hayo：https://www.hayo.com/
+
+
+**prompt汇总：**
+
 - https://qddmercny4.feishu.cn/sheets/shtcnMklYu0WsXEDUXXanrSEB2m
 - https://zl49so8lbq.feishu.cn/wiki/wikcnlmCYpKYFrH8ek1sS2ooy8d
 
@@ -28,9 +32,10 @@ stable diffusion 体验：https://playgroundai.com/create
 
 百度文心一格（图片）：https://yige.baidu.com/
 
-## 综合性
+## 综合类
 
-ai聊天汇总: https://poe.com/
+汇总: https://poe.com/
+文案类：https://www.saoma.site/
 
 ### chatgpt
 
@@ -42,6 +47,7 @@ ai聊天汇总: https://poe.com/
 - https://openai.com/waitlist/gpt-4-api
 
 免费gpt4：https://ora.sh/openai/gpt4
+平替：https://freegpt.one/
 
 **插件系统**
 
@@ -54,7 +60,7 @@ demo：https://github.com/openai/chatgpt-retrieval-plugin
 - 介绍文章：https://mp.weixin.qq.com/s/F2CgJwTC0WUGdziKefjIZA
 
 
-### **claude**
+### claude
 
 弱化版chatgpt：https://www.anthropic.com/product
 
@@ -114,8 +120,13 @@ AutoGPT太火了，无需人类插手自主完成任务，GitHub2.7万星 :https
 
 - 代码优化
 - 让 gpt 总结需求生成 prompt
+- 总结 sentry 错误规律
+- 单元测试、开发文档生成
+- 通过发布内容、浏览情况、社交网络生成人物画像
+- 代码review + 性能分析
+- 模拟面试
 
-### gpt开发者领域应用
+## gpt开发者领域应用
 
 > https://twitter.com/Barret_China/status/1638508262739034112
 

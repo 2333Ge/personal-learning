@@ -35,27 +35,12 @@ vim ~/.gitconfig
 
 ```
 
-# 踩坑记录
+## 命令简写
 
-## warning: redirecting to https://code....
-
-重定向
-```sh
-
-# 参考 https://blog.csdn.net/qq_39397845/article/details/112003403
-
-// 移除所有origin
-git remote remove origin
-
-// 重新设置origin
-git remote add origin git@github.com:Nehic/demo.git
-
-// pull一下看还会不会提示warning: redirecting to XXX
-git pull
-```
-## git 拉不下代码
-
-https://blog.csdn.net/qq_30376375/article/details/116504157
+|      完整      |  简写   |
+| :------------: | :-----: |
+| git commit -m  | git cm  |
+| git commit -am | git acm |
 
 # 实用指令
 
@@ -115,29 +100,22 @@ git revert <commit id>
 git revert -m 1 <commitHash>
 ```
 
-## 修改commit信息，如填错邮件地址
 
-参考资料：https://segmentfault.com/a/1190000041122415
-
-```bash
-# 查看commit id
-git log 
-# 重新设置基准线
-git rebase -i <最早commit> 
-# 修改commit
-git commit --amend --author="Author Name <email@address.com>" 
-# 移动到下个commit作为基准线
-git rebase --continue 
-```
-
-revert 合并提交后，再次合并分支会失效，需要revert上次revert
 
 ## 查看对应指令帮助
 
 ```bash
-~ -help;
+<指令> -help;
 # 示例
 git branch -help
+
+```
+
+```bash
+tldr <指令>
+# 示例
+tldr git grep
+
 ```
 
 ## 新建并切换分支
@@ -146,14 +124,7 @@ git branch -help
 git checkout -b + 分
 ```
 
-## 误操作后的恢复(有 commit 日志)
 
-```bash
-git reflog
-# 或者
-git log -g
-git branch <分支> commitId // 用对应日志建立新分支
-```
 
 ## 远程仓库设置(可以设置本地路径)
 
@@ -180,18 +151,87 @@ b47892 is the first bad commit
 # 退出查错 
 git bisect reset
 ```
-# 查看push到远程仓库的时间
+## 查看push到远程仓库的时间
 
 ```bash
 git reflog show origin/V1.0.15_dev --pretty='format:%C(red)%h%Creset %C(cyan)%gd%Creset %C(green)%gs%Creset: %s' --date=iso
 ```
 
-# 命令简写
+## 在git仓库查找字符串（包括历史记录中）
 
-|      完整      |  简写   |
-| :------------: | :-----: |
-| git commit -m  | git cm  |
-| git commit -am | git acm |
+示例
+
+
+```bash
+# 查找关键词search_string，并输出行号
+$ git grep -n search_string
+# 在历史查找
+$ git grep search_string HEAD~2
+# 在所有的分支中查找
+git grep search_string $(git rev-list --all)
+```
+
+## 删除文件
+
+```bash
+# 删除未跟踪的文件
+$ git clean
+# 交互式删除
+$ git clean -i
+# 显示将要被删除的文件，但是不是直接删
+$ git clean --dry-run
+# 强制删除未跟踪的文件
+$ git clean -f
+# 强制删除未跟踪的目录
+$ git clean -fd
+```
+# 踩坑记录
+
+## warning: redirecting to https://code....
+
+重定向
+```sh
+
+# 参考 https://blog.csdn.net/qq_39397845/article/details/112003403
+
+// 移除所有origin
+git remote remove origin
+
+// 重新设置origin
+git remote add origin git@github.com:Nehic/demo.git
+
+// pull一下看还会不会提示warning: redirecting to XXX
+git pull
+```
+## git 拉不下代码
+
+https://blog.csdn.net/qq_30376375/article/details/116504157
+
+## 修改commit信息，如填错邮件地址
+
+参考资料：https://segmentfault.com/a/1190000041122415
+
+```bash
+# 查看commit id
+git log 
+# 重新设置基准线
+git rebase -i <最早commit> 
+# 修改commit
+git commit --amend --author="Author Name <email@address.com>" 
+# 移动到下个commit作为基准线
+git rebase --continue 
+```
+
+revert 合并提交后，再次合并分支会失效，需要revert上次revert
+
+## 误操作后的恢复
+
+```bash
+git reflog
+# 或者
+git log -g
+git branch <分支> commitId // 用对应日志建立新分支
+```
 
 # 为什么要学习命令
 
