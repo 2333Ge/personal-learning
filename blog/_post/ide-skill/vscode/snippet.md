@@ -166,7 +166,7 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
 
 ```
 
-![位置](./image/snippet-itf.gif)
+<!-- ![位置](./image/snippet-itf.gif) -->
 
 
 ### MarkDown中创建表格
