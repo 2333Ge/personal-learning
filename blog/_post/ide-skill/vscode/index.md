@@ -11,16 +11,15 @@ tags:
 ## 快捷键
 
 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
-src/资源/keyboard-shortcuts-macos.pdf
 首选项-键盘快捷方式
 
-重构
+**重构**
 
 - 变量重命名： `f2`
 - 快速修复： `⌘ + .`
 - 重构： `⇧+⌃+r`
 
-光标
+**光标**
 
 - 多行同位置同时编辑： 鼠标中键+滑动选择、`⌥+⌘+↑、↓`
 - 插入光标： `option + click`
@@ -28,7 +27,7 @@ src/资源/keyboard-shortcuts-macos.pdf
 - 光标切到行首：`ctrl + a`
 - 光标切到行尾：`ctrl + e`
 
-基础编辑
+**基础编辑**
 
 - 平移选中内容上： `⌥ + ↑ /↓`
 - 切换自动换行（查看）：`⌥+z`
@@ -38,7 +37,7 @@ src/资源/keyboard-shortcuts-macos.pdf
 - 向左或向右缩进：`⌘+[、 ⌘+]`
 - 格式化文档：`⌥+⇧+f`
 
-导航
+**导航**
 
 - 跳转文件：`⌘+p`
 <!-- - 跳转指定行： -->
@@ -47,14 +46,16 @@ src/资源/keyboard-shortcuts-macos.pdf
 - 跳转引用：`⇧+f12`
 - 跳转实现：`⌘+f12`
 
-编辑器管理
+**编辑器管理**
 
 - 编辑器分屏：`⌘+\`
 - 切换编辑器布局(横向\纵向): `⌥+⌘+0`
 - 切换光标所在编辑器窗口：`⌘+1、2、3`
 - 当前编辑器切换(vscode多开时)：`ctrl + w`
+- 折叠当前代码块：`cmd + option + [`
+- 展开当前代码块：`cmd + option + ]`
 
-窗口
+**窗口**
 
 - 关闭当前文件：`⌘+w`
 - 非全屏模式下切换窗口: ⌘ + `
@@ -63,12 +64,25 @@ src/资源/keyboard-shortcuts-macos.pdf
 - 新建窗口：`⇧+⌘+n`
 - 禅模式，只有正在操作的代码：`⌘+k z`
 - 将当前文件在新窗口打开：`⌘+k+o`
-## 插件
+## 实用命令
 
+`cmd + p`后输入以下关键词
+
+|    中文关键词    |        英文关键词        |              说明              |
+| :--------------: | :----------------------: | :----------------------------: |
+| 求数学表达式的值 | evaluate math expression | 计算出当前选中内容的表达式结果 |
+|       大写       |        uppercase         |         选中内容转大写         |
+|       小写       |        lowercase         |         选中内容转小写         |
+|       设置       |         setting          |        打开各种设置文件        |
+
+
+
+## 插件
 ### 项目中配置推荐插件
 
 项目根目录下，.vscode 目录下添加 extensions.json 文件
-// See https://go.microsoft.com/fwlink/?LinkId=827846
+
+参考：https://go.microsoft.com/fwlink/?LinkId=827846
 
 ```
 {
@@ -148,8 +162,12 @@ https://github.com/Microsoft/vscode/issues/7426
 
 ## 其他
 
-#### vscode 正则查找目标文件示例
+### vscode 正则查找目标文件示例
 
 ```
 List[\w\W]*components[\w\W]*<List
 ```
+
+### 计算表达式
+
+选中内容 => cmd + shift + p  => evaluate math expression

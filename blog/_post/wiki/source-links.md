@@ -7,31 +7,32 @@ tags:
 ---
 
 <!-- more -->
-## 其他资源汇总贴
+## 前端
 
-- 前端实用工具：https://juejin.cn/post/7079447275755274254#refetch
-- 前端开发常用免费资源：https://juejin.cn/post/6875943665597546510
-- 前端资源汇总: https://juejin.cn/post/6844903442905825293
-- github 前端资源汇总仓库: https://github.com/helloqingfeng/Awsome-Front-End-learning-resource
-- 好彩：https://www.hi-cat.cn/
-- Android 设计相关的网站推荐：https://blog.csdn.net/leejizhou/article/details/51623082
-- VSCode 插件推荐：https://juejin.cn/post/6997186741866070023
-- Android 学习资源汇总：https://hub.fastgit.org/zhujun2730/Android-Learning-Resources
+- 网络状态的综合报告：https://almanac.httparchive.org/zh-CN/2022/
+- Chrome 调试：https://github.com/dendoink/FrontendWingman
+- webpack: https://ithelp.ithome.com.tw/users/20107789/ironman/3332?page=1
 
-### b 站资源推荐合集
+## AI
 
-- 免费素材，图片视频音频字体： [BV1gV41117k6](https://www.bilibili.com/video/BV1gV41117k6)
-- 壁纸、图标： [BV1rX4y1T7G9](https://www.bilibili.com/video/BV1rX4y1T7G9)
-- 论文、教材、电子书、教辅: [BV1D54y1W73h](https://www.bilibili.com/video/BV1D54y1W73h)
-- 学习新姿势，免费研究报告网站：[BV1cA411g75C](https://www.bilibili.com/video/BV1cA411g75C)
-- 经济管理商科数据：[BV1py4y1Y7Yb](https://www.bilibili.com/video/BV1py4y1Y7Yb)
+- 讯飞：https://xinghuo.xfyun.cn/desk
 
+### 汇总类
+
+- poe: https://poe.com
+- https://ai.nancheng.fun/
+- https://www.aigc.casa/
+## 泛用
+
+- 百度指数：https://index.baidu.com/v2/index.html#/
+- VPN推荐：https://vpncn.github.io/
 ## 自学网站
 
 - 菜鸟教程：https://www.runoob.com/
 - W3Cschool：https://www.w3cschool.cn/
 - 慕客网：https://coding.imooc.com/
 - 中国大学 MOOC: https://www.icourse163.org/
+- 大佬自学笔记：https://csdiy.wiki/
 
 ## 编程-资源列表
 
@@ -88,6 +89,27 @@ tags:
 - 设计师作品交流平台
   - https://dribbble.com/
   - http://www.ui.cn
+
+
+
+## 其他资源汇总贴
+
+- 前端实用工具：https://juejin.cn/post/7079447275755274254#refetch
+- 前端开发常用免费资源：https://juejin.cn/post/6875943665597546510
+- 前端资源汇总: https://juejin.cn/post/6844903442905825293
+- github 前端资源汇总仓库: https://github.com/helloqingfeng/Awsome-Front-End-learning-resource
+- 好彩：https://www.hi-cat.cn/
+- Android 设计相关的网站推荐：https://blog.csdn.net/leejizhou/article/details/51623082
+- VSCode 插件推荐：https://juejin.cn/post/6997186741866070023
+- Android 学习资源汇总：https://hub.fastgit.org/zhujun2730/Android-Learning-Resources
+
+### b 站资源推荐合集
+
+- 免费素材，图片视频音频字体： [BV1gV41117k6](https://www.bilibili.com/video/BV1gV41117k6)
+- 壁纸、图标： [BV1rX4y1T7G9](https://www.bilibili.com/video/BV1rX4y1T7G9)
+- 论文、教材、电子书、教辅: [BV1D54y1W73h](https://www.bilibili.com/video/BV1D54y1W73h)
+- 学习新姿势，免费研究报告网站：[BV1cA411g75C](https://www.bilibili.com/video/BV1cA411g75C)
+- 经济管理商科数据：[BV1py4y1Y7Yb](https://www.bilibili.com/video/BV1py4y1Y7Yb)
 
 ## Tips
 

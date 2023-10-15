@@ -92,6 +92,10 @@ yOffset?.current.interpolate({
 - 滑动列表键盘不消失的情况，
 - 滑动列表中的点击，需要点两次：设置`disableScrollViewPanResponder`
 
+## 图文混排
+
+- 图文混排，第一个是图片是行高失效
+
 ## 其他
 
 - 原生视图被优化引发的问题：设置`removeClippedSubviews={false}`，如只参与布局的视图容易被优化，通过Ref计算当前view的属性失败
@@ -149,3 +153,5 @@ const styles = StyleSheet.create({
   },
 });
 ```
+
+ 

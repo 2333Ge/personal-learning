@@ -207,6 +207,15 @@ git pull
 
 https://blog.csdn.net/qq_30376375/article/details/116504157
 
+`.git/config` 文件
+
+```sh
+[remote "origin"]
+	url = xxx.com/xxx.git
+  # fetch = +refs/heads/master:refs/remotes/origin/master 改成 ↓
+	fetch = +refs/heads/*:refs/remotes/origin/*
+```
+
 ## 修改commit信息，如填错邮件地址
 
 参考资料：https://segmentfault.com/a/1190000041122415

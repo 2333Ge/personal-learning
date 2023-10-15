@@ -117,11 +117,20 @@ $ history -d offset # 删除从0到offset的记录
 ```
 ### date
 
-**`date`**：查看当前时间
+  
+**`date`**：查看当前时间，更多信息：https://ss64.com/osx/date.html.
 
 ```bash
 $ date
 2022年 5月11日 星期三 15时31分15秒 CST
+# 使用默认区域设置的格式显示当前日期：
+$ date +"%c"
+# 以 UTC 和 ISO 8601 格式显示当前日期：
+$ date -u +"%Y-%m-%dT%H:%M:%SZ"
+# 将当前日期显示为 unix 时间戳（自 1970-01-01 00:00:00 以来的秒数）：
+$ date +%s
+# 使用默认格式显示特定日期（格式化指定 UNIX 时间戳）：
+$ date -r 1473305798
 ```
 ### touch
 
@@ -211,6 +220,14 @@ $ ls node_modules | cat -n
      2	@babel
      3	@hapi
      ...
+```
+
+```bash
+# 在 macOS 上使用 pbcopy 命令：
+$ cat temp.txt | pbcopy
+
+# 在 Linux 上使用 xclip 命令：
+$ cat temp.txt | xclip -selection clipboard
 ```
 
 ### tac
