@@ -1,3 +1,12 @@
+---
+title: AI 工具概览
+date: 2023-10-15
+category: 
+tags:
+  - 
+---
+
+<!-- more -->
 # 工具
 
 汇总网站 hayo：https://www.hayo.com/
@@ -43,7 +52,7 @@ stable diffusion 体验：https://playgroundai.com/create
 
 申请 waitlist
 
-- https://openai.com/waitlist/plugins (⭐️，新东西早点申请抢占市场)
+- https://openai.com/waitlist/plugins
 - https://openai.com/waitlist/gpt-4-api
 
 免费gpt4：https://ora.sh/openai/gpt4
