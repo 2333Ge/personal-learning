@@ -8,9 +8,9 @@ tags:
 ---
 
 <!-- more -->
+
 ## 快捷键
 
-https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
 首选项-键盘快捷方式
 
 **重构**
@@ -64,6 +64,7 @@ https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
 - 新建窗口：`⇧+⌘+n`
 - 禅模式，只有正在操作的代码：`⌘+k z`
 - 将当前文件在新窗口打开：`⌘+k+o`
+
 ## 实用命令
 
 `cmd + p`后输入以下关键词
@@ -78,6 +79,7 @@ https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
 
 
 ## 插件
+
 ### 项目中配置推荐插件
 
 项目根目录下，.vscode 目录下添加 extensions.json 文件
@@ -99,75 +101,63 @@ https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
   ]
 }
 ```
+### 实用插件
 
-### CodeRunner
+|              插件名               |                 描述                 |                 标识符                 |
+| :-------------------------------: | :----------------------------------: | :------------------------------------: |
+|           Code Runner：           |           实时一键运行代码           |       formulahendry.code-runner        |
+|            background             |           设置 ide 背景图            |          shalldie.background           |
+|          vscode-mindmap           | 思维导图插件，创建.km 文件，自动识别 |         souche.vscode-mindmap          |
+|        Draw.io Integration        |    流程图，创建.dio文件，自动识别    |          hediet.vscode-drawio          |
+|          Color highLight          |               颜色高光               |        naumovs.color-highlight         |
+|          KoroFileHeader           |             代码注释插件             |        OBKoro1.koro1FileHeader         |
+|              Chinese              |               ide 中文               | MS-CEINTL.vscode-language-pack-zh-hans |
+|            Git History            |           Git 历史提交比较           |        donjayamanne.githistory         |
+| equimper.react-native-react-redux |          RN、react代码片段           |   equimper.react-native-react-redux    |
+|          Markdown paste           |    markdown 智能粘贴（Cmd+Alt+V）    |  telesoho.vscode-markdown-paste-image  |  |
+|     Markdown table formatter      |          markdown表格格式化          |                                        |
+|        Code Spell Checker         |               拼写检查               | streetsidesoftware.code-spell-checker  |
+|          Color Highlight          |               颜色高亮               |        naumovs.color-highlight         |
+|         Highlight My Word         |            高亮自定义主题            |        2333ge.highlight-my-word        |
+|          css-to-rnstyle           |        CSS 与 RN样式快速转换         |         2333ge.css-to-rnstyle          |
+|           Image preview           |               图片预览               |  kisstkondoros.vscode-gutter-preview   |
+|            vscode-pdf             |               pdf预览                |      formulahendry.auto-close-tag      |
+|           HTML Preview            |              HTML 预览               |   george-alisson.html-preview-vscode   |
+|          Auto Close Tag           |      自动补充XML、HTML关闭标签       |      formulahendry.auto-close-tag      |
 
-实时一键运行代码
+相关问题：
 
-### Background
+- background： 背景图显示不出参考？ 是否装到了下载目录，参考 [链接1][bg1]、[链接2][bg2]
 
-设置 ide 背景图
+[bg1]: https://blog.csdn.net/toopoo/article/details/88841755
+[bg2]: https://github.com/Microsoft/vscode/issues/7426
 
-背景图显示不出参考：
-https://blog.csdn.net/toopoo/article/details/88841755
-https://github.com/Microsoft/vscode/issues/7426
 
-##### 1. 图片显示不出
+## 零碎技巧
 
-检查是否装到了下载目录里了
-
-### 其他
-
-- vscode-mindmap：思维导图插件
-  - 创建.km 文件，vscode 自动识别
-
-- Draw.io Integration：流程图
-
-- Markdown
-  - Markdown paste
-  - Markdown table formatter
-
-- Code spell checker：拼写检查工具
-
-- Color highLight：颜色高光
-
-- [KoroFileHeader](https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE)：注释插件
-
-- Chinese：ide 中文
-
-- [Git History](https://www.cnblogs.com/EdisonVan/p/10642698.html)： Git 历史提交比较
-
-- equimper.react-native-react-redux: 代码片段
-
-## 参考文章
-
-- [官方文档](https://code.visualstudio.com/docs/languages/javascript)
-  > 英文版，较详细
-- [常用插件推荐](https://www.jianshu.com/p/3eebde5748a6)
-- [Git 历史提交比较](https://www.cnblogs.com/EdisonVan/p/10642698.html)
-- [极客教程-VSCode 教程](https://geek-docs.com/vscode/vscode-tutorials/what-is-vscode.html)
-  > 中文版，说明较详细
-
-## 插件开发相关资料
-
-- http://blog.haoji.me/vscode-plugin-hello-world.html
-- https://code.visualstudio.com/api
-- https://juejin.cn/post/6997186741866070023
-
-## 代码片段
-
-- https://juejin.cn/post/6844903869424599053
-- https://juejin.cn/post/7052694806685810725
-- https://snippet-generator.app/
-
-## 其他
-
-### vscode 正则查找目标文件示例
+1. 正则查找目标组件示例
 
 ```
 List[\w\W]*components[\w\W]*<List
 ```
 
-### 计算表达式
+## 相关文档
 
-选中内容 => cmd + shift + p  => evaluate math expression
+- [官方文档](https://code.visualstudio.com/docs/languages/javascript)
+- [常用插件推荐](https://www.jianshu.com/p/3eebde5748a6)
+- [Git 历史提交比较](https://www.cnblogs.com/EdisonVan/p/10642698.html)
+- [极客教程-VSCode 教程](https://geek-docs.com/vscode/vscode-tutorials/what-is-vscode.html)
+- [快捷键官方文档](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+
+### 插件开发相关资料
+
+- http://blog.haoji.me/vscode-plugin-hello-world.html
+- https://code.visualstudio.com/api
+- https://juejin.cn/post/6997186741866070023
+
+### 代码片段
+
+- https://juejin.cn/post/6844903869424599053
+- https://juejin.cn/post/7052694806685810725
+- https://snippet-generator.app/
+

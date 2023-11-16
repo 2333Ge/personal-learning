@@ -61,3 +61,35 @@ tags:
 
 - [3次握手4次挥手](./three-way-handshake.md)
 - [前端常用单位说明](./fe-unit.md)
+
+## 巩固资料
+
+> from ai
+>
+当涉及到深度巩固 JavaScript、CSS 和 HTML 相关知识时，有一些经典的书籍和在线资源可以帮助你进一步学习和理解这些技术。以下是一些推荐的书籍和资源：
+
+JavaScript:
+
+1. "JavaScript高级程序设计"（《Professional JavaScript for Web Developers》） - 由Nicholas C. Zakas撰写的一本经典书籍，涵盖了 JavaScript 的方方面面，从基础知识到高级概念都有涉及。
+
+2. "你不知道的JavaScript"（《You Don't Know JS》） - 这是一系列由Kyle Simpson撰写的书籍，分为多个部分，涵盖了 JavaScript 的深入概念和细节。适合有一定 JavaScript 基础的读者。
+
+3. MDN Web 文档（https://developer.mozilla.org/zh-CN/docs/Web/JavaScript）- Mozilla 开发者网络（MDN）提供的 JavaScript 文档是一个权威且详尽的在线资源，涵盖了 JavaScript 的语法、特性、API 等方面的内容。
+
+CSS:
+
+1. "CSS权威指南"（《CSS: The Definitive Guide》） - 由Eric Meyer和Estelle Weyl撰写的一本全面介绍 CSS 的书籍，覆盖了 CSS 的各个方面，从基础到高级技术。
+
+2. "CSS揭秘"（《CSS Secrets》） - 由Lea Verou撰写的一本关于 CSS 技巧和技术的书籍，展示了一些令人惊叹的 CSS 技术和实用的技巧。
+
+3. CSS-Tricks（https://css-tricks.com/）- CSS-Tricks 是一个广受欢迎的 CSS 相关资源网站，提供了大量有关 CSS 技术、教程、示例和技巧的文章和视频。
+
+HTML:
+
+1. "HTML和CSS设计与构建网站"（《HTML and CSS: Design and Build Websites》） - 由Jon Duckett撰写的一本适合初学者的书籍，介绍了 HTML 和 CSS 的基础知识和实践方法。
+
+2. HTML5 Rocks（https://www.html5rocks.com/）- HTML5 Rocks 是一个由 Google 维护的网站，提供了关于 HTML5 技术的文章、教程和示例，涵盖了最新的 HTML 技术和最佳实践。
+
+3. Mozilla 开发者网络（MDN）HTML 文档（https://developer.mozilla.org/zh-CN/docs/Web/HTML）- 类似于 JavaScript，MDN 也提供了详细的 HTML 文档，涵盖了 HTML 的语法、元素、属性等方面的知识。
+
+以上是一些推荐的书籍和资源，它们可以帮助你深入学习和理解 JavaScript、CSS 和 HTML 相关的知识。除此之外，还可以通过实践和参与项目来加深对这些技术的理解和熟练度。
