@@ -87,6 +87,34 @@ yOffset?.current.interpolate({
 ```
 ## 代码画三角形
 
+```jsx
+import React from 'react';
+import { View } from 'react-native';
+
+function Triangle() {
+  return (
+    <View style={styles.triangle} />
+  );
+}
+
+const styles = {
+  triangle: {
+    width: 0,
+    height: 0,
+    backgroundColor: 'transparent',
+    borderStyle: 'solid',
+    borderLeftWidth: 50,
+    borderRightWidth: 50,
+    borderBottomWidth: 100,
+    borderLeftColor: 'transparent',
+    borderRightColor: 'transparent',
+    borderBottomColor: 'red',
+  },
+};
+
+export default Triangle;
+```
+
 ## 列表 + 键盘
 
 - 滑动列表键盘不消失的情况，

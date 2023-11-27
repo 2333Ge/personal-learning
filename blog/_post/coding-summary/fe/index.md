@@ -10,9 +10,10 @@ tags:
 
 ## 技能树
 
-网易云课堂嫖的图，可供参考
+参考1：
 
 ![技能](./image/fe-skill-tree.jpg)
+
 ## http 
 
 ### http 状态码
@@ -64,9 +65,9 @@ tags:
 
 ## 巩固资料
 
+- https://web.dev/learn?hl=zh-cn
+
 > from ai
->
-当涉及到深度巩固 JavaScript、CSS 和 HTML 相关知识时，有一些经典的书籍和在线资源可以帮助你进一步学习和理解这些技术。以下是一些推荐的书籍和资源：
 
 JavaScript:
 
@@ -92,4 +93,4 @@ HTML:
 
 3. Mozilla 开发者网络（MDN）HTML 文档（https://developer.mozilla.org/zh-CN/docs/Web/HTML）- 类似于 JavaScript，MDN 也提供了详细的 HTML 文档，涵盖了 HTML 的语法、元素、属性等方面的知识。
 
-以上是一些推荐的书籍和资源，它们可以帮助你深入学习和理解 JavaScript、CSS 和 HTML 相关的知识。除此之外，还可以通过实践和参与项目来加深对这些技术的理解和熟练度。
+

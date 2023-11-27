@@ -1,10 +1,10 @@
 ---
 title: 前端常见代码片段
 date: 2023-05-23
-category: css
+category: FE
 tags:
-  - css
-  - fe
+  - CSS
+  - FE
 ---
 
 <!-- more -->
