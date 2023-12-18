@@ -4,5 +4,6 @@
     "1": "接下来请用中文回答我的问题",
     "2": "将JSON数据转换成TypeScript类型定义，保留对应字段注释",
     "3": "将CSS样式转换成RN style"
-  }
+  },
+  "editor.inlineSuggest.showToolbar": "onHover"
 }
