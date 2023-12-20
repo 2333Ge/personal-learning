@@ -10,6 +10,8 @@
     </head>
     <style>
       /*-----------------饼图-----------------------*/
+
+      /*-----------伪元素方案-----*/
       .pie {
         position: relative;
         width: 100px;
@@ -43,13 +45,44 @@
         border-radius: 0 100% 100% 0 /50%;
         background-color: inherit;
         transform-origin: left;
+        /*
+        注意：
+        animation 要放在前面，放在后面无效
+        不设置infinite，超出范围无效，如-70
+        linear 旋转角度渐变
+        step-end 用于旋转的块的颜色是突变
+        */
         animation: spin 50s linear infinite, bg 100s step-end infinite;
         animation-play-state: paused;
         animation-delay: inherit;
         /* animation-delay: -20s */
       }
+      /*-----------------svg方案-----------------------*/
 
-      /*-----------------my test-----------------------*/
+      .pieSvg {
+        border-radius: 50%;
+        transform: rotate(-0.25turn);
+        margin-top: 20px;
+   }
+
+      @keyframes pieUp {
+        100% {
+          stroke-dasharray: 314 2000;
+        }
+      }
+
+      .pieSvg circle {
+        fill: yellowgreen;
+        stroke: #655;
+        stroke-width: 100;
+        stroke-dasharray: 0 2000;
+        /* 以下是自己加的，非官方示例，可以用类似上例伪元素的方案用动画方便地设置旋转角度 */
+        animation: pieUp 100s linear forwards;
+        animation-play-state: paused;
+        animation-delay: -36s;
+      }
+
+      /*-----------------my test： 伪元素方案-----------------------*/
 
       .pie2 {
         position: relative;
@@ -71,13 +104,6 @@
         border-radius: 0 100% 100% 0 / 50%;
         background-color: inherit;
         transform-origin: left;
-        /*
-        注意：
-        animation 要放在前面，放在后面无效
-        不设置infinite，超出范围无效，如-70
-        linear 旋转角度渐变
-        step-end 用于旋转的块的颜色是突变
-        */
         animation: spin 50s linear infinite, bg 100s step-end infinite;
         animation-play-state: paused;
         animation-delay: -90s;
@@ -86,6 +112,9 @@
     <body>
       <div class="pie" style="animation-delay: -80s">80</div>
       <div class="pie2">00</div>
+      <svg viewBox="0 0 100 100" width="100" height="100" class="pieSvg">
+        <circle r="50" cx="50" cy="50" />
+      </svg>
     </body>
   </html>
 </div>

@@ -92,5 +92,3 @@ HTML:
 2. HTML5 Rocks（https://www.html5rocks.com/）- HTML5 Rocks 是一个由 Google 维护的网站，提供了关于 HTML5 技术的文章、教程和示例，涵盖了最新的 HTML 技术和最佳实践。
 
 3. Mozilla 开发者网络（MDN）HTML 文档（https://developer.mozilla.org/zh-CN/docs/Web/HTML）- 类似于 JavaScript，MDN 也提供了详细的 HTML 文档，涵盖了 HTML 的语法、元素、属性等方面的知识。
-
-
