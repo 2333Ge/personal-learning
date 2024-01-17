@@ -145,6 +145,8 @@ module.exports
 
 `npm root -g` 查看本机全局node_modules目录位置
 
+`npm config get registry` 查看当前npm注册表
+
 
 如果安装的是可执行文件会放在 `node_modules/.bin`目录下，
 
