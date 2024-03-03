@@ -9,8 +9,10 @@ tags:
 <!-- more -->
 # 工具
 
-汇总网站 hayo：https://www.hayo.com/
-
+汇总网站 
+- hayo：https://www.hayo.com/
+- https://ai.nancheng.fun/
+- https://www.aigc.casa/
 
 **prompt汇总：**
 
@@ -20,6 +22,9 @@ tags:
 learning prompt：https://learningprompt.wiki/docs/chatgpt-learning-path
 
 prompt技巧：https://zhuanlan.zhihu.com/p/617524191
+
+
+提示工程(Prompt Engineering)，提示词开发和优化： https://www.promptingguide.ai/zh
 
 ## 编程相关
 
@@ -45,6 +50,7 @@ stable diffusion 体验：https://playgroundai.com/create
 
 汇总: https://poe.com/
 文案类：https://www.saoma.site/
+https://www.coze.cn/docs/guides/workflow_user_intent
 
 ### chatgpt
 
@@ -151,14 +157,3 @@ AutoGPT太火了，无需人类插手自主完成任务，GitHub2.7万星 :https
 5）自动代码审查和漏洞检测，ChatGPT 可以分析代码中的潜在问题，包括代码风格不一致、程序逻辑错误或安全漏洞等。这个能力其实在 http://cursor.so 这个产品中就已经具备了，无需等到提交代码，在本地可以直接让程序先完成一轮 CR。
 
 很多体验做出来都会让人产生 Wow~ 的感觉，利用 ChatGPT 做 toD 方向的建设，确实可以提高开发效率，减少错误，提高代码质量，对公司和开发者还是具有很大价值的。
-
-<!-- 
-# 随记
-
-- GitHub 写blog
-- gitlab、GitHub 联系与区别
-- prompt 
-- 知乎、推特、微博、微信公众号侧重点
-
-
--  -->

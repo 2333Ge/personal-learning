@@ -86,7 +86,7 @@ source 左侧面板 Snippets
 - `$1` 是对上一次我们选择的节点的引用
 - `$2` 是对在那之前选择的节点的引用，等等
 - `$_` 是对上次执行的结果的 引用
-- `$i` 在 console 中引入和测试一些 npm 库, $i('lodash') 或者 $i('moment') 几秒钟后，你就可以获取到 lodash / momentjs
+- `$i` 在 console 中引入和测试一些 npm 库, $i('lodash') 或者 $i('moment') 几秒钟后，你就可以获取到 lodash / momentjs，需要安装console importer插件
 
 ## console 中的 “bug”
 

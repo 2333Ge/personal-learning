@@ -22,10 +22,17 @@ tags:
 - poe: https://poe.com
 - https://ai.nancheng.fun/
 - https://www.aigc.casa/
+
 ## 泛用
 
 - 百度指数：https://index.baidu.com/v2/index.html#/
+
+### VPN
+
 - VPN推荐：https://vpncn.github.io/
+- https://xn--gmqz83awjh.net/auth/register?code=wGoJ4y
+- 天梯VPN
+
 ## 自学网站
 
 - 菜鸟教程：https://www.runoob.com/
