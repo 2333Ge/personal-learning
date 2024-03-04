@@ -46,23 +46,48 @@ currentColor本身就是很多CSS颜色属性的初始值，比如border-color�
 
 ## 示例
 
+未特殊说明的情况下，以下示例只能使用一个元素（伪元素不在限制内）
+
+### 背景与边框
+
 1. 实现纯色背景 + 半透明边框 
 
 ![Alt text](./image/css-secrets-share/background-clip.png)
 
-2. 使用单个元素的前提下，实现多重边框
+2. 实现多重边框
 
 3. 实现条纹背景（横向、纵向、斜向）
 
-4. 使用单个元素的前提下，实现图片边框
+4. 实现图片边框
+
 ![alt text](./image/css-secrets-share/img-border.png)
+
+https://dabblet.com/gist/55b5f131c45702a55684
+
+
 
 <!-- 六 复杂背景：棋盘、圆点重复 -->
 
+<!-- 
+8 实现行军蚁边框效果
+https://dabblet.com/gist/f26dddc71730c3847153
 
+页脚
+ -->
 
-<!-- 4. 如何画一个半圆
-1. 画一个饼图 -->
+### 形状
+
+1. 画一个椭圆、半圆、1/4圆
+
+糖果按钮示例
+
+https://simurai.com/archive/buttons/#markup
+
+2. 实现平行四边形
+
+3. 菱形图片
+
+4. 切角效果
 
 ## 相关链接
 
