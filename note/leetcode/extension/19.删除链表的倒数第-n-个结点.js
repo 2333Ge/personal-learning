@@ -13,20 +13,22 @@
  * }
  */
 /**
+ * 硬解
  * @param {ListNode} head
  * @param {number} n
  * @return {ListNode}
  */
 var removeNthFromEnd = function (head, n) {
-  let total = 0;
+  if (!head || n === 0) return head;
+  let total = 1;
   let p = head;
   while (p.next) {
     p = p.next;
     total++;
   }
   p = head;
-  let count = 0;
-  if (count === n) return head.next;
+  let count = 1;
+  if (total === n) return head.next;
   while (p) {
     if (count === total - n) {
       p.next = p.next?.next;
@@ -37,3 +39,5 @@ var removeNthFromEnd = function (head, n) {
   }
 };
 // @lc code=end
+
+// 待看题解

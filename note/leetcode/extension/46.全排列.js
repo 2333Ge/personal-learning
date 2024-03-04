@@ -25,17 +25,18 @@
  */
 var permute = function (nums) {
   const result = [];
-  const backStack = (list = [], selected = []) => {
+  const selected = {};
+  const backStack = (list = []) => {
     for (let i = 0; i < nums.length; i++) {
       if (!selected[i]) {
-        const newSelected = [...selected];
-        newSelected[i] = true;
         const newList = [...list, nums[i]];
         if (newList.length === nums.length) {
           result.push(newList);
           return;
         }
-        backStack(newList, newSelected);
+        selected[i] = true;
+        backStack(newList);
+        selected[i] = false;
       }
     }
   };
