@@ -166,6 +166,47 @@ border-radius 可以指定水平半径、垂直半径
 
 </details>
 
+#### 4. 梯形背景
+
+#### 5. 简单的饼图
+
+本地实验：./css-secrets/pie.html
+
+官方示例：
+- https://play.csssecrets.io/pie-static
+- https://play.csssecrets.io/pie-svg
+
+
+<details>
+<summary>提示：</summary>
+
+方案一：条纹背景 + 椭圆
+
+为了方便的设置比例可以用负的动画延时值来控制百分比
+
+一个负的延时值是合法的。与0s的延时类似，它意味着动画会立即开始播放，但会自动前进到延时值的绝对值处，就好像动画在过去已经播放了指定的时间一样。因此实际效果就是动画跳过指定时间而从中间开始播放了。
+
+方案二：svg 圆+stroke-dasharray
+
+</details>
+
+### 视觉效果
+
+#### 投影
+
+单侧投影：play.csssecrets.io/shadow-one-side
+临边投影：play.csssecrets.io/shadow-2-sides
+双侧投影：play.csssecrets.io/shadow-opposite-sides
+
+#### 毛玻璃效果
+
+play.csssecrets.io/frosted-glass
+
+### 字体排印
+
+#### 插入换行
+
+ 
 <!-- #### 4. 切角效果
 
 
@@ -178,7 +219,6 @@ border-radius 可以指定水平半径、垂直半径
 
 </details> -->
 
-4. 梯形
 
 ## 相关链接
 
