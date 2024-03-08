@@ -15,3 +15,7 @@
 # 相关链接
 
 - [个人博客](https://i2333g3.gitee.io/personal-learning-blog)
+
+# 备忘
+
+- 需要安装git-lfs：https://help.aliyun.com/document_detail/206889.html
