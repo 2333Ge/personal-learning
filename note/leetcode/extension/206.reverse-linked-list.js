@@ -18,22 +18,14 @@
  * }
  */
 /**
- * @param {ListNode} head
- * @return {ListNode}
- */
+ * 递归写法
+ * */
 var reverseList = function (head) {
   if (!head?.next) return head;
-  let changeNode = head;
-  let curNode = head.next;
-  let nextNode = head.next?.next;
-  changeNode.next = null;
-  while (curNode) {
-    curNode.next = changeNode;
-    changeNode = curNode;
-    curNode = nextNode;
-    nextNode = nextNode?.next;
-  }
-  return changeNode;
+  let reverseHead = reverseList(head.next);
+  head.next.next = head;
+  head.next = null;
+  return reverseHead;
 };
 // @lc code=end
 
@@ -53,5 +45,40 @@ var reverseList = function (head) {
  */
 
 // @lcpr-after-debug-begin
-module.exports = reverseList;
 // @lcpr-after-debug-end
+
+/**
+ * 首次尝试，有多余代码
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var reverseList0 = function (head) {
+  if (!head?.next) return head;
+  let changeNode = head;
+  let curNode = head.next;
+  let nextNode = head.next?.next;
+  changeNode.next = null;
+  while (curNode) {
+    curNode.next = changeNode;
+    changeNode = curNode;
+    curNode = nextNode;
+    nextNode = nextNode?.next;
+  }
+  return changeNode;
+};
+
+/**
+ * 迭代写法
+ * */
+var reverseList1 = function (head) {
+  if (!head?.next) return head;
+  let pre = null;
+  let cur = head;
+  while (cur) {
+    let next = cur.next;
+    cur.next = pre;
+    pre = cur;
+    cur = next;
+  }
+  return pre;
+};

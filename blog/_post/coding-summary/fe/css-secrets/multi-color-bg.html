@@ -1,54 +1,45 @@
 <?xml version="1.0" standalone="no"?>
-<div>
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>实现条纹背景？</title>
-    </head>
-    <style>
-      body {
-        background-color: #000;
-      }
-      .bg1 {
-        width: 100vw;
-        height: 100px;
-        background: linear-gradient(#f0f, #f0f 10px, #0ff 0, #0ff 20px) 0/100%
-          20px;
-      }
-      /* 斑马线效果 & 转向 */
-      .bg2 {
-        width: 100vw;
-        height: 100px;
-        background: linear-gradient(
-          to right,
-          #f0f,
-          #f0f 10vw,
-          #0ff 0,
-          #0ff 20vw
-        );
-        background-size: 20vw 100%;
-      }
-      
-      .bg4 {
-        width: 100vw;
-        height: 100px;
-        background: repeating-linear-gradient(
-          60deg,
-          #fb3,
-          #fb3 15px,
-          #58a 0,
-          #58a 30px
-        );
-      }
-    </style>
-    <body>
-      <div class="bg1"></div>
-      <div class="bg2"></div>
-      <div class="bg3"></div>
-      <div class="bg4"></div>
-    </body>
-  </html>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>实现条纹背景？</title>
+  </head>
+  <style>
+    body {
+      background-color: #000;
+    }
+    .bg1 {
+      width: 100vw;
+      height: 100px;
+      background: linear-gradient(#363 10px, #636 0, #636 20px) 0/100% 20px;
+    }
+    /* 斑马线效果 & 转向 */
+    .bg2 {
+      width: 100vw;
+      height: 100px;
+      background: linear-gradient(to right, #363, #363 10vw, #636 0, #636 20vw);
+      background-size: 20vw 100%;
+    }
+
+    .bg4 {
+      width: 100vw;
+      height: 100px;
+      background: repeating-linear-gradient(
+        60deg,
+        #fb3,
+        #fb3 15px,
+        #58a 0,
+        #58a 30px
+      );
+    }
+  </style>
+  <body>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="bg4"></div>
+  </body>
+</html>

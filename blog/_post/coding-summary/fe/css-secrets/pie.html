@@ -1,76 +1,74 @@
 <?xml version="1.0" standalone="no"?>
-<div>
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>如何画一个饼图？</title>
-    </head>
-    <style>
-      body {
-        background-color: #000;
-      }
-      /*-----------------1. 用伪元素实现-----------------------*/
-      .circle {
-        position: relative;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background: linear-gradient(to right, skyblue 50%, pink 0);
-      }
-      .circle::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: 100%;
-        border-radius: 0 100% 100% 0/50%;
-        transform-origin: left;
-        background-color: skyblue;
-        /*注意：animation 要放在animation-play-state、animation-delay前面，放在后面无效 */
-        animation: rotateCover infinite 50s linear,
-          changeCoverColor step-end 100s infinite;
-        animation-play-state: paused;
-        /* 百分比 */
-        animation-delay: -20s;
-      }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>如何画一个饼图？</title>
+  </head>
+  <style>
+    body {
+      background-color: #000;
+    }
+    /*-----------------1. 用伪元素实现-----------------------*/
+    .circle {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(to right, skyblue 50%, pink 0);
+    }
+    .circle::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      border-radius: 0 100% 100% 0/50%;
+      transform-origin: left;
+      background-color: skyblue;
+      /*注意：animation 要放在animation-play-state、animation-delay前面，放在后面无效 */
+      animation: rotateCover infinite 50s linear,
+        changeCoverColor step-end 100s infinite;
+      animation-play-state: paused;
+      /* 百分比 */
+      animation-delay: -50s;
+    }
 
-      @keyframes rotateCover {
-        100% {
-          transform: rotate(0.5turn);
-        }
+    @keyframes rotateCover {
+      100% {
+        transform: rotate(0.5turn);
       }
-      @keyframes changeCoverColor {
-        50% {
-          background-color: pink;
-        }
+    }
+    @keyframes changeCoverColor {
+      50% {
+        background-color: pink;
       }
+    }
 
-      /*-----------------2. 用svg实现-----------------------*/
-      .pieSvg {
-        border-radius: 50%;
-        transform: rotate(-0.25turn);
-      }
-      .svgCircle {
-        stroke-width: 32;
-        stroke: pink;
-        fill: skyblue;
-        /*第一个参数百分比，第二个需足够大*/
-        stroke-dasharray: 30 20000;
-      }
-    </style>
-    <body>
-      <!-- 1.伪元素方案 -->
-      <div class="circle"></div>
+    /*-----------------2. 用svg实现-----------------------*/
+    .pieSvg {
+      border-radius: 50%;
+      transform: rotate(-0.25turn);
+    }
+    .svgCircle {
+      stroke-width: 32;
+      stroke: pink;
+      fill: skyblue;
+      /*第一个参数百分比，第二个需足够大*/
+      stroke-dasharray: 20 20000;
+    }
+  </style>
+  <body>
+    <!-- 1.伪元素方案 -->
+    <div class="circle"></div>
 
-      <!-- 2.svg方案 -->
-      <!-- 圆周长设置成100，方便设置饼图百分比 -->
-      <svg viewBox="0 0 32 32" height="100" width="100" class="pieSvg">
-        <circle cx="16" cy="16" r="16" class="svgCircle" />
-      </svg>
-    </body>
-  </html>
-</div>
+    <!-- 2.svg方案 -->
+    <!-- 圆周长设置成100，方便设置饼图百分比 -->
+    <svg viewBox="0 0 32 32" height="100" width="100" class="pieSvg">
+      <circle cx="16" cy="16" r="16" class="svgCircle" />
+    </svg>
+  </body>
+</html>

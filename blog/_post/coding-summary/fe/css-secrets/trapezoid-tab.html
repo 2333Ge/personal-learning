@@ -1,0 +1,82 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>？</title>
+  </head>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+    }
+    .common {
+      line-height: 2;
+      position: relative;
+      width: 80px;
+      text-align: center;
+    }
+    .common::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #363;
+      transform: perspective(0.5em) rotateX(5deg) scaleY(1.1);
+    }
+
+    a {
+      color: #fff;
+      position: relative;
+      margin-top: 20px;
+      width: 80px;
+      line-height: 3;
+      display: inline-block;
+      text-align: center;
+    }
+    a::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.6);
+      transform: skew(30deg);
+      border-radius: 8px;
+    }
+
+    .left::before {
+      background: linear-gradient(white, white);
+      border-radius: 0 16px 0px 0;
+      transform: scale(1.1, 1.7) perspective(0.5em) rotateX(5deg);
+      transform-origin: bottom left;
+    }
+    .left {
+      color: #000;
+      line-height: 4;
+    }
+
+    nav {
+      margin-top: 20px;
+      position: relative;
+      background-color: #3072f6;
+      z-index: -2;
+    }
+  </style>
+  <body>
+    <div class="common">common</div>
+
+    <nav>
+      <a class="left">tab1</a>
+      <a class="center">tab2</a>
+      <a>tab3</a>
+    </nav>
+  </body>
+</html>

@@ -1,87 +1,83 @@
 <?xml version="1.0" standalone="no"?>
-<div>
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>形状？</title>
-    </head>
-    <style>
-      body {
-        background-color: #000;
-      }
-      /* 平行四边形背景，其内内容不变形 */
-      .parallelogram {
-        width: 100px;
-        height: 100px;
-        position: relative;
-      }
-      .parallelogram::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        transform: skew(10deg);
-        background: #363;
-        z-index: -1;
-      }
-      /* 菱形图片 */
-      .div2 {
-        width: 100px;
-        height: 100px;
-        background: url(https://i9.taou.com/maimai/p/33241/7099_6_4BFirXbHoMlmqg)
-          0 / cover;
-        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-        /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
-      }
-      /*切角效果*/
-      .div3 {
-        width: 100px;
-        height: 100px;
-        background: linear-gradient(45deg, transparent 15px, #363 0);
-      }
-      /*切两角效果*/
-      .div4 {
-        width: 100px;
-        height: 100px;
-        background: linear-gradient(45deg, transparent 15px, #363 0) bottom/100%
-            50%,
-          linear-gradient(135deg, transparent 15px, #363 0) top/100% 50%;
-        background-repeat: no-repeat;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>形状？</title>
+  </head>
+  <style>
+    body {
+      background-color: #000;
+    }
+    /* 平行四边形背景，其内内容不变形 */
+    .parallelogram {
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+    .parallelogram::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      transform: skew(10deg);
+      background: #363;
+      z-index: -1;
+    }
+    /* 菱形图片 */
+    .div2 {
+      width: 100px;
+      height: 100px;
+      background: url(https://i9.taou.com/maimai/p/33241/7099_6_4BFirXbHoMlmqg)
+        0 / cover;
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+    }
+    /*切角效果*/
+    .div3 {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(45deg, transparent 15px, #363 0);
+    }
+    /*切两角效果*/
+    .div4 {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(45deg, transparent 15px, #363 0) bottom/100%
+          50%,
+        linear-gradient(135deg, transparent 15px, #363 0) top/100% 50%;
+      background-repeat: no-repeat;
 
-        padding: 15px;
-        box-sizing: border-box;
-      }
-      /*-----------------梯形-----------------------*/
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    /*-----------------梯形-----------------------*/
 
-      .div5 {
-        padding: 1em;
-        line-height: 2em;
-        position: absolute;
-      }
-      .div5::before{
-        content: '';
-        z-index: -1;
-        background-color: #363;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        transform: perspective();
-
-      }
-    </style>
-    <body>
-      <div class="parallelogram">啦啦啦啦</div>
-      <div class="div2"></div>
-      <!-- <div class="div3">切1角效果</div>
+    .div5 {
+      padding: 1em;
+      line-height: 2em;
+      position: absolute;
+    }
+    .div5::before {
+      content: "";
+      z-index: -1;
+      background-color: #363;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      transform: perspective();
+    }
+  </style>
+  <body>
+    <div class="parallelogram">啦啦啦啦</div>
+    <div class="div2"></div>
+    <!-- <div class="div3">切1角效果</div>
       <div class="div4">切2角效果</div> -->
-      <div class="div4">梯形</div>
-
-    </body>
-  </html>
-</div>
+    <div class="div4">梯形</div>
+  </body>
+</html>

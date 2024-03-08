@@ -1,5 +1,5 @@
 ---
-title: 《你不知道的Chrome调试技巧》笔记
+title: Chrome调试技巧
 date: 2022-05-13
 category: ide-skill
 tags:
@@ -12,11 +12,13 @@ tags:
 
 ## 前言
 
-原文链接： https://juejin.cn/book/6844733783166418958
+大部分技巧来自：[《你不知道的》](https://juejin.cn/book/6844733783166418958)
 
 全文精华，记录关键字供回忆复习
 
 MAC Windows 的 Ctrl CMD 记混了 ，快捷键不生效时替换两个按键试试
+
+其他技巧：https://developer.aliyun.com/article/110289
 
 ## 如何不引入外部资源在浏览器中写代码并调试
 
@@ -415,4 +417,3 @@ Drawer里有什么？
 即时同步样式
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/29/167f5b37d2312b72~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
-
