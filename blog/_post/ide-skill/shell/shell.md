@@ -238,8 +238,12 @@ $ cat temp.txt | xclip -selection clipboard
 **`du`**:查看磁盘占用，`du -h 文件名`：使用人类易读的单位打印文件磁盘占用（注意并不等于文件大小）。
 
 ```bash
+# 使用人类易读单位
 $ du -h package.json
 4.0K	package.json
+# 使用人类易读单位、查看目录大小
+$ du -sh .git
+367M    .git
 ```
 ### xargs
 
