@@ -192,7 +192,7 @@ border-radius 可以指定水平半径、垂直半径
 
 #### 3. 菱形图片，图片方向不可改变
 
-![](./image/css-secrets-share/diamond.png)
+![./image/css-secrets-share/diamond.png](./image/css-secrets-share/20240318172603.png)
 
 - [官方示例](https://play.csssecrets.io/diamond-clip)
 
