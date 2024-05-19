@@ -1,9 +1,9 @@
 /*
- * @lc app=leetcode.cn id=94 lang=javascript
+ * @lc app=leetcode.cn id=144 lang=javascript
  * @lcpr version=30119
  *
- * [94] 二叉树的中序遍历
- * 用两种写法递归、迭代
+ * [144] 二叉树的前序遍历
+ * 递归 + 迭代
  */
 
 // @lcpr-template-start
@@ -23,14 +23,13 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-var inorderTraversal1 = function (root) {
+var preorderTraversal1 = function (root) {
   if (!root) return [];
   const result = [];
-
   const tra = (node) => {
     if (!node) return;
-    tra(node.left);
     result.push(node.val);
+    tra(node.left);
     tra(node.right);
   };
   tra(root);
@@ -38,24 +37,28 @@ var inorderTraversal1 = function (root) {
 };
 /**
  * 迭代写法
+ * @param {TreeNode} root
+ * @return {number[]}
  */
-var inorderTraversal = function (root) {
+var preorderTraversal = function (root) {
   if (!root) return [];
-  const stack = [];
   const result = [];
   let curNode = root;
-  while (stack.length || curNode) {
-    if (curNode) {
-      stack.push(curNode);
+  const stack = [];
+  while (curNode || stack.length) {
+    result.push(curNode.val);
+    if (curNode.right) {
+      stack.push(curNode.right);
+    }
+    if (curNode.left) {
       curNode = curNode.left;
     } else {
       curNode = stack.pop();
-      result.push(curNode.val);
-      curNode = curNode.right;
     }
   }
   return result;
 };
+
 // @lc code=end
 
 /*
@@ -69,6 +72,14 @@ var inorderTraversal = function (root) {
 
 // @lcpr case=start
 // [1]\n
+// @lcpr case=end
+
+// @lcpr case=start
+// [1,2]\n
+// @lcpr case=end
+
+// @lcpr case=start
+// [1,null,2]\n
 // @lcpr case=end
 
  */

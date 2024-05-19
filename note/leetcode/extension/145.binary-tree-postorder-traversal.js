@@ -1,9 +1,8 @@
 /*
- * @lc app=leetcode.cn id=94 lang=javascript
+ * @lc app=leetcode.cn id=145 lang=javascript
  * @lcpr version=30119
  *
- * [94] 二叉树的中序遍历
- * 用两种写法递归、迭代
+ * [145] 二叉树的后序遍历
  */
 
 // @lcpr-template-start
@@ -19,42 +18,45 @@
  * }
  */
 /**
- * 递归写法
+ * 递归
  * @param {TreeNode} root
  * @return {number[]}
  */
-var inorderTraversal1 = function (root) {
+var postorderTraversal1 = function (root) {
   if (!root) return [];
   const result = [];
-
   const tra = (node) => {
     if (!node) return;
     tra(node.left);
-    result.push(node.val);
     tra(node.right);
+    result.push(node.val);
   };
   tra(root);
   return result;
 };
 /**
- * 迭代写法
+ * 迭代
+ * 中右左翻转一下
+ * todo: 为什么是对称的
+ * @param {TreeNode} root
+ * @return {number[]}
  */
-var inorderTraversal = function (root) {
+var postorderTraversal = function (root) {
   if (!root) return [];
   const stack = [];
   const result = [];
-  let curNode = root;
-  while (stack.length || curNode) {
-    if (curNode) {
-      stack.push(curNode);
-      curNode = curNode.left;
+  let cur = root;
+  while (cur || stack.length) {
+    if (cur) {
+      stack.push(cur);
+      result.push(cur.val);
+      cur = cur.right;
     } else {
-      curNode = stack.pop();
-      result.push(curNode.val);
-      curNode = curNode.right;
+      cur = stack.pop();
+      cur = cur.left;
     }
   }
-  return result;
+  return result.reverse();
 };
 // @lc code=end
 

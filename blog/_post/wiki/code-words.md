@@ -1,5 +1,5 @@
 ---
-title: 开发常见名词释义
+title: 开发常用术语
 date: 2021-01-01
 category: Wiki
 tags:
@@ -15,6 +15,7 @@ tags:
 - pr(Pull Request): 和`merge request`一个意思，`merge request` gitlab 常用，拉取代码修改代码发起合并请求。
 - ssr：服务端渲染
 - 公钥私钥、非对称加密：非对称加密算法需要两个密钥：公开密钥（publickey:简称公钥）和私有密钥（privatekey:简称私钥）。公钥与私钥是一对，如果用公钥对数据进行加密，只有用对应的私钥才能解密。因为加密和解密使用的是两个不同的密钥[5]
+- CLI（Command Line Interface）：命令行界面
 
 ## 前端名词
 
