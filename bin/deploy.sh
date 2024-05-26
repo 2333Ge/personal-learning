@@ -13,7 +13,8 @@ cd docs
 git init
 git add -A
 git commit -m 'deploy'
-git remote add origin https://github.com/2333Ge/personal-learning-blog.git    
+git branch -M main
+git remote add origin https://github.com/2333Ge/2333Ge.github.io.git    
 git push -u -f origin main
 
 cd -

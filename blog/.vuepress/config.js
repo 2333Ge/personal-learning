@@ -5,7 +5,7 @@ module.exports = {
   port: 8089,
   dest: "./docs",
   theme: "vuepress-theme-maker",
-  base: "/personal-learning-blog/",
+  // base: "/personal-learning-blog/",
   // 显示代码行数
   markdown: {
     lineNumbers: true,
