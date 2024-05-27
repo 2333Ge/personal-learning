@@ -1,5 +1,5 @@
 ---
-title: MAC 概览
+title: 【了解你的IDE】 MAC
 date: 2021-01-01
 category: MAC
 tags:

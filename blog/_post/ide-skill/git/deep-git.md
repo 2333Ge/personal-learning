@@ -1,5 +1,5 @@
 ---
-title: 《Pro Git》笔记
+title: 《Pro Git》笔记（ing）
 date: 2022-07-13
 category: git
 tags:

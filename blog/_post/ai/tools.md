@@ -35,6 +35,7 @@ copilot介绍&使用：https://nira.com/github-copilot/
 copilot插件：https://githubnext.com/projects/copilot-labs/
 
 Copilot X: https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/
+
 内测申请：https://github.com/github-copilot/chat_waitlist_signup/join
 
 

@@ -1,5 +1,5 @@
 ---
-title: CSS 选择器
+title: 快速过一遍 CSS 选择器
 date: 2023-12-20
 category: FE
 tags:

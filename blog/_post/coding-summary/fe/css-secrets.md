@@ -1,7 +1,7 @@
 ---
-title: CSS 还能这么写？|《CSS揭秘》笔记
+title: CSS 还能这么写？|《CSS揭秘》分享
 date: 2023-11-24
-category: 
+category: FE
 tags:
   - CSS
   - FE
