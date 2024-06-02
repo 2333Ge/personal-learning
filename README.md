@@ -4,10 +4,10 @@
 
 ```shell
 .
-├── bin # 发布部署脚本
+├── bin # 脚本
 ├── blog # 较正式的笔记
 ├── docs # 博客静态网站，放于另一仓库
-├── idea # 脑爆记录
+├── idea # 脑爆
 ├── my_actions # 部署的action，放于另一仓库
 ├── note # 未整理的笔记
 ├── slidev # 用 slidev 写的 ppt
