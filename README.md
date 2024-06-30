@@ -14,7 +14,7 @@
 ```
 # 相关链接
 
-- [个人博客](https://i2333g3.gitee.io/personal-learning-blog)
+- [个人博客](https://2333ge.github.io/)
 
 # 备忘
 

@@ -10,6 +10,10 @@ tags:
 <!-- more -->
 # 通用
 
+## git 大文件存储
+
+- [Git LFS](https://help.aliyun.com/document_detail/206889.html)
+
 ## changelog 生成
 
 [Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
@@ -186,6 +190,30 @@ $ git clean -f
 $ git clean -fd
 ```
 # 踩坑记录
+
+## git push失败，远端意外挂断了
+
+git push -u origin main 报错
+
+```
+压缩对象中: 100% (18914/18914), 完成.
+错误：RPC 失败。HTTP 500 curl 22 The requested URL returned error: 500
+send-pack: unexpected disconnect while reading sideband packet
+写入对象中: 100% (23792/23792), 93.60 MiB | 3.61 MiB/s, 完成.
+总共 23792（差异 4821），复用 21112（差异 3501），包复用 0（来自  0 个包）
+致命错误：远端意外挂断了
+Everything up-to-date
+```
+
+有时候推送较大数据时，缓冲区设置默认值太小可能会导致这个问题。尝试增大 Git 的 HTTP post 缓冲区:
+
+```sh
+git config --global http.postBuffer 524288000
+```
+
+这将 HTTP post 缓冲区设置为 500MB。
+
+
 
 ## warning: redirecting to https://code....
 
