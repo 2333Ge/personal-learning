@@ -1,9 +1,9 @@
 ---
 title: AI 工具概览
 date: 2023-10-15
-category: 
+category: AI
 tags:
-  - 
+  - AI
 ---
 
 <!-- more -->
