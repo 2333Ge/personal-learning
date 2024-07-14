@@ -10,7 +10,7 @@
 // @lcpr-template-end
 // @lc code=start
 /**
- * [1,3] [2,6] [5,10] 算重合区间否？
+ * [1,3] [2,6] [5,10] 算重合区间否？算  
  * 原区间是否排序？
  * @param {number[][]} intervals
  * @return {number[][]}
