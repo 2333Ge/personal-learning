@@ -62,7 +62,7 @@ var reverseBetween1 = function (head, left, right) {
   return head;
 };
 /**
- * 待理解
+ *【重要】
  * @param {*} head
  * @param {*} left
  * @param {*} right
@@ -70,6 +70,7 @@ var reverseBetween1 = function (head, left, right) {
  */
 var reverseBetween = function (head, left, right) {
   if (left === right || !head) return head;
+  // 基操
   let dummy = { next: head };
   let pre = dummy;
   for (let i = 1; i < left; i++) {
@@ -82,8 +83,8 @@ var reverseBetween = function (head, left, right) {
     // const tmp = then.next;
     start.next = then.next;
 
-    // then.next = pre.next;
-    then.next = start;
+    then.next = pre.next;
+    // then.next = start; // 不行
 
     pre.next = then;
 
