@@ -1,0 +1,70 @@
+/*
+ * @lc app=leetcode.cn id=128 lang=javascript
+ * @lcpr version=30204
+ *
+ * [128] 最长连续序列
+ */
+
+// @lcpr-template-start
+
+// @lcpr-template-end
+// @lc code=start
+/**
+ * 冒泡排序的话超时
+ * @param {number[]} nums
+ * @return {number}
+ */
+var longestConsecutive = function (nums) {
+  if (!nums.length) return 0;
+
+  // const swap = (i, j) => {
+  //   const temp = nums[i];
+  //   nums[i] = nums[j];
+  //   nums[j] = temp;
+  // };
+  // for (let i = 0; i < nums.length - 1; i++) {
+  //   for (let j = 0; j < nums.length - i; j++) {
+  //     if (nums[j] > nums[j + 1]) {
+  //       swap(j, j + 1);
+  //     }
+  //   }
+  // }
+  nums.sort((a, b) => a - b);
+
+  let longestLength = 1;
+  let curLength = 1;
+  for (let i = 0; i < nums.length - 1; i++) {
+    if (nums[i] === nums[i + 1]) {
+      continue;
+    }
+    if (nums[i] === nums[i + 1] - 1) {
+      curLength += 1;
+      longestLength = Math.max(curLength, longestLength);
+    } else {
+      curLength = 1;
+    }
+  }
+
+  return longestLength;
+};
+
+/**
+ * 哈希表的解法
+ * 1.转set
+ * 2.从边界开始计算长度
+ */
+var longestConsecutive = function (nums) {
+
+};
+// @lc code=end
+
+/*
+// @lcpr case=start
+// [100,4,200,1,3,2]\n
+// @lcpr case=end
+
+// @lcpr case=start
+// [0,3,7,2,5,8,4,6,0,1]\n
+// @lcpr case=end
+
+ */
