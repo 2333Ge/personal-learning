@@ -5,7 +5,6 @@
  * [167] 两数之和 II - 输入有序数组
  */
 
-
 // @lcpr-template-start
 
 // @lcpr-template-end
@@ -15,12 +14,22 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function(numbers, target) {
-
+var twoSum = function (numbers, target) {
+  let left = 0;
+  let right = numbers.length - 1;
+  while (left < right) {
+    const sum = numbers[left] + numbers[right];
+    if (sum === target) {
+      return [left + 1, right + 1];
+    } else if (sum < target) {
+      left++;
+    } else {
+      right--;
+    }
+  }
+  return [];
 };
 // @lc code=end
-
-
 
 /*
 // @lcpr case=start
@@ -37,3 +46,6 @@ var twoSum = function(numbers, target) {
 
  */
 
+// @lcpr-after-debug-begin
+module.exports = twoSum;
+// @lcpr-after-debug-end
