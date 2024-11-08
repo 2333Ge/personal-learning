@@ -56,7 +56,7 @@ var flatten1 = function (root) {
   cur.right = right;
 };
 
-var flatten = function (root) {
+var flatten3 = function (root) {
   if (!root) return;
   let stack = [root];
   while (stack.length) {
@@ -72,6 +72,24 @@ var flatten = function (root) {
       node.right = stack[stack.length - 1];
     }
   }
+};
+
+var flatten = function (root) {
+  if (!root) return null;
+  flatten(root.left);
+  flatten(root.right);
+  if (root.left) {
+    const right = root.right;
+    root.right = root.left;
+    root.left = null;
+    let cur = root.right;
+    while (cur.right) {
+      cur = cur.right;
+    }
+    cur.right = right;
+  }
+
+  return root;
 };
 // @lc code=end
 

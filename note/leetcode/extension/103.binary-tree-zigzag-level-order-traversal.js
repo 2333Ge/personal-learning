@@ -77,7 +77,7 @@ var zigzagLevelOrder2 = function (root) {
   }
   return result;
 };
-var zigzagLevelOrder = function (root) {
+var zigzagLevelOrder1 = function (root) {
   if (!root) return [];
   const result = [];
   const dfs = (node, level) => {
@@ -92,6 +92,50 @@ var zigzagLevelOrder = function (root) {
   dfs(root, 0);
   return result;
 };
+
+var zigzagLevelOrder1 = function (root) {
+  if (!root) return [];
+  let toRight = true;
+  let level = [root];
+  let newLevel = [];
+  const res = [];
+  let curLevel = 0;
+  while (level.length) {
+    const cur = level.pop();
+    if (!res[curLevel]) res[curLevel] = [];
+    res[curLevel].push(cur.val);
+    if (toRight) {
+      cur.left && newLevel.push(cur.left);
+      cur.right && newLevel.push(cur.right);
+    } else {
+      cur.right && newLevel.push(cur.right);
+      cur.left && newLevel.push(cur.left);
+    }
+    if (!level.length) {
+      level = newLevel;
+      newLevel = [];
+      toRight = !toRight;
+      curLevel++;
+    }
+  }
+  return res;
+};
+
+var zigzagLevelOrder = function (root) {
+  if (!root) return [];
+  let res = [];
+  const dfs = (node, level) => {
+    if (!node) return;
+    if (!res[level]) res[level] = [];
+    const toRight = level % 2 === 0;
+    toRight ? res[level].push(node.val) : res[level].unshift(node.val);
+    dfs(node.left, level + 1);
+    dfs(node.right, level + 1);
+  };
+  dfs(root, 0);
+  return res;
+};
+
 // @lc code=end
 
 /*

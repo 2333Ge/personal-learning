@@ -13,7 +13,7 @@
  * @param {character[][]} matrix
  * @return {number}
  */
-var maximalSquare = function (matrix) {
+var maximalSquare1 = function (matrix) {
   if (!matrix.length) return 0;
   const dp = [];
   let maxSize = 0;
@@ -35,6 +35,30 @@ var maximalSquare = function (matrix) {
     }
   }
   return maxSize * maxSize;
+};
+var maximalSquare = function (matrix) {
+  if (!matrix.length) return 0;
+  const dp = []; // 以i,j为右下角的正方形
+  let maxLength = 0;
+
+  for (let i = 0; i < matrix.length; i++) {
+    dp[i] = [];
+    for (let j = 0; j < matrix[0].length; j++) {
+      if (matrix[i][j] === "1") {
+        dp[i][j] =
+          Math.min(
+            dp[i - 1]?.[j - 1] || 0,
+            dp[i]?.[j - 1] || 0,
+            dp[i - 1]?.[j] || 0
+          ) + 1;
+        maxLength = Math.max(dp[i][j], maxLength);
+      } else {
+        dp[i][j] = 0;
+      }
+    }
+  }
+
+  return maxLength * maxLength;
 };
 // @lc code=end
 

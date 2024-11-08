@@ -24,7 +24,7 @@ var myPow1 = function (x, n) {
   return halfN * halfN * (n % 2 === 0 ? 1 : extra);
 };
 
-var myPow = function (x, n) {
+var myPow2 = function (x, n) {
   if (n === 0) return 1;
   let newX = x;
   let newN = n;
@@ -35,6 +35,13 @@ var myPow = function (x, n) {
   return newN % 2 === 0
     ? myPow(newX * newX, newN / 2)
     : newX * myPow(newX * newX, Math.floor(newN / 2));
+};
+
+var myPow = function (x, n) {
+  if (n === 0) return 1;
+  const _x = n < 0 ? 1 / x : x;
+  const half = myPow(_x, Math.floor(Math.abs(n) / 2));
+  return half * half * (Math.abs(n) % 2 === 1 ? _x : 1); // 注意负数取余还是负数
 };
 // @lc code=end
 

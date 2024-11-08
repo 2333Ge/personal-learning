@@ -22,7 +22,7 @@
  * @param {_Node} head
  * @return {_Node}
  */
-var copyRandomList = function (head) {
+var copyRandomList1 = function (head) {
   if (!head) return null;
   const newHead = new _Node(head.val);
   let cur = head;
@@ -51,6 +51,57 @@ var copyRandomList = function (head) {
   }
 
   return newHead;
+};
+// 太长
+var copyRandomList2 = function (head) {
+  if (!head) return null;
+
+  let cur = head;
+  let newPre = { next: null };
+  const oldNewMap = new Map();
+  let newDummy = newPre;
+
+  while (cur) {
+    const copyNode = new _Node(cur.val);
+    newPre.next = copyNode;
+    oldNewMap.set(cur, copyNode);
+    cur = cur.next;
+    newPre = newPre.next;
+  }
+
+  cur = head;
+  let newCur = newDummy.next;
+
+  while (cur) {
+    newCur.random = oldNewMap.get(cur.random);
+    cur = cur.next;
+    newCur = newCur.next;
+  }
+
+  return newDummy.next;
+};
+
+var copyRandomList = function (head) {
+  if (!head) return null;
+
+  let cur = head;
+  let oldNewMap = new Map();
+
+  while (cur) {
+    oldNewMap.set(cur, new _Node(cur.val));
+    cur = cur.next;
+  }
+
+  cur = head;
+
+  while (cur) {
+    const newNode = oldNewMap.get(cur);
+    newNode.next = oldNewMap.get(cur.next) || null;
+    newNode.random = oldNewMap.get(cur.random) || null;
+    cur = cur.next;
+  }
+
+  return oldNewMap.get(head);
 };
 // @lc code=end
 

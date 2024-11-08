@@ -54,7 +54,7 @@ var combine2 = function (n, k) {
 
 // + 减枝
 
-var combine = function (n, k) {
+var combine3 = function (n, k) {
   let result = [];
   const path = [];
   const dfs = (min) => {
@@ -69,6 +69,25 @@ var combine = function (n, k) {
     }
   };
   dfs(1);
+  return result;
+};
+
+var combine = function (n, k) {
+  const result = [];
+  let path = [];
+  const backtrack = (min) => {
+    if (path.length === k) {
+      result.push([...path]);
+      return;
+    }
+    for (let i = min; i <= n; i++) {
+      path.push(i);
+      backtrack(i + 1);
+      path.pop();
+    }
+  };
+
+  backtrack(1);
   return result;
 };
 // @lc code=end

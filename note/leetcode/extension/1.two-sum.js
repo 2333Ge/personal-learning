@@ -10,7 +10,7 @@
 // @lcpr-template-end
 // @lc code=start
 /**
- * 待提交
+ * 
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}

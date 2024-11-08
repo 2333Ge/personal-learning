@@ -22,7 +22,7 @@
  * @param {number[]} postorder
  * @return {TreeNode}
  */
-var buildTree = function (inorder, postorder) {
+var buildTree1 = function (inorder, postorder) {
   if (!inorder.length) return null;
   const rootVal = postorder[postorder.length - 1];
   const root = new TreeNode(rootVal, null, null);
@@ -37,6 +37,25 @@ var buildTree = function (inorder, postorder) {
   );
   return root;
 };
+
+var buildTree = function (inorder, postorder) {
+  if (!inorder?.length) return null;
+  const rootVal = postorder[postorder.length - 1];
+  const root = new TreeNode(rootVal);
+  const inorderCenterIndex = inorder.findIndex(
+    (item) => item === rootVal
+  );
+  root.left = buildTree(
+    inorder.slice(0, inorderCenterIndex),
+    postorder.slice(0, inorderCenterIndex)
+  );
+  root.right = buildTree(
+    inorder.slice(inorderCenterIndex + 1),
+    postorder.slice(inorderCenterIndex, postorder.length - 1)
+  );
+  return root;
+};
+
 // @lc code=end
 
 /*

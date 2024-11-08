@@ -23,7 +23,7 @@
  * @param {number[]} inorder
  * @return {TreeNode}
  */
-var buildTree = function (preorder, inorder) {
+var buildTree1 = function (preorder, inorder) {
   if (!preorder.length) return null;
   const root = new TreeNode(preorder[0], null, null);
   const preorderIndex = inorder.findIndex((inval) => inval === preorder[0]);
@@ -39,6 +39,17 @@ var buildTree = function (preorder, inorder) {
 
   return root;
 };
+
+var buildTree = function (preorder, inorder) {
+  if (!preorder.length) return null;
+  const root = new TreeNode(preorder[0]);
+  const inorderCenterIndex = inorder.findIndex(item => item === preorder[0]);
+
+  root.left = buildTree(preorder.slice(1, inorderCenterIndex + 1), inorder.slice(0, inorderCenterIndex));
+  root.right = buildTree(preorder.slice(inorderCenterIndex + 1), inorder.slice(inorderCenterIndex + 1))
+
+  return root;
+}
 // @lc code=end
 
 /*

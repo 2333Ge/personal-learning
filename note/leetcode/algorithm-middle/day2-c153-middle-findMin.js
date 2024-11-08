@@ -70,7 +70,7 @@ var findMin = function (nums = []) {
     const mid = Math.floor((l + r) / 2);
     // 因为是和右边一个进行比较，所以上面要用floor；用round，临界值时会有相等的情况，比较无意义
     if (nums[mid] > nums[r]) {
-      // 表示在左边半截，剔除
+      // 表示在右边半截，剔除
       l = mid + 1;
     } else {
       r = mid;

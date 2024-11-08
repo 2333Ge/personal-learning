@@ -29,13 +29,29 @@ var kthSmallest = function (root, k) {
     if (!node || result !== undefined) return;
     inOrder(node.left);
     count++;
-    if (count === k){
+    if (count === k) {
       result = node.val;
-    };
+    }
     inOrder(node.right);
   };
-  inOrder(root)
+  inOrder(root);
   return result;
+};
+
+var kthSmallest = function (root, k) {
+  let step = 1;
+  let res;
+  const inOrder = (node) => {
+    if (!node) return;
+    inOrder(node.left);
+    if (step === k) {
+      res = node.val;
+    }
+    step++;
+    inOrder(node.right);
+  };
+  inOrder(root);
+  return res;
 };
 // @lc code=end
 

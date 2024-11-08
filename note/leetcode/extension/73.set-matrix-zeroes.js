@@ -13,7 +13,7 @@
  * @param {number[][]} matrix
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
-var setZeroes = function (matrix) {
+var setZeroes1 = function (matrix) {
   const rowIndex = {};
   const colIndex = {};
   for (let i = 0; i < matrix.length; i++) {
@@ -32,6 +32,27 @@ var setZeroes = function (matrix) {
     }
   }
 };
+
+var setZeroes = function (matrix) {
+  const rows = {};
+  const cols = {};
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      if (matrix[i][j] === 0) {
+        rows[i] = true;
+        cols[j] = true;
+      }
+    }
+  }
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      if (rows[i] || cols[j]) {
+        matrix[i][j] = 0;
+      }
+    }
+  }
+};
+
 // @lc code=end
 
 /*

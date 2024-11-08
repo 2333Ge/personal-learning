@@ -23,7 +23,7 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-var permute = function (nums) {
+var permute1 = function (nums) {
   const result = [];
   const selected = {};
   const backStack = (list = []) => {
@@ -43,8 +43,31 @@ var permute = function (nums) {
   backStack();
   return result;
 };
+
+var permute = function (nums) {
+  const result = [];
+  const selected = new Set();
+  const backTrack = (cur = []) => {
+    if (cur.length === nums.length) {
+      result.push(cur);
+      return;
+    }
+    for (let i = 0; i < nums.length; i++) {
+      if (selected.has(i)) continue;
+      selected.add(i);
+      backTrack([...cur, nums[i]]);
+      selected.delete(i);
+    }
+  };
+  backTrack();
+  return result;
+};
 // @lc code=end
 
 console.log("3====>", permute([1, 2, 3]));
 console.log("2====>", permute([1, 2]));
 console.log("1====>", permute([1]));
+
+// @lcpr-after-debug-begin
+module.exports = permute;
+// @lcpr-after-debug-end

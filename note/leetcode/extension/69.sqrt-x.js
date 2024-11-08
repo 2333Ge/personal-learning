@@ -13,7 +13,7 @@
  * @param {number} x
  * @return {number}
  */
-var mySqrt = function (x) {
+var mySqrt1 = function (x) {
   if (x <= 1) return x;
   let left = 1,
     right = x;
@@ -29,6 +29,24 @@ var mySqrt = function (x) {
   }
   return left;
 };
+
+var mySqrt = function (x) {
+  if (x <= 1) return x;
+  let left = 1;
+  let right = x;
+  while (left < right) {
+    const mid = Math.round((left + right) / 2);
+    const ji = mid * mid;
+    if (ji === x) return mid;
+    if (ji > x) {
+      right = mid - 1;
+    } else {
+      left = mid;
+    }
+  }
+  return right;
+};
+
 // @lc code=end
 
 /*

@@ -29,29 +29,7 @@ var merge = function (intervals) {
   }
   return result;
 };
-// var merge = function (intervals) {
-//   if (intervals.length === 1) return intervals[0];
-//   let leftA = intervals[0][1];
-//   let leftB = intervals[0][1];
-//   const result = [];
-//   for (let i = 1; i < intervals.length; i++) {
-//     const [curA, curB] = intervals[i];
-//     if (curA <= leftB) {
-//       result.push([leftA, Math.max(leftB, curB)]);
-//       i++;
-//       leftA = intervals[i]?.[0];
-//       leftB = intervals[i]?.[1];
-//       if (i === intervals.length) {
-//         result.push([leftA, leftB]);
-//       }
-//     } else {
-//       result.push([leftA, leftB]);
-//       leftA = intervals[i]?.[0];
-//       leftB = curB;
-//     }
-//   }
-//   return result;
-// };
+
 // @lc code=end
 
 /*

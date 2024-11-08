@@ -14,7 +14,7 @@
  * @param {number[]} newInterval
  * @return {number[][]}
  */
-var insert = function (intervals, newInterval) {
+var insert1 = function (intervals, newInterval) {
   let _newInterval = newInterval;
   if (intervals.length === 0) return [_newInterval];
   let i = 0;
@@ -39,6 +39,30 @@ var insert = function (intervals, newInterval) {
     }
   }
   return [...intervals, _newInterval];
+};
+
+var insert = function (intervals = [], newInterval = []) {
+  const result = [...intervals];
+  let _newInterval = newInterval;
+  let i = 0;
+  while (i < result.length) {
+    const [curStart, curEnd] = result[i];
+    const [judgeStart, judgeEnd] = _newInterval;
+    if (curEnd < judgeStart) {
+      // 小于，继续找
+      i++;
+      continue;
+    }
+    if (curStart > judgeEnd) {
+      // 无交集,前插
+      result.splice(i, 0, _newInterval);
+      return result;
+    }
+    _newInterval = [Math.min(curStart, judgeStart), Math.max(curEnd, judgeEnd)];
+    result.splice(i, 1);
+  }
+
+  return [...result, _newInterval];
 };
 // @lc code=end
 //

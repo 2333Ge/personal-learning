@@ -32,7 +32,7 @@ var minimumTotal1 = function (triangle) {
   return Math.min(...thisLevel);
 };
 
-var minimumTotal = function (triangle) {
+var minimumTotal2 = function (triangle) {
   const dp = [];
   // 超时
   const dfs = (i, j) => {
@@ -43,6 +43,23 @@ var minimumTotal = function (triangle) {
     return dp[i][j];
   };
   return dfs(0, 0);
+};
+
+var minimumTotal = function (triangle) {
+  if (!triangle[0]?.length) return 0;
+  const dp = [[triangle[0][0]]];
+  for (let i = 1; i < triangle.length; i++) {
+    dp[i] = [triangle[i][0] + dp[i - 1][0]];
+    dp[i][i] = triangle[i][i] + dp[i - 1][i - 1];
+  }
+
+  for (let i = 2; i < triangle.length; i++) {
+    for (let j = 1; j < i; j++) {
+      dp[i][j] = Math.min(dp[i - 1][j], dp[i - 1][j - 1]) + triangle[i][j];
+    }
+  }
+
+  return Math.min(...dp[dp.length - 1]);
 };
 // @lc code=end
 

@@ -44,7 +44,7 @@ var findKthLargestX = function (nums, k) {
   return quickSort(0, nums.length - 1);
 };
 
-var findKthLargest = function (nums, k) {
+var findKthLargest1 = function (nums, k) {
   const big = [],
     small = [],
     equal = [];
@@ -68,6 +68,33 @@ var findKthLargest = function (nums, k) {
     return findKthLargest(small, k - big.length - equal.length);
   }
 };
+
+var findKthLargest = function (nums, k) {
+  if (k > nums.length) return;
+  const equal = [];
+  const bigger = [];
+  const smaller = [];
+  const random = nums[0];
+  for (value of nums) {
+    if (value > random) {
+      bigger.push(value);
+    }
+    if (value < random) {
+      smaller.push(value);
+    }
+    if (value === random) {
+      equal.push(value);
+    }
+  }
+  if (bigger.length >= k) {
+    return findKthLargest(bigger, k);
+  }
+  if (equal.length && bigger.length + equal.length >= k) {
+    return random;
+  }
+  return findKthLargest(smaller, k - bigger.length - equal.length);
+};
+
 // @lc code=end
 
 /*

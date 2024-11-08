@@ -44,17 +44,30 @@ var isValidBST1 = function (root) {
     );
   };
   const res = dfs(root);
-  console.log('res====>',res);
+  console.log("res====>", res);
   return res;
   // return dfs(root);
 };
 
-var isValidBST = function (root) {
+var isValidBST1 = function (root) {
   function validate(node, low, high) {
     if (node === null) return true;
     if (node.val <= low || node.val >= high) return false;
-    return validate(node.left, low, node.val) && validate(node.right, node.val, high);
+    return (
+      validate(node.left, low, node.val) && validate(node.right, node.val, high)
+    );
   }
+  return validate(root, -Infinity, Infinity);
+};
+
+var isValidBST = function (root) {
+  const validate = (node, low, high) => {
+    if (!node) return true;
+    if (node.val <= low || node.val >= high) return false;
+    return (
+      validate(node.left, low, node.val) && validate(node.right, node.val, high)
+    );
+  };
   return validate(root, -Infinity, Infinity);
 };
 // @lc code=end

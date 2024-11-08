@@ -18,7 +18,7 @@
  * @param {number} n
  * @return {ListNode}
  */
-var removeNthFromEnd = function (head, n) {
+var removeNthFromEnd1 = function (head, n) {
   if (!head || n === 0) return head;
   let total = 1;
   let p = head;
@@ -38,6 +38,29 @@ var removeNthFromEnd = function (head, n) {
     p = p.next;
   }
 };
+
+var removeNthFromEnd = function (head, n) {
+  if (!head || n === 0) return head;
+  const dummy = new ListNode();
+  dummy.next = head;
+  let slow = dummy;
+  let fast = dummy;
+  let step = n;
+  while (step) {
+    fast = fast.next;
+    step--;
+  }
+
+  while (fast?.next) {
+    fast = fast.next;
+    slow = slow.next;
+  }
+
+  slow.next = slow.next.next;
+
+  return dummy.next;
+
+}
 // @lc code=end
 
 // 待看题解

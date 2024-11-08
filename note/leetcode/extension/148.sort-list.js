@@ -41,7 +41,7 @@ const merge = (list1, list2) => {
   return dummy.next;
 };
 
-var sortList = function (head) {
+var sortList1 = function (head) {
   if (!head?.next) return head;
   let slow = head;
   let fast = head;
@@ -56,6 +56,41 @@ var sortList = function (head) {
   pre.next = null;
   const left = sortList(head);
 
+  return merge(left, right);
+};
+
+var sortList = function (head) {
+  if (!head?.next) return head;
+  let slow = head;
+  let fast = head.next;
+  while (fast?.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+  const right = sortList(slow.next);
+  slow.next = null;
+  const left = sortList(head);
+
+  const merge = (left, right) => {
+    let curL = left;
+    let curR = right;
+    const dummy = { next: null };
+    let cur = dummy;
+    while (curL && curR) {
+      if (curL.val < curR.val) {
+        cur.next = curL;
+        curL = curL.next;
+      } else {
+        cur.next = curR;
+        curR = curR.next;
+      }
+      cur = cur.next;
+    }
+
+    if (curL) cur.next = curL;
+    if (curR) cur.next = curR;
+    return dummy.next;
+  };
   return merge(left, right);
 };
 

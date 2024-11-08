@@ -41,7 +41,7 @@ var merge1 = function (nums1, m, nums2, n) {
   nums1.splice(m + n, nums1.length - m - n);
 };
 
-var merge = function (nums1, m, nums2, n) {
+var merge2 = function (nums1, m, nums2, n) {
   let i = m - 1,
     j = n - 1;
   nums1.splice(m);
@@ -56,6 +56,22 @@ var merge = function (nums1, m, nums2, n) {
     }
   }
   nums1.splice(0, 0, ...nums2);
+};
+
+var merge = function (nums1, m, nums2, n) {
+  let last = m + n - 1;
+  let i = m - 1;
+  let j = n - 1;
+  while (i >= 0 || j >= 0) {
+    if (nums1[i] > nums2[j] || j < 0) {
+      nums1[last] = nums1[i];
+      i--;
+    } else {
+      nums1[last] = nums2[j];
+      j--;
+    }
+    last--;
+  }
 };
 
 // 2. 双指针，再↑的基础上再加个尾指针

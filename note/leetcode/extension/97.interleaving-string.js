@@ -36,7 +36,7 @@ var isInterleave1 = function (s1, s2, s3) {
   return dp[s1.length - 1][s2.length - 1];
 };
 
-var isInterleave = function (s1, s2, s3) {
+var isInterleave2 = function (s1, s2, s3) {
   if (s1.length + s2.length !== s3.length) return false;
   const dp = new Array(s1.length + 1)
     .fill(0)
@@ -63,6 +63,32 @@ var isInterleave = function (s1, s2, s3) {
   }
   return dp[s1.length][s2.length];
 };
+
+var isInterleave = function (s1, s2, s3) {
+  if (s1.length + s2.length !== s3.length) {
+    return false;
+  }
+  let dp = [[true]];
+  for (let i = 1; i <= s1.length; i++) {
+    dp[i] = [dp[i - 1][0] && s1[i - 1] === s3[i - 1]];
+  }
+  for (let i = 1; i <= s2.length; i++) {
+    dp[0][i] = dp[0][i - 1] && s2[i - 1] === s3[i - 1];
+  }
+
+  for (let i = 1; i <= s1.length; i++) {
+    for (let j = 1; j <= s2.length; j++) {
+      dp[i][j] = false;
+      if (s1[i - 1] === s3[i + j - 1] && dp[i - 1][j]) {
+        dp[i][j] = true;
+      } else if (s2[j - 1] === s3[i + j - 1] && dp[i][j - 1]) {
+        dp[i][j] = true;
+      }
+    }
+  }
+  return dp[s1.length][s2.length];
+};
+
 // @lc code=end
 console.log("name====>", isInterleave("aabcc", "dbbca", "aadbbcbcac"));
 /*
@@ -79,3 +105,7 @@ console.log("name====>", isInterleave("aabcc", "dbbca", "aadbbcbcac"));
 // @lcpr case=end
 
  */
+
+// @lcpr-after-debug-begin
+module.exports = isInterleave;
+// @lcpr-after-debug-end

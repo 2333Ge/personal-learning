@@ -31,7 +31,7 @@
 //   return nums.slice(maxStartIndex, maxEndIndex + 1)
 // };
 
-var maxSubArray = function (nums) {
+var maxSubArray1 = function (nums) {
   const dp = [nums[0]];
   let max = nums[0];
   for (let i = 1; i < nums.length; i++) {
@@ -42,6 +42,22 @@ var maxSubArray = function (nums) {
   }
   return max;
 };
+
+
+var maxSubArray = function (nums) {
+  const dp = [nums[0]];
+  let max = nums[0];
+  for (let i = 1; i < nums.length; i++) {
+    if (dp[i - 1] < 0) {
+      dp[i] = nums[i];
+    } else {
+      dp[i] = nums[i] + dp[i - 1]
+    }
+    max = Math.max(dp[i], max)
+  }
+  return max;
+}
+
 // @lc code=end
 
 /*

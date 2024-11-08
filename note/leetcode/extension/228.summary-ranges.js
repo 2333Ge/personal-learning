@@ -41,7 +41,7 @@ var summaryRanges1 = function (nums) {
   return res;
 };
 
-var summaryRanges = function (nums) {
+var summaryRanges2 = function (nums) {
   if (nums.length === 0) return [];
   const res = [];
   let start = nums[0];
@@ -59,6 +59,25 @@ var summaryRanges = function (nums) {
 
   return res;
 };
+
+var summaryRanges = function (nums) {
+  if (!nums.length) return [];
+  const res = [];
+  let start = nums[0];
+  for (let i = 1; i <= nums.length; i++) {
+    // 注意这个或
+    if (nums[i] !== nums[i - 1] + 1 || i === nums.length) {
+      if (nums[i - 1] === start) {
+        res.push(`${start}`);
+      } else {
+        res.push(`${start}->${nums[i - 1]}`);
+      }
+      start = nums[i];
+    }
+  }
+  return res;
+};
+
 // @lc code=end
 
 /*

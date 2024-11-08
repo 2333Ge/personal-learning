@@ -54,7 +54,20 @@ var longestConsecutive = function (nums) {
  * 2.从边界开始计算长度
  */
 var longestConsecutive = function (nums) {
-
+  if (!nums.length) return 0;
+  const numSet = new Set(nums);
+  let res = 1;
+  for (let value of numSet) {
+    if (numSet.has(value + 1)) continue;
+    let length = 1;
+    let cur = value;
+    while (numSet.has(cur - 1)) {
+      cur--;
+      length++;
+    }
+    res = Math.max(length, res);
+  }
+  return res;
 };
 // @lc code=end
 

@@ -68,7 +68,7 @@ var reverseBetween1 = function (head, left, right) {
  * @param {*} right
  * @returns
  */
-var reverseBetween = function (head, left, right) {
+var reverseBetween2 = function (head, left, right) {
   if (left === right || !head) return head;
   // 基操
   let dummy = { next: head };
@@ -95,6 +95,55 @@ var reverseBetween = function (head, left, right) {
   return dummy.next;
 };
 
+var reverseBetweenX = function (head, left, right) {
+  function ListNode(val, next) {
+    this.val = (val === undefined ? 0 : val)
+    this.next = (next === undefined ? null : next)
+  }
+  const dummy = new ListNode();
+  dummy.next = head;
+  let step = 1;
+  let cur = dummy;
+  while (step < left) {
+    cur = cur.next;
+    step++;
+  }
+
+  let then = cur.next;
+
+  while (step <= right) {
+    const nextThen = then.next;
+    then.next = cur;
+    cur.next = nextThen;
+    cur = cur.next;
+    then = nextThen;
+    step++;
+  }
+
+  return dummy.next;
+
+}
+
+var reverseBetween = function (head, left, right) {
+  if (left === 1) {
+    return reverseN(head, right)
+  }
+  reverseBetween(head.next, left - 1, right - 1)
+  return head;
+}
+
+const reverseN = (head, n) => {
+  if (n === 1) {
+    return head;
+  }
+  const tail = head.next;
+  const newHead = reverseN(head.next, n - 1)
+  head.next = tail.next;
+  tail.next = head;
+  return newHead;
+}
+
+
 // @lc code=end
 
 /*
@@ -107,3 +156,7 @@ var reverseBetween = function (head, left, right) {
 // @lcpr case=end
 
  */
+
+// @lcpr-after-debug-begin
+module.exports = reverseBetween;
+// @lcpr-after-debug-end
