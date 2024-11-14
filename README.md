@@ -5,12 +5,13 @@
 ```shell
 .
 ├── bin # 脚本
-├── blog # 较正式的笔记
-├── docs # 博客静态网站，放于另一仓库
+├── blog # 较正式的笔记，vuepress 打包静态网站进docs
+├── docs # blog打包产物，[个人博客](https://2333ge.github.io/)，放于另一仓库
 ├── idea # 脑爆
-├── my_actions # 部署的action，放于另一仓库
+├── my_actions # 部署用的github action，放于另一仓库
 ├── note # 未整理的笔记
 ├── slidev # 用 slidev 写的 ppt
+├── note-logseq # 用logseq记的笔记，需要用logseq打开
 ```
 # 相关链接
 
@@ -18,4 +19,4 @@
 
 # 备忘
 
-- 需要安装git-lfs：https://help.aliyun.com/document_detail/206889.html
+- 需要安装[git-lfs](https://help.aliyun.com/document_detail/206889.html)

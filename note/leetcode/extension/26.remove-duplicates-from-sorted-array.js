@@ -13,7 +13,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var removeDuplicates = function (nums) {
+var removeDuplicates1 = function (nums) {
   if (nums.length === 0) return 0;
   let lastIndex = 0;
   for (let i = 1; i < nums.length; i++) {
@@ -23,6 +23,20 @@ var removeDuplicates = function (nums) {
     }
   }
   return lastIndex + 1;
+};
+
+var removeDuplicates = function (nums) {
+  if (nums.length <= 1) return nums.length;
+  let left = 0;
+  let right = 1;
+  while (right < nums.length) {
+    if (nums[right] !== nums[left]) {
+      left++;
+      nums[left] = nums[right];
+    }
+    right++;
+  }
+  return left + 1;
 };
 // @lc code=end
 

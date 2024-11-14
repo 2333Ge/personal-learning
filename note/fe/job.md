@@ -339,8 +339,7 @@ true
 
 > [小林coding](https://www.xiaolincoding.com/network/1_base/what_happen_url.html)
 > [MDN](https://developer.mozilla.org/zh-CN/docs/Web/Performance/How_browsers_work)
->
-> 
+
 ### HTTPS
 
 

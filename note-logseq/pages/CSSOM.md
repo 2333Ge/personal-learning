@@ -1,0 +1,2 @@
+- CSSOM 则使得 JavaScript 可以读取和修改文档样式。
+-
