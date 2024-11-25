@@ -299,7 +299,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["原型和原型链"]
+ :favorites []
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -419,5 +419,5 @@
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
- :feature/enable-journals? false
+ :feature/enable-journals? true
  :default-home {:page "contents"}}

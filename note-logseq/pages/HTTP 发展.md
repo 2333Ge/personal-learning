@@ -1,0 +1,25 @@
+- HTTP/0.9--单行协议
+	- 请求：单行指令
+	- 响应：只有文档，没有HTTP头
+- HTTP/1.0--构建可扩展性
+	- 请求增加协议版本信息
+	- 引入HTTP标头概念
+	- 引入状态码标识成功、失败，一些缓存控制等
+	- 具备传输HTML文件以外的文档的能力（`Content-Type`）
+	- 它是狭义的，并不是官方标准
+- HTTP/1.1--标准化的协议
+	- 连接可以复用
+	- 请求管道化，允许等待第一个应答时发送第二个请求
+	- 支持响应分块
+	- 引入额外的缓存控制
+- HTTP/2
+	- HTTP 2是二进制协议而不是文本协议，不再可读
+		- TODO 不可读是什么意思，whistle raw 中还是文本形式
+	- 压缩了标头
+	- 新增服务器推送机制，允许服务器在缓存中填充数据
+	- 多路复用，并行的请求能在一个连接中处理
+- HTTP/3
+	- 传输层使用[QUIC](https://developer.mozilla.org/zh-CN/docs/Glossary/QUIC)而不是TCP协议
+	-
+- ## 参见
+- [MDN：HTTP的发展](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Evolution_of_HTTP)
