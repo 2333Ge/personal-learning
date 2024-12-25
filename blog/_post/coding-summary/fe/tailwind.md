@@ -1,5 +1,5 @@
 ---
-title: tailwind 概览
+title: Tailwind CSS 概览
 date: 2024-07-01
 category: FE
 tags:

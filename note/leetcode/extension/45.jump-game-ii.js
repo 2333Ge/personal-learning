@@ -23,7 +23,7 @@ var jump1 = function (nums) {
   }
   return dp[nums.length - 1];
 };
-var jump = function (nums) {
+var jump2 = function (nums) {
   let maxRight = 0;
   let step = 0;
   let curEnd = 0;
@@ -35,6 +35,35 @@ var jump = function (nums) {
       curEnd = maxRight;
     }
   }
+  return step;
+};
+
+var jump3 = function (nums) {
+  if (nums.length < 2) return 0;
+  const dp = [0];
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = 1; j <= nums[i]; j++) {
+      dp[j + i] = Math.min(dp[j + i] ?? Infinity, dp[i] + 1);
+    }
+  }
+  return dp[nums.length - 1];
+};
+
+var jump = function (nums) {
+  let step = 0;
+  let nextMax = 0;
+  let i = 0;
+  let roundEnd = 0;
+
+  while (i < nums.length - 1) {
+    nextMax = Math.max(i + nums[i], nextMax);
+    if (i === roundEnd) {
+      step++;
+      roundEnd = nextMax;
+    }
+    i++;
+  }
+
   return step;
 };
 

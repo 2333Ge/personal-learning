@@ -10,24 +10,34 @@
 // @lcpr-template-end
 // @lc code=start
 /**
- * 有重复结果
+ *
  * @param {number[]} candidates
  * @param {number} target
  * @return {number[][]}
  */
-var combinationSumX = function (candidates, target) {
-  const dp = [];
-  for (let i = 1; i <= target; i++) {
-    dp[i] = [];
-    for (base of candidates) {
-      if (i - base === 0) {
-        dp[i].push([base]);
-      } else if (dp[i - base]?.length) {
-        dp[i].push(...dp[i - base].map((arr) => [...arr, base]));
-      }
+var combinationSum = function (c, target) {
+  let res = [];
+  let path = [];
+
+  const candidates = c.sort((a, b) => a - b);
+  const backTrack = (curTarget, start = 0) => {
+    if (curTarget === 0) {
+      res.push([...path]);
+      return;
     }
-  }
-  return dp[target] || [];
+    for (
+      let i = start;
+      i < candidates.length && curTarget >= candidates[i];
+      i++
+    ) {
+      if (candidates[i] > curTarget) break;
+      path.push(candidates[i]);
+      backTrack(curTarget - candidates[i], i);
+      path.pop();
+    }
+  };
+  backTrack(target);
+  return res;
 };
 // @lc code=end
 

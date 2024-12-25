@@ -37,11 +37,19 @@ var myPow2 = function (x, n) {
     : newX * myPow(newX * newX, Math.floor(newN / 2));
 };
 
-var myPow = function (x, n) {
+var myPow3 = function (x, n) {
   if (n === 0) return 1;
   const _x = n < 0 ? 1 / x : x;
   const half = myPow(_x, Math.floor(Math.abs(n) / 2));
   return half * half * (Math.abs(n) % 2 === 1 ? _x : 1); // 注意负数取余还是负数
+};
+
+var myPow = function (x, n) {
+  if (n === 0) return 1;
+  if (n === 1) return x;
+  const _x = n < 0 ? 1 / x : x;
+  const half = myPow(_x, Math.floor(Math.abs(n) / 2));
+  return half * half * (Math.abs(n) % 2 === 1 ? _x : 1);
 };
 // @lc code=end
 

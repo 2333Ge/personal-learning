@@ -38,13 +38,11 @@ var buildTree1 = function (inorder, postorder) {
   return root;
 };
 
-var buildTree = function (inorder, postorder) {
+var buildTree2 = function (inorder, postorder) {
   if (!inorder?.length) return null;
   const rootVal = postorder[postorder.length - 1];
   const root = new TreeNode(rootVal);
-  const inorderCenterIndex = inorder.findIndex(
-    (item) => item === rootVal
-  );
+  const inorderCenterIndex = inorder.findIndex((item) => item === rootVal);
   root.left = buildTree(
     inorder.slice(0, inorderCenterIndex),
     postorder.slice(0, inorderCenterIndex)
@@ -53,6 +51,17 @@ var buildTree = function (inorder, postorder) {
     inorder.slice(inorderCenterIndex + 1),
     postorder.slice(inorderCenterIndex, postorder.length - 1)
   );
+  return root;
+};
+
+var buildTree = function (inorder, postorder) {
+  if (!inorder?.length) return null;
+  const rootVal = postorder.pop();
+  const root = new TreeNode(rootVal);
+  const inIndex = inorder.findIndex((item) => item === rootVal);
+  root.left = buildTree(inorder.slice(0, inIndex), postorder.slice(0, inIndex));
+  root.right = buildTree(inorder.slice(inIndex + 1), postorder.slice(inIndex));
+
   return root;
 };
 

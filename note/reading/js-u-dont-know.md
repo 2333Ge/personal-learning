@@ -1,9 +1,10 @@
 ---
-title: 《你不知道的JavaScript》笔记（ing）
+title: 《你不知道的JavaScript》笔记
 date: 2023-10-24
 category: 
 tags:
-  - 
+  - Reading
+  - ing
 ---
 
 <!-- more -->

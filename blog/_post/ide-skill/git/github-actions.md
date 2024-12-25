@@ -157,10 +157,6 @@ const qqEmail = core.getInput("qq-email");
 
 自定义签到actions：https://github.com/2333Ge/join-in
 
----
-
-本文持续更新版收录在[此处](https://i2333g3.gitee.io/personal-learning-blog/post/2022/07/13/github-actions.html)
-
 ## 相关链接
 
 [1] [GitHub Actions 入门教程 -- 阮一峰 ](https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)  

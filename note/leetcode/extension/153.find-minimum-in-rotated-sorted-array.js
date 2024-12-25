@@ -5,7 +5,6 @@
  * [153] 寻找旋转排序数组中的最小值
  */
 
-
 // @lcpr-template-start
 
 // @lcpr-template-end
@@ -14,8 +13,9 @@
  * @param {number[]} nums
  * @return {number}
  */
-var findMin = function (nums = []) {
-  let l = 0, r = nums.length - 1;
+var findMin1 = function (nums = []) {
+  let l = 0,
+    r = nums.length - 1;
   while (l < r) {
     const mid = Math.floor((l + r) / 2);
     if (nums[mid] > nums[r]) {
@@ -26,9 +26,21 @@ var findMin = function (nums = []) {
   }
   return nums[r];
 };
+
+var findMin = function (nums = []) {
+  let l = 0;
+  let r = nums.length - 1;
+  while (l < r) {
+    const mid = Math.floor((l + r) / 2);
+    if (nums[mid] > nums[r]) {
+      l = mid + 1;
+    } else {
+      r = mid;
+    }
+  }
+  return nums[l];
+};
 // @lc code=end
-
-
 
 /*
 // @lcpr case=start
@@ -44,4 +56,3 @@ var findMin = function (nums = []) {
 // @lcpr case=end
 
  */
-

@@ -10,7 +10,7 @@ tags:
 
 <!-- more -->
 
-# 入门必看防弯路
+## 入门必看防弯路
 
 - [新手整体规划](https://www.bilibili.com/video/BV1rS4y1W7is)
   - 了解琴、[保养](https://www.bilibili.com/video/BV1RB4y1Y7Dj)
@@ -40,7 +40,7 @@ tags:
 ![](./image-daxueba/schedule.jpg)
 
 
-# 右手基基本功
+## 右手基基本功
 
 分级别练习
 
@@ -59,7 +59,7 @@ tags:
 
 ![](./image-daxueba/right-hand-34-7.jpg)
 
-# [左手基本功](https://www.bilibili.com/video/BV15b4y177PN/?spm_id_from=333.788&vd_source=554c813e9abf3a2eb6e0cf650060074e)
+## [左手基本功](https://www.bilibili.com/video/BV15b4y177PN/?spm_id_from=333.788&vd_source=554c813e9abf3a2eb6e0cf650060074e)
 
 
 - 靠弦按弦练习
@@ -74,7 +74,7 @@ tags:
 
 左手出现问题[参考](https://www.bilibili.com/video/BV13Z4y1i7e1?spm_id_from=333.999.0.0&vd_source=554c813e9abf3a2eb6e0cf650060074e)
 
-# 基础乐理
+## 基础乐理
 
 - 咋震动(一秒多少次) 音调
 - 震多大 响度
@@ -104,7 +104,7 @@ tags:
 各个音的绝对准确高度和他们的相互关系，是确定调式和音高的基础
 
 > 调式: 若干个以特定顺序连接起来的音以一个主音为中心形成的集合[3]
-## 12 平均律
+### 12 平均律
 
 一组有12个间隔均等的音组成的音律叫做12平均律
 
@@ -118,11 +118,11 @@ tags:
 
 ![](./image-daxueba/sound_group.png)
 
-## 固定调唱名法
+### 固定调唱名法
 
 固定调唱名法：用分组和字母来代替具体频率命名的方法
 
-## 大调式
+### 大调式
 
 自然大调式
 
@@ -130,11 +130,11 @@ tags:
 
 命名方式 主音(自然)大调，eg:c大调 
 
-## 首调唱名法
+### 首调唱名法
 
 首调唱名法：只称呼音级、序号、不代表具体音的叫法 
 
-# 全指版音阶系统教学
+## 全指版音阶系统教学
 
 都是标准音时，空弦音6-1弦分别是E2、A2、D3、G3、B3、E4
 
@@ -157,7 +157,7 @@ tags:
 
 把位：指板上某品到某品的区域
 
-## 音阶的弹法咋来的
+### 音阶的弹法咋来的
 
 C大调弹哪些地方
 
@@ -165,7 +165,7 @@ C大调弹哪些地方
 
 弹法见[视频](https://www.bilibili.com/video/BV1X44y1N7x5)
 
-# 唱准音
+## 唱准音
 
 
 音域：人能发出的最低音到最高音的范围，一般男生C2-C5，女生C3-C6
@@ -185,7 +185,7 @@ C大调弹哪些地方
 - [视频链接](https://www.bilibili.com/video/BV1XV4y1u7AD)，08:00
 - [配套资料](https://www.bilibili.com/read/cv18530283)
 
-# 吉他调式和弦级数原理
+## 吉他调式和弦级数原理
 
 和弦：按三度关系排列起来的三个以上的音的结合
 
@@ -203,7 +203,7 @@ A比B高n度的音：B = A + n%7 - 1 + Math.floor(n/7)组
 大三度：音数=2
 小三度：音数=1.5
 
-## 三和弦
+### 三和弦
 
 按三度关系组合起来的音，其中最低的音叫根音、中间的音叫三音、最高的音叫五音
 
@@ -217,12 +217,12 @@ A比B高n度的音：B = A + n%7 - 1 + Math.floor(n/7)组
 ![](./image-daxueba/yin-shu2.jpg)
 ![](./image-daxueba/yin-shu3.jpg)
 
-## 跟练
+### 跟练
 <!-- 待确认 -->
 [跟练视频 ](https://www.bilibili.com/video/BV1ju411i7yA)
 
 E2开始的0-3品音阶
-# 参考文献
+## 参考文献
 
 [1] [维基百科-音高](https://zh.m.wikipedia.org/zh-cn/%E9%9F%B3%E9%AB%98)  
 [2] [维基百科-基频](https://zh.m.wikipedia.org/zh-cn/%E5%9F%BA%E6%9C%AC%E9%A0%BB%E7%8E%87)  

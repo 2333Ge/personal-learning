@@ -59,7 +59,7 @@ var sortList1 = function (head) {
   return merge(left, right);
 };
 
-var sortList = function (head) {
+var sortList2 = function (head) {
   if (!head?.next) return head;
   let slow = head;
   let fast = head.next;
@@ -94,6 +94,50 @@ var sortList = function (head) {
   return merge(left, right);
 };
 
+const mergehh = (l1, l2) => {
+  let curL = l1;
+  let curR = l2;
+  let cur = { next: null };
+  let dummy = cur;
+  while (curL && curR) {
+    if (curL.val < curR.val) {
+      cur.next = curL;
+      curL = curL.next;
+    } else {
+      cur.next = curR;
+      curR = curR.next;
+    }
+    cur = cur.next;
+  }
+
+  if (curL) {
+    cur.next = curL;
+  }
+  if (curR) {
+    cur.next = curR;
+  }
+
+  return dummy.next;
+};
+
+var sortList = function (head) {
+  if (!head?.next) return head;
+  let slow = head;
+  let fast = head.next;
+  while (fast?.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+  const rightStart = slow.next;
+  slow.next = null;
+
+  const left = sortList(head);
+  const right = sortList(rightStart);
+
+  const newHead = mergehh(left, right);
+
+  return newHead;
+};
 // @lc code=end
 
 /*

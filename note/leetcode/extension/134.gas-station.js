@@ -40,7 +40,7 @@ var canCompleteCircuitX = function (gas, cost) {
   return -1;
 };
 
-var canCompleteCircuit = function (gas, cost) {
+var canCompleteCircuit1 = function (gas, cost) {
   let rest = 0;
   let start = 0;
   let curRest = 0;
@@ -56,6 +56,23 @@ var canCompleteCircuit = function (gas, cost) {
 
   return rest >= 0 ? start : -1;
 };
+
+var canCompleteCircuit = function (gas, cost) {
+  let rest = 0;
+  let start = 0;
+  let curRest = 0;
+
+  for (let i = 0; i < gas.length; i++) {
+    rest = gas[i] + rest - cost[i];
+    curRest = gas[i] + curRest - cost[i];
+    if (curRest < 0) {
+      curRest = 0;
+      start = i + 1;
+    }
+  }
+  return rest >= 0 ? start : -1;
+};
+
 // @lc code=end
 
 /*

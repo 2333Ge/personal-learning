@@ -20,6 +20,9 @@
 	- 多路复用，并行的请求能在一个连接中处理
 - HTTP/3
 	- 传输层使用[QUIC](https://developer.mozilla.org/zh-CN/docs/Glossary/QUIC)而不是TCP协议
+	- 连接建立更快
 	-
 - ## 参见
 - [MDN：HTTP的发展](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Evolution_of_HTTP)
+- [小林coding：HTTP 演变](https://www.xiaolincoding.com/network/2_http/http_interview.html)
+-

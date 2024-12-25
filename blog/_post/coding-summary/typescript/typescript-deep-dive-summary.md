@@ -4,6 +4,7 @@ date: 2022-03-15
 category: TypeScript
 tags:
   - TypeScript
+  - FE
 ---
 
 <!-- more -->

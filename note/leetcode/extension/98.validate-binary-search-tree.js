@@ -60,7 +60,7 @@ var isValidBST1 = function (root) {
   return validate(root, -Infinity, Infinity);
 };
 
-var isValidBST = function (root) {
+var isValidBST2 = function (root) {
   const validate = (node, low, high) => {
     if (!node) return true;
     if (node.val <= low || node.val >= high) return false;
@@ -70,6 +70,21 @@ var isValidBST = function (root) {
   };
   return validate(root, -Infinity, Infinity);
 };
+
+var isValidBST = function (root) {
+  const deepV = function (root, min = -Infinity, max = Infinity) {
+    if (!root) return true;
+    if (root.val > min && root.val < max) {
+      return (
+        deepV(root.left, min, root.val) && deepV(root.right, root.val, max)
+      );
+    }
+    return false;
+  };
+
+  return deepV(root);
+};
+
 // @lc code=end
 
 /*

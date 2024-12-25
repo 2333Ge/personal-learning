@@ -53,7 +53,7 @@ var longestConsecutive = function (nums) {
  * 1.转set
  * 2.从边界开始计算长度
  */
-var longestConsecutive = function (nums) {
+var longestConsecutive1 = function (nums) {
   if (!nums.length) return 0;
   const numSet = new Set(nums);
   let res = 1;
@@ -69,6 +69,25 @@ var longestConsecutive = function (nums) {
   }
   return res;
 };
+
+var longestConsecutive = function (nums = []) {
+  if (!nums.length) return 0;
+  const set = new Set(nums);
+  let res = 0;
+  for (value of set) {
+    if (!set.has(value - 1)) {
+      let step = 1;
+      let cur = value;
+      while (set.has(cur + 1)) {
+        cur++;
+        step++;
+      }
+      res = Math.max(step, res);
+    }
+  }
+  return res;
+};
+
 // @lc code=end
 
 /*

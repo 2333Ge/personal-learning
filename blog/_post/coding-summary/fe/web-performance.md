@@ -1,5 +1,5 @@
 ---
-title: 网页性能优化（ing）
+title: 网页性能优化
 date: 2023-11-17
 category: FE
 tags:
@@ -8,6 +8,10 @@ tags:
 ---
 
 <!-- more -->
+
+## 网页性能测试
+
+- 使用 [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview?hl=zh-cn) 测试
 
 ## 性能的一般注意事项
 

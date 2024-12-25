@@ -69,7 +69,7 @@ var findKthLargest1 = function (nums, k) {
   }
 };
 
-var findKthLargest = function (nums, k) {
+var findKthLargest2 = function (nums, k) {
   if (k > nums.length) return;
   const equal = [];
   const bigger = [];
@@ -92,6 +92,25 @@ var findKthLargest = function (nums, k) {
   if (equal.length && bigger.length + equal.length >= k) {
     return random;
   }
+  return findKthLargest(smaller, k - bigger.length - equal.length);
+};
+
+var findKthLargest = function (nums, k) {
+  if (k > nums.length) return;
+  let equal = [nums[0]];
+  let smaller = [];
+  let bigger = [];
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] === nums[0]) {
+      equal.push(nums[i]);
+    } else if (nums[i] > nums[0]) {
+      bigger.push(nums[i]);
+    } else {
+      smaller.push(nums[i]);
+    }
+  }
+  if (k <= bigger.length) return findKthLargest(bigger, k);
+  if (k <= bigger.length + equal.length) return equal[0];
   return findKthLargest(smaller, k - bigger.length - equal.length);
 };
 

@@ -1,10 +1,11 @@
 ---
-title: 《Pro Git》笔记（ing）
+title: 《Pro Git》笔记
 date: 2022-07-13
 category: git
 tags:
   - Reading
   - git
+  - ing
 ---
 <!-- more -->
 
@@ -36,4 +37,6 @@ Git 用以计算校验和的机制叫做 SHA-1 散列（hash，哈希）。 这�
 
 ## 参考文献
 
-[1] [斯坦福-git](https://missing-semester-cn.github.io/2020/version-control/)
+- [1] [斯坦福-git](https://missing-semester-cn.github.io/2020/version-control/)
+- [2] [Pro Git 中文版](https://www.progit.cn/)
+

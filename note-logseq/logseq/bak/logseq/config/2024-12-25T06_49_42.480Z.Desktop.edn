@@ -421,4 +421,4 @@
  :file/name-format :triple-lowbar
  :feature/enable-journals? false
  :default-home {:page "contents"}
- :graph/forcesettings {:link-dist 20}}
+ :graph/forcesettings {:link-dist 10}}
