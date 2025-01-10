@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "personal-learning",
   "scripts": {
-    "push": "./bin/push.sh",
+    "lint": ".bin/check-logseq-assets.js note-logseq/assets",
+    "size-check": "./bin/show-commit-size.sh",
+    "save": "./bin/save.sh",
     "dev": "vuepress dev blog",
     "build": "vuepress build blog",
     "deploy": "./bin/deploy.sh",
@@ -14,5 +16,8 @@
   "devDependencies": {
     "vuepress": "^1.9.7",
     "vuepress-theme-maker": "^1.2.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
   }
 }

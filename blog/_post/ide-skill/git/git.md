@@ -48,6 +48,14 @@ vim ~/.gitconfig
 
 # 实用指令
 
+## git diff 查看文件差异
+
+查看不同分支同一文件的差异
+
+```bash
+git diff branch1..branch2 pnpm-lock.yaml
+```
+
 ## git stash 暂存 [2]
  
 ```bash

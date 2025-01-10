@@ -299,7 +299,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["Contents"]
+ :favorites ["键入网址到页面显示，过程中发生了什么？" "Contents"]
 
  ;; Set flashcards interval.
  ;; Expected value:

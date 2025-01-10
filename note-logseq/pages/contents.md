@@ -1,3 +1,5 @@
+- TOOLS
+	- [[Logseq 基础]]
 - LIFE
 	- [[记单词]]
 - FE
@@ -9,7 +11,7 @@
 	- [[键入网址到页面显示，过程中发生了什么？]]
 	- [[HTTP]]
 	- [[call、bind、apply]]
-	- TODO:
+	- TODO
 		- **this关键字**
 		- **异步编程**
 		- **DOM操作**
@@ -21,3 +23,4 @@
 		- **手写一段逻辑：Promise等**
 		- 打包工具：webpack等
 		- HTTPS
+-

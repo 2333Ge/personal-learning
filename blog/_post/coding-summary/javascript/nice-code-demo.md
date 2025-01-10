@@ -12,9 +12,17 @@ tags:
 
 ## 方法顺序执行，不论同步还是异步
 
-https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Using_promises
+以下代码实现方法顺序执行，不论同步还是异步
 
-以下代码实现方法顺序执行，不论同步还是异步，
+```js
+let result;
+for (const f of [func1, func2, func3]) {
+  result = await f(result);
+}
+/* use last result (i.e. result3) */
+```
+
+更老版本的写法：
 
 ```js
 const applyAsync = (acc, val) => acc.then(val);
@@ -27,15 +35,7 @@ const transformData = composeAsync(func1, func2, func3);
 const result3 = transformData(data);
 ```
 
-ES2017 写法
-
-```js
-let result;
-for (const f of [func1, func2, func3]) {
-  result = await f(result);
-}
-/* use last result (i.e. result3) */
-```
+参考：[MDN: 使用Promise](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Using_promises)
 
 ## 闭包缓存计算结果，提高性能
 
@@ -70,7 +70,7 @@ console.log(memoizedFibonacci(20)); // 输出 6765
 
 ## 闭包实现函数柯里化
 
-通用的函数柯里化工具函数，注意没有处理this的指向
+通用的函数柯里化工具函数，注意这里没有处理`this`的指向
 
 ```js
 function curry(fn) {
@@ -97,10 +97,9 @@ console.log(curriedSum(1)(2, 3)); // 6
 
 ## TypeScript
 
-
 ### 枚举+位运算进行状态判断
 
-枚举+位运算进行状态判断与运算, [原文链接](https://jkchao.github.io/typescript-book-chinese/typings/enums.html)
+枚举+位运算进行状态判断与运算
 
 ```typescript
 enum AnimalFlags {
@@ -137,10 +136,7 @@ animal.flags |= AnimalFlags.HasClaws | AnimalFlags.CanFly;
 printAnimalAbilities(animal); // animal has claws, animal can fly
 ```
 
-
-- Animal 有多种状态时判断、运算十分简洁
-
-- 用数字、二进制表示某种状态时，枚举能语义化字段的含义，又能用于真实环境的数据传输
+Animal 有多种状态时判断、运算十分简洁
 
 假如让我来写的话，不用枚举+位运算的话可能实现如下
 
@@ -174,21 +170,11 @@ animal.flags = ['HasClaws', 'CanFly'];
 printAnimalAbilities(animal); // animal has claws, animal can fly
 ```
 
-运算不太方便，比如状态是`['HasClaws', 'CanFly']`, 想移除Fly状态得找到元素位置、操作数组，等操作相比前面一种方式麻烦太多
+运算不太方便，比如状态是`['HasClaws', 'CanFly']`, 想移除Fly状态需要进行数组操作，比位运算麻烦许多
 
-### 简写技巧
+参考：[深入理解 TypeScript：枚举](https://jkchao.github.io/typescript-book-chinese/typings/enums.html)
 
-可选项变必选
-
-```typescript
-type Concrete<Type> = {
-  [Property in keyof Type]-?: Type[Property];
-};
-```
-
-### React 导出 useImperativeHandle 声明
-
-参考：https://stackoverflow.com/questions/62210286/declare-type-with-react-useimperativehandle
+### React 导出 useImperativeHandle 的声明
 
 定义：
 
@@ -207,7 +193,7 @@ const Countdown: React.ForwardRefRenderFunction<CountdownHandle, CountdownProps>
     start() {
       alert('Start');
     }
-  });
+  }));
 
   return <div>Countdown</div>;
 }
@@ -216,13 +202,14 @@ export default React.forwardRef(Countdown);
 
 ```
 
-使用：
+在上层组件中常想知道子组件`useImperativeHandle`的定义，可以这么写：
+
 ```typescript
 const App: React.FC = () => {
-  // this will be inferred as `CountdownHandle`
-  type CountdownHandle = React.ElementRef<typeof Countdown>;
+  // 这个类型等于 `CountdownHandle`，但不需要手动 import CountdownHandle
+  type CountDownRef = React.ElementRef<typeof Countdown>;
 
-  const ref = React.useRef<CountdownHandle>(null); // assign null makes it compatible with elements.
+  const ref = React.useRef<CountDownRef>(null); // assign null makes it compatible with elements.
 
   return (
     <Countdown ref={ref} />
@@ -230,6 +217,9 @@ const App: React.FC = () => {
 };
 ```
 
+`CountDownRef`这个类型等于 `CountdownHandle`，但不需要手动 import `CountdownHandle`
+
+参考：[stackoverflow](https://stackoverflow.com/questions/62210286/declare-type-with-react-useimperativehandle)
 
 ### `+` `-`修饰符
 
@@ -250,8 +240,8 @@ type UnlockedAccount = CreateMutable<LockedAccount>;
 // UnlockedAccount 等效于
 
 type UnlockedAccount = {
-    id: string;
-    name: string;
+  id: string;
+  name: string;
 }
 ```
 
@@ -267,7 +257,7 @@ type MappedTypeWithNewProperties<Type> = {
 
 #### 示例一，根据已知类型的键映射出新类型键
 
-> [Capitalize](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html#capitalizestringtype):转换字符串类型第一个字母为大写
+> [Capitalize](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html#capitalizestringtype): 转换字符串类型第一个字母为大写
 
 ```typescript
 type Getters<Type> = {
@@ -291,7 +281,7 @@ type LazyPerson = {
 }
 ```
 
-#### 示例二：映射任意联合类型，不仅仅是字符串
+#### 示例二：映射任意联合类型
 
 如：映射联合对象类型，并以类型的Value为新类型的key
 

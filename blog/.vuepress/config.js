@@ -75,12 +75,26 @@ module.exports = {
     /*-----------------左侧导航配置-----------------------*/
     nav: [
       { text: "🏠 主页", link: "/" },
-      { text: "Shell 实用指令概览", link: "/post/2022/04/21/shell.html" },
-      { text: "《深入理解 TypeScript》 笔记", link: "/post/2022/03/15/typescript-deep-dive-summary.html" },
-      { text: "VSCode snippet自定义代码模板", link: "/post/2022/03/16/snippet.html" },
-      { text: "VSCode插件开发小记 | 高亮自定义主题", link: "/post/2019/10/23/vscode-plugin-highlight-my-word.html" },
-      { text: "《重构2》笔记", link: "/post/2020/06/01/reactor2-summary.html" },
-      
+      {
+        text: "CSS 还能这么写？|《CSS揭秘》分享",
+        link: "/post/2023/11/24/css-secrets.html",
+      },
+      {
+        text: "《深入理解 TypeScript》 笔记",
+        link: "/post/2022/03/15/typescript-deep-dive-summary.html",
+      },
+      {
+        text: "VSCode snippet自定义代码模板",
+        link: "/post/2022/03/16/snippet.html",
+      },
+      {
+        text: "VSCode插件开发小记 | 高亮自定义主题",
+        link: "/post/2019/10/23/vscode-plugin-highlight-my-word.html",
+      },
+      {
+        text: "前端优秀代码示例",
+        link: "/post/2024/12/25/nice-code-demo.html",
+      },
     ],
     /*-----------------设置 sidebar 底部社交媒体 URL。-----------------------*/
     social: [

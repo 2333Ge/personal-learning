@@ -299,7 +299,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites []
+ :favorites ["Contents" "原型和原型链"]
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -420,4 +420,6 @@
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
  :feature/enable-journals? false
- :default-home {:page "contents"}}
+ :default-home {:page "contents"}
+ :graph/forcesettings {:link-dist 20}
+ :graph/settings {:orphan-pages? true}}
