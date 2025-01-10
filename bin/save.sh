@@ -1,9 +1,8 @@
 #!/usr/bin/env sh
 # 检查commit前的内容，并保存
 
-echo "\n"
-echo "=== save start ==="
-echo "\n"
+set -e
+echo "\n=== save start ===\n"
 
 
 echo "检查是否有重复文件==>\n"
@@ -23,6 +22,4 @@ fi
 git commit -m "$commitMsg"
 
 
-echo "\n"
-echo "=== save end ==="
-echo "\n"
+echo "\n=== save end ===\n"
