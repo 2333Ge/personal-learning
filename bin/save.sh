@@ -7,10 +7,10 @@ echo "\n=== save start ===\n"
 
 echo "检查是否有重复文件==>\n"
 
-npm run lint
+npm run check:logseq
 
 echo "检查commit内容==>\n"
-npm run size-check
+npm run check:size
 
 git add .
 

@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "personal-learning",
   "scripts": {
-    "lint": "node bin/check-logseq-assets.js note-logseq/assets",
-    "size-check": "./bin/show-commit-size.sh",
+    "check:logseq": "node bin/check-logseq-assets.js note-logseq/assets",
+    "check:size": "node bin/show-commit-size.js",
     "save": "./bin/save.sh",
     "dev": "vuepress dev blog",
     "build": "vuepress build blog",
