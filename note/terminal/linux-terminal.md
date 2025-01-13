@@ -1,5 +1,5 @@
 ---
-title: 终端概览
+title: 【了解你的IDE】终端
 date: 2022-08-26
 category: ide-skill
 tags:
@@ -72,7 +72,3 @@ zsh: command not found: tmux
 ych@banzhuan ~ %  PS1=">"
 >
 ```
-
-# 随记
-
-- jobs 概念

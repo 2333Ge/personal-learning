@@ -1,5 +1,5 @@
 ---
-title: 算法概览
+title: 算法学习
 date: 2024-01-17
 category: algorithm
 tags:

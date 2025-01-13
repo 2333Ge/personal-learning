@@ -4,17 +4,12 @@ date: 2024-02-05
 category: ai
 tags:
   - ai
+  - ing
 ---
 
 <!-- more -->
 
-## 资料
-
-https://www.promptingguide.ai/zh/
-
-- 提供样本
-
-## **链式思考**
+## 链式思考
 
 提示中间推理步骤
 
@@ -59,3 +54,8 @@ fix_english(expand_word(trans_word('婆罗摩火山处于享有“千岛之国�
 ## 在LLM中调用函数
 
 函数调用指可靠地连接LLM与外部工具的能力。让用户能够使用高效的外部工具、与外部API进行交互。
+
+
+## 参考资料
+
+[提示词工程指南](https://www.promptingguide.ai/zh/)
