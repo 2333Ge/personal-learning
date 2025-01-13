@@ -106,7 +106,8 @@ tags:
 
 |              插件名               |                 描述                 |                 标识符                 |
 | :-------------------------------: | :----------------------------------: | :------------------------------------: |
-|           Code Runner：           |           实时一键运行代码           |       formulahendry.code-runner        |
+|              Markmap              |         markdown 转思维导图          |         gera2ld.markmap-vscode         |
+|            Code Runner            |           实时一键运行代码           |       formulahendry.code-runner        |
 |            background             |           设置 ide 背景图            |          shalldie.background           |
 |          vscode-mindmap           | 思维导图插件，创建.km 文件，自动识别 |         souche.vscode-mindmap          |
 |        Draw.io Integration        |    流程图，创建.dio文件，自动识别    |          hediet.vscode-drawio          |

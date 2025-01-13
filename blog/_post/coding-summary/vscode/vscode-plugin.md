@@ -1,5 +1,5 @@
 ---
-title: VSCode 插件开发小记
+title: VSCode 插件开发入门
 date: 2019-06-01
 category: VSCode
 tags: 
@@ -8,11 +8,12 @@ tags:
 ---
 
 <!-- more -->
+
 ## Hello World
 
 - 脚手架安装&初始化
 
-```
+```shell
 npm install -g yo generator-code
 // 工作区
 yo code
@@ -25,20 +26,19 @@ yo code
 
 ### package.json
 
-- name 和 publisher： VS Code <publisher>.<name>用作插件的唯一 ID
+- name 和 publisher： VS Code `<publisher>.<name>`用作插件的唯一 ID
 - main：插件入口文件
 - engines.vscode：这指定了扩展所依赖的 VS Code API 的最低版本。
 
-```
 
+```json
 {
   "name": "helloworld-sample",
   "engines": {
     "vscode": "^1.51.0"
   },
-  "main": "./out/extension.js",
+  "main": "./out/extension.js"
 }
-
 ```
 
 ### 入口文件

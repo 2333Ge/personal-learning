@@ -1,8 +1,9 @@
 {
   "recommendations": [
-    "souche.vscode-mindmap",
-    "formulahendry.code-runner",
+    "gera2ld.markmap-vscode",
     "streetsidesoftware.code-spell-checker",
-    "hediet.vscode-drawio"
+    "formulahendry.code-runner",
+    // "souche.vscode-mindmap",
+    // "hediet.vscode-drawio"
   ]
 }

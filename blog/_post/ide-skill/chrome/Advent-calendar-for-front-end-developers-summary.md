@@ -18,8 +18,10 @@ tags:
 
 MAC Windows 的 Ctrl CMD 记混了 ，快捷键不生效时替换两个按键试试
 
-其他技巧：https://developer.aliyun.com/article/110289
+其他参考：
 
+- [开发者不可不知的 Google Chrome 七大新特性](https://developer.aliyun.com/article/110289)
+ 
 ## 如何不引入外部资源在浏览器中写代码并调试
 
 source 左侧面板 Snippets

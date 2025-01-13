@@ -1,5 +1,5 @@
 ---
-title: 这是半个提问帖 | 前端应该做什么
+title: 这是半个提问帖 | 前端应该会什么
 date: 2022-07-18
 category: FE
 tags:

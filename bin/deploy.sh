@@ -18,14 +18,3 @@ git remote add origin https://github.com/2333Ge/2333Ge.github.io.git
 git push -u -f origin main
 
 cd -
-
-# github actions 触发部署
-# cd my_actions
-
-# echo "publish: $(date +"%Y-%m-%d %H:%M:%S")" > publish.md
-# git add .
-# git commit -m "publish"
-
-# git push -u -f origin main
-
-# cd -

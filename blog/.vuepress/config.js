@@ -92,7 +92,7 @@ module.exports = {
         link: "/post/2019/10/23/vscode-plugin-highlight-my-word.html",
       },
       {
-        text: "前端优秀代码示例",
+        text: "前端优秀代码片段",
         link: "/post/2024/12/25/nice-code-demo.html",
       },
     ],
