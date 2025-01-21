@@ -244,6 +244,8 @@ $ du -h package.json
 # 使用人类易读单位、查看目录大小
 $ du -sh .git
 367M    .git
+# 查看当前目录大小，层级1层，忽略node_modules、.git
+$  du -h -I node_modules -I .git -d 1 
 ```
 ### xargs
 

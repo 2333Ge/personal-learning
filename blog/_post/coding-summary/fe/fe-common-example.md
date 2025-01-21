@@ -84,3 +84,16 @@ Element 接口的 scrollIntoView() 方法会滚动元素的父容器，使被调
 const element = document.getElementById("box");
 element.scrollIntoView({ behavior: 'smooth', block: 'center' });
 ```
+
+2. 判断是否URL
+
+```typescript
+  const isValidUrl = (url: string): boolean => {
+    try {
+      new URL(url)
+      return true
+    } catch {
+      return false
+    }
+  }
+```

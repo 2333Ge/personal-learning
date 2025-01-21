@@ -8,11 +8,6 @@ tags:
 
 <!-- more -->
 
-## 技能树
-
-参考1：
-
-![技能](./image/fe-skill-tree.jpg)
 
 ## html
 
@@ -83,9 +78,7 @@ HTML 头部
 
 - https://web.dev/learn?hl=zh-cn
 
-> from ai
-
-JavaScript:
+JavaScript（from ai）:
 
 1. "JavaScript高级程序设计"（《Professional JavaScript for Web Developers》） - 由Nicholas C. Zakas撰写的一本经典书籍，涵盖了 JavaScript 的方方面面，从基础知识到高级概念都有涉及。
 

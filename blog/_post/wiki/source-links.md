@@ -12,6 +12,8 @@ tags:
 - 网络状态的综合报告：https://almanac.httparchive.org/zh-CN/2022/
 - Chrome 调试：https://github.com/dendoink/FrontendWingman
 - webpack: https://ithelp.ithome.com.tw/users/20107789/ironman/3332?page=1
+- 浏览器份额查询：https://gs.statcounter.com/
+- 浏览器兼容性查询：https://caniuse.com/
 
 ## AI
 

@@ -12,8 +12,6 @@ tags:
 
 系统偏好设置-快捷键
 
-官方手册: https://support.apple.com/zh-cn/HT201236
-
 |                   描述                   |         快捷键         |
 | :--------------------------------------: | :--------------------: |
 |              快速打开控制台              |    cmd + shift + c     |
@@ -27,9 +25,10 @@ tags:
 |     光标跳转当前行（编辑器、控制台）     |        ctrl + a        |
 | 当前行删除光标后的内容（编辑器、控制台） |         ctrl+k         |
 
+> [官方手册](https://support.apple.com/zh-cn/HT201236)
+
 ## 终端命令
 
-https://support.apple.com/zh-cn/guide/terminal/welcome/2.9/mac
 
 |           描述           | 快捷键 |
 | :----------------------: | :----: |
@@ -37,21 +36,26 @@ https://support.apple.com/zh-cn/guide/terminal/welcome/2.9/mac
 |       打开当前目录       | open . |
 | 列出当前目录文件及其权限 | ls -l  |
 
-### **打印目录树**
+> [官方使用手册](https://support.apple.com/zh-cn/guide/terminal/welcome/2.9/mac)
 
-```
-brew install tree
-tree -a
-tree -I “node_modules” // 过滤指定目录
+### 打印目录树
+
+```bash
+# 安装
+$ brew install tree
+# 过滤指定目录
+$ tree -I “node_modules” 
 ```
 
 参考：https://www.jianshu.com/p/9411d60950bf
 
 ### 工具应用
 
-- Iterm2: 终端窗口分屏
+- Iterm2： 终端窗口分屏
 - VSCode： 加上各种插件，比大部分文档/笔记记录工具好（见：vscode ）
-- Gifski gif制作
+- Gifski： gif制作
+- Logseq： 笔记记录，
+- Cursor：AI IDE
 
 ## 其他
 
@@ -61,7 +65,7 @@ tree -I “node_modules” // 过滤指定目录
 
 ### 达尔优键盘问题记录
 
-- cmd+a、c 等键失效: fn+win
+- `cmd+a`、`c` 等键失效: `fn+win`
 
 ### 系统日志
 
