@@ -1,2 +1,3 @@
-- CSSOM 则使得 JavaScript 可以读取和修改文档样式。
+- CSS 对象模型
+- CSSOM 使得 JavaScript 可以读取和修改文档样式。
 -
