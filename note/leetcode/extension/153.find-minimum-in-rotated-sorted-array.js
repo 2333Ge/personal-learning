@@ -27,7 +27,7 @@ var findMin1 = function (nums = []) {
   return nums[r];
 };
 
-var findMin = function (nums = []) {
+var findMin2 = function (nums = []) {
   let l = 0;
   let r = nums.length - 1;
   while (l < r) {
@@ -39,6 +39,34 @@ var findMin = function (nums = []) {
     }
   }
   return nums[l];
+};
+
+// 记这个
+const findMin3 = function (nums) {
+  let left = 0;
+  let right = nums.length - 1;
+
+  // 如果数组没有旋转或只有一个元素
+  if (nums[left] <= nums[right]) {
+    return nums[left];
+  }
+
+  while (left < right) {
+    const mid = Math.floor((left + right) / 2);
+    // 如果中间值大于第一个元素，说明最小值在右半部分
+    if (nums[mid] >= nums[0]) {
+      left = mid + 1;
+    }
+    // 否则最小值在左半部分
+    else {
+      right = mid;
+    }
+  }
+  return nums[left];
+};
+
+const findMin = function (nums) {
+  
 };
 // @lc code=end
 

@@ -120,7 +120,7 @@ const mergehh = (l1, l2) => {
   return dummy.next;
 };
 
-var sortList = function (head) {
+var sortList99 = function (head) {
   if (!head?.next) return head;
   let slow = head;
   let fast = head.next;
@@ -138,6 +138,11 @@ var sortList = function (head) {
 
   return newHead;
 };
+
+var sortList99 = function (head) {
+
+}
+
 // @lc code=end
 
 /*

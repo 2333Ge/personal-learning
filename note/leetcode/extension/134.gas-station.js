@@ -57,7 +57,7 @@ var canCompleteCircuit1 = function (gas, cost) {
   return rest >= 0 ? start : -1;
 };
 
-var canCompleteCircuit = function (gas, cost) {
+var canCompleteCircuit3 = function (gas, cost) {
   let rest = 0;
   let start = 0;
   let curRest = 0;
@@ -73,6 +73,24 @@ var canCompleteCircuit = function (gas, cost) {
   return rest >= 0 ? start : -1;
 };
 
+var canCompleteCircuit = function (gas, cost) {
+  if (!gas.length) return -1;
+  let totalRest = 0;
+  let curRest = 0;
+  let res = 0;
+  for (let i = 0; i < gas.length; i++) {
+    totalRest += gas[i] - cost[i];
+    curRest += gas[i] - cost[i];
+    if (curRest < 0) {
+      res = i + 1;
+      curRest = 0;
+    }
+  }
+  if (totalRest >= 0) {
+    return res;
+  }
+  return -1;
+};
 // @lc code=end
 
 /*

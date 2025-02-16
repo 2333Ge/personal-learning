@@ -27,11 +27,12 @@ var findPeakElement1 = function (nums) {
   return l;
 };
 
-var findPeakElement = function (nums) {
+var findPeakElement2 = function (nums) {
   let l = 0,
     r = nums.length - 1;
   while (l < r) {
     const mid = Math.floor((l + r) / 2);
+    // 注意比较对象
     if (nums[mid] < nums[mid + 1]) {
       l = mid + 1;
     } else {
@@ -40,6 +41,7 @@ var findPeakElement = function (nums) {
   }
   return l;
 };
+
 // @lc code=end
 
 /*

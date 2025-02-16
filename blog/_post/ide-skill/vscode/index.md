@@ -126,13 +126,68 @@ tags:
 |            vscode-pdf             |               pdf预览                |      formulahendry.auto-close-tag      |
 |           HTML Preview            |              HTML 预览               |   george-alisson.html-preview-vscode   |
 |          Auto Close Tag           |      自动补充XML、HTML关闭标签       |      formulahendry.auto-close-tag      |
-
+|     Markdown Preview Enhanced     |      Markdown预览，支持运行代码      |  shd101wyy.markdown-preview-enhanced   |
 相关问题：
 
 - background： 背景图显示不出参考？ 是否装到了下载目录，参考 [链接1][bg1]、[链接2][bg2]
 
 [bg1]: https://blog.csdn.net/toopoo/article/details/88841755
 [bg2]: https://github.com/Microsoft/vscode/issues/7426
+
+#### Markdown Preview Enhanced (MPE) 
+
+> 参考：[官方文档](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/code-chunk)
+
+MPE提供了几种在预览窗口中运行代码块的方式：
+
+1. **代码块运行基础语法**
+````markdown
+```javascript {cmd=node}
+console.log('Hello World!');
+```
+````
+在代码块后面添加 `{cmd=node}` 表示使用 Node.js 运行这段代码。
+
+2. **实时预览输出**
+````markdown
+```javascript {cmd=node output="markdown"}
+console.log("# This is a heading");
+console.log("This is a paragraph");
+```
+````
+`output="markdown"` 表示输出会被解析为 markdown 格式。
+
+3. **修改运行环境**
+````markdown
+```python {cmd=/usr/local/bin/python3}
+print("Hello from Python!")
+```
+````
+
+**注意事项：**
+
+1. 首次使用需要在设置中启用脚本执行：
+   - 打开 VSCode 设置
+   - 搜索 "markdown-preview-enhanced.enableScriptExecution"
+   - 设置为 true
+
+2. 安全考虑：
+   - 默认情况下，代码执行是禁用的
+   - 只在信任的文档中启用代码执行
+   - 注意代码可能对系统造成的影响
+
+3. 支持的语言：
+   - JavaScript (Node.js)
+   - Python
+   - Ruby
+   - 以及其他已安装的语言运行时
+
+4. 调试技巧：
+   - 使用 `console.log()` 输出调试信息
+   - 检查预览窗口的开发者工具
+   - 查看输出面板中的错误信息
+
+这些功能使 MPE 成为一个强大的交互式文档工具，特别适合用于教程编写、代码演示和文档生成。
 
 
 ## 零碎技巧

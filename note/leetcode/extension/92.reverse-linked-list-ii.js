@@ -143,10 +143,25 @@ const reverseN = (head, n) => {
 };
 
 // 思路：递归解法，分两步
-var reverseBetween = function (head, left, right) {
+var reverseBetween4 = function (head, left, right) {
   if (!head || !head.next || left === right) {
     return head;
   }
+  // 反转前N个节点的辅助函数
+  const reverseNN = (head, n) => {
+    if (n === 1) {
+      return head;
+    }
+    // 下次循环的尾节点
+    const tail = head.next;
+    const newHead = reverseNN(head.next, n - 1);
+    // head是本次循环的尾节点，指向上次循环的的尾节点的下一节点
+    head.next = tail.next;
+    // 反转后的尾节点指向反转前的头节点
+    tail.next = head;
+    return newHead;
+  };
+
   if (left === 1) {
     return reverseNN(head, right);
   }
@@ -154,19 +169,9 @@ var reverseBetween = function (head, left, right) {
   return head;
 };
 
-// 反转前N个节点的辅助函数
-const reverseNN = (head, n) => {
-  if (n === 1) {
-    return head;
-  }
-  // 下次循环的尾节点
-  const tail = head.next;
-  const newHead = reverseNN(head.next, n - 1);
-  // head是本次循环的尾节点，指向上次循环的的尾节点的下一节点
-  head.next = tail.next;
-  // 反转后的尾节点指向反转前的头节点
-  tail.next = head;
-  return newHead;
+var reverseBetween = function (head, left, right) {
+  if (left === right || !head || !head.next) return head;
+  
 };
 
 // @lc code=end
