@@ -47,10 +47,13 @@ var myPow3 = function (x, n) {
 var myPow = function (x, n) {
   if (n === 0) return 1;
   if (n === 1) return x;
-  const _x = n < 0 ? 1 / x : x;
+  let _x = x;
+  if (n < 0) _x = 1 / x;
   const half = myPow(_x, Math.floor(Math.abs(n) / 2));
   return half * half * (Math.abs(n) % 2 === 1 ? _x : 1);
 };
+
+// console.log("myPow(2,10)====>", myPow(2, 10));
 // @lc code=end
 
 /*

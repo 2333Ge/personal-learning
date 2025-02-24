@@ -111,17 +111,17 @@ ps：训练大肌群动作如深蹲等不建议做到力竭，孤立动作如夹
 4.减脂期伙食难吃。改善方法：正常吃炒菜而非水煮；训后餐可以吃各种精制和甜口碳水；脂肪配额花在自己喜欢的食物上去
 5.心态太急预期太高。如果积累了多年的脂肪，就需要丢更多的体重才能出效果，而不是减三五公斤就能有视觉效果的
 
-![alt text](./image-7.png)
+![alt text](./image/image-7.png)
 
 力量训练后升高胰岛素非常重要
 
 吃饭方案
 
-![alt text](./image-8.png)
+![alt text](./image/image-8.png)
 
 例子
 
-![alt text](./image-9.png)
+![alt text](./image/image-9.png)
 
 
 ## 健身房训练
@@ -149,22 +149,22 @@ ps：训练大肌群动作如深蹲等不建议做到力竭，孤立动作如夹
 
 **【动作模式】**
 
-![alt text](./image-2.png)
+![alt text](./image/image-2.png)
 
 
 **【动作难易程度】**：新手先简单的动作开始，需要慢慢过度到难的动作
 
-![alt text](./image-1.png)
+![alt text](./image/image-1.png)
 
 **【训练安排】**：不要随意安排肌肉的训练组合，利用肌肉的协同效应可以节省更多的时间，比如练胸时三头、肩前束也会发力，胸练完以后可以加练肩前束、三头充分榨干
 
 如以下三分化方案
 
-![alt text](./image.png)
+![alt text](./image/image.png)
 
 **【如何配重】**
 
-![alt text](./image-3.png)
+![alt text](./image/image-3.png)
 
 ### 胸部训练
 
@@ -172,17 +172,17 @@ ps：训练大肌群动作如深蹲等不建议做到力竭，孤立动作如夹
 
 **判断练胸位置**：可通过躯干与手臂（力线方向）的夹角判断练的是胸的什么部位
 
-![alt text](./image-4.png)
+![alt text](./image/image-4.png)
 
 **动作要点**
 
-![alt text](./image-6.png)
+![alt text](./image/image-6.png)
 
 #### 杠铃卧推动作要领
 
 三要素：握距、杠铃落点、开肘角度，共同作用，使小臂要垂直于地面
 
-![alt text](./image-5.png)
+![alt text](./image/image-5.png)
 
 #### 热身
 
