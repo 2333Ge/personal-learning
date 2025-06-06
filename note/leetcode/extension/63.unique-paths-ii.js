@@ -13,6 +13,7 @@
  * @param {number[][]} obstacleGrid
  * @return {number}
  */
+
 var uniquePathsWithObstacles1 = function (obstacleGrid) {
   const dp = [];
   for (let i = 0; i < obstacleGrid.length; i++) {
@@ -33,24 +34,31 @@ var uniquePathsWithObstacles1 = function (obstacleGrid) {
   return dp[obstacleGrid.length - 1][obstacleGrid[0].length - 1];
 };
 
-var uniquePathsWithObstacles = function (obstacleGrid) {
-  const dp = [[obstacleGrid[0][0] ? 0 : 1]];
+var uniquePathsWithObstacles2 = function (obstacleGrid) {
+  let dp = [[obstacleGrid[0]?.[0] ? 0 : 1]];
 
-  for (let i = 1; i < obstacleGrid.length; i++) {
-    dp[i] = dp[i - 1][0] && !obstacleGrid[i][0] ? [1] : [0];
-  }
-  for (let j = 1; j < obstacleGrid[0].length; j++) {
-    dp[0][j] = dp[0][j - 1] && !obstacleGrid[0][j] ? 1 : 0;
+  let m = obstacleGrid.length;
+  let n = obstacleGrid[0].length;
+
+  for (let i = 1; i < m; i++) {
+    dp[i] = [dp[i - 1][0] === 0 || obstacleGrid[i][0] ? 0 : 1];
   }
 
-  for (let i = 1; i < obstacleGrid.length; i++) {
-    for (let j = 1; j < obstacleGrid[i].length; j++) {
+  for (let i = 1; i < n; i++) {
+    dp[0][i] = dp[0][i - 1] === 0 || obstacleGrid[0][i] ? 0 : 1;
+  }
+
+  for (let i = 1; i < m; i++) {
+    for (let j = 1; j < n; j++) {
       dp[i][j] = obstacleGrid[i][j] ? 0 : dp[i - 1][j] + dp[i][j - 1];
     }
   }
 
-  return dp[obstacleGrid.length - 1][obstacleGrid[0].length - 1];
+  return dp[m - 1][n - 1];
 };
+
+var uniquePathsWithObstacles = function (obstacleGrid) {};
+
 // @lc code=end
 
 /*
@@ -63,3 +71,7 @@ var uniquePathsWithObstacles = function (obstacleGrid) {
 // @lcpr case=end
 
  */
+
+// @lcpr-after-debug-begin
+module.exports = uniquePathsWithObstacles;
+// @lcpr-after-debug-end

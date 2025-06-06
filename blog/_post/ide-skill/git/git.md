@@ -112,6 +112,12 @@ git revert <commit id>
 git revert -m 1 <commitHash>
 ```
 
+撤销多个commit：假设有 1、2、3、4、5 个commit，需要撤销3、4、5
+
+```bash
+# 语法是：git revert --no-commit 要保留的commit..要撤销的最新commit
+git revert --no-commit 2..5
+```
 
 
 ## 查看对应指令帮助

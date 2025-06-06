@@ -54,7 +54,7 @@ var buildTree2 = function (inorder, postorder) {
   return root;
 };
 
-var buildTree = function (inorder, postorder) {
+var buildTree3 = function (inorder, postorder) {
   if (!inorder?.length) return null;
   const rootVal = postorder.pop();
   const root = new TreeNode(rootVal);
@@ -63,6 +63,10 @@ var buildTree = function (inorder, postorder) {
   root.right = buildTree(inorder.slice(inIndex + 1), postorder.slice(inIndex));
 
   return root;
+};
+
+var buildTree = function (inorder, postorder) {
+  
 };
 
 // @lc code=end

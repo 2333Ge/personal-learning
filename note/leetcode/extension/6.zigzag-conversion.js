@@ -14,7 +14,7 @@
  * @param {number} numRows
  * @return {string}
  */
-var convert = function (s, numRows) {
+var convert1 = function (s, numRows) {
   if (numRows === 1) return s;
   let dir = "down";
   const res = new Array(numRows).fill("");
@@ -33,6 +33,32 @@ var convert = function (s, numRows) {
     cur++;
   }
   return res.join("");
+};
+
+var convert = function (s, numRows) {
+  if (numRows === 1) return s;
+  const rowsStr = Array.from({ length: numRows }).fill("");
+  let curRow = 0;
+  let dir = "down";
+  for (let i = 0; i < s.length; i++) {
+    rowsStr[curRow] += s[i];
+    if (dir === "down") {
+      if (curRow === numRows - 1) {
+        curRow--;
+        dir = "up";
+      } else {
+        curRow++;
+      }
+    } else if (dir === "up") {
+      if (curRow === 0) {
+        curRow++;
+        dir = "down";
+      } else {
+        curRow--;
+      }
+    }
+  }
+  return rowsStr.join("");
 };
 // @lc code=end
 

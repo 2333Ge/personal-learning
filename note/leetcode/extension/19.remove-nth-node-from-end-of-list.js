@@ -21,25 +21,8 @@
  * @param {number} n
  * @return {ListNode}
  */
-var removeNthFromEnd1 = function (head, n) {
-  let dummy = { next: head };
-  let count = 0;
-  let pre = dummy;
-  while (pre.next) {
-    count++;
-    pre = pre.next;
-  }
-  let step = count - n;
-  pre = dummy;
-  while (step) {
-    pre = pre.next;
-    step--;
-  }
-  pre.next = pre.next.next;
-  return dummy.next;
-};
 
-var removeNthFromEnd = function (head, n) {
+var removeNthFromEnd1 = function (head, n) {
   let dummy = { next: head };
   let slow = dummy;
   let fast = dummy;
@@ -53,6 +36,24 @@ var removeNthFromEnd = function (head, n) {
     slow = slow.next;
   }
   slow.next = slow.next.next;
+  return dummy.next;
+};
+
+var removeNthFromEnd = function (head, n) {
+  const dummy = { next: head };
+  let cur = dummy;
+  let total = 0;
+  while (cur.next) {
+    total += 1;
+    cur = cur.next;
+  }
+  let step = total - n;
+  cur = dummy;
+  while (step) {
+    step--;
+    cur = cur.next;
+  }
+  cur.next = cur.next.next;
   return dummy.next;
 };
 // @lc code=end

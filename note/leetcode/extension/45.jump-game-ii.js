@@ -49,7 +49,7 @@ var jump3 = function (nums) {
   return dp[nums.length - 1];
 };
 
-var jump = function (nums) {
+var jump4 = function (nums) {
   let step = 0;
   let nextMax = 0;
   let i = 0;
@@ -66,6 +66,23 @@ var jump = function (nums) {
 
   return step;
 };
+
+var jump = function (nums) {
+  let curMax = nums[0];
+  let step = 0;
+
+  for(let i = 1; i < nums.length; ){
+    let nextMax = -Infinity;
+    while(i <= curMax){
+      nextMax = Math.max(nextMax, i + nums[i])
+      i++;
+    }
+    curMax = nextMax;
+    step++;
+  }
+  return step;
+};
+
 
 // @lc code=end
 

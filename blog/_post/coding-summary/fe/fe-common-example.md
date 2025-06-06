@@ -97,3 +97,22 @@ element.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   }
 ```
+
+3. 给吸顶元素单独加样式
+
+```js
+const scrollContainer = document.querySelector('.scroll-container');
+const stickyElement = document.querySelector('.sticky-element');
+
+scrollContainer.addEventListener('scroll', () => {
+    const containerRect = scrollContainer.getBoundingClientRect();
+    const elementRect = stickyElement.getBoundingClientRect();
+
+    // 判断元素是否吸顶
+    if (elementRect.top <= containerRect.top) {
+        stickyElement.classList.add('sticky');
+    } else {
+        stickyElement.classList.remove('sticky');
+    }
+});
+```

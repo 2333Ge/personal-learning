@@ -145,15 +145,3 @@ t.x()
 // output: 121
 
 ```
-
-
-
-
-- this
-    - call用法 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/call
-    - bind方法 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
-    - apply https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
-- 类型判断：typeof instanceof
-- Function
-- Object
-- class

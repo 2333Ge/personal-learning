@@ -10,8 +10,7 @@ tags:
 ## 开发名词
 
 - dsl(domain-specific language): 同时具备描述能力和逻辑能力的语言[1][2]。
-- CI/CD(Continuous Integration/Continuous Delivery): 持续集成/持续交付[3]
-  - 持续集成，它指的是那些“当您的代码变动时，自动运行的东西”
+- CI/CD(Continuous Integration/Continuous Delivery): 持续集成/持续交付/持续部署[3]，通过软件开发的持续方法，您可以持续构建、测试和部署迭代代码更改[7]
 - pr(Pull Request): 和`merge request`一个意思，`merge request` gitlab 常用，拉取代码修改代码发起合并请求。
 - ssr：服务端渲染
 - 公钥私钥、非对称加密：非对称加密算法需要两个密钥：公开密钥（publickey:简称公钥）和私有密钥（privatekey:简称私钥）。公钥与私钥是一对，如果用公钥对数据进行加密，只有用对应的私钥才能解密。因为加密和解密使用的是两个不同的密钥[5]
@@ -73,3 +72,4 @@ scheme              path
 [4] [开发中经常提及的Pr是什么意思？](https://www.zhihu.com/question/355235592)  
 [5] [百度百科-非对称加密算法](https://baike.baidu.com/item/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/1208652)  
 [6] [维基百科-URI](https://zh.wikipedia.org/wiki/%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E6%A0%87%E5%BF%97%E7%AC%A6)
+[7] [gitlab:CI/CD概念](https://gitlab.cn/docs/jh/ci/introduction/)

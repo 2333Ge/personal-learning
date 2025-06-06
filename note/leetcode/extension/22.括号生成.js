@@ -10,21 +10,6 @@
  * @param {number} n
  * @return {string[]}
  */
-var generateParenthesisX = function (n) {
-  // 失败，失败case n=4 (())(())
-  let dpPreviousMap = { "()": true };
-  let dpCurMap = { "()": true };
-  for (let i = 2; i <= n; i++) {
-    dpCurMap = {};
-    for (let str in dpPreviousMap) {
-      dpCurMap[`()${str}`] = true;
-      dpCurMap[`(${str})`] = true;
-      dpCurMap[`${str}()`] = true;
-    }
-    dpPreviousMap = dpCurMap;
-  }
-  return Object.keys(dpCurMap);
-};
 
 var generateParenthesis1 = function (n) {
   const res = [];
@@ -45,24 +30,24 @@ var generateParenthesis1 = function (n) {
 };
 
 var generateParenthesis = function (n) {
-  const res = [];
+  const result = [];
 
-  const backTrace = (cur = "", left = 0, right = 0) => {
-    if (cur.length === 2 * n) {
-      res.push(cur);
+  const backtrack = (cur = "", left = 0) => {
+    if (cur.length === n * 2) {
+      result.push(cur);
       return;
     }
     if (left < n) {
-      backTrace(cur + "(", left + 1, right);
+      backtrack(cur + "(", left + 1);
     }
-    if (right < left) {
-      backTrace(cur + ")", left, right + 1);
+    if (cur.length - left < left) {
+      backtrack(cur + ")", left);
     }
   };
 
-  backTrace();
+  backtrack();
 
-  return res;
+  return result;
 };
 
 // @lc code=end

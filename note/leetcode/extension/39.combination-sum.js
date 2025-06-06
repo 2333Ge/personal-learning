@@ -15,7 +15,7 @@
  * @param {number} target
  * @return {number[][]}
  */
-var combinationSum = function (c, target) {
+var combinationSum1 = function (c, target) {
   let res = [];
   let path = [];
 
@@ -38,6 +38,10 @@ var combinationSum = function (c, target) {
   };
   backTrack(target);
   return res;
+};
+
+var combinationSum = function (c, target) {
+
 };
 // @lc code=end
 

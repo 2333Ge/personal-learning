@@ -14,26 +14,33 @@
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function (s) {
+
+/**解法不行 */
+var lengthOfLongestSubstring1 = function (s) {
   if (!s?.length || s.length === 1) return s?.length || 0;
-  const curCharMap = {};
+  let map = {};
+  let res = 0;
   let left = 0;
-  let right = 0;
-  let maxLength = 0;
-  while (right < s.length) {
-    const char = s[right];
-    if (!curCharMap[char]) {
-      right++;
-      curCharMap[char] = true;
+  for (let i = 0; i < s.length; i++) {
+    let char = s[i];
+    if (map[char] !== undefined) {
+      res = Math.max(res, i - left);
+      if (map[char] + 1 > left) {
+        left = map[char] + 1;
+      }
+      map[char] = i;
     } else {
-      maxLength = Math.max(maxLength, right - left);
-      delete curCharMap[s[left]];
-      left++;
+      map[char] = i;
     }
   }
-  maxLength = Math.max(maxLength, right - left);
-  return maxLength;
+
+  return Math.max(res, s.length - left);
 };
+
+var lengthOfLongestSubstring = function (s) {
+  
+};
+
 // @lc code=end
 
 /*
@@ -50,3 +57,7 @@ var lengthOfLongestSubstring = function (s) {
 // @lcpr case=end
 
  */
+
+// @lcpr-after-debug-begin
+module.exports = lengthOfLongestSubstring;
+// @lcpr-after-debug-end

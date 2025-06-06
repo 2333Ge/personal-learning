@@ -5,7 +5,6 @@
  * [11] 盛最多水的容器
  */
 
-
 // @lcpr-template-start
 
 // @lcpr-template-end
@@ -14,12 +13,25 @@
  * @param {number[]} height
  * @return {number}
  */
-var maxArea = function(height) {
-
+var maxArea = function (height) {
+  let left = 0,
+    right = height.length - 1,
+    max = 0;
+  while (left < right) {
+    let cur = Math.min(height[left], height[right]) * (right - left);
+    max = Math.max(cur, max);
+    if (height[left] < height[right]) {
+      left++;
+    } else if (height[left] > height[right]) {
+      right--;
+    } else {
+      right--;
+      left++;
+    }
+  }
+  return max;
 };
 // @lc code=end
-
-
 
 /*
 // @lcpr case=start
@@ -31,4 +43,3 @@ var maxArea = function(height) {
 // @lcpr case=end
 
  */
-

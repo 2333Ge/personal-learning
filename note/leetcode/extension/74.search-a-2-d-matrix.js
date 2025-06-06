@@ -14,7 +14,7 @@
  * @param {number} target
  * @return {boolean}
  */
-var searchMatrix = function (matrix, target) {
+var searchMatrix1 = function (matrix, target) {
   let left = 0;
   let right = matrix.length - 1;
   while (left < right) {
@@ -41,6 +41,10 @@ var searchMatrix = function (matrix, target) {
   }
   return false;
 };
+
+var searchMatrix = function (matrix, target) {
+  
+}
 // @lc code=end
 
 /*

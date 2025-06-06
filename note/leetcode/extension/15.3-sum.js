@@ -43,7 +43,7 @@ var threeSum1 = function (nums) {
   return result;
 };
 
-var threeSum = function (nums) {
+var threeSum2 = function (nums) {
   const sorted = nums.sort((a, b) => a - b);
   const res = [];
   for (let i = 0; i < nums.length - 2; i++) {
@@ -70,6 +70,35 @@ var threeSum = function (nums) {
       }
     }
   }
+  return res;
+};
+
+var threeSum = function (nums) {
+  const sorted = nums.sort((a, b) => a - b);
+  let res = [];
+  for (let i = 0; i < sorted.length && sorted[i] <= 0; i++) {
+    if (sorted[i] === sorted[i - 1]) continue;
+
+    let left = i + 1;
+    let right = sorted.length - 1;
+
+    while (left < right) {
+      const target = -sorted[i];
+      const cur = sorted[left] + sorted[right];
+      if (target === cur) {
+        res.push([sorted[i], sorted[left], sorted[right]]);
+        left++;
+        right--;
+        while (sorted[left] === sorted[left - 1]) left++;
+        while (sorted[right] === sorted[right + 1]) right--;
+      } else if (target > cur) {
+        left++;
+      } else {
+        right--;
+      }
+    }
+  }
+
   return res;
 };
 // @lc code=end

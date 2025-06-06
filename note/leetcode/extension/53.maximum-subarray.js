@@ -43,20 +43,29 @@ var maxSubArray1 = function (nums) {
   return max;
 };
 
-
-var maxSubArray = function (nums) {
+var maxSubArray2 = function (nums) {
   const dp = [nums[0]];
   let max = nums[0];
   for (let i = 1; i < nums.length; i++) {
     if (dp[i - 1] < 0) {
       dp[i] = nums[i];
     } else {
-      dp[i] = nums[i] + dp[i - 1]
+      dp[i] = nums[i] + dp[i - 1];
     }
-    max = Math.max(dp[i], max)
+    max = Math.max(dp[i], max);
   }
   return max;
-}
+};
+
+var maxSubArray = function (nums) {
+  let res = nums[0];
+  let curSum = nums[0];
+  for (let i = 1; i < nums.length; i++) {
+    curSum = Math.max(curSum + nums[i], nums[i]);
+    res = Math.max(res, curSum);
+  }
+  return res;
+};
 
 // @lc code=end
 

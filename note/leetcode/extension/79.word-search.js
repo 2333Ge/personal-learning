@@ -12,19 +12,37 @@
  * @return {boolean}
  */
 var exist = function (board, word) {
-  let visited = new Map();
   const backTrack = (i, j, index) => {
-    if (board[i][j] !== word[index]) return false;
-    visited[i * board.length + j] = true;
-    // backTrack(i-1, j, ) || backTrack[]
+    if (index === word.length) return true;
 
-    visited[i * board.length + j] = false;
-
-
+    if (
+      i < 0 ||
+      j < 0 ||
+      i >= board.length ||
+      j >= board[0].length ||
+      board[i][j] !== word[index]
+    )
+      return false;
+    let temp = board[i][j];
+    board[i][j] = "*";
+    let res =
+      backTrack(i - 1, j, index + 1) ||
+      backTrack(i + 1, j, index + 1) ||
+      backTrack(i, j - 1, index + 1) ||
+      backTrack(i, j + 1, index + 1);
+    board[i][j] = temp;
+    return res;
   };
+
+  for (let i = 0; i < board.length; i++) {
+    for (let j = 0; j < board[i].length; j++) {
+      if (backTrack(i, j, 0)) return true;
+    }
+  }
+  return false;
+};
+
 // @lc code=end
-
-
 
 /*
 // @lcpr case=start
@@ -40,4 +58,3 @@ var exist = function (board, word) {
 // @lcpr case=end
 
  */
-
