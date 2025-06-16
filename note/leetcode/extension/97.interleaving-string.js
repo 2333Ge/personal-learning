@@ -16,24 +16,11 @@
  * @param {string} s3
  * @return {boolean}
  */
-var isInterleave1 = function (s1, s2, s3) {
+var isInterleave = function (s1, s2, s3) {
   if (s1.length + s2.length !== s3.length) return false;
   if ((s1 || s2) === s3) return true;
-  const dp = [];
-  dp = [];
-  for (let i = 0; i < s1.length; i++) {
-    dp[i] = [];
-    for (let j = 0; j < s2.length; j++) {
-      if (s2[j] === s3[i + j] && dp[i]?.[j - 1] !== false) {
-        dp[i][j] = true;
-      } else if (s1[i] === s3[i + j] && dp[i - 1]?.[j] !== false) {
-        dp[i][j] = true;
-      } else {
-        dp[i][j] = false;
-      }
-    }
-  }
-  return dp[s1.length - 1][s2.length - 1];
+  //  const dp = 
+
 };
 
 var isInterleave2 = function (s1, s2, s3) {
@@ -64,7 +51,7 @@ var isInterleave2 = function (s1, s2, s3) {
   return dp[s1.length][s2.length];
 };
 
-var isInterleave = function (s1, s2, s3) {
+var isInterleave3 = function (s1, s2, s3) {
   if (s1.length + s2.length !== s3.length) {
     return false;
   }

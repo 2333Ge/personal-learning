@@ -14,7 +14,7 @@
 	- [[call、bind、apply]]
 	- [[promise]]
 	- [[状态管理框架对比：Mobx、Zustand、Redux]]
-	- [[npm pnmp 对比]]
+	- [[pnpm 与 monorepo]]
 	- 如何实现瀑布流布局
 	- ToDo：
 		- **this关键字**

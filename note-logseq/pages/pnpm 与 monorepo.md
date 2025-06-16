@@ -1,0 +1,8 @@
+- pnpm 优势
+	- **安装速度最快**（非扁平的包结构，没有`yarn/npm`的复杂的扁平算法，且只更新变化的文件）
+	- **节省磁盘空间** （统一安装包到磁盘的某个位置，项目中的`node_modules`通过`hard-link`的方式链接到实际的安装地址）
+- 安装结构
+- ![](https://developer.qcloudimg.com/http-save/yehe-5471653/64c0376fac0d4826a8723f9201864b96.jpg)
+- ## 参考资料
+- [带你了解并实践monorepo和pnpm--腾讯云](https://cloud.tencent.com/developer/article/2316013)
+-
