@@ -51,11 +51,7 @@ var reverseBetween4 = function (head, left, right) {
   return head;
 };
 
-var reverseBetween = function (head, left, right) {
-  if (left === right || !head || !head.next) return head;
-};
-
-var reverseBetween = function (head, left, right) {
+var reverseBetween5 = function (head, left, right) {
   if (left === right) return head;
   let dummy = { next: head };
   let cur = 0;
@@ -68,6 +64,33 @@ var reverseBetween = function (head, left, right) {
   // start是反转区间的第一个节点
   let start = pre.next;
   // then是start的下一个节点
+  let then = start.next;
+
+  while (cur < right - 1) {
+    start.next = then?.next;
+    then.next = pre.next;
+    pre.next = then;
+    then = start.next;
+    cur++;
+  }
+
+  return dummy.next;
+};
+
+var reverseBetween = function (head, left, right) {
+  if (!head?.next || left === right) return head;
+  let cur = 0;
+  let dummy = { next: head };
+  let curNode = dummy;
+
+  while (cur < left - 1) {
+    // 注意这里是-1
+    cur++;
+    curNode = curNode.next;
+  }
+
+  let pre = curNode;
+  let start = pre.next;
   let then = start.next;
 
   while (cur < right - 1) {

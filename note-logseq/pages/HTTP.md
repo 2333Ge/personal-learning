@@ -1,6 +1,5 @@
 - 解释：超文本传输协议（**H**yperText **T**ransfer **P**rotocol。）
-- ## 状态码
-- ![](https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP/6-%E4%BA%94%E5%A4%A7%E7%B1%BBHTTP%E7%8A%B6%E6%80%81%E7%A0%81.png)
+- ## [[HTTP 状态码]]
 - ## Header
 - `Connection`: 最常用**HTTP 长连接**，特点是，只要任意一端没有明确提出断开连接，则保持 [[TCP]] 连接状态
 - 见词知义的字段：`Content-Encoding: gzip`、`Host: 10.6.0.130`、`Content-Length：1000`
@@ -20,5 +19,4 @@
 - [[HTTPS]]
 - ## 参见
 - [小林coding：HTTP常见面试题](https://www.xiaolincoding.com/network/2_http/http_interview.htm)
--
 -

@@ -57,7 +57,9 @@ var uniquePathsWithObstacles2 = function (obstacleGrid) {
   return dp[m - 1][n - 1];
 };
 
-var uniquePathsWithObstacles = function (obstacleGrid) {};
+var uniquePathsWithObstacles = function (obstacleGrid) {
+  
+};
 
 // @lc code=end
 

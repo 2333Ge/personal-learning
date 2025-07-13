@@ -11,7 +11,7 @@
  * @param {string} word
  * @return {boolean}
  */
-var exist = function (board, word) {
+var exist1 = function (board, word) {
   const backTrack = (i, j, index) => {
     if (index === word.length) return true;
 
@@ -40,6 +40,11 @@ var exist = function (board, word) {
     }
   }
   return false;
+};
+
+var exist = function (board, word) {
+
+  
 };
 
 // @lc code=end

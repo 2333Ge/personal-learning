@@ -4,11 +4,12 @@
 - HTTP/1.0--构建可扩展性
 	- 请求增加协议版本信息
 	- 引入HTTP标头概念
-	- 引入状态码标识成功、失败，一些缓存控制等
+	- 引入状态码标识成功、失败，
+	- 增加缓存控制
 	- 具备传输HTML文件以外的文档的能力（`Content-Type`）
 	- 它是狭义的，并不是官方标准
 - HTTP/1.1--标准化的协议
-	- 连接可以复用
+	- 连接可以复用（持久连接）
 	- 请求管道化，允许等待第一个应答时发送第二个请求
 	- 支持响应分块
 	- 引入额外的缓存控制
@@ -19,8 +20,12 @@
 	- 新增服务器推送机制，允许服务器在缓存中填充数据
 	- 多路复用，并行的请求能在一个连接中处理
 - HTTP/3
-	- 传输层使用[QUIC](https://developer.mozilla.org/zh-CN/docs/Glossary/QUIC)而不是TCP协议
+	- 传输层使用[QUIC](https://developer.mozilla.org/zh-CN/docs/Glossary/QUIC)(基于UDP)而不是TCP协议
 	- 连接建立更快
+- [[HTTPS]]
+	- 数据加密，防止窃听
+	- 证书验证，防止伪造
+	- 防篡改，确保数据未被修改
 	-
 - ## 参见
 - [MDN：HTTP的发展](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Evolution_of_HTTP)

@@ -71,7 +71,7 @@ var isValidBST2 = function (root) {
   return validate(root, -Infinity, Infinity);
 };
 
-var isValidBST = function (root) {
+var isValidBST3 = function (root) {
   const deepV = function (root, min = -Infinity, max = Infinity) {
     if (!root) return true;
     if (root.val > min && root.val < max) {
@@ -85,6 +85,11 @@ var isValidBST = function (root) {
   return deepV(root);
 };
 
+
+var isValidBST = function (root) {
+  
+  
+}
 // @lc code=end
 
 /*

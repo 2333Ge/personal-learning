@@ -1,0 +1,39 @@
+## 高优
+- 准备1-2个能体现沟通、抗压、成长的完整故事
+	- px2vw => rpx
+	- 脉芽项目
+	- 社区PC
+		- 前端项目部署流程：https://maimai.feishu.cn/docx/PN3CdzzbDo0fL6x5CK6cWAKknPd
+- webpack 原理 & 实战
+- react 原理
+	- react dom/ virtual dom
+- nextjs如何实现首屏优化
+- 性能优化
+- 单元测试
+- CI/CD
+- [[八股文]]
+- babel
+- ## 中优
+- 0.5 px 如何实现的
+- CSS 版本
+- github找一个完整的 nextjs 项目对比社区PC缺失功能
+- Mobx 理解
+- session
+- 浏览器缓存
+- 浏览器线程、进程
+- next
+	- image 怎么优化的
+- react 原理
+- **this关键字**
+- 如何实现瀑布流布局
+- **异步编程**
+- **DOM操作**
+- **事件委托**
+- **模块化**
+- **CSS布局**
+- **浏览器渲染过程**
+- 打包工具：webpack等
+- CSRF
+- XSS
+- cookie
+- [[Next.js查漏补缺]]

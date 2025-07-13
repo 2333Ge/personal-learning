@@ -1,0 +1,30 @@
+- 这三个方法都是 JavaScript 中用于改变函数执行时 `this` 指向的方法
+- ## 核心区别对比表
+  
+  | 方法 | 参数传递方式 | 执行时机 | 返回值 | 是否立即调用 |
+  | ---- | ---- | ---- |
+  | `call` | 参数逐个传递 (arg1, arg2) | 立即执行 | 函数执行结果 | 是 |
+  | `apply` | 参数数组传递 ([args]) | 立即执行 | 函数执行结果 | 是 |
+  | `bind` | 参数逐个传递 (arg1, arg2) | 返回绑定后的函数 | 新的绑定函数 | 否 |
+- ## 示例
+- ```javascript
+  const person = {
+    name: 'John',
+    greet: function(greeting, punctuation) {
+      return `${greeting}, ${this.name}${punctuation}`;
+    }
+  };
+  
+  // call - 立即调用，参数逐个传递
+  person.greet.call({ name: 'Alice' }, 'Hello', '!'); 
+  // 返回: "Hello, Alice!"
+  
+  // apply - 立即调用，参数数组传递
+  person.greet.apply({ name: 'Bob' }, ['Hi', '?']); 
+  // 返回: "Hi, Bob?"
+  
+  // bind - 返回绑定函数，延迟调用
+  const boundGreet = person.greet.bind({ name: 'Charlie' }, 'Hey');
+  boundGreet('...'); 
+  // 返回: "Hey, Charlie..."
+  ```

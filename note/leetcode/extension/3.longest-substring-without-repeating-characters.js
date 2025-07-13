@@ -38,8 +38,25 @@ var lengthOfLongestSubstring1 = function (s) {
 };
 
 var lengthOfLongestSubstring = function (s) {
-  
+  const charMap = {};
+  let left = 0;
+  let right = 0;
+  let res = 0;
+  while (right < s.length) {
+    const char = s[right];
+    if (charMap[char] === undefined) {
+      charMap[char] = right;
+      right++;
+      res = Math.max(right - left, res);
+    } else {
+      left = charMap[char] + 1;
+      delete charMap[char];
+    }
+  }
+  return res;
 };
+
+// abba
 
 // @lc code=end
 
