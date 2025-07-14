@@ -1,0 +1,45 @@
+- [[webpackR]]
+- Webpack 是一个**模块打包工具**（module bundler），它将项目中的所有资源（JS、CSS、图片等）视为模块，通过依赖关系将它们打包成静态资源。
+- ## 核心概念
+- ### Entry (入口)
+- 指定 Webpack 从哪个文件开始构建依赖图
+- 可以有一个或多个入口点
+- Next.js 中通常隐藏了这个配置
+- ### Output (输出)
+- 指定打包后的文件存放位置和命名规则
+- 例如 `dist/main.js`
+- ### Loaders (加载器)
+- 让 Webpack 能够处理非 JS 文件
+- 常见 Loaders:
+	- `babel-loader`: 转换 ES6+ 代码
+	- `css-loader`: 处理 CSS 文件
+	- `file-loader`: 处理图片等资源文件
+	- `ts-loader`: 处理 TypeScript
+- ### Plugins (插件)
+- 用于执行更广泛的任务，如打包优化、资源管理等
+- 常见 Plugins:
+	- `HtmlWebpackPlugin`: 生成 HTML 文件
+	- `MiniCssExtractPlugin`: 提取 CSS 到单独文件
+	- `CleanWebpackPlugin`: 清理构建目录
+- ### Mode (模式)
+- 开发模式 (`development`) 和生产模式 (`production`)
+- 影响内置优化级别
+- ## 常见问题
+- ### Webpack 构建流程
+- 解析入口文件
+- 递归构建依赖图
+- 使用 Loaders 处理非 JS 资源
+- 应用插件执行额外任务
+- 输出打包后的文件
+- ### Loader 和 Plugin 的区别
+- **Loader**: 文件加载器，处理单个文件（转换、编译）
+- **Plugin**: 在打包过程的特定时机执行更广泛的任务
+- ### 如何优化 Webpack 构建
+- 使用 `DllPlugin` 预编译不常变化的依赖
+- 配置 `exclude/include` 减少不必要的文件处理
+- 使用 `cache-loader` 或 `hard-source-webpack-plugin` 缓存
+- 多线程/并行处理 (`thread-loader`)
+- ### 代码分割的实现
+- 入口点分割: 配置多个 entry
+- 动态导入: 使用 `import()` 语法
+- 防止重复: 使用 `SplitChunksPlugin`

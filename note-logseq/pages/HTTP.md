@@ -17,6 +17,7 @@
 - [[HTTP 缓存]]
 - [[HTTP 发展]]
 - [[HTTPS]]
+- [[HTTP 状态码]]
 - ## 参见
 - [小林coding：HTTP常见面试题](https://www.xiaolincoding.com/network/2_http/http_interview.htm)
 -

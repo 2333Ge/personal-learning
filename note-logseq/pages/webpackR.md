@@ -1,0 +1,9 @@
+- 面试角度如何回答webpack相关问题
+- Q：Webpack 如何处理非 JS 文件（比如视频）？为什么需要 Loaders？
+- A：Webpack 默认只能处理 JS，但通过 Loaders 可以处理其他文件。比如视频文件：
+	- 使用 `file-loader` 会复制视频到输出目录，并返回 URL。
+	- 使用 `url-loader` 可以选择转成 Base64（适合小文件）。
+	- **需要 Loaders 的原因**：
+		- Webpack 本身不认识非 JS 文件，需要 Loaders 进行转换。
+		- 不同文件需要不同处理方式（CSS 要注入 DOM，图片要优化，JSON 要转成对象等）。
+		- 直接塞进 JS bundle 可能影响性能（如 Base64 增加体积），Loaders 提供了更灵活的处理方式。

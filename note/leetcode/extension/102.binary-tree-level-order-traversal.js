@@ -41,7 +41,7 @@ var levelOrder1 = function (root) {
   return res;
 };
 
-var levelOrder = function (root) {
+var levelOrder3 = function (root) {
   // 深度有限
   if (!root) return [];
   const res = [];
@@ -55,6 +55,10 @@ var levelOrder = function (root) {
   dfs(root, 0);
   return res;
 };
+
+var levelOrder = function (root) {
+  
+}
 // @lc code=end
 
 /*

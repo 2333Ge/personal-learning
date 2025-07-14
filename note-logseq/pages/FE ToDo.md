@@ -1,14 +1,12 @@
 ## 高优
 - 准备1-2个能体现沟通、抗压、成长的完整故事
-	- px2vw => rpx
 	- 脉芽项目
 	- 社区PC
-		- 前端项目部署流程：https://maimai.feishu.cn/docx/PN3CdzzbDo0fL6x5CK6cWAKknPd
+		- 前端项目部署流程：[SOP](https://maimai.feishu.cn/docx/PN3CdzzbDo0fL6x5CK6cWAKknPd)
 - webpack 原理 & 实战
 - react 原理
 	- react dom/ virtual dom
 - nextjs如何实现首屏优化
-- 性能优化
 - 单元测试
 - CI/CD
 - [[八股文]]
