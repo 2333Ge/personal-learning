@@ -272,7 +272,7 @@ const showQuickPick = () => {
 
 export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(
-		vscode.languages.registerHoverProvider(['javascript', 'typescript'], {
+		vscode.languages.registerHoverProvider(['JavaScript', 'typescript'], {
 			provideHover: (document: vscode.TextDocument, position: vscode.Position, _: vscode.CancellationToken): vscode.ProviderResult<vscode.Hover> => {
 				// 得到鼠标悬浮处的单词
 				const word = document.getText(document.getWordRangeAtPosition(position));

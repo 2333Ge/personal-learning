@@ -1,0 +1,7 @@
+- **FlatList 默认就支持虚拟化，基于 VirtualizedList 实现**
+- 设置 `getItemLayout` 来跳过运行时布局计算
+- 配置合适的 `initialNumToRender`、`windowSize` 等虚拟化参数
+- 使用 `React.memo` 优化 `renderItem`，并避免 render 中创建新对象
+- 避免嵌套 ScrollView，嵌套 ScrollView时，会失去虚拟化
+- 禁用不可见的渲染：`removeClippedSubviews={true}`，在Android上可以节省内存
+- 在极端场景下会考虑引入 Shopify 的 `FlashList` 提升性能

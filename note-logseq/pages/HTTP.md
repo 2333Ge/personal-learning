@@ -1,5 +1,4 @@
 - 解释：超文本传输协议（**H**yperText **T**ransfer **P**rotocol。）
-- ## [[HTTP 状态码]]
 - ## Header
 - `Connection`: 最常用**HTTP 长连接**，特点是，只要任意一端没有明确提出断开连接，则保持 [[TCP]] 连接状态
 - 见词知义的字段：`Content-Encoding: gzip`、`Host: 10.6.0.130`、`Content-Length：1000`
@@ -14,6 +13,7 @@
 - POST: **HTTP `POST` 方法**发送数据给服务器。请求主体的类型由 [`Content-Type`](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Type) 标头指定。
 - GET和POST方法都是安全和[[幂等]]的吗？如果按照RFC规范的语义实现，GET 是幂等的，POST 不是
 - ## 相关
+- [[HTTP 状态码]]
 - [[HTTP 缓存]]
 - [[HTTP 发展]]
 - [[HTTPS]]

@@ -3,6 +3,15 @@
 	- **节省磁盘空间** （统一安装包到磁盘的某个位置，项目中的`node_modules`通过`hard-link`的方式链接到实际的安装地址）
 - 安装结构
 - ![](https://developer.qcloudimg.com/http-save/yehe-5471653/64c0376fac0d4826a8723f9201864b96.jpg)
+- 当我们安装`bar`包时，根目录下只包含安装的包`bar`
+- 而`node_modules`目录下的`bar`包会`软链接`到`.pnpm/bar/node_modules/bar@*.*.*`
+- bar的依赖包foo会被提升到.pnpm的根目录下，其他包依赖foo时也会`软链接`到这里
+- 而bar和foo实际通过`硬链接`到`.pnpm store`中
+- ## monorepo
+- 之所以应用`monorepo`，主要是解决以下问题：
+	- 代码复用的问题
+	- 开发流程统一
+	- 高效管理多项目/包
 - ## 参考资料
 - [带你了解并实践monorepo和pnpm--腾讯云](https://cloud.tencent.com/developer/article/2316013)
 -

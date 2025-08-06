@@ -29,6 +29,16 @@ var sortedArrayToBST = function (nums) {
   root.right = sortedArrayToBST(nums.slice(centerIndex + 1));
   return root;
 };
+
+var sortedArrayToBST = function (nums = []) {
+  if (!nums?.length) return null;
+  const centerIndex = Math.floor(nums.length / 2);
+  const root = new TreeNode(nums[centerIndex]);
+  root.left = sortedArrayToBST(nums.slice(0, centerIndex));
+  root.right = sortedArrayToBST(nums.slice(centerIndex + 1, nums.length));
+  return root;
+};
+
 // @lc code=end
 
 /*

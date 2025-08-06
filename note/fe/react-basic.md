@@ -288,6 +288,6 @@ function FriendListItem(props) {
 ### useRef
 
 useRef() 比 ref 属性更有用。它可以很方便地保存任何可变值，其类似于在 class 中使用实例字段的方式。
-这是因为它创建的是一个普通 Javascript 对象。而 useRef() 和自建一个 {current: ...} 对象的唯一区别是，useRef 会在每次渲染时返回同一个 ref 对象。
+这是因为它创建的是一个普通 JavaScript 对象。而 useRef() 和自建一个 {current: ...} 对象的唯一区别是，useRef 会在每次渲染时返回同一个 ref 对象。
 
 ### [Hook 常见问题](https://react.docschina.org/docs/hooks-faq.html#how-do-i-implement-shouldcomponentupdate)

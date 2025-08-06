@@ -1,0 +1,22 @@
+- React 16
+	- fiber
+		- 可中断渲染：Fiber将渲染工作分解为小的单元，可以在浏览器需要处理其他任务时暂停，避免阻塞主线程
+		- 分片更新：将大的更新任务拆分成多个时间片，在每个时间片内完成部分工作，提升用户体验
+		- 异步协调：引入了优先级概念，高优先级任务可以打断低优先级任务
+	- hooks
+	- 错误边界
+- React 17
+	- 稳定性更新
+	- 不再需要显式导入 `React`
+	- 渐进式升级支持：改善了与旧版本 React 应用的兼容性
+- React 18
+	- 并发渲染：并发渲染允许 React 在渲染过程中**中断、暂停和恢复**工作，从而保持应用的响应性。这意味着 React 可以
+		- 在渲染大型组件树时不阻塞主线程
+		- 优先处理用户交互（如点击、输入）
+		- 在后台准备新的渲染结果
+	- 自动批处理：将多个状态更新自动合并到一次重新渲染中，包括setTimeout、Promise等异步操作
+	- Suspense升级，服务端支持Suspense流式渲染，nextjs的server action能力基于此实现
+	- 新的Hooks: useId, useDeferredValue, useTransition
+- React 19
+	- Server Actions 和 Server Components
+	- 编译器层优化

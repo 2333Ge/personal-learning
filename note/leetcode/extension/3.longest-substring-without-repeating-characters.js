@@ -10,33 +10,9 @@
 // @lcpr-template-end
 // @lc code=start
 /**
- * 待看官方题解
  * @param {string} s
  * @return {number}
  */
-
-/**解法不行 */
-var lengthOfLongestSubstring1 = function (s) {
-  if (!s?.length || s.length === 1) return s?.length || 0;
-  let map = {};
-  let res = 0;
-  let left = 0;
-  for (let i = 0; i < s.length; i++) {
-    let char = s[i];
-    if (map[char] !== undefined) {
-      res = Math.max(res, i - left);
-      if (map[char] + 1 > left) {
-        left = map[char] + 1;
-      }
-      map[char] = i;
-    } else {
-      map[char] = i;
-    }
-  }
-
-  return Math.max(res, s.length - left);
-};
-
 var lengthOfLongestSubstring = function (s) {
   const charMap = {};
   let left = 0;

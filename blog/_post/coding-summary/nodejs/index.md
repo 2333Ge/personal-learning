@@ -34,7 +34,7 @@ Node.js 是一个开源和跨平台的 JavaScript 运行时环境。 它几乎�
 
 ## V8 JavaScript引擎介绍
 
-http://nodejs.cn/learn/the-v8-javascript-engine
+http://nodejs.cn/learn/the-v8-JavaScript-engine
 
 V8 提供了执行 JavaScript 的运行时环境。 DOM 和其他 Web 平台 API 则由浏览器提供。
 

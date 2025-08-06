@@ -1,24 +1,30 @@
-## 高优
+## 场景
+- 原型与原型链
+- 网络请求并发控制：https://juejin.cn/post/6844904055819468808
+- z-index设置具体值与auto的区别
+- BFC：margin塌陷除了用BFC来解决，还可以用什么？ BFC形成的条件？
+- 实现一个简易的eventBus
+- tcp和udp
+- 大文件上传
+- ## 算法
+-
+- ## 高优
 - 准备1-2个能体现沟通、抗压、成长的完整故事
-	- 脉芽项目
-	- 社区PC
-		- 前端项目部署流程：[SOP](https://maimai.feishu.cn/docx/PN3CdzzbDo0fL6x5CK6cWAKknPd)
-- webpack 原理 & 实战
+	- [[项目R]]
 - react 原理
 	- react dom/ virtual dom
-- nextjs如何实现首屏优化
+- [[Nextjs 实现首屏优化R]]
 - 单元测试
 - CI/CD
 - [[八股文]]
 - babel
 - ## 中优
-- 0.5 px 如何实现的
+- 0.5 px 如何实现的 ✅
 - CSS 版本
 - github找一个完整的 nextjs 项目对比社区PC缺失功能
 - Mobx 理解
 - session
 - 浏览器缓存
-- 浏览器线程、进程
 - next
 	- image 怎么优化的
 - react 原理

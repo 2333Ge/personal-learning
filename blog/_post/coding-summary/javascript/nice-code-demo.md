@@ -20,7 +20,7 @@ tags:
 
 以下代码实现方法顺序执行，不论同步还是异步
 
-```javascript
+```JavaScript
 let result;
 for (const f of [func1, func2, func3]) {
   result = await f(result);
@@ -30,7 +30,7 @@ for (const f of [func1, func2, func3]) {
 
 更老版本的写法：
 
-```javascript 
+```JavaScript 
 const applyAsync = (acc, val) => acc.then(val);
 const composeAsync =
   (...funcs) =>
@@ -45,7 +45,7 @@ const result3 = transformData(data);
 
 ## 闭包缓存计算结果，提高性能
 
-```javascript {cmd=node}
+```JavaScript {cmd=node}
 function memoize(fn) {
     const cache = {};
 
@@ -82,7 +82,7 @@ console.log(memoizedFibonacci(20)); // 输出 6765
 
 通用的函数柯里化工具函数，注意这里没有处理`this`的指向
 
-```javascript {cmd=node}
+```JavaScript {cmd=node}
 function curry(fn) {
   return function curried(...args) {
     if (args.length >= fn.length) {

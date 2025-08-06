@@ -1,0 +1,5 @@
+- 列表重构
+- 可视化H5搭建项目
+- 社区PC
+	- 前端项目部署流程：[SOP](https://maimai.feishu.cn/docx/PN3CdzzbDo0fL6x5CK6cWAKknPd)
+- 详见 personal

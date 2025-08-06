@@ -58,7 +58,7 @@ var buildTree2 = function (preorder, inorder) {
 };
 
 var buildTree = function (preorder = [], inorder = []) {
-
+  
 };
 
 // @lc code=end

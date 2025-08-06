@@ -18,7 +18,7 @@
 - #### **2. `try/catch` + `async/await`**
 - #### **3. `then` 的第二个参数（错误回调）**  
   `then(resolveFn, rejectFn)` 的第二个参数可以单独处理当前 Promise 的错误，但不会捕获后续 `then` 的错误。  
-  ```javascript
+  ```JavaScript
   fetchData()
   .then(
     data => processData(data),
@@ -29,7 +29,7 @@
   ```
 - #### **4. `window.onunhandledrejection`（全局捕获未处理的 Promise 错误）**  
   用于捕获未被 `.catch()` 处理的 Promise 错误（适用于调试）：  
-  ```javascript
+  ```JavaScript
   window.addEventListener('unhandledrejection', event => {
   console.error('未捕获的 Promise 错误：', event.reason);
   event.preventDefault(); // 阻止默认错误打印
@@ -42,7 +42,7 @@
 - 如果全部成功，返回结果数组（按输入顺序）。
 - 如果有一个失败，立即 reject 该错误。
 - #### **实现代码：**  
-  ```javascript
+  ```JavaScript
   function myPromiseAll(promises) {
   return new Promise((resolve, reject) => {
     const results = [];
@@ -81,7 +81,7 @@
 	- 如果 Promise 失败（rejected），会抛出错误，可以用 `try/catch` 捕获。  
 	  
 	  **示例：**  
-	  ```javascript
+	  ```JavaScript
 	  // 用 Promise 的写法
 	  function fetchData() {
 	  return fetch('/api')
@@ -110,7 +110,7 @@
   
   **原生 Promise 无法直接取消**，只能通过外部变量忽略结果。可以通过以下方式模拟取消效果：
 - #### **方法 1：利用标志变量（简单版）**  
-  ```javascript
+  ```JavaScript
   function cancellablePromise(fn) {
   let isCancelled = false;
   
@@ -136,7 +136,7 @@
   ```
 - #### **方法 2：使用 AbortController（适用于 fetch）**  
   适用于需要真正终止网络请求的场景（如 `fetch` 或 `axios`）：  
-  ```javascript
+  ```JavaScript
   async function fetchWithCancel(url) {
   const abortController = new AbortController();
   const promise = fetch(url, { signal: abortController.signal });
@@ -165,7 +165,7 @@
 	- 状态管理（`pending`/`fulfilled`/`rejected`）
 	- 异步回调处理
 	- 错误捕获
-	- ```javascript
+	- ```JavaScript
 	  class MyPromise {
 	    value;
 	    err;
@@ -223,8 +223,8 @@
 	        if (this.status === "rejected") {
 	          queueMicrotask(() => {
 	            try {
-	              const res = _onReject(this.value);
-	              reject(res);
+	              const res = _onReject(this.err);
+	              resolve(res);
 	            } catch (e) {
 	              reject(e);
 	            }
@@ -262,3 +262,17 @@
 	  }
 	  
 	  ```
+- Q：`fulfilledCallbacks`为什么用数组，不用一个对象存
+- A：[then](vscode-file://vscode-app/Applications/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-browser/workbench/workbench.html) 方法可以被**多次调用**，每次调用都会注册一个新的回调函数：
+  ```JavaScript
+  const promise = new MyPromise((resolve) => {
+    setTimeout(() => resolve('success'), 1000);
+  });
+  
+  // 多次调用then，注册多个回调
+  promise.then(value => console.log('第一个回调:', value));
+  promise.then(value => console.log('第二个回调:', value));
+  promise.then(value => console.log('第三个回调:', value));
+  
+  // 当promise resolve时，所有回调都应该被执行
+  ```

@@ -1,0 +1,23 @@
+- Fiber是什么？Fiber 是 React 16 引入的一种**重新实现的协调引擎（Reconciler）**，用于管理组件更新、渲染和调度。它的核心目的是让 React 能够更好地控制渲染过程，比如支持**中断、优先级调度、异步渲染**等功能。
+- ## Fiber做了哪些事？
+- React Fiber 实现了一种**可中断、可恢复的工作单元模型**，它分为两个阶段：
+- ### 1. Render Phase（可中断，构建工作树）
+- 构建 Fiber 树（work-in-progress）
+- 对比（diff）新旧 Fiber 节点
+- 收集要执行的副作用（effects）
+- 可以被中断（支持时间切片）
+- ### 2. Commit Phase（不可中断，执行真实 DOM 操作）
+- 执行 DOM 更新、ref、生命周期、useEffect 等副作用
+- 更新真实 DOM 树
+- 只会执行收集好的变更列表，速度更快
+- ## Fiber 树结构是什么？
+- 每个 React 元素都会被创建成一个 **Fiber 节点**，形成一棵 Fiber 树
+- 每个 Fiber 节点是一个 JavaScript 对象，包含以下信息：
+	- `type`：组件类型（函数、类、DOM 等）
+	- `stateNode`：实际实例（如 DOM 节点或类组件实例）
+	- `child` / `sibling` / `return`：形成树状结构
+	- `alternate`：当前 Fiber 和上一次渲染的 Fiber 的双缓冲结构
+- ## ⏱️ Fiber 是怎么调度优先级的？
+- React 使用一个调度器（Scheduler），为每个更新任务分配优先级（如 `Immediate`、`UserBlocking`、`Normal`、`Low`）
+- 借助浏览器的 `requestIdleCallback`（或 `MessageChannel`），在空闲时片内执行渲染任务
+- 允许高优任务打断低优任务（如用户输入可优先渲染）

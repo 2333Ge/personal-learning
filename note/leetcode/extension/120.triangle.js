@@ -32,19 +32,6 @@ var minimumTotal1 = function (triangle) {
   return Math.min(...thisLevel);
 };
 
-var minimumTotal2 = function (triangle) {
-  const dp = [];
-  // 超时
-  const dfs = (i, j) => {
-    if (i === triangle.length - 1) return triangle[i][j];
-    if (!dp[i]) dp[i] = [];
-    if (dp[i][j] !== undefined) return dp[i][j];
-    dp[i][j] = Math.min(dfs(i + 1, j), dfs(i + 1, j + 1)) + triangle[i][j];
-    return dp[i][j];
-  };
-  return dfs(0, 0);
-};
-
 var minimumTotal = function (triangle) {
   if (!triangle[0]?.length) return 0;
   const dp = [[triangle[0][0]]];
@@ -60,6 +47,10 @@ var minimumTotal = function (triangle) {
   }
 
   return Math.min(...dp[dp.length - 1]);
+};
+
+var minimumTotal = function (triangle) {
+
 };
 // @lc code=end
 

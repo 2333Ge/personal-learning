@@ -40,6 +40,12 @@ var connect = function (root) {
   dfs(root, 0);
   return root;
 };
+
+
+var connect = function (root) {
+
+  
+}
 // @lc code=end
 
 /*

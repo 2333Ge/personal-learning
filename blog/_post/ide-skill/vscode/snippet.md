@@ -43,7 +43,7 @@ VSCode左上角
   // key会出现在代码片段提示的后面，也是后面绑定快捷键用的标识
   "Print to console": {
 		// 指定可以触发代码片段的文件类型
-		"scope": "javascript,typescript",
+		"scope": "JavaScript,typescript",
 		// 触发代码片段的字符
 		// "prefix": "log",
 		"prefix": ["a", "z"], // 多个时的写法

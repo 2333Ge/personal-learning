@@ -27,6 +27,20 @@ var reverseList = function (head) {
   head.next = null;
   return reverseHead;
 };
+
+function reverseList(head) {
+  let prev = null;
+  let current = head;
+
+  while (current !== null) {
+    const nextTemp = current.next; // 暂存下一个节点
+    current.next = prev; // 反转指针
+    prev = current; // prev前进
+    current = nextTemp; // current前进
+  }
+
+  return prev; // 新头节点
+}
 // @lc code=end
 
 /*

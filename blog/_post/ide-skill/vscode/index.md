@@ -142,7 +142,7 @@ MPE提供了几种在预览窗口中运行代码块的方式：
 
 1. **代码块运行基础语法**
 ````markdown
-```javascript {cmd=node}
+```JavaScript {cmd=node}
 console.log('Hello World!');
 ```
 ````
@@ -150,7 +150,7 @@ console.log('Hello World!');
 
 2. **实时预览输出**
 ````markdown
-```javascript {cmd=node output="markdown"}
+```JavaScript {cmd=node output="markdown"}
 console.log("# This is a heading");
 console.log("This is a paragraph");
 ```
@@ -200,7 +200,7 @@ List[\w\W]*components[\w\W]*<List
 
 ## 相关文档
 
-- [官方文档](https://code.visualstudio.com/docs/languages/javascript)
+- [官方文档](https://code.visualstudio.com/docs/languages/JavaScript)
 - [常用插件推荐](https://www.jianshu.com/p/3eebde5748a6)
 - [Git 历史提交比较](https://www.cnblogs.com/EdisonVan/p/10642698.html)
 - [极客教程-VSCode 教程](https://geek-docs.com/vscode/vscode-tutorials/what-is-vscode.html)

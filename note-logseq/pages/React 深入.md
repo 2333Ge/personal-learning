@@ -1,0 +1,7 @@
+- 日常使用 App，浏览网页时，有两类场景会制约`快速响应`，可概括为
+	- CPU 的瓶颈
+	- IO 的瓶颈
+- 解决`CPU瓶颈`的关键是实现`时间切片`，而`时间切片`的关键是：将**同步的更新**变为**可中断的异步更新**。在浏览器每一帧的时间中，预留一些时间给 JS 线程，`React`利用这部分时间更新组件（可以看到，在[源码](https://github.com/facebook/react/blob/1fb18e22ae66fdb1dc127347e169e73948778e5a/packages/scheduler/src/forks/SchedulerHostConfig.default.js#L119)中，预留的初始时间是 5ms）
+- `网络延迟`是前端开发者无法解决的。如何在`网络延迟`客观存在的情况下，减少用户对`网络延迟`的感知？[Suspense](https://zh-hans.reactjs.org/docs/concurrent-mode-suspense.html)及配套hook
+- ## [[React 版本迭代历史]]
+-

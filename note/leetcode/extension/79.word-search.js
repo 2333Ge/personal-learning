@@ -5,6 +5,10 @@
  * [79] 单词搜索
  */
 
+
+// @lcpr-template-start
+
+// @lcpr-template-end
 // @lc code=start
 /**
  * @param {character[][]} board

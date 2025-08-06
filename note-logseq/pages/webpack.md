@@ -34,12 +34,22 @@
 - ### Loader 和 Plugin 的区别
 - **Loader**: 文件加载器，处理单个文件（转换、编译）
 - **Plugin**: 在打包过程的特定时机执行更广泛的任务
+- ###  使用 webpack 时如何优化项目体积[1]
+- 按需加载
+- 提取公共代码
+- 提取第三方库或通过引用外部文件的方式引入第三方库
+- 代码压缩：代码压缩插件UglifyJsPlugin
+- 服务器启用gzip压缩
+- 剥离css文件，单独打包
+- Tree Shaking 在构建打包过程中，移除那些引入但未被使用的无效代码
+- ### 代码分割的实现
+- 入口点分割: 配置多个 entry
+- 动态导入: 使用 `import()` 语法
+- 防止重复: 使用 `SplitChunksPlugin`
 - ### 如何优化 Webpack 构建
 - 使用 `DllPlugin` 预编译不常变化的依赖
 - 配置 `exclude/include` 减少不必要的文件处理
 - 使用 `cache-loader` 或 `hard-source-webpack-plugin` 缓存
 - 多线程/并行处理 (`thread-loader`)
-- ### 代码分割的实现
-- 入口点分割: 配置多个 entry
-- 动态导入: 使用 `import()` 语法
-- 防止重复: 使用 `SplitChunksPlugin`
+- ## 参考文章
+- [1] [使用 webpack 时如何优化项目体积](https://q.shanyue.tech/fe/webpack/78)
