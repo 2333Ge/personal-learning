@@ -2,7 +2,91 @@
 - ### 1. React 16.x
 - **发布日期**：2017年9月26日
 - **核心更新**：
-	- **Fiber 重构**：React 完全重写了协程引擎，采用 Fiber 架构，支持 **可中断渲染**、**分片更新** 和 **异步协调**。这为 React 实现高级性能优化、时间切片和优先级调度奠定基础。
+	- **Fiber 重构**：React 完全重写了协程引擎，采用 Fiber 架构，支持 **可中断渲染**、**分片更新** 和 **异步协调**。这为 React 实现高级性能优化、时间切片和优先级调度奠定基础。、
+		- 🌰 可中断渲染
+		  ```javascript
+		  // 可中断渲染示例
+		  function ExpensiveComponent() {
+		    return (
+		      <div>
+		        {/* 正在渲染这个复杂列表时... */}
+		        {largeDataSet.map(item => (
+		          <ComplexItem key={item.id} data={item} />
+		        ))}
+		      </div>
+		    );
+		  }
+		  
+		  function App() {
+		    const [count, setCount] = useState(0);
+		    
+		    return (
+		      <div>
+		        {/* 用户点击按钮会中断上面的渲染 */}
+		        <button onClick={() => setCount(count + 1)}>
+		          点击次数: {count}
+		        </button>
+		        <ExpensiveComponent />
+		      </div>
+		    );
+		  }
+		  
+		  // 渲染过程：
+		  // 1. 开始渲染 ExpensiveComponent
+		  // 2. 用户点击按钮（高优先级事件）
+		  // 3. 中断当前渲染，优先处理按钮点击
+		  // 4. 更新 count 状态
+		  // 5. 恢复 ExpensiveComponent 的渲染
+		  ```
+		- 🌰 分片更新
+		  ```jsx
+		  // 传统的同步渲染（React 15）
+		  function renderLargeList() {
+		  // 一次性渲染 10000 个项目，会阻塞主线程
+		  for (let i = 0; i < 10000; i++) {
+		    renderItem(i);
+		  }
+		  // 用户无法在这期间进行任何交互
+		  }
+		  - // Fiber 的时间切片（React 16+）
+		  function renderWithTimeSlicing() {
+		  // 将工作分成 5ms 的小片段
+		  let deadline = performance.now() + 5;
+		  
+		  while (performance.now() < deadline && hasMoreWork()) {
+		    performUnitOfWork(); // 渲染一个组件
+		  }
+		  
+		  // 让出控制权给浏览器处理用户交互
+		  if (hasMoreWork()) {
+		    requestIdleCallback(renderWithTimeSlicing);
+		  }
+		  }
+		  ```
+		- 🌰 异步协调
+		  ```jsx
+		  // 不同类型的更新有不同优先级
+		  const priorities = {
+		    Immediate: 1,      // 用户输入、点击事件
+		    UserBlocking: 2,   // 鼠标悬停、滚动
+		    Normal: 3,         // 数据获取、网络请求
+		    Low: 4,           // 分析、日志
+		    Idle: 5           // 后台任务
+		  };
+		  
+		  // 示例场景
+		  function handleUserInput() {
+		    // 高优先级：立即更新输入框
+		    setState({ inputValue: newValue }); // Immediate priority
+		  }
+		  
+		  function handleDataFetch() {
+		    // 低优先级：更新列表数据
+		    setState({ listData: newData }); // Normal priority
+		  }
+		  
+		  // 当用户正在输入时，输入框更新会中断列表渲染
+		  ```
 	- **错误边界**：引入了 `Error Boundaries`，使得 React 组件能够捕获 JavaScript 错误，防止整个应用崩溃。
 	- **Fragments 和 Portals**：支持 **Fragments** 允许多个子元素返回而无需包裹父容器，`Portals` 可以将子元素渲染到 DOM 中的不同位置。
 	- **Hooks 初步支持**：React 16.8 版本开始，尽管主要更新发生在 16.8 版本，但早期支持了 `useState` 和 `useEffect`。

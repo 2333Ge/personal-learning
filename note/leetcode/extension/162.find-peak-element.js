@@ -42,6 +42,10 @@ var findPeakElement2 = function (nums) {
   return l;
 };
 
+var findPeakElement = function (nums) {
+  
+};
+
 // @lc code=end
 
 /*

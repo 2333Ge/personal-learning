@@ -5,7 +5,6 @@
  * [122] 买卖股票的最佳时机 II
  */
 
-
 // @lcpr-template-start
 
 // @lcpr-template-end
@@ -18,14 +17,17 @@ var maxProfit = function (prices) {
   let res = 0;
   for (let i = 1; i < prices.length; i++) {
     if (prices[i] > prices[i - 1]) {
-      res += prices[i] - prices[i - 1]
+      res += prices[i] - prices[i - 1];
     }
   }
   return res;
 };
+
+var maxProfit = function (prices) {
+  
+}
+
 // @lc code=end
-
-
 
 /*
 // @lcpr case=start
@@ -41,4 +43,3 @@ var maxProfit = function (prices) {
 // @lcpr case=end
 
  */
-

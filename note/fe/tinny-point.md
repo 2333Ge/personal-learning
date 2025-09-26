@@ -40,3 +40,11 @@ tags:
 ## etc/hosts
 
 mac etc/hosts文件中存放域名对应ip的解析
+
+## pnpm i 失败
+
+1. 检查源 `nrm ls`、`pnpm config get registry`、`npm config get registry`
+> 有时候`pnpm config get registry`、`npm config get registry`的源地址不一样，注意区分
+2. 检查pnpm版本
+> 可以在不同的node版本下安装不同的pnpm
+3. 检查node版本

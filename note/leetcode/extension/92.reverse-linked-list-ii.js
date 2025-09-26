@@ -103,6 +103,55 @@ var reverseBetween = function (head, left, right) {
 
   return dummy.next;
 };
+// [1,2,3,4,5]
+var reverseBetween = function (head, left, right) {
+  if (!head?.next || left === right) return head;
+  let cur = 1;
+  let dummy = { next: head };
+  let pre = dummy;
+  while (cur < left) {
+    pre = pre.next;
+    cur++;
+  }
+
+  const start = pre.next;
+  let then = start.next;
+  while (cur < right) {
+    start.next = then?.next;
+    then.next = pre.next;
+    pre.next = then;
+    then = start.next;
+    cur++;
+  }
+
+  return dummy.next;
+};
+
+// a -> b -> c -> d -> e
+// a -> c -> b -> d -> e
+var reverseBetween = function (head, left, right) {
+  const dummy = { next: head };
+  let pre = dummy;
+  let cur = 1; // 注意这里
+
+  while (cur < left) {
+    pre = pre.next;
+    cur++;
+  }
+
+  let start = pre.next;
+  let then = start?.next;
+
+  while (cur < right) {
+    start.next = then?.next;
+    then.next = pre.next;
+    pre.next = then;
+    then = start.next;
+    cur++;
+  }
+
+  return dummy.next;
+};
 
 // @lc code=end
 

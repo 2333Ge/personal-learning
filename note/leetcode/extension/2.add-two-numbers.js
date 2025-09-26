@@ -21,25 +21,26 @@
  * @param {ListNode} l2
  * @return {ListNode}
  */
+
 var addTwoNumbers = function (l1, l2) {
-  const dummy = new ListNode();
-  let add1 = 0;
-  let curL1 = l1,
-    curL2 = l2;
+  let plus = 0;
+  let a = l1;
+  let b = l2;
+  const dummy = { next: null };
   let cur = dummy;
-  while (curL1 || curL2) {
-    const sum = (curL1?.val || 0) + (curL2?.val || 0) + add1;
-    const val = sum % 10;
-    add1 = sum >= 10 ? 1 : 0;
-    const newNode = new ListNode(val);
-    cur.next = newNode;
-    cur = newNode;
-    curL1 = curL1?.next;
-    curL2 = curL2?.next;
+  while (a || b) {
+    const temp = plus + (a?.val || 0) + (b?.val || 0);
+    plus = Math.floor(temp / 10);
+    cur.next = new ListNode(temp % 10);
+    cur = cur.next;
+    a = a?.next;
+    b = b?.next;
   }
-  if (add1) {
-    cur.next = new ListNode(add1);
+
+  if (plus) {
+    cur.next = new ListNode(plus);
   }
+
   return dummy.next;
 };
 // @lc code=end

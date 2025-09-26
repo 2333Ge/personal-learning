@@ -5,9 +5,8 @@
 - BFC：margin塌陷除了用BFC来解决，还可以用什么？ BFC形成的条件？
 - 实现一个简易的eventBus
 - tcp和udp
+- POST GET
 - 大文件上传
-- ## 算法
--
 - ## 高优
 - 准备1-2个能体现沟通、抗压、成长的完整故事
 	- [[项目R]]
@@ -24,7 +23,6 @@
 - github找一个完整的 nextjs 项目对比社区PC缺失功能
 - Mobx 理解
 - session
-- 浏览器缓存
 - next
 	- image 怎么优化的
 - react 原理
@@ -37,7 +35,8 @@
 - **CSS布局**
 - **浏览器渲染过程**
 - 打包工具：webpack等
-- CSRF
+	- 打包 vite -- 运营后台实践
+-
 - XSS
 - cookie
 - [[Next.js查漏补缺]]

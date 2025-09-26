@@ -16,34 +16,7 @@
  * @param {string[]} bank
  * @return {number}
  */
-var minMutationX = function (startGene, endGene, bank) {
-  if (startGene.length !== endGene.length) return -1;
-  if (startGene === endGene) return 0;
-  const bankSet = new Set(bank);
-  let min = Infinity;
-  let step = 0;
 
-  function updateCharAt(str, index, char) {
-    return str.slice(0, index) + char + str.slice(index + 1);
-  }
-
-  const dfs = (start) => {
-    if (start === endGene) return step;
-    for (let i = 0; i < start.length; i++) {
-      if (start[i] === endGene[i]) continue;
-      const newStart = updateCharAt(start, i, endGene[i]);
-      if (!bankSet.has(newStart)) {
-        continue;
-      }
-      step++;
-      min = Math.min(dfs(newStart), min);
-      step--;
-    }
-    return Infinity;
-  };
-  dfs(startGene);
-  return min === Infinity ? -1 : min;
-};
 
 var minMutation = function (startGene, endGene, bank) {
   if (startGene.length !== endGene.length) return -1;

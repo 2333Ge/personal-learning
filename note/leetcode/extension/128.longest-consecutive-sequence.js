@@ -70,7 +70,7 @@ var longestConsecutive1 = function (nums) {
   return res;
 };
 
-var longestConsecutive4 = function (nums = []) {
+var longestConsecutive = function (nums = []) {
   let set = new Set(nums);
   let res = 0;
   for (let value of set) {
@@ -87,8 +87,19 @@ var longestConsecutive4 = function (nums = []) {
 };
 
 var longestConsecutive = function (nums = []) {
-  
-}
+  const set = new Set(nums);
+  let len = 0;
+  for (let value of nums) {
+    if (!set.has(value - 1)) {
+      let temp = value;
+      while (set.has(temp + 1)) {
+        temp++;
+      }
+      len = Math.max(len, temp - value + 1);
+    }
+  }
+  return len;
+};
 
 // @lc code=end
 

@@ -16,3 +16,9 @@
   
   typeof func; // "function"
   ```
+- 一些特别的typeof
+  ```javascript
+  typeof Array.prototype // 'object'
+  typeof Object.prototype // 'object'
+  typeof Function.prototype // 'function'
+  ```

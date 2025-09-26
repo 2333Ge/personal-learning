@@ -28,6 +28,34 @@ var lengthOfLIS = function (nums) {
   }
   return res;
 };
+
+var lengthOfLIS = function (nums) {
+  if (!nums?.length) return 0;
+  const dp = Array.from({ length: nums.length }).fill(1);
+
+  for (let i = 1; i < nums.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (nums[i] > nums[j]) {
+        dp[i] = Math.max(dp[i], dp[j] + 1);
+      }
+    }
+  }
+  return Math.max(...dp);
+};
+
+var lengthOfLIS = function (nums) {
+  if (!nums.length) return 0;
+  const dp = Array.from({ length: nums.length }).fill(1);
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[j] > nums[i]) {
+        dp[j] = Math.max(dp[i] + 1, dp[j]);
+      }
+    }
+  }
+
+  return Math.max(...dp);
+};
 // @lc code=end
 
 /*

@@ -2,7 +2,7 @@
   | 阶段 | 关键过程 |
   | ---- | ---- | ---- |
   | 调度（Scheduling） | `setState` 被排入队列，React 批量处理更新，非立即执行 |
-  | 渲染（Render） | 重新执行组件渲染函数，生成新 React 元素树 |
+  | 渲染（Render） | 重新执行组件渲染函数，生成新 [[Fiber]] 树 |
   | Diff 比较 | 新旧树比对，找出差异节点，生成 effects 列表 |
   | Commit 操作 | 将 effects 应用到真实 DOM，执行生命周期和 `useEffect` 副作用 |
 - 调度阶段

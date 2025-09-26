@@ -13,23 +13,6 @@
  * @param {number[]} nums
  * @return {number}
  */
-// var maxSubArray = function (nums) {
-//   const dpIndex = [];
-//   let maxStartIndex = 0;
-//   let maxEndIndex = 0;
-//   for (let i = 1; i < nums.length; i++) {
-//     if ((nums[dpIndex[i - 1]] || 0) + nums[i] > nums[i]) {
-//       dpIndex[i] = dpIndex[i - 1];
-//       maxStartIndex = dpIndex[i - 1];
-//       maxEndIndex = i;
-//     } else {
-//       dpIndex[i] = i;
-//       maxStartIndex = i;
-//       maxEndIndex = i;
-//     }
-//   }
-//   return nums.slice(maxStartIndex, maxEndIndex + 1)
-// };
 
 var maxSubArray1 = function (nums) {
   const dp = [nums[0]];

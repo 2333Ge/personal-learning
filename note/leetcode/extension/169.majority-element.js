@@ -22,6 +22,10 @@ var majorityElement = function (nums) {
     if (count > nums.length / 2) return num;
   }
 };
+
+var majorityElement = function (nums) {
+  
+}
 // @lc code=end
 
 /*

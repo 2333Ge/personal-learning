@@ -10,36 +10,10 @@
 // @lcpr-template-end
 // @lc code=start
 /**
- * ❎，超时
  * @param {number[]} gas
  * @param {number[]} cost
  * @return {number}
  */
-var canCompleteCircuitX = function (gas, cost) {
-  let totalRest = 0;
-  const rest = [];
-  for (let i = 0; i < gas.length; i++) {
-    totalRest = totalRest + gas[i] - cost[i];
-    rest[i] = gas[i] - cost[i];
-  }
-  if (totalRest < 0) {
-    return -1;
-  }
-  for (let i = 0; i < gas.length; i++) {
-    let cur = 0;
-    for (let j = i; j < gas.length + i; j++) {
-      cur = cur + rest[j % gas.length];
-      if (cur < 0) {
-        break;
-      }
-    }
-    if (cur >= 0) {
-      return i;
-    }
-  }
-  return -1;
-};
-
 var canCompleteCircuit1 = function (gas, cost) {
   let rest = 0;
   let start = 0;
@@ -91,6 +65,23 @@ var canCompleteCircuit = function (gas, cost) {
   }
   return -1;
 };
+
+var canCompleteCircuit = function (gas, cost) {
+  let reset = 0;
+  let res = 0;
+  let totalRest = 0;
+  for (let i = 0; i < gas.length; i++) {
+    reset = gas[i] - cost[i] + reset;
+    totalRest = gas[i] - cost[i] + totalRest;
+    if (reset < 0) {
+      reset = 0;
+      res = i + 1;
+    }
+  }
+
+  return totalRest >= 0 ? res : -1;
+};
+
 // @lc code=end
 
 /*

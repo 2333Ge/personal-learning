@@ -10,7 +10,7 @@
 // @lcpr-template-end
 // @lc code=start
 /**
- * 
+ *
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
@@ -24,6 +24,20 @@ var twoSum = function (nums, target) {
     }
     indexMap[cur] = index;
   }
+  return [];
+};
+
+var twoSum = function (nums, target) {
+  const indexMap = new Map();
+  for (let i = 0; i < nums.length; i++) {
+    const halfValue = target - nums[i];
+    if (indexMap.has(halfValue)) {
+      return [indexMap.get(halfValue), i];
+    } else {
+      indexMap.set(nums[i], i);
+    }
+  }
+
   return [];
 };
 // @lc code=end

@@ -15,35 +15,6 @@
  * @param {number} k
  * @return {number}
  */
-var findKthLargestX = function (nums, k) {
-  const quickSort = (left, right) => {
-    if (left >= right) return nums[k];
-    const randomX = nums[Math.floor(Math.random() * (right - left)) + left];
-    let i = left + 1;
-    let j = right;
-    while (i < j) {
-      while (i < j && nums[i] < randomX) i++;
-      while (i < j && nums[j] > randomX) j--;
-      if (i < j) {
-        const tmp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = tmp;
-      }
-    }
-    const tmp = nums[left];
-    nums[left] = nums[i];
-    nums[i] = tmp;
-    if (k === j) return nums[j];
-    if (k < j) {
-      return quickSort(left, j - 1);
-    } else {
-      return quickSort(i, right);
-    }
-  };
-
-  return quickSort(0, nums.length - 1);
-};
-
 var findKthLargest1 = function (nums, k) {
   const big = [],
     small = [],
@@ -95,7 +66,7 @@ var findKthLargest2 = function (nums, k) {
   return findKthLargest(smaller, k - bigger.length - equal.length);
 };
 
-var findKthLargest = function (nums, k) {
+var findKthLargest3 = function (nums, k) {
   if (k > nums.length) return;
   let equal = [nums[0]];
   let smaller = [];
@@ -114,8 +85,29 @@ var findKthLargest = function (nums, k) {
   return findKthLargest(smaller, k - bigger.length - equal.length);
 };
 
+var findKthLargest = function (nums, k) {
+  const smaller = [];
+  const bigger = [];
+  const equal = [];
+  let target = nums[0];
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] === target) {
+      equal.push(nums[i]);
+    } else if (nums[i] > target) {
+      bigger.push(nums[i]);
+    } else {
+      smaller.push(nums[i]);
+    }
+  }
 
-
+  if (bigger.length >= k) {
+    return findKthLargest(bigger, k);
+  }
+  if (bigger.length + equal >= k) {
+    return target;
+  }
+  return findKthLargest(smaller, k - equal.length - smaller.length);
+};
 
 // @lc code=end
 
