@@ -10,57 +10,52 @@ tags:
 # 工具
 
 汇总网站 
-- hayo：https://www.hayo.com/
-- https://ai.nancheng.fun/
-- https://www.aigc.casa/
+
+- [hayo](https://www.hayo.com/)
+- [ai.nancheng.fun](https://ai.nancheng.fun/)
+- [aigc](https://www.aigc.casa/)
 
 **prompt汇总：**
 
 - https://qddmercny4.feishu.cn/sheets/shtcnMklYu0WsXEDUXXanrSEB2m
 - https://zl49so8lbq.feishu.cn/wiki/wikcnlmCYpKYFrH8ek1sS2ooy8d
 
-learning prompt：https://learningprompt.wiki/docs/chatgpt-learning-path
+## 技巧
 
-prompt技巧：https://zhuanlan.zhihu.com/p/617524191
-
-
-提示工程(Prompt Engineering)，提示词开发和优化： https://www.promptingguide.ai/zh
+- [learning prompt](https://learningprompt.wiki/docs/chatgpt-learning-path)
+- [prompt技巧](https://zhuanlan.zhihu.com/p/617524191)
+- [提示工程(Prompt Engineering)](https://www.promptingguide.ai/zh)，提示词开发和优化
+- [Google提示工程中文翻译](https://lewlh.github.io/2025/04/15/PromptEngineering)
 
 ## 编程相关
 
-ide: https://www.cursor.so/
+ide: 
 
-copilot介绍&使用：https://nira.com/github-copilot/
-
-copilot插件：https://githubnext.com/projects/copilot-labs/
-
-Copilot X: https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/
-
-内测申请：https://github.com/github-copilot/chat_waitlist_signup/join
+- [cursor](https://www.cursor.so/)
+- [copilot介绍&使用](https://nira.com/github-copilot/)
+- [copilot插件](https://githubnext.com/projects/copilot-labs/)
+- [Copilot X](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/)
 
 
 ## 绘图相关
 
-midjourney 平替 stable diffusion：https://www.8btc.com/article/6774458
-
-stable diffusion 体验：https://playgroundai.com/create
-
-百度文心一格（图片）：https://yige.baidu.com/
+- [midjourney 平替 stable diffusion](https://www.8btc.com/article/6774458)
+- [stable diffusion 体验](https://playgroundai.com/create)
+- [百度文心一格（图片）](https://yige.baidu.com/)
+- 豆包
+- 
 
 ## 综合类
 
-汇总: https://poe.com/
-文案类：https://www.saoma.site/
-https://www.coze.cn/docs/guides/workflow_user_intent
+汇总: 
+
+- [poe](https://poe.com/)
+- [文案类](https://www.saoma.site/)
+- [coze](https://www.coze.cn/docs/guides/workflow_user_intent)
 
 ### chatgpt
 
-- openai api 官网介绍：https://platform.openai.com/docs/introduction
-
-申请 waitlist
-
-- https://openai.com/waitlist/plugins
-- https://openai.com/waitlist/gpt-4-api
+- [openai api 官网介绍](https://platform.openai.com/docs/introduction)
 
 免费gpt4：https://ora.sh/openai/gpt4
 平替：https://freegpt.one/

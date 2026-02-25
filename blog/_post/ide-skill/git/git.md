@@ -31,6 +31,7 @@ tags:
 ```bash
 vim ~/.gitconfig
 [alias] 
+        c- = checkout -
         co = checkout
         ps = push
         pl = pull

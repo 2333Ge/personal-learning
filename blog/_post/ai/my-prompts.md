@@ -137,4 +137,5 @@ leetcode题目【】，给我解答，要求：
 - [1] [提示词工程指南](https://www.promptingguide.ai/zh/)
 - [2] [少数派：Deepseek 教我的法则：不是要「会提问」，而是要「早动手」](https://sspai.com/post/96150)
 - [3] [ChatGPT 技巧 | Prompt 逆向工程](https://zhuanlan.zhihu.com/p/617524191)
+- [4] [Google提示工程中文翻译](https://lewlh.github.io/2025/04/15/PromptEngineering/)
 
