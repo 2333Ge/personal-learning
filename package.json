@@ -2,20 +2,24 @@
   "name": "personal-learning",
   "version": "0.0.1",
   "description": "personal-learning",
+  "type": "module",
   "scripts": {
     "check:logseq": "node bin/check-logseq-assets.js note-logseq/assets",
     "check:size": "node bin/show-commit-size.js",
     "save": "./bin/save.sh",
-    "dev": "vuepress dev blog",
-    "build": "vuepress build blog",
+    "dev": "vitepress dev blog",
+    "build": "vitepress build blog --outDir ../docs",
     "deploy": "./bin/deploy.sh",
     "ppt:build": "slidev build slidev/index.md",
     "ppt:dev": "slidev --open slidev/index.md",
     "ppt:export": "slidev export slidev/index.md"
   },
   "devDependencies": {
-    "vuepress": "^1.9.7",
-    "vuepress-theme-maker": "^1.2.3"
+    "vitepress": "^1.6.4",
+    "globby": "^14.0.0",
+    "gray-matter": "^4.0.3",
+    "fs-extra": "^11.3.2",
+    "vitepress-plugin-comment-with-giscus": "^1.1.15"
   },
   "dependencies": {
     "chalk": "^4.1.2"

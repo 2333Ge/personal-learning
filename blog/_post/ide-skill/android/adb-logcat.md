@@ -31,9 +31,9 @@ adb logcat -b all | grep "am_on_create.*{...activity}"
 
 清除（清空）所选的缓冲区并退出。要清除所有缓冲区，请使用 -b all -c。
 
-### -f <filename>
+### -f `<filename>`
 
-将日志消息输出写入 <filename>。默认值为 stdout。
+将日志消息输出写入 `<filename>`。默认值为 stdout。
 
 该命令不起作用建议使用
 

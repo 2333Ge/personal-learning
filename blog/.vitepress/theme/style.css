@@ -1,0 +1,18 @@
+/* 自定义品牌配色，保持与旧站风格一致且更美观 */
+:root {
+  --vp-c-brand-1: #673ab7; /* 主色 */
+  --vp-c-brand-2: #522e92; /* 深色 */
+  --vp-c-brand-3: #7e57c2; /* hover/强调 */
+}
+
+/* 适度提升正文可读性 */
+.vp-doc p {
+  line-height: 1.85;
+}
+
+/* 代码块圆角与阴影优化 */
+.vp-doc pre {
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
