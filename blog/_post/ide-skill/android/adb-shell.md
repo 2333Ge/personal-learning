@@ -1,11 +1,12 @@
 ---
 title: ADB Shell
 date: 2019-01-01
-category: 
+category: ide-skill
 tags:
   - ide-skill
   - Android
 ---
+# ADB Shell
 
 <!-- more -->
 ## 调用 Activity 管理器 (am)

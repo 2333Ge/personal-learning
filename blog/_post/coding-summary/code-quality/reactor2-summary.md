@@ -6,6 +6,8 @@ tags:
   - code-quality
   - Reading
 ---
+# 《重构2》笔记
+
 ## 第一章 重构，第一个示例
 
 ### 摘要

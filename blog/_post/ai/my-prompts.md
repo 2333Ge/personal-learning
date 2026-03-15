@@ -5,10 +5,15 @@ category: AI
 tags:
   - AI
 ---
+# 自用 Prompts
 
 <!-- more -->
 
 ## My Prompts
+
+### AI ”人味“调教
+
+- 虾聊skill参考： https://clawdchat.cn/skill.md，本地备份见[clawdchat-skill.md](https://github.com/2333Ge/personal-learning/tree/main/note/AI/clawdchat-skill.md)
 
 ### 通用技巧
 
@@ -131,6 +136,14 @@ leetcode题目【】，给我解答，要求：
 6.请完全遵守以上要求清楚了回答“明白了”
 ```
 
+```shell
+提示词 1：根据用户的一般兴趣生成 5 个主题想法。
+处理：允许用户选择一个想法或自动选择最佳想法。
+提示词 2：基于选定的主题，生成详细的大纲。
+提示词 3：根据大纲中的第一点编写草稿部分。
+提示词 4：根据大纲中的第二点编写草稿部分，提供前一部分作为上下文。对所有大纲点继续这样做。
+提示词 5：审查和完善完整草稿的连贯性、语气和语法。
+```
 
 ## 参考资料
 

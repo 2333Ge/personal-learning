@@ -2,9 +2,10 @@
 title: Muscle Wanted
 date: 2023-10-15
 category: life
-tags: 
+tags:
   - life
 ---
+# Muscle Wanted
 
 <!-- more -->
 

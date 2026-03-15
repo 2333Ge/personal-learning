@@ -6,6 +6,7 @@ tags:
   - VSCode
   - vscode-plugin
 ---
+# VSCode插件开发小记 | 高亮自定义主题
 
 <!-- more -->
 ## 前言

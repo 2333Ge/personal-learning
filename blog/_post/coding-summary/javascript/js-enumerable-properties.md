@@ -2,10 +2,11 @@
 title: JavaScript 对象的“枚举属性”
 date: 2025-07-25
 category: JavaScript
-tags: 
+tags:
   - FE
   - JavaScript
 ---
+# JavaScript 对象的“枚举属性”
 
 <!-- more -->
 

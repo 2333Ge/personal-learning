@@ -18,13 +18,15 @@ async function getPosts(pageSize: number) {
     paths.map(async (item) => {
       const content = await fs.readFile(item, 'utf-8')
       const { data } = matter(content)
+      // 生成站点内的可访问路径，移除物理目录前缀 "blog/"
+      const sitePath = item.replace(/^blog\//, '')
       return {
         frontMatter: {
           ...data,
           date: convertDateV2(data.date),
           order: _convertOrder((data as any).order)
         },
-        regularPath: `/${item.replace('.md', '.html')}`
+        regularPath: `/${sitePath.replace('.md', '.html')}`
       }
     })
   )

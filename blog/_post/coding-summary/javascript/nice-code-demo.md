@@ -6,9 +6,9 @@ tags:
   - JavaScript
   - TypeScript
   - FE
+description: 记录日常开发遇到的让人眼前一亮的代码
 ---
-
-> 记录日常开发遇到的让人眼前一亮的代码
+# 前端优秀代码片段
 
 <!-- more -->
 

@@ -6,7 +6,7 @@
         <a :href="withBase(article.regularPath)"> {{ article.frontMatter.title }}</a>
       </div>
     </div>
-    <p class="describe" v-html="article.frontMatter.description"></p>
+    <p class="describe">{{ article.frontMatter.description }}</p>
     <div class='post-info'>
       {{ article.frontMatter.date }} <span v-for="item in article.frontMatter.tags"><a :href="withBase(`/pages/tags.html?tag=${item}`)"> {{ item }}</a></span>
     </div>
@@ -53,4 +53,3 @@ const pageArray = computed(() => generatePaginationArray(props.pagesNum, props.p
   .describe { font-size: 0.9375rem; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; margin: 0.5rem 0 1rem; }
 }
 </style>
-

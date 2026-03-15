@@ -2,8 +2,11 @@
 title: Android 特殊场景Api记录
 date: 2019-01-01
 category: Android
-tag: [Android]
+tag:
+  - Android
 ---
+# Android 特殊场景Api记录
+
 ## 启动应用默认 activity
 
 场景来源：推送处理 Activity

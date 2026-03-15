@@ -6,6 +6,7 @@ tags:
   - FE
   - JavaScript
 ---
+# 浏览器事件循环与渲染：为什么连续修改 innerText 会立即生效？
 
 ## 浏览器事件循环与渲染：为什么连续修改 innerText 会立即生效？
 

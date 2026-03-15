@@ -6,6 +6,7 @@ tags:
   - ide-skill
   - VSCode
 ---
+# VSCode snippet自定义代码模板
 
 > 代码片段是可以更轻松地输入重复代码模式的模板，例如循环或条件语句
 
