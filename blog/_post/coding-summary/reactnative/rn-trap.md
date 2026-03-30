@@ -5,9 +5,8 @@ category: react-native
 tags:
   - react-native
 ---
-# RN 踩坑记录
 
-<!-- more -->
+# RN 踩坑记录
 
 ## Could not connect to development server
 

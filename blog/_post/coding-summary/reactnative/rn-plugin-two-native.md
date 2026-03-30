@@ -5,9 +5,9 @@ category: react-native
 tags:
   - react-native
 ---
+
 # 【RN-插件 2】原生视图插件
 
-<!-- more -->
 ## 1 目标
 
 结合上一次【RN-插件 1】原生插件-初始化、发布 npm&使用 的联系，结合之前学 RN 利用原生组件知识，创建一个简单的原生视图插件

@@ -6,9 +6,8 @@ tags:
   - NPM
   - ide-skill
 ---
-# NPM 概览
 
-<!-- more -->
+# NPM 概览
 
 ## 实用命令
 

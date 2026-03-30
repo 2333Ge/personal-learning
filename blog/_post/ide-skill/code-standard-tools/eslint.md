@@ -6,9 +6,8 @@ tags:
   - ESLint
   - ide-skill
 ---
-# ESLint 概览
 
-<!-- more -->
+# ESLint 概览
 
 ## 相关文章
 

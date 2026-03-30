@@ -5,9 +5,8 @@ category: AI
 tags:
   - AI
 ---
-# 自用 Prompts
 
-<!-- more -->
+# 自用 Prompts
 
 ## My Prompts
 
@@ -99,8 +98,6 @@ leetcode题目【】，给我解答，要求：
 4. 不用对原题目进行说明
 5. 关键代码注释说明
 ```
-
-
 
 ### 面试
 

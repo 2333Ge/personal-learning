@@ -5,6 +5,7 @@ category: Android
 tag:
   - Android
 ---
+
 # Android 特殊场景Api记录
 
 ## 启动应用默认 activity

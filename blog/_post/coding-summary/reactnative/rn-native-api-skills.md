@@ -5,9 +5,8 @@ category: react-native
 tags:
   - react-native
 ---
-# RN原生API奇淫巧技
 
-<!-- more -->
+# RN原生API奇淫巧技
 
 ## ReactMarker
 
@@ -142,5 +141,4 @@ protected void handleCreateView(
   }
 }​
 ```
-
 

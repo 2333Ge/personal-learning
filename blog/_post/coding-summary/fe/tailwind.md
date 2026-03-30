@@ -6,9 +6,9 @@ tags:
   - FE
   - CSS
 ---
+
 # Tailwind CSS 概览
 
-<!-- more -->
 ## 相关资料
 
 - [tailwind 中文网站](https://tailwind.nodejs.cn/docs/responsive-design)

@@ -6,16 +6,15 @@ tags:
   - ide-skill
   - Chrome
 ---
+
 # Chrome概览
 
-<!-- more -->
 ## 快捷键
 
 |   快捷键    |       描述       |
 | :---------: | :--------------: |
 | cmd+shift+f |     切换全屏     |
 | cmd+shift+b | 显示、隐藏书签栏 |
-
 
 ## 插件
 
@@ -27,13 +26,11 @@ tags:
 - 繪畫工具和屏幕截圖：取色器，画草稿
 - Quick QRCode：二维码生成
 
-
 ## 调试
 
 - [调试技巧](./Advent-calendar-for-front-end-developers-summary.md)
 
 ## 仅用浏览器如何查看图片真实大小
-
 
 仅用浏览器内置的开发者工具即可查看网络图片的真实尺寸，无需额外插件。以下为常用方法：
 

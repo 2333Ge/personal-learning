@@ -7,7 +7,8 @@ tags:
   - ide-skill
 ---
 
-<!-- more -->
+# Git 概览
+
 ## 通用
 
 - changelog 生成
@@ -40,7 +41,6 @@ git remote add origin git@github.com:Nehic/demo.git
 git pull
 ```
 
-
 ## 实用命令
 
 - 修改commit信息，如填错邮件地址
@@ -51,7 +51,6 @@ git log 查看commit id
 git rebase -i <最早commit> 重新设置基准线
 git commit --amend --author="Author Name <email@address.com>" 来修改commit
 `git rebase --continue 移动到下个commit作为基准线
-
 
 - 查看对应指令帮助
 
@@ -91,7 +90,6 @@ git branch <分支> commitId // 用对应日志建立新分支
 git remote add origin ../remote
 ```
 - 项目纠错技巧 git bisect: https://www.ruanyifeng.com/blog/2018/12/git-bisect.html
-
 
 ## 命令简写
 

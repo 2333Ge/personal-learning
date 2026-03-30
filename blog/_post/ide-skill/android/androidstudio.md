@@ -8,9 +8,9 @@ tags:
   - ide-skill
 ---
 
-<!-- more -->
+# Android Studio概览
 
-# 快捷键
+## 快捷键
 
 快捷键[官网链接][official]
 
@@ -24,7 +24,6 @@ tags:
 
 [a1]: ./image/codeInOneWindow.png
 [official]: https://developer.android.google.cn/studio/intro/keyboard-shortcuts
-
 
 ## 技巧
 
@@ -41,7 +40,6 @@ Android_10_1080p_no_Frame
 $ emulator -avd Android_10_1080p_no_Frame
 ```
 
-
 若报错
 
 ```
@@ -52,7 +50,7 @@ emulator: ERROR: No AVD specified. Use '@foo' or '-avd foo' to launch a virtual 
 
 ```bash
 export ANDROID_HOME=/Users/ych/Library/Android/sdk
-# export PATH=${PATH}:${ANDROID_HOME}/emulator # 这一段为什么不行
+## export PATH=${PATH}:${ANDROID_HOME}/emulator # 这一段为什么不行
 export PATH=$ANDROID_HOME/emulator:$PATH
 ```
 #### [RN 开发者菜单](https://reactnative.cn/docs/debugging)
@@ -64,6 +62,4 @@ cmd m
 ```
 adb shell input keyevent 82
 ```
-
-
 

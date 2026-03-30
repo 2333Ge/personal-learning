@@ -5,9 +5,8 @@ category: JavaScript
 tags:
   - JavaScript
 ---
-# 原型与原型链
 
-<!-- more -->
+# 原型与原型链
 
 ## 前言
 

@@ -6,9 +6,8 @@ tags:
   - vscode-plugin
   - VSCode
 ---
-# VSCode 插件开发入门
 
-<!-- more -->
+# VSCode 插件开发入门
 
 ## Hello World
 
@@ -30,7 +29,6 @@ yo code
 - name 和 publisher： VS Code `<publisher>.<name>`用作插件的唯一 ID
 - main：插件入口文件
 - engines.vscode：这指定了扩展所依赖的 VS Code API 的最低版本。
-
 
 ```json
 {

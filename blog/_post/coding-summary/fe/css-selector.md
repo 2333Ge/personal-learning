@@ -6,9 +6,8 @@ tags:
   - CSS
   - FE
 ---
-# 快速过一遍 CSS 选择器
 
-<!-- more -->
+# 快速过一遍 CSS 选择器
 
 ## 选择器
 
@@ -86,7 +85,6 @@ li[class^="a" i] {
 }
 ```
 
-
 ### 伪类与伪元素
 
 上[MDN](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements) 查看更多伪类、伪元素示例
@@ -144,7 +142,6 @@ article:first-child{}
 
 #### 伪元素
 
-
 **伪元素**：允许你对被选择元素的特定部分修改样式
 ```css
 p::first-line {
@@ -153,7 +150,6 @@ p::first-line {
 p::before {
 }
 ```
-
 
 ### 关系选择器
 

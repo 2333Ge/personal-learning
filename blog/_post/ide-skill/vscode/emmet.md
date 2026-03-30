@@ -1,5 +1,5 @@
 ---
-title: emmet
+title: emmet(WIP)
 date: 2025-12-12
 category: 
 tags:
@@ -7,7 +7,7 @@ tags:
   - ide-skill
 ---
 
-<!-- more -->
+# emmet(WIP)
 
 ## 介绍
 
@@ -27,7 +27,6 @@ TopicList
 # 输出
 <TopicList></TopicList>
 ```
-
 
 ## 参考资料
 

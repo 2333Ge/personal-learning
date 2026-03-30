@@ -7,11 +7,8 @@ tags:
   - FE
 description: 在前端日常开发，大多数的样式都能写出来，不管是切图还是多套几层div，最终都能实现，所以对样式这一块的代码的简洁与优雅往往不太在意。《CSS揭秘》这本书通过各种各样的例子，由浅入深的讲解了如何用CSS实现各种炫酷效果、布局技巧以及介绍了一些不太常用却很实用的属性
 ---
+
 # CSS 还能这么写？|《CSS揭秘》分享
-
-
-
-<!-- more -->
 
 ## 前言
 
@@ -29,14 +26,12 @@ CSS3 并没有在任何规范中定义过，指的是一个非正式的集合，
 
 ...
 
-
 ### 实现实验性的特性方案
 
 CSS 迭代过程中，浏览器厂商为了实现一些实验性特性，出现过以下方案
 
 - **[浏览器前缀](https://developer.mozilla.org/zh-CN/docs/Glossary/Vendor_Prefix)**：在名称前面加上自己特有的前缀。最常见的前缀分别是Firefox的-moz-、IE的-ms-、Opera的-o-以及Safari和Chrome的-webkit-。
 - **通过配置开关启用**。有效防止开发者在生产环境中滥用。也是目前的趋势
-
 
 ## 实用技巧
 
@@ -156,7 +151,6 @@ background-origin: 设置背景图的原点位置的背景相对区域
 
 <!-- 六 复杂背景：棋盘效果、圆点背景、8 实现行军蚁边框效果 https://dabblet.com/gist/f26dddc71730c3847153 -->
 
-
 ### 形状
 
 #### 1. 画一个椭圆、半椭圆、1/4椭圆
@@ -215,7 +209,6 @@ border-radius 可以指定水平半径、垂直半径
 
 - [官方示例](http://play.csssecrets.io/trapezoid-tabs)
 
-
 #### 5. 饼图
 
 ![](./image/css-secrets-share/20240306221618.png)
@@ -225,7 +218,6 @@ border-radius 可以指定水平半径、垂直半径
 官方示例:
 - [渐变方案](https://play.csssecrets.io/pie-static)
 - [svg方案](https://play.csssecrets.io/pie-svg)
-
 
 <details>
 <summary>提示：</summary>
@@ -239,8 +231,6 @@ border-radius 可以指定水平半径、垂直半径
 方案二：svg 圆+stroke-dasharray
 
 </details>
-
-
 
 ### 字体排印
 
@@ -271,17 +261,11 @@ play.csssecrets.io/line-breaks -->
 
 https://play.csssecrets.io/wavy-underlines -->
 
-
-
-
 ## 相关链接
 
 [1] [书中所有示例](https://play.csssecrets.io/)
 
 [2] [可视化构建svg](https://yqnn.github.io/svg-path-editor/)
-
-
-
 
 <!-- ### 视觉效果
 

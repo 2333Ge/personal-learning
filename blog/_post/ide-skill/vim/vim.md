@@ -7,9 +7,8 @@ tags:
   - Shell
   - Wiki
 ---
-# Vim 概览
 
-<!-- more -->
+# Vim 概览
 
 ## 前言
 
@@ -23,16 +22,13 @@ vim 模式：
 
 > 理解：vim接口本身是一种编程
 
-
 ### 查看帮助
 
 - `tldr vim`
 - `man vim`
 - 命令模式下输入`:help <参数>`, 可以通过前缀进一步指定上下文， 更多上下文及说明参见  [help-summary](https://yianwillis.github.io/vimcdoc/doc/usr_02.html#help-summary)
 
-
 ![](image/vim-help.png)
-
 
 ## 正常模式
 
@@ -42,7 +38,6 @@ vim 模式：
 ### 移动
 
 详见[官方中文文档](https://yianwillis.github.io/vimcdoc/doc/quickref.html#quickref)非常详细
-
 
 - `hjkl`: 左下上右
 ```
@@ -69,7 +64,6 @@ h    l
 
 ### 编辑
 
-
 - `x`: 删除当前字符
 - `r 2`: 替换当前选中字符为2 
 - `~`: 大小写转换
@@ -90,7 +84,6 @@ h    l
 的全部内容。
 
 - `c c`: 删除当前行，光标移动到行首进入编辑模式
-
 
 **y: 复制******
 
@@ -150,7 +143,6 @@ eg：
 [1] [官方中文手册](https://github.com/yianwillis/vimcdoc)  
 
 [2] [官方中文手册-总览](https://yianwillis.github.io/vimcdoc/doc/help.html)
-
 
 ## 随记
 

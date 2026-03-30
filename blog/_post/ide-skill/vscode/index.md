@@ -6,9 +6,8 @@ tags:
   - VSCode
   - ide-skill
 ---
-# 【了解你的IDE】VSCode
 
-<!-- more -->
+# 【了解你的IDE】VSCode
 
 ## 快捷键
 
@@ -77,8 +76,6 @@ tags:
 |       大写       |        uppercase         |         选中内容转大写         |
 |       小写       |        lowercase         |         选中内容转小写         |
 |       设置       |         setting          |        打开各种设置文件        |
-
-
 
 ## 插件
 
@@ -189,7 +186,6 @@ print("Hello from Python!")
    - 查看输出面板中的错误信息
 
 这些功能使 MPE 成为一个强大的交互式文档工具，特别适合用于教程编写、代码演示和文档生成。
-
 
 ## 零碎技巧
 

@@ -5,9 +5,9 @@ category: react-native
 tags:
   - react-native
 ---
+
 # RN开发概览
 
-<!-- more -->
 ## 前言
 
 官网：https://www.react-native.cn/docs/getting-started
@@ -41,7 +41,6 @@ tags:
 - 深合并：deepmerge
 - iphonex:react-native-iphone-x-helper 兼容底部操作提示
 - 单元测试：jest、enzyme
-
 
 ## bug 排查方法
 

@@ -8,8 +8,9 @@ tags:
   - Reading
 ---
 
-<!-- more -->
-# 前言
+# 《Mastering Gradle》笔记
+
+## 前言
 
 - 原书：https://juejin.cn/book/6844733819363262472
 - demo: demo/gradle-demo

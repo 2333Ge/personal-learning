@@ -6,7 +6,6 @@ tags:
   - FE
   - React
 ---
-<!-- more -->
 
 # React 批处理与变量更新逻辑
 

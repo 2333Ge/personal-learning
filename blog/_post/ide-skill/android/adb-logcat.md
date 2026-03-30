@@ -6,9 +6,9 @@ tags:
   - Android
   - ide-skill
 ---
+
 # ADB logcat
 
-<!-- more -->
 ## 官方链接
 
 https://developer.android.google.cn/studio/command-line/logcat?hl=zh_cn

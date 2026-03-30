@@ -30,14 +30,14 @@ export default defineConfig({
       categoryId: ''
     },
     nav: [
-      { text: '🏠 主页', link: '/' },
-      { text: '分类', link: '/pages/category' },
-      { text: '归档', link: '/pages/archives' },
-      { text: '标签', link: '/pages/tags' },
-      { text: '关于', link: '/pages/about' },
+      { text: '🏠 Home', link: '/' },
+      { text: 'Category', link: '/pages/category' },
+      { text: 'Timeline', link: '/pages/archives' },
+      { text: 'Tags', link: '/pages/tags' },
+      { text: 'About', link: '/pages/about' },
       // 保留原有常用直达入口
-      { text: 'CSS揭秘分享', link: '/_post/coding-summary/fe/css-secrets' },
-      { text: 'TS 笔记', link: '/_post/coding-summary/typescript/typescript-deep-dive-summary' },
+      // { text: 'CSS揭秘分享', link: '/_post/coding-summary/fe/css-secrets' },
+      // { text: 'TS 笔记', link: '/_post/coding-summary/typescript/typescript-deep-dive-summary' },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/2333Ge' }

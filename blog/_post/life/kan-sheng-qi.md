@@ -5,9 +5,8 @@ category: life
 tags:
   - life
 ---
-# 看升旗攻略
 
-<!-- more -->
+# 看升旗攻略
 
 ## 流程
 

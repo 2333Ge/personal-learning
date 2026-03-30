@@ -6,9 +6,8 @@ tags:
   - FE
   - JavaScript
 ---
-# JavaScript 对象的“枚举属性”
 
-<!-- more -->
+# JavaScript 对象的“枚举属性”
 
 ## 🔹 什么是枚举属性？
 

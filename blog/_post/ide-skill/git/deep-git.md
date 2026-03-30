@@ -7,7 +7,8 @@ tags:
   - git
   - ing
 ---
-<!-- more -->
+
+# 《Pro Git》笔记
 
 ## git的数据模型
 
@@ -22,8 +23,6 @@ Git 将顶级目录中的文件和文件夹作为集合，并通过一系列快�
 +- baz.txt (blob, contents = "git is wonderful")
 ```
 这个顶层的树包含了两个元素，一个名为 “foo” 的树（它本身包含了一个blob对象 “bar.txt”），以及一个 blob 对象 “baz.txt”。
-
-
 
 # 随记
 

@@ -6,9 +6,9 @@ tags:
   - React
   - Reading
 ---
+
 # 《React进阶指南》笔记
 
-<!-- more -->
 ## 前言
 
 > 原文：[《React 进阶指南》](https://juejin.cn/book/6945998773818490884)

@@ -5,12 +5,11 @@ category: VSCode
 tags:
   - ide-skill
   - VSCode
+description: 代码片段是可以更轻松地输入重复代码模式的模板，例如循环或条件语句
 ---
+
 # VSCode snippet自定义代码模板
 
-> 代码片段是可以更轻松地输入重复代码模式的模板，例如循环或条件语句
-
-<!-- more -->
 ## 自定义snippet优势
 
 - 现有插件提供的`snippet`(如：equimper.react-native-react-redux)弊端
@@ -35,7 +34,6 @@ VSCode左上角
 在ts或js文件中输入log测试效果
 
 ![log](./image/snippet-log.gif)
-
 
 ## snippet文件字段说明
 
@@ -169,7 +167,6 @@ ${TM_FILENAME/(.*)\\..+$/$1/}
 
 <!-- ![位置](./image/snippet-itf.gif) -->
 
-
 ### MarkDown中创建表格
 
 特定文件使用的代码片段可通过`code => 首选项 => 用户片段 => 选择特定语言` 的方式创建，便无需填写`scope`
@@ -202,8 +199,6 @@ ps2: 其他VSCode小技巧传送门：[VSCode快捷键推荐](https://juejin.cn/
 [2] [一个案例学会 VSCode Snippets，极大提高开发效率](https://juejin.cn/post/7052694806685810725)  
 [3] [官方文档](https://code.visualstudio.com/docs/editor/userdefinedsnippets)  
 [4] [Snippet 生成器](https://snippet-generator.app/)
-
-
 
 [variables]:https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables
 

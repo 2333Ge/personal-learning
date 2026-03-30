@@ -7,9 +7,8 @@ tags:
   - ide-skill
   - FE
 ---
-# Chrome调试技巧
 
-<!-- more -->
+# Chrome调试技巧
 
 ## 前言
 
@@ -43,7 +42,6 @@ source 左侧面板 Snippets
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/7/16787442c1b6d1f7~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0.awebp)
 
-
 - COPY HTML: `Ctrl C`
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/7/16787442daaa7199~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0.awebp)
@@ -53,7 +51,6 @@ source 左侧面板 Snippets
 - 切换布局：ctrl + shift + D (⌘ + shift + D Mac) 
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/18/167c07cf50125757~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0.awebp)
-
 
 - 切换 DevTools 面板(mac cmd...)
   - `ctrl + [` 和 `ctrl + ]`
@@ -66,7 +63,6 @@ source 左侧面板 Snippets
 - 调整数值（样式等）
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/18/167c07cf43b2f06e~tplv-t2oaga2asx-zoom-in-crop-mark:1304:0:0:0.awebp)
-
 
 - `ctrl+f`搜索查找：elements， logs， sources & network 中的查找
 
@@ -119,7 +115,6 @@ source 左侧面板 Snippets
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/17/167b94b8f36112b7~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
-
 - 忍者打印
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/17/167b955a1f0311fc~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
@@ -135,7 +130,6 @@ source 左侧面板 Snippets
 可以用来美化、过滤log，结合snippet实现保存（也可写在代码中，大概）
 
 [原文链接](https://juejin.cn/book/6844733783166418958/section/6844733783212589063)
-
 
 1. 开启 enable custom formatters
 
@@ -158,7 +152,6 @@ source 左侧面板 Snippets
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/18/167c07a88c45b6bd~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/18/167c07a88ed68f7f~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
-
 
 2. `monitor`: 每当一个 被潜入 的方法运行的时候，console 控制台 会把它的实例打印出来，包含 函数名 以及 调用它的参数。eg:
 
@@ -194,7 +187,6 @@ class Person {
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/7/167893640b5cdd71~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
-
 ### `console.table`
 
 `console.table` 这个小技巧在开发者中可能并没有多少人知道: 如果有一个 数组 (或者是 类数组 的对象，或者就是一个 对象 )需要打印，你可以使用 `console.table` 方法将它以一个漂亮的表格的形式打印出来。它不仅会根据数组中包含的对象的所有属性，去计算出表中的列名，而且这些列都是可以 缩放 甚至 还可以排序!!!
@@ -206,7 +198,6 @@ class Person {
 ### `table`结合`{}`
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2019/1/22/1687448b6fdfc5bc~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
-
 
 ### `console.dir`
 
@@ -220,7 +211,6 @@ class Person {
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/13/167a467d9f9ff467~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
-
 ### 检测执行时间
 
 对脚本中的特殊的节点之间执行的时间跨度更加感兴趣，对于这样的情况，我们可以采用一对有效的 console 方法
@@ -231,7 +221,6 @@ class Person {
 如果你想一次记录多件事，可以往这些函数中传入不同的标签值。(例如: console.time('loading') ， console.timeEnd('loading') )
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/13/167a484d3824545d~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
-
 
 ### 给`console.log`加上`CSS`样式
 
@@ -272,7 +261,6 @@ function log(message) {
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2019/1/22/168744938b968240~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
-
 ### 使用实时表达式
 
 只需按下 "眼睛" 符号，你就可以在那里定义任何 JavaScript 表达式。 它会不断更新，所以表达的结果将永远存在
@@ -305,7 +293,6 @@ function log(message) {
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/20/167c99ea1c267c2b~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
-
 ### XHR/fetch 断点
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2019/1/22/16874662814db12c~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
@@ -326,9 +313,7 @@ function log(message) {
 
 移动你当前选中的元素，在 DOM 结构中往上挪一点或者往下挪一点，而不是拖动和放置，可以使用[ctrl] + [⬆/⬇]  ([⌘] + [⬆/⬇] on Mac)
 
-
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/9/16793797bf5d233e~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
-
 
 ### 编辑元素面板
 
@@ -342,11 +327,9 @@ Style 面板中点击靠近 box-shadow 属性或者 text-shadow 属性的 阴影
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/14/167ac17a4194c870~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
-
 ### Timing function editor 定时函数编辑器
 
 贝塞尔曲线是一串用来定义 CSS 的动画速度在整个动画过程中如何变化的 魔法数值 。我们将其定义为 transition-timing-function 或者 animation-timing-function CSS 属性
-
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/14/167ac1748b45fe3f~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
 
@@ -364,7 +347,6 @@ Style 面板中点击靠近 box-shadow 属性或者 text-shadow 属性的 阴影
 
 - mac: option + 左键
 - win: alt + 左键
-
 
 ### DOM 断点
 
@@ -387,7 +369,6 @@ Drawer: 选项卡(Elements、Console、Sources...)的平行选项卡，被隐藏
 Drawer里有什么？
 
 ![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/12/20/167ca65dd36c5272~tplv-t2oaga2asx-zoom-in-crop-mark:3024:0:0:0.awebp)
-
 
 1. 控制传感器
 
