@@ -30,9 +30,9 @@ export default defineConfig({
       categoryId: ''
     },
     nav: [
-      { text: '🏠 Home', link: '/' },
+      { text: 'Home', link: '/' },
       { text: 'Category', link: '/pages/category' },
-      { text: 'Timeline', link: '/pages/archives' },
+      { text: 'Archives', link: '/pages/archives' },
       { text: 'Tags', link: '/pages/tags' },
       { text: 'About', link: '/pages/about' },
       // 保留原有常用直达入口
