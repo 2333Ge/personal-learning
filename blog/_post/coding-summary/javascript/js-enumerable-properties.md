@@ -2,12 +2,12 @@
 title: JavaScript 对象的“枚举属性”
 date: 2025-07-25
 category: JavaScript
-tags: 
+tags:
   - FE
   - JavaScript
 ---
 
-<!-- more -->
+# JavaScript 对象的“枚举属性”
 
 ## 🔹 什么是枚举属性？
 

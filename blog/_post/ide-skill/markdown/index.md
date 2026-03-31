@@ -7,7 +7,8 @@ tags:
   - ide-skill
 ---
 
-<!-- more -->
+# MarkDown 概览
+
 ## 前言
 
 [中文官网](http://markdown.p2hp.com/basic-syntax/#links)

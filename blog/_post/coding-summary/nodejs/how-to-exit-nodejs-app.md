@@ -6,7 +6,8 @@ tags:
   - Nodejs
 ---
 
-<!-- more -->
+# 如何退出Nodejs程序
+
 ## 省流
 
 1. `process.exit(1)`

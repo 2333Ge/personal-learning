@@ -2,9 +2,15 @@
 title: 《Android开发艺术探索》笔记
 date: 2019-01-01
 category: Android
-cover: https://developer.android.com/topic/generic-system-image/images/gsi-support.png
-tag: [Android, Reading]
+cover: >-
+  https://developer.android.com/topic/generic-system-image/images/gsi-support.png
+tag:
+  - Android
+  - Reading
 ---
+
+# 《Android开发艺术探索》笔记
+
 ## Activity 生命周期和启动模式
 
 ### 生命周期

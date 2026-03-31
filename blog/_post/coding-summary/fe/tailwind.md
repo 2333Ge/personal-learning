@@ -1,5 +1,5 @@
 ---
-title: Tailwind CSS 概览
+title: Tailwind CSS 概览(WIP)
 date: 2024-07-01
 category: FE
 tags:
@@ -7,7 +7,8 @@ tags:
   - CSS
 ---
 
-<!-- more -->
+# Tailwind CSS 概览
+
 ## 相关资料
 
 - [tailwind 中文网站](https://tailwind.nodejs.cn/docs/responsive-design)

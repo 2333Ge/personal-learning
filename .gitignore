@@ -5,3 +5,14 @@ temp
 *.cache
 docs
 my_actions
+blog/.vitepress/cache
+.DS_Store
+
+# Auto-generated blog pagination pages
+blog/index.md
+blog/page_*.md
+blog/index.md
+.coco
+.motor-code
+.trae
+.traecli

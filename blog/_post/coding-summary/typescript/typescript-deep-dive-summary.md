@@ -7,7 +7,8 @@ tags:
   - FE
 ---
 
-<!-- more -->
+# 《深入理解 TypeScript》 笔记
+
 ## 前言
 
 [TS中文网](https://www.tslang.cn/docs/home.html)学习过一遍，查漏补缺，只记录没见过、没掌握、比较重要的知识点
@@ -27,7 +28,6 @@ tags:
 ## 声明空间
 
 [声明空间](https://jkchao.github.io/typescript-book-chinese/project/declarationspaces.html)：类型声明空间与变量声明空间。
-
 
 下例 `Class Foo` 提供了一个类型 `Foo` 到类型声明空间，此外它同样提供了一个变量 `Foo` 到变量声明空间。
 
@@ -119,7 +119,6 @@ npm install @types/jquery --save-dev
 ## 环境声明
 
 可以通过 `declare` 关键字来告诉 `TypeScript`，你正在试图表述一个其他地方已经存在的代码。
-
 
 ```ts
 /*
@@ -214,7 +213,6 @@ let lie = 0;
 ```
 - 内联枚举的任何用法（0 而不是 `Tristate.False`）；
 - 不会为枚举类型编译成任何 JavaScript（在这个例子中，运行时没有 `Tristate` 变量），因为它使用内联语法。
-
 
 ## 开放式枚举
 
@@ -326,7 +324,6 @@ declare const Foo: CallMeWithNewToGetString;
 const bar = new Foo(); // bar 被推断为 string 类型
 ```
 
-
 padding不能当做类型使用吗??这也不是一个合规的变量呀..
 
 ```ts
@@ -421,7 +418,6 @@ interface NestedCSS {
   };
 }
 
-
 const failsSliently: NestedCSS = {
   colour: 'red'  // TS Error: 未知属性 'colour'
 }
@@ -497,7 +493,6 @@ enum BarIdBrand {
 
 ```ts
 type ParamType<T> = T extends (...args: infer P) => any ? P : T;
-
 
 interface User {
   name: string;
@@ -620,7 +615,6 @@ x = MyClass;
 
 ## 随记
 
-
 - 只导入模块, 这种写法导入了什么??
 
 ```js
@@ -631,8 +625,6 @@ import './index.css'
 - d.ts文件到底是什么作用？为啥.两下，为啥叫d.ts，和普通ts文件区别？
 
 eg: 使用@types为现有npm包提供类型声明
-
-
 
 [covariance]:https://jkchao.github.io/typescript-book-chinese/tips/covarianceAndContravariance.html
 

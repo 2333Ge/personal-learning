@@ -7,7 +7,8 @@ tags:
   - ide-skill
 ---
 
-<!-- more -->
+# Android 开发者选项
+
 ## 前言
 
 概览可参考：http://www.oneplusbbs.com/thread-3968678-1.html
