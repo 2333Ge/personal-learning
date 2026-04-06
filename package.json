@@ -8,7 +8,7 @@
     "check:size": "node bin/show-commit-size.js",
     "save": "./bin/save.sh",
     "dev": "vitepress dev blog",
-    "build": "vitepress build blog --outDir ../docs",
+    "build": "vitepress build blog --outDir docs",
     "deploy": "./bin/deploy.sh",
     "ppt:build": "slidev build slidev/index.md",
     "ppt:dev": "slidev --open slidev/index.md",

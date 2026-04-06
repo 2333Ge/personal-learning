@@ -195,6 +195,8 @@ print("Hello from Python!")
 List[\w\W]*components[\w\W]*<List
 ```
 
+2. 底部状态栏图标找不到，比如想关闭copilot的自动提示，找不到图标，放到一个大一点的屏幕上
+
 ## 相关文档
 
 - [官方文档](https://code.visualstudio.com/docs/languages/JavaScript)
