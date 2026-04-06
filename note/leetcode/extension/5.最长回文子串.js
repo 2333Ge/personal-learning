@@ -11,36 +11,38 @@
  * @param {string} s
  * @return {string}
  */
-var longestPalindrome1 = function (s) {
-  // 硬解，没用动态规划
-  if (!s?.length) return "";
+var longestPalindrome = function (s) {
+  if (!s?.length) return 0;
 
-  const palindromeSpace = (i, j) => {
-    if (i < 0 || j >= s.length) return 0;
-    if (s[i] != s[j]) return 0;
-    return 1 + palindromeSpace(i - 1, j + 1);
+  let maxLen = 0;
+  let start = 0;
+
+  const expandFromCenter = (l, r) => {
+    while (l >= 0 && r < s.length && s[l] == s[r]) {
+      const len = r - l + 1;
+      if (len > maxLen) {
+        maxLen = len;
+        start = l;
+      }
+      l--;
+      r++;
+    }
   };
-  let result = s[0];
-  let space = 0;
-  for (let i = 0; i < s.length - 1; i++) {
-    space = palindromeSpace(i - 1, i + 1);
-    if (1 + space * 2 > result.length) {
-      result = s.substring(i - space, i + space + 1);
-    }
-    space = palindromeSpace(i, i + 1);
-    if (space * 2 > result.length) {
-      result = s.substring(i - space + 1, i + space + 1);
-    }
+
+  for (let i = 0; i < s.length; i++) {
+    expandFromCenter(i, i);
+    expandFromCenter(i, i + 1);
   }
 
-  return result;
+  return s.substring(start, start + maxLen);
 };
+
 /**
  * ai
  * @param {*} s
  * @returns
  */
-var longestPalindrome = function (s) {
+var longestPalindrome1 = function (s) {
   if (s.length < 2) return s;
 
   let start = 0;
