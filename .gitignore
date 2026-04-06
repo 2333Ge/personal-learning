@@ -1,6 +1,6 @@
 .history
 node_modules
-temp
+temp/
 *.temp
 *.cache
 docs
