@@ -3,7 +3,7 @@
 - **发布日期**：2017年9月26日
 - **核心更新**：
 	- **Fiber 重构**：React 完全重写了协程引擎，采用 Fiber 架构，支持 **可中断渲染**、**分片更新** 和 **异步协调**。这为 React 实现高级性能优化、时间切片和优先级调度奠定基础。、
-		- 🌰 可中断渲染
+		- 🌰 可中断渲染：就是 React 在做组件 diff、计算新 DOM 结构的时候，**不是一口气从头跑到尾**，而是可以随时停下来。
 		  ```javascript
 		  // 可中断渲染示例
 		  function ExpensiveComponent() {
@@ -38,7 +38,7 @@
 		  // 4. 更新 count 状态
 		  // 5. 恢复 ExpensiveComponent 的渲染
 		  ```
-		- 🌰 分片更新
+		- 🌰 时间分片
 		  ```jsx
 		  // 传统的同步渲染（React 15）
 		  function renderLargeList() {
@@ -63,7 +63,7 @@
 		  }
 		  }
 		  ```
-		- 🌰 异步协调
+		- 🌰 异步优先级协调
 		  ```jsx
 		  // 不同类型的更新有不同优先级
 		  const priorities = {
@@ -105,6 +105,9 @@
 - **发布日期**：2022年3月29日
 - **核心更新**：
 	- **并发渲染（Concurrent Rendering）**：React 18 开始支持并发渲染，启用 **Concurrent Mode**，使得 React 可以挂起任务、恢复任务，并进行并行渲染，从而提高应用响应性。
+		- [[React 18 并发渲染和React 16的特性对比]]
+			- React 16：切片不堵路，但必须跑完
+			  React 18：能插队、能放弃、能后台准备，真正并发
 	- **自动批处理（Automatic Batching）**：React 18 引入了自动批处理功能，将异步事件（如 `Promise`、`setTimeout`、原生事件等）中的多个 `setState` 更新合并成一个更新，减少了不必要的重新渲染。
 	- **Transitions 和 Suspense 升级**：
 		- 引入了 `startTransition` 和 `useTransition` 等新 API，允许将一些不紧急的更新标记为过渡更新，从而优化 UI 渲染性能。
