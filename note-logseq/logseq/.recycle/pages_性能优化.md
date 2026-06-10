@@ -1,4 +1,5 @@
 - [[性能优化R]]
+- [[]]
 - ## 常规手段
 - 防抖、节流限制方法执行频率
 - 首屏加载慢
@@ -98,7 +99,7 @@
     res.status(200).json({ data });
   }
   ```
-- ## [[RN FLatList 如何进行性能优化]]
+- ## [[RN 性能优化]]
 - ## 参考文章
 - [前端铜九铁十面试必备八股文——性能优化](https://juejin.cn/post/7273119689185673253)
 - [web.dev: 预加载自适应图片](https://web.dev/articles/preload-responsive-images?hl=zh-cn)
