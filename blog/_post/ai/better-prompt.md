@@ -1,4 +1,4 @@
----
+ ---
 title: 如何写好 Prompt
 date: 2025-02-26
 category: AI
