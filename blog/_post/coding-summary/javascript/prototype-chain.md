@@ -6,7 +6,7 @@ tags:
   - JavaScript
 ---
 
-<!-- more -->
+# 原型与原型链
 
 ## 前言
 

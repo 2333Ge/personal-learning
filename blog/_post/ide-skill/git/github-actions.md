@@ -2,15 +2,14 @@
 title: github actions 概览
 date: 2022-07-13
 category: git
+description: 在 GitHub Actions 的仓库中自动化、自定义和执行软件开发工作流程。 您可以发现、创建和共享操作以执行您喜欢的任何作业（包括 CI/CD），并将操作合并到完全自定义的工作流程中。
 tags:
   - github
   - git
   - github-actions
 ---
 
-> 在 GitHub Actions 的仓库中自动化、自定义和执行软件开发工作流程。 您可以发现、创建和共享操作以执行您喜欢的任何作业（包括 CI/CD），并将操作合并到完全自定义的工作流程中。
-
-<!-- more -->
+# github actions 概览
 
 ## github actions 作用
 
@@ -72,7 +71,6 @@ jobs: # 表示要执行的一项或多项任务
 - 在 GitHub 之外发生并在 GitHub 上触发 repository_dispatch 事件的事件
 - 预定时间
 - 手动
-
 
 eg: 打印
 

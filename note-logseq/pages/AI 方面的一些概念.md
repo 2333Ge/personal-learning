@@ -1,0 +1,7 @@
+- 见笔记：blog/_post/ai/terminology.md
+- subaget
+- agent
+- skill
+- MCP
+- memory
+- RAG

@@ -6,7 +6,7 @@ tags:
   - react-native
 ---
 
-<!-- more -->
+# RN 踩坑记录
 
 ## Could not connect to development server
 

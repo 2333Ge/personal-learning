@@ -8,14 +8,13 @@ tags:
   - guitar
 ---
 
-<!-- more -->  
+# 吉他入门笔记
 
 ## Hello World 
 
 1. [吉他选购](https://www.bilibili.com/video/BV1FB4y1s761) 
       
 my: 卡马 D1C 
-
 
 2. [调音](https://www.bilibili.com/video/BV1db411c7gQ?p=2)
   
@@ -47,7 +46,6 @@ my: 卡马 D1C
 
 ![](./image/fen-yin-fu-4.jpeg)
 
-
 8分音符练习： 
 
 ![](./image/fen-yin-fu-8.jpeg)
@@ -72,10 +70,7 @@ my: 卡马 D1C
 | :-----------: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 位置（弦-品） |  5-3  |  4-0  |  4-2  |  4-3  |  3-0  |  3-2  |  2-0  |  2-1  |
 
-
 常用： 6 线谱 + 简谱、6线谱 + 五线谱，
-
-
 
 ## 时值
 
@@ -148,7 +143,6 @@ my: 卡马 D1C
 ![](./image/shao-nian-time1.jpg)
 
 ![](./image/shao-nian-time2.jpg)
-
 
 # 参考资料
 

@@ -8,7 +8,7 @@ tags:
   - Wiki
 ---
 
-<!-- more -->
+# Shell 实用指令概览
 
 ## 前言
 
@@ -53,7 +53,6 @@ Ctrl K # 将光标以后的内容删除
 Ctrl U # 清空当前输入
 Ctrl R # 在历史命令中查找[8]，比如之前某条命令执行失败，可通过此方式快速找到对应命令重新执行
 ```
-
 
 ### 一些基础概念
 
@@ -166,7 +165,6 @@ $ curl www.baidu.com
 ```bash
 curl -H "Host: suggestion.baidu.com" -H "Sec-Fetch-Site: none" -H "Sec-Fetch-Mode: no-cors" -H "Sec-Fetch-Dest: empty" -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" -H "Accept-Language: zh-CN,zh;q=0.9" -H "Cookie: BDUSS_BFESS=Z2UVJ4UERzNTVyWHVRb21KLTVkcVdOdWhDMDl3aG1jWkdpMFA4M2x3R2NvbEppRVFBQUFBJCQAAAAAAAAAAAEAAAAkAEGTxcu1wsCtubG1xLn71q0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJwVK2KcFStiQW; BDSFRCVID_BFESS=w4FOJeC62Z7x5j3DOYtxtKoBoVALqC3TH6ao7gE5pd23RU6n14g8EG0PhM8g0KAbx4seogKK0mOTHv-F_2uxOjjg8UtVJeC6EG0Ptf8g0f5; BAIDUID_BFESS=698F99AAD30B1558728C57D13A001C25:FG=1" --compressed "https://suggestion.baidu.com/su?wd=&action=opensearch&ie=UTF-8"
 ```
-
 
 ### cp
 
@@ -468,7 +466,6 @@ node_modules
 
 **操作符**
 
-
 - `-and`、`-a`: 与，一行中的两个语句隐含用`-a`连接，第一个语句为false则后面不再执行。
 
 - `-or`、`-o`: 或
@@ -485,7 +482,6 @@ expr1 expr2
 **选项**
 
 某些情况可以指定数字类型的参数`n`为以下形式：
-
 
 - `+n` 超过n
 
@@ -771,7 +767,6 @@ $ cat sort.txt
 ```bash
 $ sort sort.txt
 
-
  		4
    3
   1
@@ -783,7 +778,6 @@ $ sort sort.txt
 
 ```bash
 $ sort -b sort.txt
-
 
   1
   2
@@ -813,7 +807,6 @@ drwxr-xr-x 13 ych staff 416 4 19 15:15 vue_start
 drwxrwxr-x@ 8 ych staff 256 3 4 16:47 react_start
 drwxr-xr-x 7 ych staff 224 4 19 16:03 nodejs_start
 ```
-
 
 ### awk
 
@@ -977,7 +970,6 @@ what-are-en0-en1-p2p-and-so-on-that-are-displayed-after-executing-ifconfig" >ifc
 
 [21] [【麻省理工现场授课视频】计算机编程中最重要的一门课程------编程工具的使用][bilibili]
 
-
 [linux-shell]:https://www.runoob.com/linux/linux-shell.html
 [curl]:https://www.ruanyifeng.com/blog/2019/09/curl-reference.html
 [bilibili]:https://b23.tv/9Xh3oaW
@@ -994,7 +986,6 @@ what-are-en0-en1-p2p-and-so-on-that-are-displayed-after-executing-ifconfig" >ifc
 - `$?`: 从上一个命令中获取错误代码
 - `$_`: 获取上一个命令的最后一个参数
 - `$@`: 获取所有参数 -->
-
 
 <!-- 什么是shell -->
 

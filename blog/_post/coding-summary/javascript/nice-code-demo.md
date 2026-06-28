@@ -6,15 +6,20 @@ tags:
   - JavaScript
   - TypeScript
   - FE
+description: 记录日常开发遇到的让人眼前一亮的代码
 ---
 
-> 记录日常开发遇到的让人眼前一亮的代码
-
-<!-- more -->
+# 前端优秀代码片段
 
 ## 介绍
 
 记录日常开发遇到的让人眼前一亮的代码
+
+## 生成随机字符串
+
+```javascript
+Math.random().toString(36).substring(2)
+```
 
 ## 方法顺序执行，不论同步还是异步
 
@@ -72,13 +77,9 @@ console.log(memoizedFibonacci(10)); // 输出 55
 console.log(memoizedFibonacci(20)); // 输出 6765
 ```
 
-
 在这个例子中，`memoize` 函数通过闭包缓存了计算结果，提高了递归函数的性能。
 
-
-
 ## 闭包实现函数柯里化
-
 
 通用的函数柯里化工具函数，注意这里没有处理`this`的指向
 

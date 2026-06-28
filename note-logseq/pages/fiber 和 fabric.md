@@ -1,0 +1,3 @@
+- Fiber：React 的“调度与协调架构”
+- Fabric:  React Native 的“渲染器（Renderer）
+-

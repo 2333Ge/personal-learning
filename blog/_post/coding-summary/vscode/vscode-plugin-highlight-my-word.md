@@ -7,7 +7,8 @@ tags:
   - vscode-plugin
 ---
 
-<!-- more -->
+# VSCode插件开发小记 | 高亮自定义主题
+
 ## 前言
 
 **背景**：项目中预定义了主题样式，在代码编写过程中用到颜色的地方只使用相关变量，然鹅在使用变量时往往记不住各个主题值表示什么颜色，需要反复查阅文档，故希望在coding时能知道当前变量表示的颜色。且支持多套映射，以支持主题切换（如：`text_color`默认主题下`#333`，`dark`主题下`#d9d9d9`）。
@@ -17,7 +18,6 @@ tags:
 好记性不如烂笔头✏️，写文章记录一下插件开发中用到的知识点。
 
 ps：关于插件项目的初始化、package.json各个配置的作用等，已经很多其他优秀文章介绍过了，可查阅文末的附录参考文献，此处便一笔带过了，本文只介绍实现目标功能用到的核心API
-
 
 ## 插件演示&功能介绍
 
@@ -71,7 +71,6 @@ yo code
 ### 在编辑器目标位置设置样式
 
 下例🌰演示了如何高亮编辑器中的第一个目标字段，多主题多映射的情况可以此类推
-
 
 ```ts
 import * as vscode from 'vscode';
@@ -212,7 +211,6 @@ export const displayStatusBar = () => {
 
 ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5394cfe4211b4e879cabc1dd37e613d2~tplv-k3u1fbpfcp-watermark.image?)
 
-
 点击状态栏可以响应`command`, 通过command调用一个快捷选择弹窗即可实现快捷切换主题
 
 ### 注册&实现command
@@ -287,7 +285,6 @@ export function activate(context: vscode.ExtensionContext) {
 
 最终通过上述api实现了最终的VSCode插件效果，关于详细的API用法可上[官网][vscode-api]了解,
 欢迎应用商店搜索highlight my word体验使用☘️☘️
-
 
 ## 附录
 

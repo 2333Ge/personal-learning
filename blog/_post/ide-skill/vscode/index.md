@@ -7,7 +7,7 @@ tags:
   - ide-skill
 ---
 
-<!-- more -->
+# 【了解你的IDE】VSCode
 
 ## 快捷键
 
@@ -76,8 +76,6 @@ tags:
 |       大写       |        uppercase         |         选中内容转大写         |
 |       小写       |        lowercase         |         选中内容转小写         |
 |       设置       |         setting          |        打开各种设置文件        |
-
-
 
 ## 插件
 
@@ -189,7 +187,6 @@ print("Hello from Python!")
 
 这些功能使 MPE 成为一个强大的交互式文档工具，特别适合用于教程编写、代码演示和文档生成。
 
-
 ## 零碎技巧
 
 1. 正则查找目标组件示例
@@ -197,6 +194,8 @@ print("Hello from Python!")
 ```
 List[\w\W]*components[\w\W]*<List
 ```
+
+2. 底部状态栏图标找不到，比如想关闭copilot的自动提示，找不到图标，放到一个大一点的屏幕上
 
 ## 相关文档
 

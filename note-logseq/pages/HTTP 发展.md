@@ -22,10 +22,11 @@
 - HTTP/3
 	- 传输层使用[QUIC](https://developer.mozilla.org/zh-CN/docs/Glossary/QUIC)(基于UDP)而不是TCP协议
 	- 连接建立更快
-- [[HTTPS]]
-	- 数据加密，防止窃听
-	- 证书验证，防止伪造
-	- 防篡改，确保数据未被修改
+- [[HTTPS]]：[参考](https://www.doubao.com/thread/w4d7a8de852fbeca5)
+	- 防止窃听，数据加密
+	- 防止伪造，证书验证
+	- 防止篡改，数字签名
+-
 	-
 - ## 参见
 - [MDN：HTTP的发展](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Evolution_of_HTTP)

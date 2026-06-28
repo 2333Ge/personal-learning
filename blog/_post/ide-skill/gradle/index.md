@@ -7,7 +7,7 @@ tags:
   - ide-skill
 ---
 
-<!-- more -->
+# Gradle 概览
 
 ## 入门
 
@@ -138,7 +138,6 @@ RELEASE_KEY_ALIAS=xxx
 RELEASE_KEY_PASSWORD=xxx
 
  // 然后在build.gradle中直接引用即可：
-
 
 signingConfigs {
     myConfig {

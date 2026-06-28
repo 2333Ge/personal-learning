@@ -6,10 +6,9 @@ tags:
   - Nodejs
 ---
 
+# Nodejs概览
+
 Node.js 是一个开源和跨平台的 JavaScript 运行时环境。 它几乎是任何类型项目的流行工具。
-
-<!-- more -->
-
 
 ## what is Node.js
 
@@ -17,7 +16,6 @@ Node.js 是一个开源和跨平台的 JavaScript 运行时环境。 它几乎�
 
 - 官网：http://nodejs.cn/learn
 - 《深入浅出Node.js》
-
 
 ## node.js 与浏览器区别
 
@@ -76,7 +74,6 @@ export NODE_ENV=production
 ```shell
 NODE_ENV=production node app.js
 ```
-
 
 ## Node.js REPL
 
@@ -146,7 +143,6 @@ module.exports
 `npm root -g` 查看本机全局node_modules目录位置
 
 `npm config get registry` 查看当前npm注册表
-
 
 如果安装的是可执行文件会放在 `node_modules/.bin`目录下，
 
